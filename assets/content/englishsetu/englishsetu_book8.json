@@ -1,0 +1,34 @@
+{
+  "subject": "Englishsetu",
+  "book": "पुस्तक 8: Book 8: Cloze Test & Advanced Fillers",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Contextual Word Elimination",
+      "subtitle": "Techniques for Cloze Passage",
+      "content": [
+        {
+          "type": "text",
+          "value": "Read the entire paragraph first to grasp the tone, tense, and flow before filling individual blanks."
+        },
+        {
+          "type": "callout",
+          "value": "परीक्षा टिप्स: सेतु श्रृंखला के मुख्य सूत्रों और बिंदुओं को बार-बार दोहराएं।"
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "What should you do first when solving a Cloze Test?",
+          "options": [
+            "Fill first blank immediately",
+            "Read whole passage for context",
+            "Guess from options",
+            "Skip tough words"
+          ],
+          "correctIndex": 1,
+          "explanation": "Understanding the whole context is crucial."
+        }
+      ]
+    }
+  ]
+}

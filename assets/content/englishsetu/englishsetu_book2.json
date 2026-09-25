@@ -1,0 +1,34 @@
+{
+  "subject": "Englishsetu",
+  "book": "पुस्तक 2: Book 2: Tenses, Voice & Narration",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Mastering English Tenses",
+      "subtitle": "Present, Past and Future Aspects",
+      "content": [
+        {
+          "type": "text",
+          "value": "Tense indicates the time of an action along with its degree of completeness."
+        },
+        {
+          "type": "callout",
+          "value": "परीक्षा टिप्स: सेतु श्रृंखला के मुख्य सूत्रों और बिंदुओं को बार-बार दोहराएं।"
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "Identify the tense: She has completed her assignment.",
+          "options": [
+            "Simple Present",
+            "Present Perfect",
+            "Past Perfect",
+            "Present Continuous"
+          ],
+          "correctIndex": 1,
+          "explanation": "has + past participle (V3) indicates Present Perfect."
+        }
+      ]
+    }
+  ]
+}

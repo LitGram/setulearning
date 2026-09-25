@@ -1,0 +1,34 @@
+{
+  "subject": "Englishsetu",
+  "book": "पुस्तक 3: Book 3: Sentence Structure & Clauses",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Simple, Compound and Complex Sentences",
+      "subtitle": "Independent and Dependent Clauses",
+      "content": [
+        {
+          "type": "text",
+          "value": "A simple sentence has one independent clause. A compound sentence connects independent clauses using coordinating conjunctions (FANBOYS)."
+        },
+        {
+          "type": "callout",
+          "value": "परीक्षा टिप्स: सेतु श्रृंखला के मुख्य सूत्रों और बिंदुओं को बार-बार दोहराएं।"
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "Which conjunction is part of FANBOYS?",
+          "options": [
+            "Because",
+            "Although",
+            "But",
+            "Since"
+          ],
+          "correctIndex": 2,
+          "explanation": "For, And, Nor, But, Or, Yet, So form FANBOYS."
+        }
+      ]
+    }
+  ]
+}

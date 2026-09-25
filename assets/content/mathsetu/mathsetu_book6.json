@@ -1,0 +1,34 @@
+{
+  "subject": "Mathsetu",
+  "book": "पुस्तक 6: Book 6: चाल, समय एवं दूरी",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "चाल, समय और दूरी की आधारशिला",
+      "subtitle": "Speed, Time and Distance",
+      "content": [
+        {
+          "type": "text",
+          "value": "दूरी = चाल × समय। km/h को m/s में बदलने के लिए 5/18 से गुणा करते हैं।"
+        },
+        {
+          "type": "callout",
+          "value": "परीक्षा टिप्स: सेतु श्रृंखला के मुख्य सूत्रों और बिंदुओं को बार-बार दोहराएं।"
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "72 km/h को m/s में बदलें:",
+          "options": [
+            "15 m/s",
+            "20 m/s",
+            "25 m/s",
+            "30 m/s"
+          ],
+          "correctIndex": 1,
+          "explanation": "72 × (5/18) = 20 m/s"
+        }
+      ]
+    }
+  ]
+}

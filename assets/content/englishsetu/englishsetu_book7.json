@@ -1,0 +1,34 @@
+{
+  "subject": "Englishsetu",
+  "book": "पुस्तक 7: Book 7: Reading Comprehension Techniques",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Skimming, Scanning & Inference",
+      "subtitle": "Active Reading Strategies",
+      "content": [
+        {
+          "type": "text",
+          "value": "Skimming provides the overall gist, while scanning targets specific dates, names, or numbers."
+        },
+        {
+          "type": "callout",
+          "value": "परीक्षा टिप्स: सेतु श्रृंखला के मुख्य सूत्रों और बिंदुओं को बार-बार दोहराएं।"
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "Scanning a passage is primarily used for finding:",
+          "options": [
+            "Central theme",
+            "Specific facts or keywords",
+            "Author tone",
+            "Grammar errors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Scanning quickly searches for specific target information."
+        }
+      ]
+    }
+  ]
+}

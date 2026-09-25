@@ -1,0 +1,116 @@
+{
+  "subject": "EnglishSetu",
+  "book": "Book 1: Foundations of Grammar & Parts of Speech",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Chapter 1: The Sentence & Its Components",
+      "subtitle": "Subject, Predicate and Sentence Types",
+      "content": [
+        {
+          "type": "text",
+          "value": "A sentence is a group of words that expresses a complete thought or idea. Every complete sentence contains two essential components: a Subject (what the sentence is about) and a Predicate (what is said about the subject, including the finite verb)."
+        },
+        {
+          "type": "callout",
+          "value": "Golden Rule: A group of words without a finite verb cannot form an independent sentence in English grammar."
+        },
+        {
+          "type": "heading",
+          "value": "Four Basic Sentence Types"
+        },
+        {
+          "type": "text",
+          "value": "1. Assertive / Declarative: Makes a statement (e.g., 'The train arrived on time.')\n2. Interrogative: Asks a direct question (e.g., 'Have you completed the exercise?')\n3. Imperative: Expresses a command, request, or advice (e.g., 'Read the instructions carefully.')\n4. Exclamatory: Expresses strong emotion or wonder (e.g., 'What a brilliant concept!')"
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "Identify the subject in: 'Across the desert marched the brave soldiers.'",
+          "options": ["Across the desert", "the brave soldiers", "marched", "desert"],
+          "correctIndex": 1,
+          "explanation": "'The brave soldiers' are performing the action 'marched', making it the grammatical subject."
+        },
+        {
+          "question": "Which sentence type expresses a command, request, or suggestion?",
+          "options": ["Declarative", "Imperative", "Interrogative", "Exclamatory"],
+          "correctIndex": 1,
+          "explanation": "Imperative sentences issue commands, requests, or instructions."
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "Chapter 2: Nouns & Their Classifications",
+      "subtitle": "Proper, Common, Collective, Abstract & Material Nouns",
+      "content": [
+        {
+          "type": "text",
+          "value": "A noun is the naming word for any person, place, thing, animal, concept, or state of being. Correct noun usage is the primary anchor of subject-verb agreement."
+        },
+        {
+          "type": "callout",
+          "value": "Exam Alert: Uncountable nouns like 'information', 'advice', 'furniture', and 'scenery' NEVER take an indefinite article ('a/an') or a plural '-s'."
+        },
+        {
+          "type": "formula",
+          "value": "Uncountable Noun + Singular Verb (e.g., 'The scenery of Rajasthan is magnificent.')",
+          "caption": "Standard Competitive English Rule"
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "Find the grammatically correct sentence:",
+          "options": [
+            "He gave me many advices.",
+            "He gave me a good advice.",
+            "He gave me a piece of good advice.",
+            "He gave me good advices."
+          ],
+          "correctIndex": 2,
+          "explanation": "'Advice' is an uncountable noun. We say 'a piece of advice', never 'an advice' or 'advices'."
+        },
+        {
+          "question": "What type of noun is the word 'Integrity'?",
+          "options": ["Proper Noun", "Collective Noun", "Abstract Noun", "Material Noun"],
+          "correctIndex": 2,
+          "explanation": "'Integrity' represents an intangible quality/virtue, classifying it as an Abstract Noun."
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Chapter 3: Pronouns & Agreement Rules",
+      "subtitle": "Personal, Relative, Demonstrative & Indefinite Pronouns",
+      "content": [
+        {
+          "type": "text",
+          "value": "A pronoun is used in place of a noun to avoid tedious repetition. The pronoun must agree with its antecedent in number, person, and gender."
+        },
+        {
+          "type": "heading",
+          "value": "Order of Personal Pronouns"
+        },
+        {
+          "type": "formula",
+          "value": "Normal pleasant context: 231 (Second Person → Third Person → First Person)\ne.g. 'You, he, and I are working on this project.'",
+          "caption": "Order of Pronouns Rule"
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "Fill in the blank: 'Neither of the two candidates _____ qualified.'",
+          "options": ["are", "is", "were", "have been"],
+          "correctIndex": 1,
+          "explanation": "'Neither' refers to one at a time and takes a singular verb: 'is'."
+        },
+        {
+          "question": "Which sequence of personal pronouns is grammatically standard in polite English?",
+          "options": ["1-2-3", "2-3-1", "3-2-1", "1-3-2"],
+          "correctIndex": 1,
+          "explanation": "Polite convention follows 2-3-1 order (You, he and I)."
+        }
+      ]
+    }
+  ]
+}

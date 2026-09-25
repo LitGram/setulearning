@@ -1,0 +1,34 @@
+{
+  "subject": "Englishsetu",
+  "book": "पुस्तक 5: Book 5: Idioms & Phrasal Verbs",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "High-Frequency Idiomatic Expressions",
+      "subtitle": "Usage in Competitive Exams",
+      "content": [
+        {
+          "type": "text",
+          "value": "Idioms are figurative expressions whose meanings cannot be deduced literally from individual words."
+        },
+        {
+          "type": "callout",
+          "value": "परीक्षा टिप्स: सेतु श्रृंखला के मुख्य सूत्रों और बिंदुओं को बार-बार दोहराएं।"
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "What is the meaning of: A blessing in disguise?",
+          "options": [
+            "A misfortune",
+            "A good thing that seemed bad at first",
+            "A hidden trap",
+            "An unexpected gift"
+          ],
+          "correctIndex": 1,
+          "explanation": "A positive outcome that initially seemed unfortunate."
+        }
+      ]
+    }
+  ]
+}

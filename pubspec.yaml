@@ -1,0 +1,38 @@
+name: setu_learning
+description: "Setu Learning - Offline-first educational companion app for the Setu book series."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Local database for tracking read chapters, quiz scores, and bookmarks
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  path_provider: ^2.1.4
+  
+  # Reactive state management
+  provider: ^6.1.2
+  
+  # Simple key-value storage for settings
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/content/mathsetu/
+    - assets/content/englishsetu/
+    - assets/content/vigyansetu/
+    - assets/images/
+    - assets/icons/
