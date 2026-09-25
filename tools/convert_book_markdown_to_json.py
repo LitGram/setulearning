@@ -258,7 +258,43 @@ def parse_chapter_content_and_mcqs(chapter_title, chapter_lines, file_ref, refer
         if mcq_obj:
             mcqs.append(mcq_obj)
 
-    # 2. Check for native markdown MCQs if no <!-- mcq --> blocks were found
+    # 2. Check for VigyanSetu style MCQs: **Q<N>.** with answers in भाग 12
+    if not mcqs and '**Q1.**' in full_text:
+        # Extract answers first
+        answers_map = {}
+        for m in re.finditer(r'\*\*Q(\d+)\.\s*(?:सही उत्तर|उत्तर|सही विकल्प)[\s\:\*]*\(?([A-Da-d1-4])\)?(?:\*\*)?(.*?)(?=\*\*Q\d+\.|$)', full_text, re.DOTALL):
+            q_num = int(m.group(1))
+            letter = m.group(2).upper()
+            exp = m.group(3).strip()
+            # Clean explanation markdown artifacts
+            exp_clean = re.sub(r'^[-\*\s]+', '', exp).strip()
+            answers_map[q_num] = (letter, exp_clean)
+
+        # Extract questions
+        for m in re.finditer(r'\*\*Q(\d+)\.\*\*\s*(.+?)(?=\*\*Q\d+\.\*\*|##\s*भाग\s*12|##\s*उत्तर|$)', full_text, re.DOTALL):
+            q_num = int(m.group(1))
+            q_raw = m.group(2).strip()
+            lines = [l.strip() for l in q_raw.split('\n') if l.strip()]
+            opts = []
+            q_lines = []
+            for line in lines:
+                opt_match = re.match(r'^\(?([A-Da-d])\)?[\.\:\-\s]+\s*(.*)$', line)
+                if opt_match and len(opts) < 4:
+                    opts.append(opt_match.group(2).strip())
+                elif not opts:
+                    q_lines.append(line)
+
+            if len(opts) == 4:
+                ans_letter, exp = answers_map.get(q_num, ('A', ''))
+                mapping = {'A': 0, '1': 0, 'B': 1, '2': 1, 'C': 2, '3': 2, 'D': 3, '4': 3}
+                mcqs.append({
+                    "question": " ".join(q_lines).strip(),
+                    "options": opts,
+                    "correctIndex": mapping.get(ans_letter, 0),
+                    "explanation": exp[:400] if exp else None
+                })
+
+    # 3. Check for native markdown MCQs (MathSetu style) if no MCQs found yet
     if not mcqs:
         # Look for ### प्रश्न blocks
         q_blocks = re.split(r'\n(?=###\s*(?:प्रश्न|Question)\s*\d+)', full_text)
@@ -267,13 +303,20 @@ def parse_chapter_content_and_mcqs(chapter_title, chapter_lines, file_ref, refer
             if parsed_q:
                 mcqs.append(parsed_q)
 
-    # Remove the MCQ blocks from the text flow so raw quiz code doesn't clutter the reader
+    # Remove the MCQ blocks and quiz sections from the text flow so raw quiz code doesn't clutter the reader
     text_for_reading = MCQ_BLOCK_PATTERN.sub('', full_text)
     
-    # If fallback questions were found in a dedicated section (e.g., ## अभ्यास MCQs),
-    # remove the MCQ section from the reading text
-    if 'अभ्यास MCQs' in text_for_reading or 'प्रश्न एवं 6-चरणीय विस्तृत समाधान' in text_for_reading:
-        text_for_reading = re.split(r'##\s*(?:अभ्यास MCQs|उत्तर कुंजी तालिका|प्रश्न एवं 6-चरणीय विस्तृत समाधान)', text_for_reading)[0]
+    # If questions were found in a dedicated section, truncate the reading text before the quiz/answer section
+    cutoff_patterns = [
+        r'##\s*भाग\s*(?:11|12|5)\s*[\:\-]\s*(?:बहुविकल्पीय|उच्च-प्रतिफल|उत्तर|अभ्यास)',
+        r'##\s*(?:अभ्यास MCQs|उत्तर कुंजी तालिका|प्रश्न एवं 6-चरणीय विस्तृत समाधान)',
+        r'###\s*प्रश्न\s*1\b',
+        r'\*\*Q1\.\*\*'
+    ]
+    for cp in cutoff_patterns:
+        if re.search(cp, text_for_reading):
+            text_for_reading = re.split(cp, text_for_reading)[0]
+            break
 
     # 3. Parse content blocks (text and images in exact visual order)
     content_blocks = []
