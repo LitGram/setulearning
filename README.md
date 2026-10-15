@@ -9,7 +9,7 @@
 1. **100% Offline-First Architecture**:
    - Zero dependence on a live backend server for core reading and practice.
    - Books are bundled as JSON assets in `assets/content/`; the catalog supports a different number of books for every subject.
-   - Clean Markdown source copies of the formatted MCQ books are kept in `books_markdown/`; the app uses their cleaned JSON versions.
+   - Curated book and quiz content is bundled as JSON assets for offline reading and practice.
    - SQLite database (`sqflite`) locally persists read chapters, quiz scores, and the user's last reading position.
 
 2. **Material 3 Design System**:
@@ -71,52 +71,11 @@ setu learning android app/
 
 ## 📖 Chapter JSON Schema
 
-The **M.Sc. Physics** section (`mscphysics`) contains four complete English guides:
-Mathematical Physics (67 chapters), Classical Mechanics (48), Quantum Mechanics I
-(52), and Statistical Physics (27). Chapter boundaries follow the manuscripts'
-actual units, topics, exam/revision sections, and educational appendices. Reading
-begins at Unit 1; book-level title/author pages, prefaces, introductory syllabus
-pages and printed contents are excluded. All subsequent teaching content and
-references are retained. Existing open-answer questions and worked solutions
-remain reading content; the sources do not supply keyed MCQs.
-
-Regenerate only these four assets, their clean Markdown copies and generated
-catalog with `python tools/import_msc_physics.py`. Use `--source-root` if the source
-folder moves and `--check` to verify repeatability without rewriting outputs.
-Original sources in `D:\new projects\ras books\msc physics guide` are read only.
-Clean copies are in `books_markdown/mscphysics/`; hashes, excluded line ranges,
-formatting repairs, chapter inventory, complete retained-character coverage and
-publication EPUB comparisons are in `artifacts/mscphysics_import.json`.
-
-The manuscripts use Unicode equations and literal notation, not TeX. The import
-preserves those equations and matrix/derivation layouts without speculative
-conversion. Fenced equations and wide tables scroll horizontally in the existing
-offline Markdown reader. A stray equation fence in Mathematical Physics is
-repaired; the repeated formula beside it is retained. All chapters are tested for
-visible text preservation and overflow at 320px with enlarged text. Run
-`flutter test test/msc_physics_test.dart` for Physics asset, rendering, chapter
-search, Next/Previous and screenshot-protection verification.
-
-The **100 Great Works of All Time** section contains six critical guides covering
-novels, plays, poems, short stories, essays, and literary criticism. Each has 100
-lessons, in the source book's reading order. Publication title pages, author credit
-pages, copyright, dedications, introductory notes, printed contents, and part
-divider pages are excluded; the app supplies its own chapter navigation. Literary
-authors, work details, quotations, and source references within lessons are retained.
-These are reading guides and contain no invented practice quizzes.
-
-Regenerate only these six assets with `python tools/import_great_works.py`. The
-importer reads the publication EPUBs in `D:\new projects\100 great works\manuscript`
-(including the revised short stories edition), preserving Markdown headings,
-emphasis, quotations, verse line breaks, and lists. Clean Markdown copies are in
-`books_markdown/great_works/`; source hashes and excluded pages are recorded in
-`artifacts/great_works_import.json`. To check every retained character through the
-app's Markdown parser, run:
-
-```powershell
-dart run tools/audit_great_works.dart > artifacts/great_works_rendered_text.json
-python tools/import_great_works.py --verify-render artifacts/great_works_rendered_text.json
-```
+The **M.Sc. Physics** section contains guides for Mathematical Physics, Classical
+Mechanics, Quantum Mechanics, and Statistical Physics. The **100 Great Works of All
+Time** section includes reading guides for novels, plays, poems, short stories,
+essays, and literary criticism. Both collections are bundled under
+`assets/content/` and available offline in the app.
 
 On Android, chapter readers and chapter quizzes enable `FLAG_SECURE` while open.
 Screenshots and screen recordings remain available on the library, subject, and
