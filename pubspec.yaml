@@ -1,0 +1,57 @@
+name: setu_learning
+description: "Setu Learning - Offline-first educational companion app with a flexible book library."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Local database for tracking read chapters, quiz scores, and bookmarks
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  path_provider: ^2.1.4
+  
+  # Reactive state management
+  provider: ^6.1.2
+  
+  # Simple key-value storage for settings
+  shared_preferences: ^2.2.3
+  flutter_math_fork: ^0.7.4
+  flutter_markdown_plus: ^1.0.12
+  markdown: ^7.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/content/rbse10_maths/
+    - assets/content/rbse10_social/
+    - assets/content/rbse10_hindi/
+    - assets/content/rbse10_english/
+    - assets/content/rbse10_science/
+    - assets/content/rbse10_sanskrit/
+    - assets/content/rbse10_punjabi/
+    - assets/content/mathsetu/
+    - assets/content/englishsetu/
+    - assets/content/vigyansetu/
+    - assets/content/rassetu/
+    - assets/content/rassetu_supplementary/
+    - assets/content/greatworks/
+    - assets/content/mscphysics/
+    - assets/content/ugcnet_english/
+    - assets/content/ugcnet_political_science/
+    - assets/content/ugcnet_history/
+    - assets/content/ugcnet_commerce/
+    - assets/content/ugcnet_hindi/
+    - assets/images/
+    - assets/icons/

@@ -1,0 +1,70 @@
+name: Build and release to Indus Appstore
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_name:
+        description: App version name (for example, 1.0.1)
+        required: true
+        default: 1.0.1
+        type: string
+      version_code:
+        description: Android version code; must be higher than the currently published version
+        required: true
+        default: "2"
+        type: string
+      release_notes:
+        description: Notes for this release
+        required: true
+        default: Improvements and fixes
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indus-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Setu Learning
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install Flutter packages
+        run: flutter pub get
+
+      - name: Build Android App Bundle
+        run: >-
+          flutter build appbundle --release
+          --build-name "${{ inputs.version_name }}"
+          --build-number "${{ inputs.version_code }}"
+
+      - name: Upload update to Indus Appstore
+        uses: indusappstore/appstore-release@v1
+        with:
+          operation_mode: deploy_only
+          file_path: build/app/outputs/bundle/release/app-release.aab
+          file_type: aab
+          package_name: com.litgram.setulearning
+          api_token: ${{ secrets.INDUS_APP_STORE_API_TOKEN }}
+          keystore_source: base64
+          keystore_base64: ${{ secrets.KEYSTORE_BASE64 }}
+          keystore_password: ${{ secrets.KEYSTORE_PASSWORD }}
+          key_alias: ${{ secrets.KEY_ALIAS }}
+          key_password: ${{ secrets.KEY_PASSWORD }}
+          release_notes: ${{ inputs.release_notes }}
