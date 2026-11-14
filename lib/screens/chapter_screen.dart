@@ -151,6 +151,92 @@ class _ChapterScreenState extends State<ChapterScreen>
     }
   }
 
+  /// Lists every chapter of the book so the reader can jump straight to one.
+  void _showContents() {
+    final chapters = widget.book.chapters;
+    final current = _currentIndex;
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      showDragHandle: true,
+      useSafeArea: true,
+      builder: (sheetContext) {
+        final theme = Theme.of(sheetContext);
+        final colorScheme = theme.colorScheme;
+        final progress = sheetContext.watch<ProgressProvider>();
+        return DraggableScrollableSheet(
+          expand: false,
+          initialChildSize: 0.7,
+          minChildSize: 0.4,
+          maxChildSize: 0.95,
+          builder: (context, controller) => Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
+                child: Text(
+                  'All chapters',
+                  style: theme.textTheme.titleLarge
+                      ?.copyWith(fontWeight: FontWeight.bold),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
+                child: Text(
+                  widget.book.title,
+                  style: theme.textTheme.bodyMedium,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+              const Divider(height: 1),
+              Expanded(
+                child: ListView.builder(
+                  controller: controller,
+                  itemCount: chapters.length,
+                  itemBuilder: (context, index) {
+                    final chapter = chapters[index];
+                    final isCurrent = index == current;
+                    final isRead = progress.isChapterRead(
+                        widget.subject.id, widget.book.id, chapter.id);
+                    return ListTile(
+                      selected: isCurrent,
+                      selectedTileColor:
+                          colorScheme.primaryContainer.withOpacity(0.5),
+                      minVerticalPadding: 12,
+                      leading: CircleAvatar(
+                        backgroundColor: isRead
+                            ? colorScheme.primary
+                            : colorScheme.surfaceContainerHighest,
+                        foregroundColor: isRead
+                            ? colorScheme.onPrimary
+                            : colorScheme.onSurfaceVariant,
+                        child: isRead
+                            ? const Icon(Icons.check_rounded, size: 20)
+                            : Text('${index + 1}'),
+                      ),
+                      title: Text(chapter.title,
+                          maxLines: 2, overflow: TextOverflow.ellipsis),
+                      subtitle: Text(isCurrent
+                          ? 'Reading now'
+                          : isRead
+                              ? 'Read'
+                              : 'Unread'),
+                      onTap: () {
+                        Navigator.pop(sheetContext);
+                        if (!isCurrent) _goToChapter(index);
+                      },
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state != AppLifecycleState.resumed) {
@@ -306,6 +392,10 @@ class _ChapterScreenState extends State<ChapterScreen>
         ),
         actions: [
           IconButton(
+              tooltip: 'All chapters',
+              icon: const Icon(Icons.format_list_bulleted_rounded),
+              onPressed: _showContents),
+          IconButton(
               tooltip: 'Reading settings',
               icon: const Icon(Icons.text_fields_rounded),
               onPressed: () => showReaderSettings(context)),
@@ -441,12 +531,22 @@ class _ChapterScreenState extends State<ChapterScreen>
                     ),
                   ),
                   const SizedBox(width: 12),
-                  // Chapter indicator
-                  Text(
-                    '${_currentIndex + 1} / ${widget.book.chapters.length}',
-                    style: theme.textTheme.labelMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: colorScheme.onSurfaceVariant,
+                  // Chapter indicator. Tapping it opens the chapter list.
+                  Semantics(
+                    hint: 'Opens the list of all chapters',
+                    child: TextButton(
+                      onPressed: _showContents,
+                      style: TextButton.styleFrom(
+                        foregroundColor: colorScheme.onSurfaceVariant,
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                      ),
+                      child: Text(
+                        '${_currentIndex + 1} / ${widget.book.chapters.length}',
+                        style: theme.textTheme.labelMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: colorScheme.onSurfaceVariant,
+                        ),
+                      ),
                     ),
                   ),
                   const SizedBox(width: 12),

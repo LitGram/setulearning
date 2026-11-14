@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/subject.dart';
+import '../models/subject_group.dart';
 import '../providers/progress_provider.dart';
-import '../providers/theme_provider.dart';
 import '../services/content_service.dart';
 import '../services/chapter_identity.dart';
 import '../widgets/accessible_card.dart';
@@ -11,7 +11,7 @@ import 'search_screen.dart';
 import 'chapter_screen.dart';
 import 'progress_screen.dart';
 import 'settings_screen.dart';
-import 'subject_screen.dart';
+import 'subject_navigation.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -117,11 +117,19 @@ class _SubjectHomeScreen extends StatefulWidget {
 class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
   bool _resuming = false;
 
+  /// `null` shows every group.
+  SubjectGroup? _group;
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
     final subjects = ContentService.instance.getSubjects();
+    final groups = SubjectGroup.values
+        .where((group) => subjects.any((s) => SubjectGroup.of(s) == group))
+        .toList();
+    final visibleGroups = _group == null ? groups : [_group!];
+
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: (MediaQuery.textScalerOf(context).scale(
@@ -137,6 +145,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                 width: 36,
                 height: 36,
                 fit: BoxFit.cover,
+                excludeFromSemantics: true,
                 errorBuilder: (context, error, stackTrace) => Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
@@ -172,94 +181,250 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
             )),
           ],
         ),
+        actions: [
+          IconButton(
+            tooltip: 'Search',
+            icon: const Icon(Icons.search_rounded),
+            onPressed: _openSearch,
+          ),
+          const SizedBox(width: 4),
+        ],
       ),
       body: Consumer<ProgressProvider>(
         builder: (context, progressProvider, child) {
           final lastPos = progressProvider.lastPosition;
 
-          return ListView(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-            children: [
-              const ProgressStatePanel(),
-              if (lastPos != null) ...[
-                _buildResumeBanner(context, lastPos),
-                const SizedBox(height: 16),
-              ],
-              OutlinedButton.icon(
-                icon: const Icon(Icons.search_rounded),
-                label: const Text('Search books and chapters'),
-                onPressed: () => Navigator.push(context,
-                    MaterialPageRoute(builder: (_) => const SearchScreen())),
-              ),
-              const SizedBox(height: 16),
-              // Section Header
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
-                child: Text(
-                  'Choose a subject',
-                  style: theme.textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Text(
-                'अपनी परीक्षा और विषय के अनुसार पुस्तकें चुनें।',
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: colorScheme.onSurfaceVariant,
-                ),
-              ),
-              const SizedBox(height: 16),
-
-              // Subject Cards
-              ...subjects.map((subject) {
-                return Padding(
-                  padding: const EdgeInsets.only(bottom: 14.0),
-                  child: _buildSubjectCard(context, subject, progressProvider),
-                );
-              }),
-
-              const SizedBox(height: 16),
-
-              // Quick Offline Info Card
-              AccessibleCard(
-                color: colorScheme.surfaceVariant.withOpacity(0.4),
-                child: Row(
+          return LayoutBuilder(builder: (context, constraints) {
+            // Two columns of subject cards once there is room for them.
+            final twoColumns = constraints.maxWidth >= 720;
+            return Align(
+              alignment: Alignment.topCenter,
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 1040),
+                child: ListView(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 16.0, vertical: 12.0),
                   children: [
-                    Icon(
-                      Icons.offline_pin_rounded,
-                      color: colorScheme.primary,
-                      size: 28,
-                    ),
-                    const SizedBox(width: 14),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'पूर्णतः ऑफलाइन अध्ययन',
-                            style: theme.textTheme.labelLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const SizedBox(height: 2),
-                          Text(
-                            'सभी पुस्तकें एवं अभ्यास प्रश्न बिना इंटरनेट के उपलब्ध हैं।',
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                        ],
+                    const ProgressStatePanel(),
+                    if (lastPos != null) ...[
+                      _buildResumeBanner(context, lastPos),
+                      const SizedBox(height: 12),
+                    ],
+                    _buildSearchField(context),
+                    const SizedBox(height: 20),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                      child: Text(
+                        'Choose a subject',
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(4, 2, 4, 0),
+                      child: Text(
+                        'अपनी परीक्षा और विषय के अनुसार पुस्तकें चुनें।',
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    _buildGroupFilter(context, subjects, groups),
+                    const SizedBox(height: 8),
+                    for (final group in visibleGroups) ...[
+                      _buildGroupHeader(context, group, subjects),
+                      _buildSubjectGrid(
+                        context,
+                        subjects
+                            .where((s) => SubjectGroup.of(s) == group)
+                            .toList(),
+                        progressProvider,
+                        twoColumns,
+                      ),
+                      const SizedBox(height: 8),
+                    ],
+                    const SizedBox(height: 8),
+                    _buildOfflineNote(context),
+                    const SizedBox(height: 24),
                   ],
                 ),
               ),
-              const SizedBox(height: 24),
-            ],
-          );
+            );
+          });
         },
+      ),
+    );
+  }
+
+  void _openSearch() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (_) => const SearchScreen()));
+  }
+
+  /// Looks like a search box so it is easy to spot. Tapping opens the
+  /// search screen with the keyboard ready.
+  Widget _buildSearchField(BuildContext context) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+    return Semantics(
+      button: true,
+      label: 'Search books and chapters',
+      excludeSemantics: true,
+      child: Material(
+        color: colorScheme.surfaceContainerHigh,
+        borderRadius: BorderRadius.circular(28),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(28),
+          onTap: _openSearch,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 56),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+              child: Row(
+                children: [
+                  Icon(Icons.search_rounded,
+                      color: colorScheme.onSurfaceVariant),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      'Search books and chapters',
+                      style: theme.textTheme.bodyLarge?.copyWith(
+                        color: colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildGroupFilter(
+      BuildContext context, List<Subject> subjects, List<SubjectGroup> groups) {
+    Widget chip(SubjectGroup? group, String label, int count) {
+      final selected = _group == group;
+      return ChoiceChip(
+        label: Text('$label ($count)'),
+        selected: selected,
+        avatar: group == null ? null : Icon(group.icon, size: 18),
+        showCheckmark: group == null,
+        onSelected: (_) => setState(() => _group = group),
+      );
+    }
+
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: [
+        chip(null, 'All', subjects.length),
+        for (final group in groups)
+          chip(group, group.label,
+              subjects.where((s) => SubjectGroup.of(s) == group).length),
+      ],
+    );
+  }
+
+  Widget _buildGroupHeader(
+      BuildContext context, SubjectGroup group, List<Subject> subjects) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+    return Semantics(
+      header: true,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
+        child: Row(
+          children: [
+            Icon(group.icon, size: 20, color: colorScheme.primary),
+            const SizedBox(width: 8),
+            Flexible(
+              child: Text(
+                group.label,
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            Flexible(
+              child: Text(
+                group.hindiLabel,
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: colorScheme.onSurfaceVariant,
+                ),
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSubjectGrid(
+    BuildContext context,
+    List<Subject> subjects,
+    ProgressProvider progressProvider,
+    bool twoColumns,
+  ) {
+    final cards = [
+      for (final subject in subjects)
+        _buildSubjectCard(context, subject, progressProvider),
+    ];
+    if (!twoColumns) {
+      return Column(
+        children: [
+          for (final card in cards)
+            Padding(padding: const EdgeInsets.only(bottom: 10), child: card),
+        ],
+      );
+    }
+    return Column(
+      children: [
+        for (var i = 0; i < cards.length; i += 2)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: IntrinsicHeight(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(child: cards[i]),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: i + 1 < cards.length
+                        ? cards[i + 1]
+                        : const SizedBox.shrink(),
+                  ),
+                ],
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildOfflineNote(BuildContext context) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 4),
+      child: Row(
+        children: [
+          Icon(Icons.offline_pin_rounded, color: colorScheme.primary, size: 22),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              'पूर्णतः ऑफलाइन: सभी पुस्तकें एवं अभ्यास प्रश्न बिना इंटरनेट के उपलब्ध हैं।',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -269,8 +434,9 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
     final colorScheme = theme.colorScheme;
 
     return AccessibleCard(
-      color: colorScheme.primaryContainer.withOpacity(0.7),
-      semanticLabel: 'अंतिम पठित अध्याय जारी रखें: ${lastPos.chapterTitle}',
+      color: colorScheme.primaryContainer,
+      semanticLabel:
+          'Continue reading: ${lastPos.chapterTitle}, ${lastPos.bookTitle}',
       onTap: _resuming
           ? null
           : () async {
@@ -294,16 +460,14 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                   );
 
                   if (context.mounted) {
-                    Provider.of<ThemeProvider>(context, listen: false)
-                        .setSubjectSeedColor(subject.seedColor);
-                    Navigator.push(
+                    setState(() => _resuming = false);
+                    await openWithSubjectTheme(
                       context,
-                      MaterialPageRoute(
-                        builder: (_) => ChapterScreen(
-                          subject: subject,
-                          book: loadedBook,
-                          chapter: chapter,
-                        ),
+                      subject,
+                      (_) => ChapterScreen(
+                        subject: subject,
+                        book: loadedBook,
+                        chapter: chapter,
                       ),
                     );
                   }
@@ -315,7 +479,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                           'Could not open the chapter. Please try again.')));
                 }
               } finally {
-                if (mounted) setState(() => _resuming = false);
+                if (mounted && _resuming) setState(() => _resuming = false);
               }
             },
       child: Row(
@@ -326,48 +490,50 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
               color: colorScheme.primary,
               shape: BoxShape.circle,
             ),
-            child: Icon(
-              Icons.play_arrow_rounded,
-              color: colorScheme.onPrimary,
-              size: 28,
-            ),
+            child: _resuming
+                ? SizedBox(
+                    width: 28,
+                    height: 28,
+                    child: Padding(
+                      padding: const EdgeInsets.all(4),
+                      child: CircularProgressIndicator(
+                        strokeWidth: 3,
+                        color: colorScheme.onPrimary,
+                      ),
+                    ),
+                  )
+                : Icon(
+                    Icons.play_arrow_rounded,
+                    color: colorScheme.onPrimary,
+                    size: 28,
+                  ),
           ),
           const SizedBox(width: 14),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Flexible(
-                        child: Text(
-                      'Continue reading',
-                      style: theme.textTheme.labelMedium?.copyWith(
-                        color: colorScheme.primary,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )),
-                    const SizedBox(width: 6),
-                    Icon(
-                      Icons.arrow_forward_rounded,
-                      size: 14,
-                      color: colorScheme.primary,
-                    ),
-                  ],
+                Text(
+                  'Continue reading',
+                  style: theme.textTheme.labelLarge?.copyWith(
+                    color: colorScheme.onPrimaryContainer,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Text(
                   lastPos.chapterTitle,
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
+                    color: colorScheme.onPrimaryContainer,
                   ),
-                  maxLines: 1,
+                  maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                 ),
                 Text(
                   '${lastPos.subjectName} • ${lastPos.bookTitle}',
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: colorScheme.onSurfaceVariant,
+                    color: colorScheme.onPrimaryContainer,
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -375,6 +541,9 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
               ],
             ),
           ),
+          const SizedBox(width: 8),
+          Icon(Icons.chevron_right_rounded,
+              size: 28, color: colorScheme.onPrimaryContainer),
         ],
       ),
     );
@@ -391,28 +560,19 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
             seedColor: subject.seedColor, brightness: theme.brightness)
         .primary;
     final readCount = progressProvider.getReadCountForSubject(subject.id);
+    final bookCount = subject.books.length;
+    final bookLabel = bookCount == 1 ? '1 book' : '$bookCount books';
 
     return AccessibleCard(
-      semanticLabel:
-          '${subject.name}, ${subject.hindiName}, ${subject.books.length} पुस्तकें उपलब्ध',
-      onTap: () {
-        // Set dynamic theme matching this subject per Section 6.2
-        Provider.of<ThemeProvider>(context, listen: false)
-            .setSubjectSeedColor(subject.seedColor);
-
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (_) => SubjectScreen(subject: subject),
-          ),
-        );
-      },
+      semanticLabel: '${subject.name}, ${subject.hindiName}, $bookLabel'
+          '${readCount > 0 ? ', $readCount chapters read' : ''}',
+      onTap: () => openSubject(context, subject),
       child: Row(
         children: [
           // Distinct subject icon container.
           Container(
-            width: 58,
-            height: 58,
+            width: 52,
+            height: 52,
             decoration: BoxDecoration(
               color: subjectColor.withOpacity(0.14),
               borderRadius: BorderRadius.circular(14),
@@ -423,41 +583,20 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
             ),
             child: Icon(
               subject.icon,
-              size: 32,
+              size: 28,
               color: subjectColor,
             ),
           ),
-          const SizedBox(width: 16),
+          const SizedBox(width: 14),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: Text(
-                        subject.name,
-                        style: theme.textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 8, vertical: 2),
-                      decoration: BoxDecoration(
-                        color: colorScheme.surfaceVariant,
-                        borderRadius: BorderRadius.circular(6),
-                      ),
-                      child: Text(
-                        '${subject.books.length} Books',
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
+                Text(
+                  subject.name,
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 2),
                 Text(
@@ -476,26 +615,18 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                 ),
-                if (readCount > 0) ...[
-                  const SizedBox(height: 8),
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.check_circle_outline_rounded,
-                        size: 14,
-                        color: colorScheme.primary,
-                      ),
-                      const SizedBox(width: 4),
-                      Text(
-                        '$readCount अध्याय पूर्ण',
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          color: colorScheme.primary,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
+                const SizedBox(height: 8),
+                Wrap(
+                  spacing: 12,
+                  runSpacing: 4,
+                  children: [
+                    _meta(context, Icons.menu_book_outlined, bookLabel,
+                        colorScheme.onSurfaceVariant),
+                    if (readCount > 0)
+                      _meta(context, Icons.check_circle_outline_rounded,
+                          '$readCount अध्याय पूर्ण', colorScheme.primary),
+                  ],
+                ),
               ],
             ),
           ),
@@ -507,6 +638,25 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
           ),
         ],
       ),
+    );
+  }
+
+  Widget _meta(BuildContext context, IconData icon, String text, Color color) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(icon, size: 16, color: color),
+        const SizedBox(width: 4),
+        Flexible(
+          child: Text(
+            text,
+            style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                  color: color,
+                  fontWeight: FontWeight.bold,
+                ),
+          ),
+        ),
+      ],
     );
   }
 }

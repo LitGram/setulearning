@@ -26,8 +26,42 @@ class BookScreen extends StatefulWidget {
 
 class _BookScreenState extends State<BookScreen> {
   late Future<Book> _loadBookFuture;
+  final _searchController = TextEditingController();
   String _query = '';
-  bool _unreadOnly = false;
+  _ChapterFilter _filter = _ChapterFilter.all;
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  bool _matches(Chapter chapter, Book book, ProgressProvider progress) {
+    final text = '${chapter.title} ${chapter.subtitle ?? ''}'.toLowerCase();
+    if (!text.contains(_query)) return false;
+    final read = progress.isChapterRead(widget.subject.id, book.id, chapter.id);
+    switch (_filter) {
+      case _ChapterFilter.all:
+        return true;
+      case _ChapterFilter.unread:
+        return !read;
+      case _ChapterFilter.read:
+        return read;
+    }
+  }
+
+  void _openChapter(Book book, Chapter chapter) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => ChapterScreen(
+          subject: widget.subject,
+          book: book,
+          chapter: chapter,
+        ),
+      ),
+    );
+  }
 
   @override
   void initState() {
@@ -59,11 +93,15 @@ class _BookScreenState extends State<BookScreen> {
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
-              maxLines: 1,
+              maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),
             Text(
-              '${widget.subject.name} • पुस्तक ${widget.book.bookNumber}',
+              widget.subject.books.length == 1
+                  ? widget.subject.name
+                  : '${widget.subject.name} • पुस्तक ${widget.book.bookNumber}',
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: colorScheme.onSurfaceVariant,
               ),
@@ -134,102 +172,57 @@ class _BookScreenState extends State<BookScreen> {
                     horizontal: 16.0, vertical: 12.0),
                 children: [
                   const ProgressStatePanel(),
-                  // Book Overview Header
-                  Container(
-                    padding: const EdgeInsets.all(16.0),
-                    decoration: BoxDecoration(
-                      color: colorScheme.surfaceVariant.withOpacity(0.5),
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(
-                        color: colorScheme.outlineVariant,
-                      ),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Wrap(
-                          spacing: 16,
-                          runSpacing: 8,
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 10, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: colorScheme.primary,
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Text(
-                                'पाठ्यक्रम खंड ${widget.book.bookNumber}',
-                                style: theme.textTheme.labelSmall?.copyWith(
-                                  color: colorScheme.onPrimary,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Text(
-                              'कुल अध्याय: ${chapters.length}',
-                              style: theme.textTheme.labelMedium?.copyWith(
-                                color: colorScheme.primary,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          widget.book.title,
-                          style: theme.textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          widget.book.description,
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: colorScheme.onSurfaceVariant,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 18),
+                  _buildOverview(context, book, progressProvider),
+                  const SizedBox(height: 20),
 
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 4.0, vertical: 4.0),
-                    child: Text(
-                      'Chapters',
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
+                  Semantics(
+                    header: true,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 4.0, vertical: 4.0),
+                      child: Text(
+                        'Chapters',
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
                   const SizedBox(height: 8),
 
                   TextField(
-                    decoration: const InputDecoration(
-                        labelText: 'Search chapters',
-                        prefixIcon: Icon(Icons.search),
-                        border: OutlineInputBorder()),
+                    controller: _searchController,
+                    textInputAction: TextInputAction.search,
+                    decoration: InputDecoration(
+                      labelText: 'Search chapters',
+                      prefixIcon: const Icon(Icons.search),
+                      suffixIcon: _query.isEmpty
+                          ? null
+                          : IconButton(
+                              tooltip: 'Clear search',
+                              icon: const Icon(Icons.clear),
+                              onPressed: () => setState(() {
+                                _searchController.clear();
+                                _query = '';
+                              }),
+                            ),
+                      border: const OutlineInputBorder(),
+                    ),
                     onChanged: (value) =>
                         setState(() => _query = value.trim().toLowerCase()),
                   ),
                   const SizedBox(height: 12),
-                  Wrap(spacing: 8, children: [
-                    FilterChip(
-                        label: const Text('Unread'),
-                        selected: _unreadOnly,
-                        onSelected: (value) =>
-                            setState(() => _unreadOnly = value)),
+                  Wrap(spacing: 8, runSpacing: 8, children: [
+                    for (final filter in _ChapterFilter.values)
+                      ChoiceChip(
+                        label: Text(filter.label),
+                        selected: _filter == filter,
+                        onSelected: (_) => setState(() => _filter = filter),
+                      ),
                   ]),
                   const SizedBox(height: 12),
-                  if (!chapters.any((chapter) =>
-                      '${chapter.title} ${chapter.subtitle ?? ''}'
-                          .toLowerCase()
-                          .contains(_query) &&
-                      (!_unreadOnly ||
-                          !progressProvider.isChapterRead(
-                              widget.subject.id, book.id, chapter.id))))
+                  if (!chapters.any(
+                      (chapter) => _matches(chapter, book, progressProvider)))
                     const Padding(
                         padding: EdgeInsets.all(16),
                         child: Text(
@@ -239,12 +232,7 @@ class _BookScreenState extends State<BookScreen> {
                       .asMap()
                       .entries
                       .where((entry) =>
-                          '${entry.value.title} ${entry.value.subtitle ?? ''}'
-                              .toLowerCase()
-                              .contains(_query) &&
-                          (!_unreadOnly ||
-                              !progressProvider.isChapterRead(
-                                  widget.subject.id, book.id, entry.value.id)))
+                          _matches(entry.value, book, progressProvider))
                       .map((entry) {
                     final index = entry.key;
                     final chapter = entry.value;
@@ -270,6 +258,114 @@ class _BookScreenState extends State<BookScreen> {
     );
   }
 
+  /// Book summary with reading progress and one button that opens the right
+  /// chapter: the first one for a new reader, or the next unread one.
+  Widget _buildOverview(
+      BuildContext context, Book book, ProgressProvider progressProvider) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+    final chapters = book.chapters;
+    final readCount = chapters
+        .where((c) =>
+            progressProvider.isChapterRead(widget.subject.id, book.id, c.id))
+        .length;
+    final fraction = chapters.isEmpty ? 0.0 : readCount / chapters.length;
+    final nextIndex = chapters.indexWhere((c) =>
+        !progressProvider.isChapterRead(widget.subject.id, book.id, c.id));
+    final allRead = chapters.isNotEmpty && nextIndex == -1;
+
+    String actionLabel;
+    Chapter? target;
+    if (chapters.isEmpty) {
+      actionLabel = '';
+    } else if (allRead) {
+      actionLabel = 'Read again from chapter 1';
+      target = chapters.first;
+    } else if (readCount == 0) {
+      actionLabel = 'Start reading';
+      target = chapters[nextIndex];
+    } else {
+      actionLabel = 'Continue with chapter ${nextIndex + 1}';
+      target = chapters[nextIndex];
+    }
+
+    return Container(
+      padding: const EdgeInsets.all(16.0),
+      decoration: BoxDecoration(
+        color: colorScheme.primaryContainer.withOpacity(0.35),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: colorScheme.primary.withOpacity(0.2)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (widget.book.description.isNotEmpty) ...[
+            Text(
+              widget.book.description,
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: colorScheme.onSurfaceVariant,
+              ),
+            ),
+            const SizedBox(height: 14),
+          ],
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  '$readCount of ${chapters.length} chapters read',
+                  style: theme.textTheme.labelLarge?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Text(
+                '${(fraction * 100).round()}%',
+                style: theme.textTheme.labelLarge?.copyWith(
+                  color: colorScheme.primary,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(6),
+            child: LinearProgressIndicator(
+              value: fraction,
+              minHeight: 8,
+              backgroundColor: colorScheme.surfaceContainerHighest,
+              semanticsLabel:
+                  'Book progress, $readCount of ${chapters.length} chapters read',
+            ),
+          ),
+          if (target != null) ...[
+            const SizedBox(height: 16),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton.icon(
+                icon: Icon(
+                    allRead ? Icons.replay_rounded : Icons.play_arrow_rounded),
+                label: Text(actionLabel),
+                onPressed: () => _openChapter(book, target!),
+              ),
+            ),
+            if (!allRead) ...[
+              const SizedBox(height: 6),
+              Text(
+                target.title,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: colorScheme.onSurfaceVariant,
+                ),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
+          ],
+        ],
+      ),
+    );
+  }
+
   Widget _buildChapterTile(
     BuildContext context,
     int index,
@@ -287,18 +383,7 @@ class _BookScreenState extends State<BookScreen> {
     return AccessibleCard(
       semanticLabel:
           'अध्याय $index: ${chapter.title}, ${isRead ? "पठित" : "अपठित"}',
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (_) => ChapterScreen(
-              subject: widget.subject,
-              book: book,
-              chapter: chapter,
-            ),
-          ),
-        );
-      },
+      onTap: () => _openChapter(book, chapter),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -384,4 +469,13 @@ class _BookScreenState extends State<BookScreen> {
       ),
     );
   }
+}
+
+enum _ChapterFilter {
+  all('All'),
+  unread('Unread'),
+  read('Read');
+
+  final String label;
+  const _ChapterFilter(this.label);
 }
