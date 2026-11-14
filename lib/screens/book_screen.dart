@@ -93,7 +93,7 @@ class _BookScreenState extends State<BookScreen> {
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
-              maxLines: 2,
+              maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),
             Text(
@@ -299,6 +299,13 @@ class _BookScreenState extends State<BookScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text(
+            widget.book.title,
+            style: theme.textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 6),
           if (widget.book.description.isNotEmpty) ...[
             Text(
               widget.book.description,

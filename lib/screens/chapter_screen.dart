@@ -217,11 +217,14 @@ class _ChapterScreenState extends State<ChapterScreen>
                       ),
                       title: Text(chapter.title,
                           maxLines: 2, overflow: TextOverflow.ellipsis),
-                      subtitle: Text(isCurrent
-                          ? 'Reading now'
-                          : isRead
-                              ? 'Read'
-                              : 'Unread'),
+                      subtitle: Text([
+                        if (chapter.subtitle != null) chapter.subtitle!,
+                        isCurrent
+                            ? 'Reading now'
+                            : isRead
+                                ? 'Read'
+                                : 'Unread',
+                      ].join(' • ')),
                       onTap: () {
                         Navigator.pop(sheetContext);
                         if (!isCurrent) _goToChapter(index);

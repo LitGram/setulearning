@@ -174,8 +174,14 @@ class _SearchScreenState extends State<SearchScreen> {
                                 color: subjectColor),
                             title:
                                 Text(entry.chapter?.title ?? entry.book.title),
-                            subtitle: Text(
-                                '${entry.subject.name} • ${entry.chapter == null ? 'पुस्तक' : entry.book.title}'),
+                            subtitle: Text([
+                              if (entry.chapter?.subtitle != null)
+                                entry.chapter!.subtitle!,
+                              entry.subject.name,
+                              entry.chapter == null
+                                  ? 'पुस्तक'
+                                  : entry.book.title,
+                            ].join(' • ')),
                             trailing: const Icon(Icons.chevron_right),
                             onTap: () async {
                               _recent = [

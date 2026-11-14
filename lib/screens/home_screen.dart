@@ -311,8 +311,6 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
       return ChoiceChip(
         label: Text('$label ($count)'),
         selected: selected,
-        avatar: group == null ? null : Icon(group.icon, size: 18),
-        showCheckmark: group == null,
         onSelected: (_) => setState(() => _group = group),
       );
     }
