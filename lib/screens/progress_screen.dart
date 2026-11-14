@@ -4,7 +4,7 @@ import '../providers/progress_provider.dart';
 import '../services/content_service.dart';
 import '../widgets/accessible_card.dart';
 import '../widgets/progress_state_panel.dart';
-import 'subject_screen.dart';
+import 'subject_navigation.dart';
 
 class ProgressScreen extends StatelessWidget {
   const ProgressScreen({super.key});
@@ -121,10 +121,7 @@ class ProgressScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 12.0),
                   child: AccessibleCard(
                     semanticLabel: '${subject.name}: $readCount अध्याय पूर्ण',
-                    onTap: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (_) => SubjectScreen(subject: subject))),
+                    onTap: () => openSubject(context, subject),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -156,8 +153,8 @@ class ProgressScreen extends StatelessWidget {
                             value: progressFraction,
                             minHeight: 8,
                             backgroundColor: colorScheme.surfaceVariant,
-                            valueColor: AlwaysStoppedAnimation<Color>(
-                                subject.seedColor),
+                            valueColor:
+                                AlwaysStoppedAnimation<Color>(subjectColor),
                           ),
                         ),
                       ],
@@ -166,9 +163,7 @@ class ProgressScreen extends StatelessWidget {
                 );
               }),
 
-              const SizedBox(height: 32),
-
-              const SizedBox(height: 20),
+              const SizedBox(height: 24),
             ],
           );
         },

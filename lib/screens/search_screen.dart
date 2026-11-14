@@ -6,6 +6,7 @@ import '../services/content_service.dart';
 import '../services/study_session_store.dart';
 import 'book_screen.dart';
 import 'chapter_screen.dart';
+import 'subject_navigation.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -82,14 +83,18 @@ class _SearchScreenState extends State<SearchScreen> {
             padding: const EdgeInsets.all(16),
             child: TextField(
               controller: _controller,
+              autofocus: true,
+              textInputAction: TextInputAction.search,
               onChanged: (_) => setState(() {}),
               decoration: InputDecoration(
                 labelText: 'Hindi or English title',
                 prefixIcon: const Icon(Icons.search),
-                suffixIcon: IconButton(
-                    tooltip: 'Clear search',
-                    icon: const Icon(Icons.clear),
-                    onPressed: () => setState(_controller.clear)),
+                suffixIcon: _controller.text.isEmpty
+                    ? null
+                    : IconButton(
+                        tooltip: 'Clear search',
+                        icon: const Icon(Icons.clear),
+                        onPressed: () => setState(_controller.clear)),
                 border: const OutlineInputBorder(),
               ),
             )),
@@ -113,12 +118,24 @@ class _SearchScreenState extends State<SearchScreen> {
                 ? ListView(padding: const EdgeInsets.all(16), children: [
                     const Text(
                         'Search any word from a book or chapter title. Works offline.'),
-                    const SizedBox(height: 16),
-                    if (_recent.isNotEmpty) const Text('Recent searches'),
-                    ..._recent.map((value) => ListTile(
-                        leading: const Icon(Icons.history),
-                        title: Text(value),
-                        onTap: () => setState(() => _controller.text = value))),
+                    const SizedBox(height: 20),
+                    if (_recent.isNotEmpty) ...[
+                      Semantics(
+                        header: true,
+                        child: Text('Recent searches',
+                            style: Theme.of(context).textTheme.titleSmall),
+                      ),
+                      const SizedBox(height: 8),
+                      Wrap(spacing: 8, runSpacing: 8, children: [
+                        for (final value in _recent)
+                          ActionChip(
+                            avatar: const Icon(Icons.history, size: 18),
+                            label: Text(value),
+                            onPressed: () =>
+                                setState(() => _controller.text = value),
+                          ),
+                      ]),
+                    ],
                   ])
                 : results.isEmpty
                     ? const Center(
@@ -127,17 +144,44 @@ class _SearchScreenState extends State<SearchScreen> {
                             child: Text(
                                 'No results. Try a shorter word or a Hindi or English title.')))
                     : ListView.builder(
-                        itemCount: results.length,
+                        itemCount: results.length + 1,
                         itemBuilder: (context, index) {
-                          final entry = results[index];
+                          if (index == 0) {
+                            return Padding(
+                              padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
+                              child: Semantics(
+                                liveRegion: true,
+                                child: Text(
+                                  results.length == 1
+                                      ? '1 result'
+                                      : '${results.length} results',
+                                  style: Theme.of(context).textTheme.labelLarge,
+                                ),
+                              ),
+                            );
+                          }
+                          final entry = results[index - 1];
+                          final subjectColor = ColorScheme.fromSeed(
+                                  seedColor: entry.subject.seedColor,
+                                  brightness: Theme.of(context).brightness)
+                              .primary;
                           return ListTile(
-                            leading: Icon(entry.chapter == null
-                                ? Icons.menu_book
-                                : Icons.article_outlined),
+                            minVerticalPadding: 12,
+                            leading: Icon(
+                                entry.chapter == null
+                                    ? Icons.menu_book
+                                    : Icons.article_outlined,
+                                color: subjectColor),
                             title:
                                 Text(entry.chapter?.title ?? entry.book.title),
-                            subtitle: Text(
-                                '${entry.subject.name} • ${entry.chapter == null ? 'पुस्तक' : entry.book.title}'),
+                            subtitle: Text([
+                              if (entry.chapter?.subtitle != null)
+                                entry.chapter!.subtitle!,
+                              entry.subject.name,
+                              entry.chapter == null
+                                  ? 'पुस्तक'
+                                  : entry.book.title,
+                            ].join(' • ')),
                             trailing: const Icon(Icons.chevron_right),
                             onTap: () async {
                               _recent = [
@@ -150,17 +194,17 @@ class _SearchScreenState extends State<SearchScreen> {
                                     {'queries': _recent});
                               } catch (_) {/* Search remains usable. */}
                               if (!context.mounted) return;
-                              Navigator.push(
+                              openWithSubjectTheme(
                                   context,
-                                  MaterialPageRoute(
-                                      builder: (_) => entry.chapter == null
-                                          ? BookScreen(
-                                              subject: entry.subject,
-                                              book: entry.book)
-                                          : ChapterScreen(
-                                              subject: entry.subject,
-                                              book: entry.book,
-                                              chapter: entry.chapter!)));
+                                  entry.subject,
+                                  (_) => entry.chapter == null
+                                      ? BookScreen(
+                                          subject: entry.subject,
+                                          book: entry.book)
+                                      : ChapterScreen(
+                                          subject: entry.subject,
+                                          book: entry.book,
+                                          chapter: entry.chapter!));
                             },
                           );
                         })),
