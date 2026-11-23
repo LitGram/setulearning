@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:markdown/markdown.dart' as md;
@@ -89,7 +90,7 @@ class _MathBuilder extends MarkdownElementBuilder {
         (parentStyle ?? style ?? Theme.of(context).textTheme.bodyLarge)!
             .copyWith(color: Theme.of(context).colorScheme.onSurface);
     return Semantics(
-        label: 'Equation: $source',
+        label: context.strings.equation(source),
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Math.tex(source,

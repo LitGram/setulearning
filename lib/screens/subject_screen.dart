@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
 import '../models/book.dart';
 import '../models/subject.dart';
@@ -77,7 +78,7 @@ class SubjectScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            '${subject.books.length} पुस्तकें उपलब्ध',
+                            context.strings.booksAvailable(subject.books.length),
                             style: theme.textTheme.titleSmall?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: colorScheme.primary,
@@ -92,7 +93,7 @@ class SubjectScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            'अलग-अलग विषयों और परीक्षाओं के लिए अध्ययन सामग्री।',
+                            context.strings.subjectBlurb,
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: colorScheme.onSurfaceVariant,
                             ),
@@ -109,7 +110,7 @@ class SubjectScreen extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
                 child: Text(
-                  'Choose a book',
+                  context.strings.chooseBook,
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
@@ -143,7 +144,7 @@ class SubjectScreen extends StatelessWidget {
     final readCount = progressProvider.getReadCountForBook(subject.id, book.id);
 
     return AccessibleCard(
-      semanticLabel: '${book.title}, विषय-आधारित पुस्तक',
+      semanticLabel: context.strings.bookSemantics(book.title),
       onTap: () {
         Navigator.push(
           context,
@@ -202,7 +203,7 @@ class SubjectScreen extends StatelessWidget {
                   const SizedBox(height: 8),
                   StatusBadge(
                     type: BadgeType.inProgress,
-                    customLabel: '$readCount अध्याय पठित',
+                    customLabel: context.strings.chaptersRead(readCount),
                   ),
                 ],
               ],

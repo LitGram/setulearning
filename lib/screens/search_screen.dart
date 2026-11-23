@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import '../models/book.dart';
 import '../models/chapter.dart';
 import '../models/subject.dart';
@@ -76,7 +77,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 .contains(query))
         .toList();
     return Scaffold(
-      appBar: AppBar(title: const Text('Search books and chapters')),
+      appBar: AppBar(title: Text(context.strings.searchBooksAndChapters)),
       body: Column(children: [
         Padding(
             padding: const EdgeInsets.all(16),
@@ -84,48 +85,48 @@ class _SearchScreenState extends State<SearchScreen> {
               controller: _controller,
               onChanged: (_) => setState(() {}),
               decoration: InputDecoration(
-                labelText: 'Hindi or English title',
+                labelText: context.strings.searchFieldLabel,
                 prefixIcon: const Icon(Icons.search),
                 suffixIcon: IconButton(
-                    tooltip: 'Clear search',
+                    tooltip: context.strings.clearSearch,
                     icon: const Icon(Icons.clear),
                     onPressed: () => setState(_controller.clear)),
                 border: const OutlineInputBorder(),
               ),
             )),
         if (_loading)
-          const LinearProgressIndicator(
-              semanticsLabel: 'Preparing chapter search'),
+          LinearProgressIndicator(
+              semanticsLabel: context.strings.preparingSearch),
         if (_failed)
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Wrap(
                   crossAxisAlignment: WrapCrossAlignment.center,
                   children: [
-                    const Text(
-                        'Some chapters could not be loaded. You can still search books.'),
+                    Text(
+                        context.strings.someChaptersNotLoaded),
                     TextButton(
                         onPressed: _loading ? null : _index,
-                        child: const Text('Retry')),
+                        child: Text(context.strings.retry)),
                   ])),
         Expanded(
             child: query.isEmpty
                 ? ListView(padding: const EdgeInsets.all(16), children: [
-                    const Text(
-                        'Search any word from a book or chapter title. Works offline.'),
+                    Text(
+                        context.strings.searchHint),
                     const SizedBox(height: 16),
-                    if (_recent.isNotEmpty) const Text('Recent searches'),
+                    if (_recent.isNotEmpty) Text(context.strings.recentSearches),
                     ..._recent.map((value) => ListTile(
                         leading: const Icon(Icons.history),
                         title: Text(value),
                         onTap: () => setState(() => _controller.text = value))),
                   ])
                 : results.isEmpty
-                    ? const Center(
+                    ? Center(
                         child: Padding(
-                            padding: EdgeInsets.all(24),
+                            padding: const EdgeInsets.all(24),
                             child: Text(
-                                'No results. Try a shorter word or a Hindi or English title.')))
+                                context.strings.noResults)))
                     : ListView.builder(
                         itemCount: results.length,
                         itemBuilder: (context, index) {
@@ -137,7 +138,7 @@ class _SearchScreenState extends State<SearchScreen> {
                             title:
                                 Text(entry.chapter?.title ?? entry.book.title),
                             subtitle: Text(
-                                '${entry.subject.name} • ${entry.chapter == null ? 'पुस्तक' : entry.book.title}'),
+                                '${entry.subject.name} • ${entry.chapter == null ? context.strings.book : entry.book.title}'),
                             trailing: const Icon(Icons.chevron_right),
                             onTap: () async {
                               _recent = [

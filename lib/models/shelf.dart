@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'subject.dart';
 
 /// A group of subjects aimed at one kind of learner, used to shorten the
@@ -8,24 +9,32 @@ enum Shelf {
     id: 'class10',
     label: 'कक्षा 10 (RBSE)',
     description: 'बोर्ड परीक्षा की अध्यायवार गाइड',
+    labelEn: 'Class 10 (RBSE)',
+    descriptionEn: 'Chapter-wise board exam guides',
     icon: Icons.school_rounded,
   ),
   competitive(
     id: 'competitive',
     label: 'प्रतियोगी परीक्षाएँ',
     description: 'RAS, गणित, अंग्रेज़ी और विज्ञान की तैयारी',
+    labelEn: 'Competitive exams',
+    descriptionEn: 'RAS, maths, English and science preparation',
     icon: Icons.emoji_events_rounded,
   ),
   ugcNet(
     id: 'ugcnet',
     label: 'UGC NET',
     description: 'विषयवार संपूर्ण ग्रंथ',
+    labelEn: 'UGC NET',
+    descriptionEn: 'Complete subject-wise texts',
     icon: Icons.workspace_premium_rounded,
   ),
   higher(
     id: 'higher',
     label: 'कॉलेज व साहित्य',
     description: 'M.Sc. Physics और विश्व साहित्य',
+    labelEn: 'College & literature',
+    descriptionEn: 'M.Sc. Physics and world literature',
     icon: Icons.auto_stories_rounded,
   );
 
@@ -33,13 +42,22 @@ enum Shelf {
     required this.id,
     required this.label,
     required this.description,
+    required this.labelEn,
+    required this.descriptionEn,
     required this.icon,
   });
 
   final String id;
   final String label;
   final String description;
+  final String labelEn;
+  final String descriptionEn;
   final IconData icon;
+
+  String labelIn(AppLanguage language) =>
+      language == AppLanguage.hi ? label : labelEn;
+  String descriptionIn(AppLanguage language) =>
+      language == AppLanguage.hi ? description : descriptionEn;
 
   static Shelf? fromId(String? id) {
     for (final shelf in Shelf.values) {

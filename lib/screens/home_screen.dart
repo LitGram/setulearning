@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/shelf.dart';
@@ -55,21 +56,21 @@ class _HomeScreenState extends State<HomeScreen> {
                         _visited.add(index);
                       }),
                       labelType: NavigationRailLabelType.all,
-                      destinations: const [
+                      destinations: [
                         NavigationRailDestination(
-                          icon: Icon(Icons.menu_book_outlined),
-                          selectedIcon: Icon(Icons.menu_book_rounded),
-                          label: Text('Subjects'),
+                          icon: const Icon(Icons.menu_book_outlined),
+                          selectedIcon: const Icon(Icons.menu_book_rounded),
+                          label: Text(context.strings.navSubjects),
                         ),
                         NavigationRailDestination(
-                          icon: Icon(Icons.insights_outlined),
-                          selectedIcon: Icon(Icons.insights_rounded),
-                          label: Text('Progress'),
+                          icon: const Icon(Icons.insights_outlined),
+                          selectedIcon: const Icon(Icons.insights_rounded),
+                          label: Text(context.strings.navProgress),
                         ),
                         NavigationRailDestination(
-                          icon: Icon(Icons.settings_outlined),
-                          selectedIcon: Icon(Icons.settings_rounded),
-                          label: Text('Settings'),
+                          icon: const Icon(Icons.settings_outlined),
+                          selectedIcon: const Icon(Icons.settings_rounded),
+                          label: Text(context.strings.navSettings),
                         ),
                       ],
                     ),
@@ -86,21 +87,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     _selectedDestination = index;
                     _visited.add(index);
                   }),
-                  destinations: const [
+                  destinations: [
                     NavigationDestination(
-                      icon: Icon(Icons.menu_book_outlined),
-                      selectedIcon: Icon(Icons.menu_book_rounded),
-                      label: 'Subjects',
+                      icon: const Icon(Icons.menu_book_outlined),
+                      selectedIcon: const Icon(Icons.menu_book_rounded),
+                      label: context.strings.navSubjects,
                     ),
                     NavigationDestination(
-                      icon: Icon(Icons.insights_outlined),
-                      selectedIcon: Icon(Icons.insights_rounded),
-                      label: 'Progress',
+                      icon: const Icon(Icons.insights_outlined),
+                      selectedIcon: const Icon(Icons.insights_rounded),
+                      label: context.strings.navProgress,
                     ),
                     NavigationDestination(
-                      icon: Icon(Icons.settings_outlined),
-                      selectedIcon: Icon(Icons.settings_rounded),
-                      label: 'Settings',
+                      icon: const Icon(Icons.settings_outlined),
+                      selectedIcon: const Icon(Icons.settings_rounded),
+                      label: context.strings.navSettings,
                     ),
                   ],
                 ),
@@ -208,7 +209,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                   ),
                 ),
                 Text(
-                  'पढ़ाई, जब चाहो',
+                  context.strings.appTagline,
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: colorScheme.onSurfaceVariant,
                   ),
@@ -233,7 +234,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
               ],
               OutlinedButton.icon(
                 icon: const Icon(Icons.search_rounded),
-                label: const Text('Search books and chapters'),
+                label: Text(context.strings.searchBooksAndChapters),
                 onPressed: () => Navigator.push(context,
                     MaterialPageRoute(builder: (_) => const SearchScreen())),
               ),
@@ -276,14 +277,14 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'पूर्णतः ऑफलाइन अध्ययन',
+                            context.strings.offlineTitle,
                             style: theme.textTheme.labelLarge?.copyWith(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            'सभी पुस्तकें एवं अभ्यास प्रश्न बिना इंटरनेट के उपलब्ध हैं।',
+                            context.strings.offlineBody,
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: colorScheme.onSurfaceVariant,
                             ),
@@ -312,14 +313,14 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'आप किसकी तैयारी कर रहे हैं?',
+            context.strings.shelfQuestion,
             style: theme.textTheme.titleLarge?.copyWith(
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 4),
           Text(
-            'हम आपकी पुस्तकें सबसे ऊपर दिखाएँगे। इसे कभी भी बदल सकते हैं।',
+            context.strings.shelfQuestionHint,
             style: theme.textTheme.bodyMedium?.copyWith(
               color: colorScheme.onSurfaceVariant,
             ),
@@ -345,14 +346,14 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            shelf.label,
+                            shelf.labelIn(context.strings.language),
                             style: theme.textTheme.titleSmall?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: colorScheme.onSurface,
                             ),
                           ),
                           Text(
-                            shelf.description,
+                            shelf.descriptionIn(context.strings.language),
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: colorScheme.onSurfaceVariant,
                             ),
@@ -366,7 +367,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
             ),
           TextButton(
             onPressed: () => _chooseShelf(null),
-            child: const Text('सभी विषय देखें'),
+            child: Text(context.strings.showAllSubjects),
           ),
         ],
       ),
@@ -383,15 +384,15 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
           onSelected: (_) => _chooseShelf(shelf),
         );
     return Semantics(
-      label: 'पुस्तकों की श्रेणी चुनें',
+      label: context.strings.chooseShelf,
       container: true,
       child: Wrap(
         spacing: 8,
         runSpacing: 8,
         children: [
-          chip('सभी', null, Icons.apps_rounded),
+          chip(context.strings.allShelves, null, Icons.apps_rounded),
           for (final shelf in Shelf.values)
-            chip(shelf.label, shelf, shelf.icon),
+            chip(shelf.labelIn(context.strings.language), shelf, shelf.icon),
         ],
       ),
     );
@@ -409,7 +410,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
             const SizedBox(width: 8),
             Expanded(
               child: Text(
-                shelf.label,
+                shelf.labelIn(context.strings.language),
                 style: theme.textTheme.titleLarge?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -427,7 +428,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
 
     return AccessibleCard(
       color: colorScheme.primaryContainer.withOpacity(0.7),
-      semanticLabel: 'अंतिम पठित अध्याय जारी रखें: ${lastPos.chapterTitle}',
+      semanticLabel: context.strings.continueChapterSemantics(lastPos.chapterTitle),
       onTap: _resuming
           ? null
           : () async {
@@ -467,9 +468,8 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                 }
               } catch (_) {
                 if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                      content: Text(
-                          'Could not open the chapter. Please try again.')));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text(context.strings.couldNotOpenChapter)));
                 }
               } finally {
                 if (mounted) setState(() => _resuming = false);
@@ -498,7 +498,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                   children: [
                     Flexible(
                         child: Text(
-                      'Continue reading',
+                      context.strings.continueReading,
                       style: theme.textTheme.labelMedium?.copyWith(
                         color: colorScheme.primary,
                         fontWeight: FontWeight.bold,
@@ -551,7 +551,8 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
 
     return AccessibleCard(
       semanticLabel:
-          '${subject.name}, ${subject.hindiName}, ${subject.books.length} पुस्तकें उपलब्ध',
+          context.strings.subjectCardSemantics(
+              subject.name, subject.hindiName, subject.books.length),
       onTap: () {
         // Set dynamic theme matching this subject per Section 6.2
         Provider.of<ThemeProvider>(context, listen: false)
@@ -608,7 +609,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                         borderRadius: BorderRadius.circular(6),
                       ),
                       child: Text(
-                        '${subject.books.length} Books',
+                        context.strings.booksCount(subject.books.length),
                         style: theme.textTheme.labelSmall?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
@@ -644,7 +645,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                       ),
                       const SizedBox(width: 4),
                       Text(
-                        '$readCount अध्याय पूर्ण',
+                        context.strings.chaptersDone(readCount),
                         style: theme.textTheme.labelSmall?.copyWith(
                           color: colorScheme.primary,
                           fontWeight: FontWeight.bold,

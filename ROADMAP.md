@@ -40,12 +40,13 @@ Status key: `[ ]` not started · `[~]` in progress · `[x]` done
 - **Where:** `lib/services/content_service.dart` (subject taglines, book titles).
 - **Branch:** `feature/home-shelves` (small change, done on the current branch)
 
-### 4. [ ] One interface language setting (Hindi / English)
+### 4. [x] One interface language setting (Hindi / English) — done 2026-11-23
 - **Problem:** Buttons are English ("Previous", "Next", "Mark as read",
   "Choose a subject") while descriptions are Hindi.
 - **Change:** Add a language choice in Settings and route all UI strings through
   it (Flutter `intl` / ARB files, or a simple strings map).
 - **Where:** all of `lib/screens/` and `lib/widgets/`, `settings_screen.dart`.
+- **Branch:** `feature/ui-language`
 
 ## Priority 2 — missing features
 
@@ -120,3 +121,12 @@ Status key: `[ ]` not started · `[~]` in progress · `[x]` done
   stays, because it tells students honestly what is still missing (e.g. Science:
   NCERT solutions and full PYQs still being checked), so finishing those books
   is still open. New guard test: `test/no_draft_labels_test.dart`.
+- 2026-11-23 — #4 done on `feature/ui-language` (not yet committed). New
+  `lib/l10n/app_strings.dart` holds every UI string as a Hindi/English pair;
+  `LanguageProvider` saves the choice under the `ui_language` preference
+  (default Hindi). Settings has a "भाषा / Language" section at the top. Book
+  content and subject names are not translated. Screens with no
+  `AppStringsScope` above them (single-screen widget tests) fall back to
+  English, so older tests still find "Next", "Mark as read" etc. New test:
+  `test/ui_language_test.dart`. Not yet checked visually on a phone; long
+  Hindi labels on small screens are worth a look.

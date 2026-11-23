@@ -83,7 +83,7 @@ void main() {
     expect(find.byType(Image), findsOneWidget);
     await tester.tap(find.byType(Image));
     await tester.pumpAndSettle();
-    expect(find.text('चित्र देखें / Diagram'), findsOneWidget);
+    expect(find.text('Diagram'), findsOneWidget);
     expect(find.byType(InteractiveViewer), findsOneWidget);
     expect(tester.takeException(), isNull);
   });

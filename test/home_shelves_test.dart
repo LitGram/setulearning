@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
+import 'package:setu_learning/l10n/app_strings.dart';
 import 'package:setu_learning/models/shelf.dart';
 import 'package:setu_learning/providers/progress_provider.dart';
 import 'package:setu_learning/providers/theme_provider.dart';
@@ -21,7 +22,11 @@ Widget _app() => MultiProvider(
         ChangeNotifierProvider<ProgressProvider>(
             create: (_) => _TestProgress()),
       ],
-      child: const MaterialApp(home: HomeScreen()),
+      child: MaterialApp(
+        builder: (context, child) =>
+            AppStringsScope(strings: AppStrings.hindi, child: child!),
+        home: const HomeScreen(),
+      ),
     );
 
 void main() {

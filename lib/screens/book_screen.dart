@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
 import '../models/book.dart';
 import '../models/chapter.dart';
@@ -63,7 +64,7 @@ class _BookScreenState extends State<BookScreen> {
               overflow: TextOverflow.ellipsis,
             ),
             Text(
-              '${widget.subject.name} • पुस्तक ${widget.book.bookNumber}',
+              '${widget.subject.name} • ${context.strings.bookNumber(widget.book.bookNumber)}',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: colorScheme.onSurfaceVariant,
               ),
@@ -82,7 +83,7 @@ class _BookScreenState extends State<BookScreen> {
                   const CircularProgressIndicator(),
                   const SizedBox(height: 16),
                   Text(
-                    'विषय सूची लोड हो रही है...',
+                    context.strings.loadingContents,
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: colorScheme.onSurfaceVariant,
                     ),
@@ -103,7 +104,7 @@ class _BookScreenState extends State<BookScreen> {
                         size: 48, color: colorScheme.error),
                     const SizedBox(height: 12),
                     Text(
-                      'पुस्तक लोड करने में समस्या आई',
+                      context.strings.bookLoadError,
                       style: theme.textTheme.titleMedium?.copyWith(
                         color: colorScheme.error,
                       ),
@@ -116,7 +117,7 @@ class _BookScreenState extends State<BookScreen> {
                               .loadBookContent(widget.book);
                         });
                       },
-                      child: const Text('Retry'),
+                      child: Text(context.strings.retry),
                     ),
                   ],
                 ),
@@ -159,7 +160,7 @@ class _BookScreenState extends State<BookScreen> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
-                                'पाठ्यक्रम खंड ${widget.book.bookNumber}',
+                                context.strings.syllabusPart(widget.book.bookNumber),
                                 style: theme.textTheme.labelSmall?.copyWith(
                                   color: colorScheme.onPrimary,
                                   fontWeight: FontWeight.bold,
@@ -167,7 +168,7 @@ class _BookScreenState extends State<BookScreen> {
                               ),
                             ),
                             Text(
-                              'कुल अध्याय: ${chapters.length}',
+                              context.strings.totalChapters(chapters.length),
                               style: theme.textTheme.labelMedium?.copyWith(
                                 color: colorScheme.primary,
                                 fontWeight: FontWeight.bold,
@@ -198,7 +199,7 @@ class _BookScreenState extends State<BookScreen> {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 4.0, vertical: 4.0),
                     child: Text(
-                      'Chapters',
+                      context.strings.chapters,
                       style: theme.textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
@@ -207,17 +208,17 @@ class _BookScreenState extends State<BookScreen> {
                   const SizedBox(height: 8),
 
                   TextField(
-                    decoration: const InputDecoration(
-                        labelText: 'Search chapters',
-                        prefixIcon: Icon(Icons.search),
-                        border: OutlineInputBorder()),
+                    decoration: InputDecoration(
+                        labelText: context.strings.searchChapters,
+                        prefixIcon: const Icon(Icons.search),
+                        border: const OutlineInputBorder()),
                     onChanged: (value) =>
                         setState(() => _query = value.trim().toLowerCase()),
                   ),
                   const SizedBox(height: 12),
                   Wrap(spacing: 8, children: [
                     FilterChip(
-                        label: const Text('Unread'),
+                        label: Text(context.strings.unread),
                         selected: _unreadOnly,
                         onSelected: (value) =>
                             setState(() => _unreadOnly = value)),
@@ -230,10 +231,10 @@ class _BookScreenState extends State<BookScreen> {
                       (!_unreadOnly ||
                           !progressProvider.isChapterRead(
                               widget.subject.id, book.id, chapter.id))))
-                    const Padding(
-                        padding: EdgeInsets.all(16),
+                    Padding(
+                        padding: const EdgeInsets.all(16),
                         child: Text(
-                            'No matching chapters. Try another word or clear the filter.')),
+                            context.strings.noMatchingChapters)),
                   // Chapters List
                   ...chapters
                       .asMap()
@@ -286,7 +287,7 @@ class _BookScreenState extends State<BookScreen> {
 
     return AccessibleCard(
       semanticLabel:
-          'अध्याय $index: ${chapter.title}, ${isRead ? "पठित" : "अपठित"}',
+          context.strings.chapterSemantics(index, chapter.title, isRead),
       onTap: () {
         Navigator.push(
           context,
@@ -355,23 +356,24 @@ class _BookScreenState extends State<BookScreen> {
                   runSpacing: 4,
                   children: [
                     if (isRead)
-                      const StatusBadge(
-                          type: BadgeType.completed, customLabel: 'Read')
+                      StatusBadge(
+                          type: BadgeType.completed, customLabel: context.strings.read)
                     else
-                      const StatusBadge(
-                          type: BadgeType.notStarted, customLabel: 'Unread'),
+                      StatusBadge(
+                          type: BadgeType.notStarted, customLabel: context.strings.unread),
                     if (quizRecord != null)
                       StatusBadge(
                         type: quizRecord.percentage >= 60
                             ? BadgeType.quizPassed
                             : BadgeType.quizNeedsReview,
                         customLabel:
-                            'स्कोर: ${quizRecord.score}/${quizRecord.total} (${quizRecord.percentage.toStringAsFixed(0)}%)',
+                            context.strings.quizScore(quizRecord.score, quizRecord.total,
+                                quizRecord.percentage.toStringAsFixed(0)),
                       )
                     else if (chapter.mcqs.isNotEmpty)
                       StatusBadge(
                         type: BadgeType.inProgress,
-                        customLabel: '${chapter.mcqs.length} अभ्यास प्रश्न',
+                        customLabel: context.strings.practiceQuestionsCount(chapter.mcqs.length),
                       ),
                   ],
                 ),

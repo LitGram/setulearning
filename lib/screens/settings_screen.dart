@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
+import '../providers/language_provider.dart';
 import '../providers/theme_provider.dart';
 import '../widgets/accessible_card.dart';
 import '../widgets/reset_progress_button.dart';
@@ -12,6 +14,7 @@ class SettingsScreen extends StatelessWidget {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
     final themeProvider = Provider.of<ThemeProvider>(context);
+    final languageProvider = Provider.of<LanguageProvider>(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -19,16 +22,45 @@ class SettingsScreen extends StatelessWidget {
                     Theme.of(context).textTheme.titleMedium?.fontSize ?? 18) *
                 2.8)
             .clamp(56.0, 160.0),
-        title: const Text('Settings'),
+        title: Text(context.strings.navSettings),
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
         children: [
+          // Interface language. The header stays bilingual so it can be
+          // found whichever language is active.
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
+            child: Text(
+              context.strings.languageHeader,
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
+          AccessibleCard(
+            child: Column(
+              children: [
+                for (final language in AppLanguage.values)
+                  RadioListTile<AppLanguage>(
+                    title: Text(language.nativeName),
+                    value: language,
+                    groupValue: languageProvider.language,
+                    onChanged: (val) {
+                      if (val != null) languageProvider.setLanguage(val);
+                    },
+                  ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 20),
+
           // Accessibility & Text Sizing Section (Section 6.4)
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
             child: Text(
-              'Reading',
+              context.strings.readingSection,
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
@@ -45,7 +77,7 @@ class SettingsScreen extends StatelessWidget {
                   children: [
                     Expanded(
                         child: Text(
-                      'Text size',
+                      context.strings.textSize,
                       style: theme.textTheme.titleSmall?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
@@ -79,7 +111,7 @@ class SettingsScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Text(
-                    'पूर्वावलोकन: सेतु श्रृंखला से अपनी परीक्षा तैयारी को सहज और प्रभावी बनाएं।',
+                    context.strings.textPreview,
                     style: theme.textTheme.bodyMedium,
                   ),
                 ),
@@ -92,7 +124,7 @@ class SettingsScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
             child: Text(
-              'Appearance',
+              context.strings.appearance,
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
@@ -104,7 +136,7 @@ class SettingsScreen extends StatelessWidget {
             child: Column(
               children: [
                 RadioListTile<ThemeMode>(
-                  title: const Text('System default'),
+                  title: Text(context.strings.systemDefault),
                   value: ThemeMode.system,
                   groupValue: themeProvider.themeMode,
                   onChanged: (val) {
@@ -112,7 +144,7 @@ class SettingsScreen extends StatelessWidget {
                   },
                 ),
                 RadioListTile<ThemeMode>(
-                  title: const Text('Light mode'),
+                  title: Text(context.strings.lightMode),
                   value: ThemeMode.light,
                   groupValue: themeProvider.themeMode,
                   onChanged: (val) {
@@ -120,7 +152,7 @@ class SettingsScreen extends StatelessWidget {
                   },
                 ),
                 RadioListTile<ThemeMode>(
-                  title: const Text('Dark mode'),
+                  title: Text(context.strings.darkMode),
                   value: ThemeMode.dark,
                   groupValue: themeProvider.themeMode,
                   onChanged: (val) {
@@ -136,7 +168,7 @@ class SettingsScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
             child: Text(
-              'About Setu Learning',
+              context.strings.aboutApp,
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
@@ -176,7 +208,7 @@ class SettingsScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            'संस्करण 1.0.0 (Release Build)',
+                            context.strings.versionLabel,
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: colorScheme.onSurfaceVariant,
                             ),
@@ -188,7 +220,7 @@ class SettingsScreen extends StatelessWidget {
                 ),
                 const Divider(height: 24),
                 Text(
-                  'सेतु लर्निंग स्कूली, कॉलेज और प्रतियोगी परीक्षा के विद्यार्थियों के लिए विषयवार अध्ययन सामग्री उपलब्ध कराता है। MathSetu, VigyanSetu, EnglishSetu, RASSetu और अन्य विषयों की पुस्तकें ऑफ़लाइन पढ़ी जा सकती हैं।',
+                  context.strings.aboutBody,
                   style: theme.textTheme.bodyMedium?.copyWith(height: 1.5),
                 ),
                 const SizedBox(height: 14),
@@ -199,7 +231,7 @@ class SettingsScreen extends StatelessWidget {
                     const SizedBox(width: 8),
                     Flexible(
                         child: Text(
-                      'Works offline',
+                      context.strings.worksOffline,
                       style: theme.textTheme.labelSmall?.copyWith(
                         fontWeight: FontWeight.bold,
                         color: colorScheme.secondary,

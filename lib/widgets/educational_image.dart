@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 
 /// Shared offline figure and accessible full-screen viewer for book chapters.
 class EducationalImage extends StatelessWidget {
@@ -22,7 +23,7 @@ class EducationalImage extends StatelessWidget {
         children: [
           Semantics(
             button: true,
-            label: 'Enlarge diagram / चित्र बड़ा करें',
+            label: context.strings.enlargeDiagram,
             child: InkWell(
               onTap: () => Navigator.of(context).push(MaterialPageRoute<void>(
                 builder: (_) => _FigureViewer(asset: asset, caption: caption),
@@ -30,10 +31,10 @@ class EducationalImage extends StatelessWidget {
               child: Image.asset(
                 asset,
                 fit: BoxFit.contain,
-                semanticLabel: caption ?? 'Educational diagram',
-                errorBuilder: (_, error, stack) => const SizedBox(
+                semanticLabel: caption ?? context.strings.educationalDiagram,
+                errorBuilder: (_, error, stack) => SizedBox(
                   height: 160,
-                  child: Center(child: Text('चित्र उपलब्ध नहीं है')),
+                  child: Center(child: Text(context.strings.imageUnavailable)),
                 ),
               ),
             ),
@@ -44,11 +45,11 @@ class EducationalImage extends StatelessWidget {
             child: Column(children: [
               if (caption != null) Text(caption!, textAlign: TextAlign.center),
               const SizedBox(height: 4),
-              const Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Icon(Icons.zoom_in_rounded, size: 18),
-                SizedBox(width: 6),
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                const Icon(Icons.zoom_in_rounded, size: 18),
+                const SizedBox(width: 6),
                 Flexible(
-                  child: Text('चित्र पर टैप करें • Tap to enlarge',
+                  child: Text(context.strings.tapToEnlarge,
                       textAlign: TextAlign.center),
                 ),
               ]),
@@ -88,23 +89,23 @@ class _FigureViewerState extends State<_FigureViewer> {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: const Text('चित्र देखें / Diagram'),
+          title: Text(context.strings.diagramTitle),
           leading: IconButton(
-            tooltip: 'Close diagram',
+            tooltip: context.strings.closeDiagram,
             icon: const Icon(Icons.close),
             onPressed: () => Navigator.of(context).pop(),
           ),
           actions: [
             IconButton(
-                tooltip: 'Zoom out',
+                tooltip: context.strings.zoomOut,
                 onPressed: () => _zoom(1 / 1.5),
                 icon: const Icon(Icons.zoom_out)),
             IconButton(
-                tooltip: 'Zoom in',
+                tooltip: context.strings.zoomIn,
                 onPressed: () => _zoom(1.5),
                 icon: const Icon(Icons.zoom_in)),
             IconButton(
-                tooltip: 'Reset zoom',
+                tooltip: context.strings.resetZoom,
                 onPressed: () => _transform.value = Matrix4.identity(),
                 icon: const Icon(Icons.fit_screen)),
           ],
@@ -120,12 +121,12 @@ class _FigureViewerState extends State<_FigureViewer> {
                     child: Image.asset(widget.asset,
                         fit: BoxFit.contain,
                         semanticLabel:
-                            widget.caption ?? 'Educational diagram')),
+                            widget.caption ?? context.strings.educationalDiagram)),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(16),
-              child: Text(widget.caption ?? 'Pinch to zoom • Drag to explore',
+              child: Text(widget.caption ?? context.strings.pinchToZoom,
                   textAlign: TextAlign.center),
             ),
           ]),

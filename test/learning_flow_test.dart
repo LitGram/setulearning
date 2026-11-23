@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:setu_learning/providers/language_provider.dart';
 import 'package:setu_learning/models/book.dart';
 import 'package:setu_learning/models/chapter.dart';
 import 'package:setu_learning/models/mcq.dart';
@@ -106,7 +107,8 @@ Widget app(Widget screen, ProgressProvider progress, {double scale = 1}) =>
     MultiProvider(
       providers: [
         ChangeNotifierProvider.value(value: progress),
-        ChangeNotifierProvider(create: (_) => ThemeProvider())
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => LanguageProvider())
       ],
       child: MaterialApp(
           theme: AppTheme.createTheme(fontScale: scale > 1 ? 1.4 : 1),
