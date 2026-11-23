@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import '../theme/app_theme.dart';
 
 class AccessibleCard extends StatelessWidget {
   final Widget child;
   final VoidCallback? onTap;
   final String? semanticLabel;
   final String? semanticHint;
+  final bool? selected;
   final EdgeInsetsGeometry padding;
   final Color? color;
   final BorderSide? border;
@@ -15,7 +17,8 @@ class AccessibleCard extends StatelessWidget {
     this.onTap,
     this.semanticLabel,
     this.semanticHint,
-    this.padding = const EdgeInsets.all(16.0),
+    this.selected,
+    this.padding = const EdgeInsets.all(AppSpacing.medium),
     this.color,
     this.border,
   });
@@ -36,6 +39,7 @@ class AccessibleCard extends StatelessWidget {
 
     return Semantics(
       label: semanticLabel,
+      selected: selected,
       hint: semanticHint,
       button: onTap != null,
       enabled: onTap != null,

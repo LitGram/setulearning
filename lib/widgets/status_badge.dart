@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
-enum BadgeType { completed, inProgress, notStarted, quizPassed, quizNeedsReview }
+enum BadgeType {
+  completed,
+  inProgress,
+  notStarted,
+  quizPassed,
+  quizNeedsReview
+}
 
 class StatusBadge extends StatelessWidget {
   final BadgeType type;
@@ -26,35 +32,35 @@ class StatusBadge extends StatelessWidget {
     switch (type) {
       case BadgeType.completed:
         icon = Icons.check_circle_rounded;
-        label = customLabel ?? 'पूर्ण (Completed)';
+        label = customLabel ?? 'Completed';
         bgColor = colorScheme.primaryContainer;
         fgColor = colorScheme.onPrimaryContainer;
         border = BorderSide(color: colorScheme.primary.withOpacity(0.3));
         break;
       case BadgeType.quizPassed:
         icon = Icons.emoji_events_rounded;
-        label = customLabel ?? 'क्विज उत्तीर्ण';
+        label = customLabel ?? 'Practice completed';
         bgColor = colorScheme.secondaryContainer;
         fgColor = colorScheme.onSecondaryContainer;
         border = BorderSide(color: colorScheme.secondary.withOpacity(0.3));
         break;
       case BadgeType.quizNeedsReview:
         icon = Icons.replay_rounded;
-        label = customLabel ?? 'पुनः प्रयास करें';
+        label = customLabel ?? 'Retry';
         bgColor = colorScheme.tertiaryContainer;
         fgColor = colorScheme.onTertiaryContainer;
         border = BorderSide(color: colorScheme.tertiary.withOpacity(0.3));
         break;
       case BadgeType.inProgress:
         icon = Icons.timelapse_rounded;
-        label = customLabel ?? 'प्रगति में';
+        label = customLabel ?? 'In progress';
         bgColor = colorScheme.surfaceVariant;
         fgColor = colorScheme.onSurfaceVariant;
         border = BorderSide(color: colorScheme.outlineVariant);
         break;
       case BadgeType.notStarted:
         icon = Icons.circle_outlined;
-        label = customLabel ?? 'अपठित (Unread)';
+        label = customLabel ?? 'Unread';
         bgColor = colorScheme.surface;
         fgColor = colorScheme.onSurfaceVariant;
         border = BorderSide(color: colorScheme.outline.withOpacity(0.4));
@@ -62,7 +68,8 @@ class StatusBadge extends StatelessWidget {
     }
 
     return Semantics(
-      label: 'स्थिति: $label',
+      label: 'Status: $label',
+      excludeSemantics: true,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
         decoration: BoxDecoration(
@@ -75,13 +82,14 @@ class StatusBadge extends StatelessWidget {
           children: [
             Icon(icon, size: 16, color: fgColor),
             const SizedBox(width: 6),
-            Text(
+            Flexible(
+                child: Text(
               label,
               style: theme.textTheme.labelMedium?.copyWith(
                 color: fgColor,
                 fontWeight: FontWeight.bold,
               ),
-            ),
+            )),
           ],
         ),
       ),

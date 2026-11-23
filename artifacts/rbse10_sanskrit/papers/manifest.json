@@ -1,0 +1,211 @@
+[
+  {
+    "id": "2026_main",
+    "year": 2026,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/Sec/S-71.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/index.htm",
+    "pages": 12,
+    "sha256": "c5813f6b4af3fecb9b562596e262b7242f8c93d87c834d55ff2cead679aa5292",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2026_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2026_main.txt"
+  },
+  {
+    "id": "2026_supplementary",
+    "year": 2026,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/SecSUP/S-71.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/index.htm",
+    "pages": 12,
+    "sha256": "1d26ee249abc717774df55c94cf83c67a881cc424af439db128da5eccd92b739",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2026_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2026_supplementary.txt"
+  },
+  {
+    "id": "2025_main",
+    "year": 2025,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/Sec/S-71.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/index.htm",
+    "pages": 12,
+    "sha256": "94b06976d6246cba2ea3b08d40e3df041df0f220763303fca85067add698d908",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2025_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2025_main.txt"
+  },
+  {
+    "id": "2025_supplementary",
+    "year": 2025,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/SecSUP/S-71.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/index.htm",
+    "pages": 12,
+    "sha256": "706cdaa44a036e44295cf4bcd39eba20fcc33c045ef07cc65c9fbcc9d6db2e17",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2025_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2025_supplementary.txt"
+  },
+  {
+    "id": "2024_main",
+    "year": 2024,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/Sec/S-71.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/index.htm",
+    "pages": 12,
+    "sha256": "3cbfba89ab847c8a0fd8aa6012bd054f6f23e6e1fb6e2b09609dedb0db23a6b8",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2024_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2024_main.txt"
+  },
+  {
+    "id": "2024_supplementary",
+    "year": 2024,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/SecSUP/S-71.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/index.htm",
+    "pages": 12,
+    "sha256": "19a2fdc99ae189f78a3cad73cc2d110014c37e24155063bac33dffad9d07621a",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2024_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2024_supplementary.txt"
+  },
+  {
+    "id": "2023_main",
+    "year": 2023,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2023/Sec/S-71.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2023/index.htm",
+    "pages": 12,
+    "sha256": "3659093fd81d0b228b5901ee71ba2e3b2c5121f9ae269b789119c5c2a6ee76f7",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2023_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2023_main.txt"
+  },
+  {
+    "id": "2022_main",
+    "year": 2022,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2022/Sec/S-71.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2022/index.htm",
+    "pages": 12,
+    "sha256": "d3ac27d26dfb05de940a6ba79f8d3537753fa70c3188de2b5e443da540e6cec8",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2022_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2022_main.txt"
+  },
+  {
+    "id": "2021_main",
+    "year": 2021,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2021/Sec/S-71-Sanskrit-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2021/index.htm",
+    "pages": 14,
+    "sha256": "5f9fbad1af299c3ae0a83d6d1ecf89540526be620ce71c6e9735b0e427046c78",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2021_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2021_main.txt"
+  },
+  {
+    "id": "2020_main",
+    "year": 2020,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/Sec/S-71-Sanskrit-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/index.htm",
+    "pages": 8,
+    "sha256": "b7cf45d8af550f8b4a8b566fbb4752b60ff06e4c95ee1451f5c4e5a25518c2ec",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2020_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2020_main.txt"
+  },
+  {
+    "id": "2020_supplementary",
+    "year": 2020,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/SecSUP/S-71.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/index.htm",
+    "pages": 12,
+    "sha256": "4f8f05910578fd2ad71c5e646877f0410bb235572ea32ea825ab41e0c0917774",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2020_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2020_supplementary.txt"
+  },
+  {
+    "id": "2019_main",
+    "year": 2019,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2019/Sec/S-71-Sanskrit-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2019/index.htm",
+    "pages": 8,
+    "sha256": "3e3b4f6452f47f75786ecbf630bc4a4046a501a3f91b45cbfe99b36883183a51",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2019_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2019_main.txt"
+  },
+  {
+    "id": "2018_main",
+    "year": 2018,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/Sec/S-71-Sanskrit-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/index.htm",
+    "pages": 12,
+    "sha256": "e48a15320d3dbac162246c5d5d90fec197d5bc64c485ed5ee749538d2fea7b99",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2018_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2018_main.txt"
+  },
+  {
+    "id": "2018_supplementary",
+    "year": 2018,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/SUPP/Sec/S-71-Sanskrit-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/index.htm",
+    "pages": 12,
+    "sha256": "8c5be8a7cb70066025ced2b7d1f09325ee6cbc46c6f5593a58a14e5aa8b74310",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2018_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2018_supplementary.txt"
+  },
+  {
+    "id": "2017_main",
+    "year": 2017,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/Sec/S-71-Sanskrit-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/index.htm",
+    "pages": 12,
+    "sha256": "f54c12fbae98c4f26705f8ddfa47c132af882015230019f11e9c4959d0473d3f",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2017_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2017_main.txt"
+  },
+  {
+    "id": "2017_supplementary",
+    "year": 2017,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/SUPP/Sec/S-71-Sanskrit-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/index.htm",
+    "pages": 12,
+    "sha256": "1deb24dfbb7876a434f4b6de0b4d8f13002d15c1382326a879d39a16365449d7",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2017_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2017_supplementary.txt"
+  },
+  {
+    "id": "2016_main",
+    "year": 2016,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2016/Sec/S-71-Sanskrit%20%28T.L.%29.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2016/index.htm",
+    "pages": 8,
+    "sha256": "a78beae84e1260bf16ada506c49b0aaa263ea5fe2fbb193bcb0f2c39955d3a1a",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2016_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2016_main.txt"
+  },
+  {
+    "id": "2015_main",
+    "year": 2015,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2015/Sec/S-71-Sankrit-15.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2015/index.htm",
+    "pages": 7,
+    "sha256": "0912c3ba03667b03e685415c37778701b2f09d47b97f2e8d5835d575312c689f",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2015_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2015_main.txt"
+  },
+  {
+    "id": "2014_main",
+    "year": 2014,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2014/Sec/S-71-Sankrit-14.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2014/index.htm",
+    "pages": 11,
+    "sha256": "22a011a714130fee2149392ab0d33c2b488a5264cafbb2a178e70b7923f0b686",
+    "file": "artifacts\\rbse10_sanskrit\\papers\\2014_main.pdf",
+    "text_file": "artifacts\\rbse10_sanskrit\\papers\\2014_main.txt"
+  }
+]

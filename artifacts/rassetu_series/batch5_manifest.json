@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "batch": "Book 5 Rajasthan energy",
+  "placements": [
+    {
+      "chapter": "ch27",
+      "originalChapterSha256": "e402d17bdb4e95715a8ee1ff5a2efa17d6e7c63cd651ddd6e06a10299d9b79d0",
+      "anchor": "### 2.1 राजस्थान ऊर्जा मिश्रण एवं ग्रिड स्थिरता (Energy Mix Dynamics)",
+      "image": "rassetu_b5_renewable_energy.webp",
+      "caption": "ऊर्जा के कुछ स्रोत: स्रोत से उपयोग तक",
+      "explanation": "सौर, पवन, जल और जैव-ऊर्जा के सामान्य स्रोत-से-उपयोग उदाहरण। ऊर्जा-मिश्रण और ग्रिड में वास्तविक भूमिका स्थान और समय के अनुसार बदलती है; इसमें क्षमता या उत्पादन के आंकड़े नहीं हैं।"
+    },
+    {
+      "chapter": "ch28",
+      "originalChapterSha256": "ffc47322cc3184f04426f4f715956bf40befe1e8333b8c2b1702a1fa6cd9c063",
+      "anchor": "### 2.1 राजस्थान ऊर्जा मिश्रण एवं ग्रिड स्थिरता (Energy Mix Dynamics)",
+      "image": "rassetu_b5_renewable_energy.webp",
+      "caption": "ऊर्जा के कुछ स्रोत: स्रोत से उपयोग तक",
+      "explanation": "सौर, पवन, जल और जैव-ऊर्जा के सामान्य स्रोत-से-उपयोग उदाहरण। ऊर्जा-मिश्रण और ग्रिड में वास्तविक भूमिका स्थान और समय के अनुसार बदलती है; इसमें क्षमता या उत्पादन के आंकड़े नहीं हैं।"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "batch": "Representative historical and agriculture scenes",
+  "placements": [
+    {
+      "book": 3,
+      "chapter": "ch35",
+      "originalChapterSha256": "b15929a37f763cf8cd594aa269bc6a871a70b9fc39c7a70eceba3edf1c39bd55",
+      "anchor": "## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+      "image": "rassetu_b3_salt_march_scene.webp",
+      "caption": "नमक सत्याग्रह से प्रेरित दृश्य",
+      "explanation": "1930 के नमक सत्याग्रह से प्रेरित प्रतिनिधि दृश्य। यह किसी विशेष दिन, स्थान या ऐतिहासिक व्यक्ति का दस्तावेजी पुनर्निर्माण नहीं है।"
+    },
+    {
+      "book": 3,
+      "chapter": "ch36",
+      "originalChapterSha256": "90b2d85c4c835be255ec75ab5591118f5fcc8d551ec535bc2f8f07bbddf86603",
+      "anchor": "## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+      "image": "rassetu_b3_salt_march_scene.webp",
+      "caption": "नमक सत्याग्रह से प्रेरित दृश्य",
+      "explanation": "1930 के नमक सत्याग्रह से प्रेरित प्रतिनिधि दृश्य। यह किसी विशेष दिन, स्थान या ऐतिहासिक व्यक्ति का दस्तावेजी पुनर्निर्माण नहीं है।"
+    },
+    {
+      "book": 4,
+      "chapter": "ch01",
+      "originalChapterSha256": "c3491320164883e3c5be9f4275f3049b4ebf025b0ac75cfb2deef95e1904cbca",
+      "anchor": "### 2.2 संविधान सभा का गठन, चुनाव एवं संरचना (कैबिनेट मिशन 1946)",
+      "image": "rassetu_b4_constituent_assembly_scene.webp",
+      "caption": "संविधान सभा की चर्चा: प्रतिनिधि दृश्य",
+      "explanation": "संविधान सभा की सामूहिक विचार-प्रक्रिया का व्याख्यात्मक दृश्य। प्रतिनिधि और सभा-कक्ष किसी विशिष्ट बैठक का सटीक चित्रण नहीं हैं।"
+    },
+    {
+      "book": 4,
+      "chapter": "ch02",
+      "originalChapterSha256": "fa6fabcd9744ffc96524641b4c4d55ba3b137f33845e39486b7f5c84c71690f7",
+      "anchor": "### 2.2 संविधान सभा का गठन, चुनाव एवं संरचना (कैबिनेट मिशन 1946)",
+      "image": "rassetu_b4_constituent_assembly_scene.webp",
+      "caption": "संविधान सभा की चर्चा: प्रतिनिधि दृश्य",
+      "explanation": "संविधान सभा की सामूहिक विचार-प्रक्रिया का व्याख्यात्मक दृश्य। प्रतिनिधि और सभा-कक्ष किसी विशिष्ट बैठक का सटीक चित्रण नहीं हैं।"
+    },
+    {
+      "book": 5,
+      "chapter": "ch11",
+      "originalChapterSha256": "74bc8e0eaa9a0e630a2b79f03ee47abb8415008e93d1340df0551f0ff928ac28",
+      "anchor": "### 2.1 भारतीय कृषि का संरचनात्मक ढांचा",
+      "image": "rassetu_b5_agriculture_market_scene.webp",
+      "caption": "खेत से स्थानीय बाजार तक: प्रतिनिधि कृषि दृश्य",
+      "explanation": "खेती, कटाई और स्थानीय विपणन से प्रेरित प्रतिनिधि दृश्य। फसल, मौसम, क्षेत्र और मूल्य की सटीक जानकारी इस चित्र से न निकालें।"
+    },
+    {
+      "book": 5,
+      "chapter": "ch12",
+      "originalChapterSha256": "ae70eeffaa322914471a4f6c81269c8d143e504c5c96d5463b9e9fb9411e7c82",
+      "anchor": "### 2.1 भारतीय कृषि का संरचनात्मक ढांचा",
+      "image": "rassetu_b5_agriculture_market_scene.webp",
+      "caption": "खेत से स्थानीय बाजार तक: प्रतिनिधि कृषि दृश्य",
+      "explanation": "खेती, कटाई और स्थानीय विपणन से प्रेरित प्रतिनिधि दृश्य। फसल, मौसम, क्षेत्र और मूल्य की सटीक जानकारी इस चित्र से न निकालें।"
+    }
+  ]
+}

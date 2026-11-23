@@ -1,0 +1,76 @@
+{
+  "subject": "MathSetu",
+  "book": "Book 3",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Fractions",
+      "content": [
+        {
+          "type": "text",
+          "value": "Fractions represent a part of a whole or collection of objects. When an object or number is divided into equal parts, each part is a fraction."
+        },
+        {
+          "type": "text",
+          "value": "In a fraction, the number on the top is called the Numerator, and the number on the bottom is called the Denominator."
+        },
+        {
+          "type": "image",
+          "value": "fractions_diagram.png"
+        },
+        {
+          "type": "text",
+          "value": "Like fractions are fractions that have identical denominators. Adding like fractions is straightforward: we simply add the numerators together while keeping the denominator the same."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "What is 1/2 + 1/4?",
+          "options": [
+            "1/4",
+            "3/4",
+            "1/6",
+            "2/4"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "question": "Which of the following is a proper fraction?",
+          "options": [
+            "5/4",
+            "7/3",
+            "3/8",
+            "9/2"
+          ],
+          "correctIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "Decimals",
+      "content": [
+        {
+          "type": "text",
+          "value": "A decimal is another way of representing a fraction whose denominator is a power of 10 (such as 10, 100, 1000)."
+        },
+        {
+          "type": "text",
+          "value": "Decimals are widely used in everyday life, including currency calculations and precise measurements."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "What is 0.75 converted to its simplest fraction form?",
+          "options": [
+            "1/2",
+            "2/3",
+            "3/4",
+            "4/5"
+          ],
+          "correctIndex": 2
+        }
+      ]
+    }
+  ]
+}

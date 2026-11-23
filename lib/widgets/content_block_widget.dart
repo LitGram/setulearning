@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/chapter.dart';
+import 'markdown_content.dart';
+import 'educational_image.dart';
 
 class ContentBlockWidget extends StatelessWidget {
   final ContentBlock block;
@@ -18,8 +20,8 @@ class ContentBlockWidget extends StatelessWidget {
       case 'heading':
         return Padding(
           padding: const EdgeInsets.only(top: 16.0, bottom: 8.0),
-          child: Text(
-            block.value,
+          child: MarkdownContent(
+            data: block.value,
             style: theme.textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.bold,
               color: colorScheme.primary,
@@ -49,8 +51,8 @@ class ContentBlockWidget extends StatelessWidget {
               ),
               const SizedBox(width: 12),
               Expanded(
-                child: SelectableText(
-                  block.value,
+                child: MarkdownContent(
+                  data: block.value,
                   style: theme.textTheme.bodyMedium?.copyWith(
                     color: colorScheme.onSecondaryContainer,
                     fontWeight: FontWeight.w500,
@@ -77,9 +79,11 @@ class ContentBlockWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              SelectableText(
-                block.value,
-                textAlign: TextAlign.center,
+              MarkdownContent(
+                data: RegExp(r'\\[a-zA-Z]').hasMatch(block.value) &&
+                        !block.value.contains(r'$')
+                    ? r'$' + block.value + r'$'
+                    : block.value,
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                   letterSpacing: 0.5,
@@ -101,79 +105,14 @@ class ContentBlockWidget extends StatelessWidget {
         );
 
       case 'image':
-        return Container(
-          margin: const EdgeInsets.symmetric(vertical: 16.0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(
-              color: colorScheme.outlineVariant,
-              width: 1,
-            ),
-          ),
-          clipBehavior: Clip.antiAlias,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Image.asset(
-                'assets/images/${block.value}',
-                fit: BoxFit.contain,
-                semanticLabel: block.caption ?? 'Educational diagram ${block.value}',
-                errorBuilder: (context, error, stackTrace) {
-                  return Container(
-                    height: 160,
-                    color: colorScheme.surfaceVariant,
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.image_rounded,
-                            size: 44,
-                            color: colorScheme.onSurfaceVariant.withOpacity(0.6),
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            block.caption ?? 'चित्र: ${block.value}',
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: colorScheme.onSurfaceVariant,
-                              fontStyle: FontStyle.italic,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  );
-                },
-              ),
-              if (block.caption != null)
-                Container(
-                  color: colorScheme.surfaceVariant.withOpacity(0.6),
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                  child: Text(
-                    block.caption!,
-                    textAlign: TextAlign.center,
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: colorScheme.onSurfaceVariant,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ),
-            ],
-          ),
+        return EducationalImage(
+          asset: 'assets/images/${block.value}',
+          caption: block.caption,
         );
 
       case 'text':
       default:
-        return Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8.0),
-          child: SelectableText(
-            block.value,
-            style: theme.textTheme.bodyLarge?.copyWith(
-              color: colorScheme.onSurface,
-              height: 1.6,
-            ),
-          ),
-        );
+        return MarkdownContent(data: block.value);
     }
   }
 }

@@ -1,0 +1,24 @@
+{
+  "apk": "D:\\new projects\\setu learning android app\\apk_output\\SetuLearning-Biology-Books1-2-Graphics.apk",
+  "bytes": 97830162,
+  "sha256": "bd98fbafcbfaa4c49a91eba2f65ad414858120c1a4b7856c719fecaff046b187",
+  "books": [
+    {
+      "book": 1,
+      "chapters": 16,
+      "figures": 46,
+      "figure_bytes": 3806090,
+      "bundled_book_matches_source": true,
+      "original_text_and_mcqs_preserved": true
+    },
+    {
+      "book": 2,
+      "chapters": 24,
+      "figures": 64,
+      "figure_bytes": 4956228,
+      "bundled_book_matches_source": true,
+      "original_text_and_mcqs_preserved": true
+    }
+  ],
+  "zip_integrity_verified": true
+}

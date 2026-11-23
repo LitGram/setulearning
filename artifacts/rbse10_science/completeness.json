@@ -1,0 +1,128 @@
+{
+  "chapters": [
+    {
+      "id": "sci_ch01",
+      "file": "10th rbse\\02_science\\ch01.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 15887,
+      "marks": 6
+    },
+    {
+      "id": "sci_ch02",
+      "file": "10th rbse\\02_science\\ch02.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 15515,
+      "marks": 7
+    },
+    {
+      "id": "sci_ch03",
+      "file": "10th rbse\\02_science\\ch03.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 15720,
+      "marks": 5
+    },
+    {
+      "id": "sci_ch04",
+      "file": "10th rbse\\02_science\\ch04.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 16002,
+      "marks": 7
+    },
+    {
+      "id": "sci_ch05",
+      "file": "10th rbse\\02_science\\ch05.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 16763,
+      "marks": 8
+    },
+    {
+      "id": "sci_ch06",
+      "file": "10th rbse\\02_science\\ch06.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 16966,
+      "marks": 6
+    },
+    {
+      "id": "sci_ch07",
+      "file": "10th rbse\\02_science\\ch07.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 16418,
+      "marks": 7
+    },
+    {
+      "id": "sci_ch08",
+      "file": "10th rbse\\02_science\\ch08.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 15322,
+      "marks": 4
+    },
+    {
+      "id": "sci_ch09",
+      "file": "10th rbse\\02_science\\ch09.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 15849,
+      "marks": 8
+    },
+    {
+      "id": "sci_ch10",
+      "file": "10th rbse\\02_science\\ch10.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 16874,
+      "marks": 4
+    },
+    {
+      "id": "sci_ch11",
+      "file": "10th rbse\\02_science\\ch11.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 14605,
+      "marks": 7
+    },
+    {
+      "id": "sci_ch12",
+      "file": "10th rbse\\02_science\\ch12.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 17421,
+      "marks": 6
+    },
+    {
+      "id": "sci_ch13",
+      "file": "10th rbse\\02_science\\ch13.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 17324,
+      "marks": 5
+    },
+    {
+      "id": "sci_ch14",
+      "file": "10th rbse/02_science/ch14_previous_year_exams.md",
+      "mcqs": 18,
+      "blocks": 811,
+      "characters": 159160,
+      "marks": 0,
+      "solved_questions": 361,
+      "papers": 18
+    }
+  ],
+  "total_mcqs": 213,
+  "solved_pyqs": 361,
+  "official_papers": 18,
+  "pending": [
+    "regular 2026-27 syllabus confirmation",
+    "exhaustive NCERT question coverage",
+    "unselected past-paper questions and image-only 2021 file",
+    "anatomical and full ray-diagram pack",
+    "independent teacher review"
+  ]
+}

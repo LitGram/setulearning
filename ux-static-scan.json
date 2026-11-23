@@ -1,0 +1,606 @@
+{
+  "root": "D:\\new projects\\setu learning android app\\lib",
+  "filesScanned": 22,
+  "detectedStack": [
+    "Unknown mobile stack"
+  ],
+  "counts": {
+    "P0": 0,
+    "P1": 57,
+    "P2": 2,
+    "P3": 0
+  },
+  "findings": [
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/book_screen.dart",
+      "line": 95,
+      "evidence": "Icon(Icons.error_outline_rounded, size: 48, color: colorScheme.error),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/book_screen.dart",
+      "line": 266,
+      "evidence": "? Icon(Icons.check_rounded, color: colorScheme.primary, size: 22)",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/book_screen.dart",
+      "line": 324,
+      "evidence": "const Icon(Icons.chevron_right_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/chapter_screen.dart",
+      "line": 136,
+      "evidence": "Icon(Icons.quiz_rounded,",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/chapter_screen.dart",
+      "line": 165,
+      "evidence": "child: FilledButton.icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/chapter_screen.dart",
+      "line": 166,
+      "evidence": "icon: const Icon(Icons.play_circle_fill_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P2",
+      "platform": "Flutter",
+      "category": "Accessibility",
+      "title": "IconButton likely missing tooltip",
+      "path": "screens/chapter_screen.dart",
+      "line": 215,
+      "evidence": "IconButton(",
+      "fix": "Verify tooltip/semanticLabel exists so screen readers and long-press hints are useful."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/chapter_screen.dart",
+      "line": 217,
+      "evidence": "icon: const Icon(Icons.text_decrease_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P2",
+      "platform": "Flutter",
+      "category": "Accessibility",
+      "title": "IconButton likely missing tooltip",
+      "path": "screens/chapter_screen.dart",
+      "line": 222,
+      "evidence": "IconButton(",
+      "fix": "Verify tooltip/semanticLabel exists so screen readers and long-press hints are useful."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/chapter_screen.dart",
+      "line": 224,
+      "evidence": "icon: const Icon(Icons.text_increase_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/chapter_screen.dart",
+      "line": 280,
+      "evidence": "child: OutlinedButton.icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/chapter_screen.dart",
+      "line": 281,
+      "evidence": "icon: const Icon(Icons.arrow_back_rounded, size: 18),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/chapter_screen.dart",
+      "line": 300,
+      "evidence": "child: FilledButton.icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/chapter_screen.dart",
+      "line": 301,
+      "evidence": "icon: const Icon(Icons.arrow_forward_rounded, size: 18),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 52,
+      "evidence": "icon: Icon(Icons.menu_book_outlined),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 53,
+      "evidence": "selectedIcon: Icon(Icons.menu_book_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 57,
+      "evidence": "icon: Icon(Icons.insights_outlined),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 58,
+      "evidence": "selectedIcon: Icon(Icons.insights_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 62,
+      "evidence": "icon: Icon(Icons.settings_outlined),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 63,
+      "evidence": "selectedIcon: Icon(Icons.settings_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 81,
+      "evidence": "icon: Icon(Icons.menu_book_outlined),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 82,
+      "evidence": "selectedIcon: Icon(Icons.menu_book_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 86,
+      "evidence": "icon: Icon(Icons.insights_outlined),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 87,
+      "evidence": "selectedIcon: Icon(Icons.insights_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 91,
+      "evidence": "icon: Icon(Icons.settings_outlined),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 92,
+      "evidence": "selectedIcon: Icon(Icons.settings_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Flutter",
+      "category": "Images",
+      "title": "Image likely missing semantic label",
+      "path": "screens/home_screen.dart",
+      "line": 127,
+      "evidence": "child: Image.asset(",
+      "fix": "Add semanticLabel for meaningful images or exclude decorative images from semantics."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 138,
+      "evidence": "child: Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Flutter",
+      "category": "Images",
+      "title": "Image likely missing semantic label",
+      "path": "screens/home_screen.dart",
+      "line": 197,
+      "evidence": "child: Image.asset(",
+      "fix": "Add semanticLabel for meaningful images or exclude decorative images from semantics."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 209,
+      "evidence": "child: Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 283,
+      "evidence": "Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 366,
+      "evidence": "child: Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 387,
+      "evidence": "Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 457,
+      "evidence": "child: Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 518,
+      "evidence": "Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/home_screen.dart",
+      "line": 538,
+      "evidence": "Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/progress_screen.dart",
+      "line": 52,
+      "evidence": "child: Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/progress_screen.dart",
+      "line": 110,
+      "evidence": "Icon(subject.icon, color: subject.seedColor, size: 24),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/progress_screen.dart",
+      "line": 149,
+      "evidence": "child: TextButton.icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/progress_screen.dart",
+      "line": 150,
+      "evidence": "icon: Icon(Icons.delete_outline_rounded, color: colorScheme.error),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/progress_screen.dart",
+      "line": 171,
+      "evidence": "icon: const Icon(Icons.warning_amber_rounded, size: 36),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/quiz_screen.dart",
+      "line": 114,
+      "evidence": "const Icon(Icons.quiz_outlined, size: 60),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/quiz_screen.dart",
+      "line": 237,
+      "evidence": "statusIcon = Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/quiz_screen.dart",
+      "line": 245,
+      "evidence": "statusIcon = Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/quiz_screen.dart",
+      "line": 323,
+      "evidence": "Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/quiz_screen.dart",
+      "line": 432,
+      "evidence": "child: Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/quiz_screen.dart",
+      "line": 539,
+      "evidence": "child: FilledButton.icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/quiz_screen.dart",
+      "line": 540,
+      "evidence": "icon: const Icon(Icons.arrow_back_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/quiz_screen.dart",
+      "line": 548,
+      "evidence": "child: OutlinedButton.icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/quiz_screen.dart",
+      "line": 549,
+      "evidence": "icon: const Icon(Icons.refresh_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Flutter",
+      "category": "Images",
+      "title": "Image likely missing semantic label",
+      "path": "screens/settings_screen.dart",
+      "line": 149,
+      "evidence": "child: Image.asset(",
+      "fix": "Add semanticLabel for meaningful images or exclude decorative images from semantics."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/settings_screen.dart",
+      "line": 154,
+      "evidence": "errorBuilder: (context, error, stackTrace) => Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/settings_screen.dart",
+      "line": 191,
+      "evidence": "Icon(Icons.wifi_off_rounded,",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/subject_screen.dart",
+      "line": 61,
+      "evidence": "Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "screens/subject_screen.dart",
+      "line": 204,
+      "evidence": "const Icon(Icons.chevron_right_rounded),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "widgets/content_block_widget.dart",
+      "line": 46,
+      "evidence": "Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Flutter",
+      "category": "Images",
+      "title": "Image likely missing semantic label",
+      "path": "widgets/content_block_widget.dart",
+      "line": 118,
+      "evidence": "Image.asset(",
+      "fix": "Add semanticLabel for meaningful images or exclude decorative images from semantics."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "widgets/content_block_widget.dart",
+      "line": 130,
+      "evidence": "Icon(",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    },
+    {
+      "severity": "P1",
+      "platform": "Android Compose",
+      "category": "Accessibility",
+      "title": "Icon likely missing contentDescription",
+      "path": "widgets/status_badge.dart",
+      "line": 76,
+      "evidence": "Icon(icon, size: 16, color: fgColor),",
+      "fix": "Set contentDescription for meaningful icons or null for decorative icons."
+    }
+  ],
+  "notice": "Static scan output is a triage signal. Confirm every finding in the app or code before changing behavior."
+}

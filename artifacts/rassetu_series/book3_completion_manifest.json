@@ -1,0 +1,890 @@
+{
+  "version": 1,
+  "batch": "Book 3 completion — 19 vector diagrams/maps and 3 representative scenes, plus 2 previously integrated visuals",
+  "asset": "assets/content/rassetu/rassetu_book3.json",
+  "date": "2026-10-08",
+  "vectorAssets": 20,
+  "generatedSceneAssets": 4,
+  "newVectorAssets": 19,
+  "newGeneratedSceneAssets": 3,
+  "newPlacementCount": 44,
+  "placementCount": 48,
+  "distinctNewAssets": 22,
+  "distinctVisualAssets": 24,
+  "chapters": [
+    {
+      "book": 3,
+      "chapter": "ch01",
+      "topicId": "rassetu_b3_harappan_sites_planning",
+      "originalChapterSha256": "bdcab4e125e518189cce7e6f4eaedc4689e05907cbcf0b2fce8b38d249239a63",
+      "sourceContentSha256": "a2b3556ec133482f9bd0ad4e629ef0f28d7e1f49c2fe56911f2b0d41cbfd6e18",
+      "anchor": "### 3. प्रमुख पुरातात्विक स्थल एवं उनके विशिष्ट साक्ष्य",
+      "image": "rassetu_b3_harappan_sites_planning.webp",
+      "assetSha256": "28667b56c3f53ca6c93b93ad5e24fb3ff6f1c72815ab1c1a01ba8f8a381c2104",
+      "caption": "हड़प्पाई स्थल और नगर-योजना का पुरातात्विक साक्ष्य",
+      "explanation": "मुख्य स्थलों को नदी-मैदानों और तटीय क्षेत्रों के सापेक्ष रखें। मोहेंजोदड़ो का रेखाचित्र केवल सड़क-जाल, ऊंचे भाग/निचले नगर और नालियों के साक्ष्य को समझाता है; यह किसी पूरी बस्ती का मापित नक्शा नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch01/### 3. प्रमुख पुरातात्विक स्थल एवं उनके विशिष्ट साक्ष्य",
+        "https://ncert.nic.in/textbook/pdf/lehs101.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch02",
+      "topicId": "rassetu_b3_harappan_sites_planning",
+      "originalChapterSha256": "12fabc0ff161f4ba5a15a096d8ab0b4eb3bc54c9daadd3e3eef75319ce02a15c",
+      "sourceContentSha256": "a2b3556ec133482f9bd0ad4e629ef0f28d7e1f49c2fe56911f2b0d41cbfd6e18",
+      "anchor": "### 3. प्रमुख पुरातात्विक स्थल एवं उनके विशिष्ट साक्ष्य",
+      "image": "rassetu_b3_harappan_sites_planning.webp",
+      "assetSha256": "28667b56c3f53ca6c93b93ad5e24fb3ff6f1c72815ab1c1a01ba8f8a381c2104",
+      "caption": "हड़प्पाई स्थल और नगर-योजना का पुरातात्विक साक्ष्य",
+      "explanation": "मुख्य स्थलों को नदी-मैदानों और तटीय क्षेत्रों के सापेक्ष रखें। मोहेंजोदड़ो का रेखाचित्र केवल सड़क-जाल, ऊंचे भाग/निचले नगर और नालियों के साक्ष्य को समझाता है; यह किसी पूरी बस्ती का मापित नक्शा नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch02/### 3. प्रमुख पुरातात्विक स्थल एवं उनके विशिष्ट साक्ष्य",
+        "https://ncert.nic.in/textbook/pdf/lehs101.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch03",
+      "topicId": "rassetu_b3_vedic_geography_shift",
+      "originalChapterSha256": "18c25ba01c4b9f6692cb0e72067e42235cbfea6be4e0b36506ec36e428686129",
+      "sourceContentSha256": "16af2fbf899e8e313ced00ed9c8dba5d8f2865c6511dcf2814a216a880e9bbc8",
+      "anchor": "### 1. ऋग्वैदिक काल (1500 - 1000 ई.पू.): कबीलाई जनतंत्र एवं संस्थाएं",
+      "image": "rassetu_b3_vedic_geography_shift.webp",
+      "assetSha256": "353ff0ba88bba56dfe568e65b79ae5060412e4d016598828ae19d8f44a082f21",
+      "caption": "वैदिक काल: क्षेत्रीय विस्तार का सांकेतिक मॉडल",
+      "explanation": "पाठ के अनुसार ऋग्वैदिक संदर्भ उत्तर-पश्चिमी नदी-क्षेत्र से जुड़ते हैं और उत्तर-वैदिक संदर्भ गंगा-यमुना क्षेत्र की ओर अधिक फैलते हैं। सीमाएं सांकेतिक हैं, न कि निश्चित राजनीतिक सरहदें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch03/### 1. ऋग्वैदिक काल (1500 - 1000 ई.पू.): कबीलाई जनतंत्र एवं संस्थाएं",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch04",
+      "topicId": "rassetu_b3_vedic_geography_shift",
+      "originalChapterSha256": "510a871de11539cf81bc1cb9b7ea0bc963e40913c9171809dc59de5e3ff8056f",
+      "sourceContentSha256": "16af2fbf899e8e313ced00ed9c8dba5d8f2865c6511dcf2814a216a880e9bbc8",
+      "anchor": "### 1. ऋग्वैदिक काल (1500 - 1000 ई.पू.): कबीलाई जनतंत्र एवं संस्थाएं",
+      "image": "rassetu_b3_vedic_geography_shift.webp",
+      "assetSha256": "353ff0ba88bba56dfe568e65b79ae5060412e4d016598828ae19d8f44a082f21",
+      "caption": "वैदिक काल: क्षेत्रीय विस्तार का सांकेतिक मॉडल",
+      "explanation": "पाठ के अनुसार ऋग्वैदिक संदर्भ उत्तर-पश्चिमी नदी-क्षेत्र से जुड़ते हैं और उत्तर-वैदिक संदर्भ गंगा-यमुना क्षेत्र की ओर अधिक फैलते हैं। सीमाएं सांकेतिक हैं, न कि निश्चित राजनीतिक सरहदें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch04/### 1. ऋग्वैदिक काल (1500 - 1000 ई.पू.): कबीलाई जनतंत्र एवं संस्थाएं",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch05",
+      "topicId": "rassetu_b3_mahajanapada_magadh",
+      "originalChapterSha256": "9dc6a1958e5e16075a4ee2c2bfb1cf7c3fe74d8a4f66e0d0247485bbcc8eb2e7",
+      "sourceContentSha256": "cb5794f7cbe25aa806fffbbd697b043d8c341a2a59506c8a94f90a4a160c5187",
+      "anchor": "### 1. द्वितीय नगरीकरण एवं 16 महाजनपदों की राजनीतिक व्यवस्था",
+      "image": "rassetu_b3_mahajanapada_magadh.webp",
+      "assetSha256": "f1e230d76cd10a996e22647e4c171cd1ef4bbbf183f9a90f33e8559bcd4f4702",
+      "caption": "16 महाजनपद और मगध के उत्कर्ष का स्थानिक संदर्भ",
+      "explanation": "नाम और स्थान का सामान्यीकृत अध्ययन-मानचित्र। अलग-अलग महाजनपदों की वास्तविक सीमाएं आधुनिक राज्य-सीमाओं जैसी स्थिर रेखाएं नहीं थीं। मगध के उत्कर्ष के कारण अध्याय में दिए गए भूगोल, संसाधन और राजनीतिक संदर्भ के साथ पढ़ें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch05/### 1. द्वितीय नगरीकरण एवं 16 महाजनपदों की राजनीतिक व्यवस्था",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch06",
+      "topicId": "rassetu_b3_mahajanapada_magadh",
+      "originalChapterSha256": "a2c7fe7df09dd80f116f7a51690e04ff0eec22def8203bff97c8feb82f1031b6",
+      "sourceContentSha256": "cb5794f7cbe25aa806fffbbd697b043d8c341a2a59506c8a94f90a4a160c5187",
+      "anchor": "### 1. द्वितीय नगरीकरण एवं 16 महाजनपदों की राजनीतिक व्यवस्था",
+      "image": "rassetu_b3_mahajanapada_magadh.webp",
+      "assetSha256": "f1e230d76cd10a996e22647e4c171cd1ef4bbbf183f9a90f33e8559bcd4f4702",
+      "caption": "16 महाजनपद और मगध के उत्कर्ष का स्थानिक संदर्भ",
+      "explanation": "नाम और स्थान का सामान्यीकृत अध्ययन-मानचित्र। अलग-अलग महाजनपदों की वास्तविक सीमाएं आधुनिक राज्य-सीमाओं जैसी स्थिर रेखाएं नहीं थीं। मगध के उत्कर्ष के कारण अध्याय में दिए गए भूगोल, संसाधन और राजनीतिक संदर्भ के साथ पढ़ें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch06/### 1. द्वितीय नगरीकरण एवं 16 महाजनपदों की राजनीतिक व्यवस्था",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch05",
+      "topicId": "rassetu_b3_buddhism_jainism_compare",
+      "originalChapterSha256": "9dc6a1958e5e16075a4ee2c2bfb1cf7c3fe74d8a4f66e0d0247485bbcc8eb2e7",
+      "sourceContentSha256": "cb5794f7cbe25aa806fffbbd697b043d8c341a2a59506c8a94f90a4a160c5187",
+      "anchor": "### 3. बौद्ध धर्म: दर्शन, आचार संहिता एवं संगीतियां",
+      "image": "rassetu_b3_buddhism_jainism_compare.webp",
+      "assetSha256": "f94f499122bc16a8783c3ac79c61b504d8fef24ee49b019abece1874b92ea943",
+      "caption": "बौद्ध और जैन शिक्षाएं: तुलना और साधना-पथ",
+      "explanation": "दोनों श्रमण परंपराओं के अपने सिद्धांत और आचार हैं। बौद्ध चार आर्य सत्य/अष्टांगिक मार्ग तथा जैन त्रिरत्न/महाव्रत को अलग-अलग रखें; यह संक्षिप्त तुलना है, पूर्ण दर्शन-सार नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch05/### 3. बौद्ध धर्म: दर्शन, आचार संहिता एवं संगीतियां",
+        "https://ncert.nic.in/textbook/pdf/lehs104.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch06",
+      "topicId": "rassetu_b3_buddhism_jainism_compare",
+      "originalChapterSha256": "a2c7fe7df09dd80f116f7a51690e04ff0eec22def8203bff97c8feb82f1031b6",
+      "sourceContentSha256": "cb5794f7cbe25aa806fffbbd697b043d8c341a2a59506c8a94f90a4a160c5187",
+      "anchor": "### 3. बौद्ध धर्म: दर्शन, आचार संहिता एवं संगीतियां",
+      "image": "rassetu_b3_buddhism_jainism_compare.webp",
+      "assetSha256": "f94f499122bc16a8783c3ac79c61b504d8fef24ee49b019abece1874b92ea943",
+      "caption": "बौद्ध और जैन शिक्षाएं: तुलना और साधना-पथ",
+      "explanation": "दोनों श्रमण परंपराओं के अपने सिद्धांत और आचार हैं। बौद्ध चार आर्य सत्य/अष्टांगिक मार्ग तथा जैन त्रिरत्न/महाव्रत को अलग-अलग रखें; यह संक्षिप्त तुलना है, पूर्ण दर्शन-सार नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch06/### 3. बौद्ध धर्म: दर्शन, आचार संहिता एवं संगीतियां",
+        "https://ncert.nic.in/textbook/pdf/lehs104.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch07",
+      "topicId": "rassetu_b3_maurya_saptanga_edicts",
+      "originalChapterSha256": "73434758eb31e04aad1c467544fde64cd2a95ea068a2f2edd161f0b2517c5547",
+      "sourceContentSha256": "fc75e7cf7f974150cfe076dd389215ac97e4b20134e03c3ac85e1eec32087209",
+      "anchor": "### 2. कौटिल्य का अर्थशास्त्र एवं मौर्य प्रशासनिक ढांचा",
+      "image": "rassetu_b3_maurya_saptanga_edicts.webp",
+      "assetSha256": "52d762090cec926dffb0ba77f820daf9cf554969f44cb5806717800bf514e154",
+      "caption": "मौर्यकालीन राज्य-विचार: सप्तांग सिद्धांत",
+      "explanation": "अर्थशास्त्र का सप्तांग राज्य-विचार सात परस्पर जुड़े घटक बताता है। यह प्रशासनिक पदक्रम नहीं है; धम्म और अभिलेखों के लिए आगे के अनुभाग देखें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch07/### 2. कौटिल्य का अर्थशास्त्र एवं मौर्य प्रशासनिक ढांचा",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch08",
+      "topicId": "rassetu_b3_maurya_saptanga_edicts",
+      "originalChapterSha256": "a47e3ce4dce053a796f9413773da9d08de6b016d4dd865a5e18d8d574bfb0c8c",
+      "sourceContentSha256": "fc75e7cf7f974150cfe076dd389215ac97e4b20134e03c3ac85e1eec32087209",
+      "anchor": "### 2. कौटिल्य का अर्थशास्त्र एवं मौर्य प्रशासनिक ढांचा",
+      "image": "rassetu_b3_maurya_saptanga_edicts.webp",
+      "assetSha256": "52d762090cec926dffb0ba77f820daf9cf554969f44cb5806717800bf514e154",
+      "caption": "मौर्यकालीन राज्य-विचार: सप्तांग सिद्धांत",
+      "explanation": "अर्थशास्त्र का सप्तांग राज्य-विचार सात परस्पर जुड़े घटक बताता है। यह प्रशासनिक पदक्रम नहीं है; धम्म और अभिलेखों के लिए आगे के अनुभाग देखें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch08/### 2. कौटिल्य का अर्थशास्त्र एवं मौर्य प्रशासनिक ढांचा",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch09",
+      "topicId": "rassetu_b3_gupta_harsha_knowledge",
+      "originalChapterSha256": "6e8439dd2a84e333e8126b0c164c9d840f3d2c9194a6475ed2644369a2dedfaa",
+      "sourceContentSha256": "e73ddc5ded5c00ad61661c7f4a79aca06912237f8119fc1d3d6b61c72f8a039e",
+      "anchor": "### 3. प्राचीन भारत की वैज्ञानिक एवं बौद्धिक परंपराएं",
+      "image": "rassetu_b3_gupta_harsha_knowledge.webp",
+      "assetSha256": "20baaffd59423ea3f1c36829ccbb77307a62f7a7d00c74129f4b3845d5da6ffe",
+      "caption": "गुप्त और गुप्तोत्तर काल: ज्ञान-परंपरा के कुछ पड़ाव",
+      "explanation": "गुप्त काल और हर्ष के समय की चुनी हुई साहित्यिक, वैज्ञानिक और शिक्षण परंपराएं। काल-रेखाएं व्यापक हैं; व्यक्तियों/रचनाओं का सटीक काल और संबद्धता पाठ में जांचें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch09/### 3. प्राचीन भारत की वैज्ञानिक एवं बौद्धिक परंपराएं",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf",
+        "https://ncert.nic.in/textbook/pdf/lehs104.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch10",
+      "topicId": "rassetu_b3_gupta_harsha_knowledge",
+      "originalChapterSha256": "53899c907e55a75d0bd3c46127ede44f137dfaae7163c2edf6a3e86cca256b9c",
+      "sourceContentSha256": "e73ddc5ded5c00ad61661c7f4a79aca06912237f8119fc1d3d6b61c72f8a039e",
+      "anchor": "### 3. प्राचीन भारत की वैज्ञानिक एवं बौद्धिक परंपराएं",
+      "image": "rassetu_b3_gupta_harsha_knowledge.webp",
+      "assetSha256": "20baaffd59423ea3f1c36829ccbb77307a62f7a7d00c74129f4b3845d5da6ffe",
+      "caption": "गुप्त और गुप्तोत्तर काल: ज्ञान-परंपरा के कुछ पड़ाव",
+      "explanation": "गुप्त काल और हर्ष के समय की चुनी हुई साहित्यिक, वैज्ञानिक और शिक्षण परंपराएं। काल-रेखाएं व्यापक हैं; व्यक्तियों/रचनाओं का सटीक काल और संबद्धता पाठ में जांचें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch10/### 3. प्राचीन भारत की वैज्ञानिक एवं बौद्धिक परंपराएं",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf",
+        "https://ncert.nic.in/textbook/pdf/lehs104.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch11",
+      "topicId": "rassetu_b3_south_india_governance",
+      "originalChapterSha256": "1bd2ffb4c9abacbf31aded9122a99611f37b70407334ff82132f78519bed3bb3",
+      "sourceContentSha256": "6968fc02f33295c1a93a6d271b3a45e4eb44ef244a4affb9a191cdeae3875a38",
+      "anchor": "### 5. चोल प्रशासन एवं स्थानीय स्वशासन की प्रणाली",
+      "image": "rassetu_b3_south_india_governance.webp",
+      "assetSha256": "098e49c234dc2fa4ade89a1f69119c97bce0ab01be1329b7a71e5ed37572ea63",
+      "caption": "दक्षिण भारत के प्रमुख सत्ता-केंद्र और चोल स्थानीय संस्थाएं",
+      "explanation": "सत्ता-केंद्रों की अवस्थिति सांकेतिक है। चोल-कालीन स्थानीय संस्थाओं के नाम और कार्य अध्याय से पढ़ें; यह आधुनिक पंचायत व्यवस्था के समान नहीं है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch11/### 5. चोल प्रशासन एवं स्थानीय स्वशासन की प्रणाली",
+        "https://www.ncert.nic.in/textbook/pdf/lehs203.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch12",
+      "topicId": "rassetu_b3_south_india_governance",
+      "originalChapterSha256": "7c8fdc624057bafb206b8776f4cb5653b198e6c3c63d0b97a0f685b824a2e1dd",
+      "sourceContentSha256": "6968fc02f33295c1a93a6d271b3a45e4eb44ef244a4affb9a191cdeae3875a38",
+      "anchor": "### 5. चोल प्रशासन एवं स्थानीय स्वशासन की प्रणाली",
+      "image": "rassetu_b3_south_india_governance.webp",
+      "assetSha256": "098e49c234dc2fa4ade89a1f69119c97bce0ab01be1329b7a71e5ed37572ea63",
+      "caption": "दक्षिण भारत के प्रमुख सत्ता-केंद्र और चोल स्थानीय संस्थाएं",
+      "explanation": "सत्ता-केंद्रों की अवस्थिति सांकेतिक है। चोल-कालीन स्थानीय संस्थाओं के नाम और कार्य अध्याय से पढ़ें; यह आधुनिक पंचायत व्यवस्था के समान नहीं है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch12/### 5. चोल प्रशासन एवं स्थानीय स्वशासन की प्रणाली",
+        "https://www.ncert.nic.in/textbook/pdf/lehs203.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch13",
+      "topicId": "rassetu_b3_delhi_sultanate_system",
+      "originalChapterSha256": "0e754b505271808c4d093f97f191edee301d2a0e7410c9f5ea374a733e26005c",
+      "sourceContentSha256": "bca147baae4983e00ebd23071cf408ce09cb1979db62e53812fc0421eea3f858",
+      "anchor": "### 2. खिलजी क्रांति एवं अलाउद्दीन खिलजी के सुधार (1290-1320 ई.)",
+      "image": "rassetu_b3_delhi_sultanate_system.webp",
+      "assetSha256": "bb857904808b5fd492481c69c2ea9e25815cb8720a95ffb2744258747ef83e28",
+      "caption": "दिल्ली सल्तनत: राजवंश-क्रम और खिलजी बाजार-नियमन",
+      "explanation": "राजवंश-क्रम के साथ बाजार-नियमन का कारण-प्रक्रिया मॉडल। इसे पूरे सल्तनत काल में समान रूप से लागू व्यवस्था न मानें; विशेष विवरण अलाउद्दीन खिलजी के शासन से जुड़ा है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch13/### 2. खिलजी क्रांति एवं अलाउद्दीन खिलजी के सुधार (1290-1320 ई.)",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch14",
+      "topicId": "rassetu_b3_delhi_sultanate_system",
+      "originalChapterSha256": "e9c381a5f3c6eaf89423d250838cd67daa082ff686597c923d632a6b5d4fd8b0",
+      "sourceContentSha256": "bca147baae4983e00ebd23071cf408ce09cb1979db62e53812fc0421eea3f858",
+      "anchor": "### 2. खिलजी क्रांति एवं अलाउद्दीन खिलजी के सुधार (1290-1320 ई.)",
+      "image": "rassetu_b3_delhi_sultanate_system.webp",
+      "assetSha256": "bb857904808b5fd492481c69c2ea9e25815cb8720a95ffb2744258747ef83e28",
+      "caption": "दिल्ली सल्तनत: राजवंश-क्रम और खिलजी बाजार-नियमन",
+      "explanation": "राजवंश-क्रम के साथ बाजार-नियमन का कारण-प्रक्रिया मॉडल। इसे पूरे सल्तनत काल में समान रूप से लागू व्यवस्था न मानें; विशेष विवरण अलाउद्दीन खिलजी के शासन से जुड़ा है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch14/### 2. खिलजी क्रांति एवं अलाउद्दीन खिलजी के सुधार (1290-1320 ई.)",
+        "https://ncert.nic.in/textbook/pdf/lehs102.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch15",
+      "topicId": "rassetu_b3_vijayanagara_bahmani_1565",
+      "originalChapterSha256": "ae869c3adc1beab2d9dbb7dc193b57adbaf46af61bbb946fe0dbf06adade560f",
+      "sourceContentSha256": "9fa05b75c49088e6023aa99b2911bbd818bc1ec855e45d630035320fdd2ced32",
+      "anchor": "### 2. तालीकोटा का युद्ध (23 जनवरी 1565 ई.) — 'राक्षस-तंगड़ी का युद्ध'",
+      "image": "rassetu_b3_vijayanagara_bahmani_1565.webp",
+      "assetSha256": "8b1c6a5c95054f9374b1ada283ed4d6188f24b0f87808b23831327818a1ce0fe",
+      "caption": "विजयनगर और दक्कन: 1565 का स्थानिक संदर्भ",
+      "explanation": "1565 के संदर्भ में दक्षिणी दक्कन के शक्ति-केंद्रों का सांकेतिक स्थान-चित्र। यह राजनीतिक सीमाओं का सटीक मानचित्र नहीं है; राक्षस-तंगड़ी/तालीकोटा का युद्ध-बिंदु अनुमानित क्षेत्र के रूप में दिखाया गया है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch15/### 2. तालीकोटा का युद्ध (23 जनवरी 1565 ई.) — 'राक्षस-तंगड़ी का युद्ध'",
+        "https://www.ncert.nic.in/textbook/pdf/lehs203.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch16",
+      "topicId": "rassetu_b3_vijayanagara_bahmani_1565",
+      "originalChapterSha256": "179f42fc734d11cbfd0aaddd7c605babbc7259c252469fda00728f921253704e",
+      "sourceContentSha256": "9fa05b75c49088e6023aa99b2911bbd818bc1ec855e45d630035320fdd2ced32",
+      "anchor": "### 2. तालीकोटा का युद्ध (23 जनवरी 1565 ई.) — 'राक्षस-तंगड़ी का युद्ध'",
+      "image": "rassetu_b3_vijayanagara_bahmani_1565.webp",
+      "assetSha256": "8b1c6a5c95054f9374b1ada283ed4d6188f24b0f87808b23831327818a1ce0fe",
+      "caption": "विजयनगर और दक्कन: 1565 का स्थानिक संदर्भ",
+      "explanation": "1565 के संदर्भ में दक्षिणी दक्कन के शक्ति-केंद्रों का सांकेतिक स्थान-चित्र। यह राजनीतिक सीमाओं का सटीक मानचित्र नहीं है; राक्षस-तंगड़ी/तालीकोटा का युद्ध-बिंदु अनुमानित क्षेत्र के रूप में दिखाया गया है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch16/### 2. तालीकोटा का युद्ध (23 जनवरी 1565 ई.) — 'राक्षस-तंगड़ी का युद्ध'",
+        "https://www.ncert.nic.in/textbook/pdf/lehs203.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch17",
+      "topicId": "rassetu_b3_mughal_mansabdari_dahsala",
+      "originalChapterSha256": "cdc9257230957e26d39291bec5e5637db03130c131ebb5a2f8f3b2e2f3b76972",
+      "sourceContentSha256": "6f98c1cb432c79a4414f28e4ca4bd22eebf5a6c1bd32c92e4b4b23b68c5ba713",
+      "anchor": "### 3. अकबर की प्रशासनिक संस्थाएं: मनसबदारी एवं दहसाला व्यवस्था",
+      "image": "rassetu_b3_mughal_mansabdari_dahsala.webp",
+      "assetSha256": "2207a673a517be8826e3605c3ab5dcd0f2940f1272aaf8a075f57d96d96afdd4",
+      "caption": "मुगल प्रशासन: मनसब और दहसाला के अलग तंत्र",
+      "explanation": "मनसब में जात व्यक्तिगत पद/रैंक और सवार घुड़सवार दायित्व बताता है। दहसाला भूमि-राजस्व आकलन से जुड़ी व्यवस्था है। दोनों को एक ही प्रशासनिक प्रणाली न समझें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch17/### 3. अकबर की प्रशासनिक संस्थाएं: मनसबदारी एवं दहसाला व्यवस्था",
+        "https://ncert.nic.in/textbook/pdf/lehs204.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch18",
+      "topicId": "rassetu_b3_mughal_mansabdari_dahsala",
+      "originalChapterSha256": "27bc7c7b6dea803c9140f25b12fc12ac59346a36f99d2eefcbc9f1c628565355",
+      "sourceContentSha256": "6f98c1cb432c79a4414f28e4ca4bd22eebf5a6c1bd32c92e4b4b23b68c5ba713",
+      "anchor": "### 3. अकबर की प्रशासनिक संस्थाएं: मनसबदारी एवं दहसाला व्यवस्था",
+      "image": "rassetu_b3_mughal_mansabdari_dahsala.webp",
+      "assetSha256": "2207a673a517be8826e3605c3ab5dcd0f2940f1272aaf8a075f57d96d96afdd4",
+      "caption": "मुगल प्रशासन: मनसब और दहसाला के अलग तंत्र",
+      "explanation": "मनसब में जात व्यक्तिगत पद/रैंक और सवार घुड़सवार दायित्व बताता है। दहसाला भूमि-राजस्व आकलन से जुड़ी व्यवस्था है। दोनों को एक ही प्रशासनिक प्रणाली न समझें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch18/### 3. अकबर की प्रशासनिक संस्थाएं: मनसबदारी एवं दहसाला व्यवस्था",
+        "https://ncert.nic.in/textbook/pdf/lehs204.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch21",
+      "topicId": "rassetu_b3_bhakti_sufi_network",
+      "originalChapterSha256": "46bd95509f9ca05ef4a1df59141c2112b3da77dfecf3b2167fb44f97f4e59039",
+      "sourceContentSha256": "0a6b3569b186897a6c379f83e4e0470c739337bad1e7b55b3582a250df03b397",
+      "anchor": "### 2.2 भक्ति संप्रदाय: दार्शनिक मत एवं आचार्य परंपरा",
+      "image": "rassetu_b3_bhakti_sufi_network.webp",
+      "assetSha256": "eb693fd3c07a2b2a69fc480443c63f184cfbd10b0bf6b37575a52ac39960788a",
+      "caption": "भक्ति और सूफी परंपराएं: विविध पथ, अलग संस्थाएं",
+      "explanation": "भक्ति और सूफी धाराएं अनेक थीं। आचार्य, संत, सिलसिले और क्षेत्र अध्याय में दिए चयनित उदाहरण हैं; आरेख किसी एकीकृत या एकरेखीय आंदोलन का दावा नहीं करता।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch21/### 2.2 भक्ति संप्रदाय: दार्शनिक मत एवं आचार्य परंपरा",
+        "https://ncert.nic.in/textbook/pdf/gess106.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch22",
+      "topicId": "rassetu_b3_bhakti_sufi_network",
+      "originalChapterSha256": "bcc5785e946de7b3315dbf3b999a80ae8ccba0b1af6c2477e42d682a49775971",
+      "sourceContentSha256": "0a6b3569b186897a6c379f83e4e0470c739337bad1e7b55b3582a250df03b397",
+      "anchor": "### 2.2 भक्ति संप्रदाय: दार्शनिक मत एवं आचार्य परंपरा",
+      "image": "rassetu_b3_bhakti_sufi_network.webp",
+      "assetSha256": "eb693fd3c07a2b2a69fc480443c63f184cfbd10b0bf6b37575a52ac39960788a",
+      "caption": "भक्ति और सूफी परंपराएं: विविध पथ, अलग संस्थाएं",
+      "explanation": "भक्ति और सूफी धाराएं अनेक थीं। आचार्य, संत, सिलसिले और क्षेत्र अध्याय में दिए चयनित उदाहरण हैं; आरेख किसी एकीकृत या एकरेखीय आंदोलन का दावा नहीं करता।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch22/### 2.2 भक्ति संप्रदाय: दार्शनिक मत एवं आचार्य परंपरा",
+        "https://ncert.nic.in/textbook/pdf/gess106.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch23",
+      "topicId": "rassetu_b3_european_expansion",
+      "originalChapterSha256": "4d560140e8338b180ac18e1100366d4bf892bb26490ad1f1243ab3fa6d7ad77c",
+      "sourceContentSha256": "ae8192f6770b5fd37f5e957a7800b304a4879bbd70d53ebb2fadcdf8dbc62750",
+      "anchor": "### 2.1 यूरोपीय व्यापारिक कंपनियों का आगमन एवं नौसैनिक प्रभुत्व का संघर्ष",
+      "image": "rassetu_b3_european_expansion.webp",
+      "assetSha256": "bd351b923887ed88e66b7705755d0f98a7af07c991f0c9a9e145ca283ed513a9",
+      "caption": "यूरोपीय व्यापार से औपनिवेशिक सत्ता तक: चुने हुए पड़ाव",
+      "explanation": "व्यापारिक उपस्थिति और क्षेत्रीय राजनीतिक सत्ता अलग चरण थे। यह सामान्यीकृत तटीय स्थान-चित्र और चुनी हुई तिथियां दिखाता है; आधुनिक राजनीतिक सीमाएं लागू नहीं की गई हैं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch23/### 2.1 यूरोपीय व्यापारिक कंपनियों का आगमन एवं नौसैनिक प्रभुत्व का संघर्ष",
+        "https://www.ncert.nic.in/textbook/pdf/hess202.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch24",
+      "topicId": "rassetu_b3_european_expansion",
+      "originalChapterSha256": "4eaa7a972069f32acf4be5e33517bb216dca7b8407ae38379e65870605c860f6",
+      "sourceContentSha256": "ae8192f6770b5fd37f5e957a7800b304a4879bbd70d53ebb2fadcdf8dbc62750",
+      "anchor": "### 2.1 यूरोपीय व्यापारिक कंपनियों का आगमन एवं नौसैनिक प्रभुत्व का संघर्ष",
+      "image": "rassetu_b3_european_expansion.webp",
+      "assetSha256": "bd351b923887ed88e66b7705755d0f98a7af07c991f0c9a9e145ca283ed513a9",
+      "caption": "यूरोपीय व्यापार से औपनिवेशिक सत्ता तक: चुने हुए पड़ाव",
+      "explanation": "व्यापारिक उपस्थिति और क्षेत्रीय राजनीतिक सत्ता अलग चरण थे। यह सामान्यीकृत तटीय स्थान-चित्र और चुनी हुई तिथियां दिखाता है; आधुनिक राजनीतिक सीमाएं लागू नहीं की गई हैं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch24/### 2.1 यूरोपीय व्यापारिक कंपनियों का आगमन एवं नौसैनिक प्रभुत्व का संघर्ष",
+        "https://www.ncert.nic.in/textbook/pdf/hess202.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch27",
+      "topicId": "rassetu_b3_revolt_1857_centres",
+      "originalChapterSha256": "9d3a9828565c9a2e5723ada288448336e54b5994b7cafaae782afe42f3382e9b",
+      "sourceContentSha256": "72a36f25380c08da09b1bbaa2971431b8bbf0b55570d5785dc9a17d0f1ec183a",
+      "anchor": "### 2.2 विद्रोह का प्रसार एवं प्रमुख केंद्र: विस्तृत सामरिक इतिहास",
+      "image": "rassetu_b3_revolt_1857_centres.webp",
+      "assetSha256": "8c4d24b9661d291a6a77262d3ff8229bab1ada3e8bc26d6910a76585545af904",
+      "caption": "1857–58: विद्रोह के प्रमुख केंद्र और नेता",
+      "explanation": "मुख्य केंद्रों और अध्याय में उल्लिखित नेताओं का योजनात्मक स्थान-चित्र। यह विद्रोह के पूरे प्रसार या राजनीतिक सीमाओं का मानचित्र नहीं है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch27/### 2.2 विद्रोह का प्रसार एवं प्रमुख केंद्र: विस्तृत सामरिक इतिहास",
+        "https://www.ncert.nic.in/textbook/pdf/hess205.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch28",
+      "topicId": "rassetu_b3_revolt_1857_centres",
+      "originalChapterSha256": "227ff7e5a5eced7540faf5e61885a09e898f0cc0aa8791a73093d9dd8c5758be",
+      "sourceContentSha256": "72a36f25380c08da09b1bbaa2971431b8bbf0b55570d5785dc9a17d0f1ec183a",
+      "anchor": "### 2.2 विद्रोह का प्रसार एवं प्रमुख केंद्र: विस्तृत सामरिक इतिहास",
+      "image": "rassetu_b3_revolt_1857_centres.webp",
+      "assetSha256": "8c4d24b9661d291a6a77262d3ff8229bab1ada3e8bc26d6910a76585545af904",
+      "caption": "1857–58: विद्रोह के प्रमुख केंद्र और नेता",
+      "explanation": "मुख्य केंद्रों और अध्याय में उल्लिखित नेताओं का योजनात्मक स्थान-चित्र। यह विद्रोह के पूरे प्रसार या राजनीतिक सीमाओं का मानचित्र नहीं है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch28/### 2.2 विद्रोह का प्रसार एवं प्रमुख केंद्र: विस्तृत सामरिक इतिहास",
+        "https://www.ncert.nic.in/textbook/pdf/hess205.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch29",
+      "topicId": "rassetu_b3_reform_movements",
+      "originalChapterSha256": "faeeda611d2d1c5b40b45d4081f2253072a152ab48f9829ee95e2473ef0b7552",
+      "sourceContentSha256": "7ebfa0ce26578a25cdcf90b4908a04d626401f69e55e221640f04941fae289c8",
+      "anchor": "### 2.5 अन्य प्रमुख सामाजिक-धार्मिक सुधार आंदोलन",
+      "image": "rassetu_b3_reform_movements.webp",
+      "assetSha256": "4c9d12d67c188c94518f18db1ce037c518a66aa46a392b97432c1e1916df8645",
+      "caption": "उन्नीसवीं सदी के सुधार आंदोलन: क्षेत्र और अलग प्राथमिकताएं",
+      "explanation": "सुधारकों/संस्थाओं के क्षेत्र, काल और विचार अलग थे। तिथियां अध्याय के अनुसार चुनी गई हैं; यह संपूर्ण सूची या एक साझा विचारधारा का दावा नहीं है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch29/### 2.5 अन्य प्रमुख सामाजिक-धार्मिक सुधार आंदोलन",
+        "https://www.ncert.nic.in/textbook/pdf/hess208.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch30",
+      "topicId": "rassetu_b3_reform_movements",
+      "originalChapterSha256": "96c36fa727f79883333c9c83e12cd82313c81d1397815ec34c805c7a1f41d378",
+      "sourceContentSha256": "7ebfa0ce26578a25cdcf90b4908a04d626401f69e55e221640f04941fae289c8",
+      "anchor": "### 2.5 अन्य प्रमुख सामाजिक-धार्मिक सुधार आंदोलन",
+      "image": "rassetu_b3_reform_movements.webp",
+      "assetSha256": "4c9d12d67c188c94518f18db1ce037c518a66aa46a392b97432c1e1916df8645",
+      "caption": "उन्नीसवीं सदी के सुधार आंदोलन: क्षेत्र और अलग प्राथमिकताएं",
+      "explanation": "सुधारकों/संस्थाओं के क्षेत्र, काल और विचार अलग थे। तिथियां अध्याय के अनुसार चुनी गई हैं; यह संपूर्ण सूची या एक साझा विचारधारा का दावा नहीं है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch30/### 2.5 अन्य प्रमुख सामाजिक-धार्मिक सुधार आंदोलन",
+        "https://www.ncert.nic.in/textbook/pdf/hess208.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch31",
+      "topicId": "rassetu_b3_early_nationalism",
+      "originalChapterSha256": "23d987e69360f01296634db7d32ae601439d8e50c000a265c927b6285b113b2e",
+      "sourceContentSha256": "21f674c0d574a515d3ccb321f753e0c19491c1eb95307905c08761b51204f865",
+      "anchor": "## 16.5 बंगाल विभाजन (1905 AD) — कारण, योजना एवं प्रतिक्रिया",
+      "image": "rassetu_b3_early_nationalism.webp",
+      "assetSha256": "f6e62b03b00c22c7a8f85a4cc0fb421ba3a8209e73a081049c14c05cd470ba22",
+      "caption": "कांग्रेस से स्वदेशी तक: आरंभिक राष्ट्रवाद के पड़ाव",
+      "explanation": "कांग्रेस के गठन से बंगाल विभाजन, स्वदेशी और सूरत-विभाजन तक चुने हुए पड़ाव। यह आरंभिक राष्ट्रवाद का संक्षिप्त कालक्रम है; बाद के आंदोलनों के लिए राष्ट्रीय आंदोलन के व्यापक चित्र को देखें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch31/## 16.5 बंगाल विभाजन (1905 AD) — कारण, योजना एवं प्रतिक्रिया",
+        "https://www.ncert.nic.in/textbook/pdf/hess209.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch32",
+      "topicId": "rassetu_b3_early_nationalism",
+      "originalChapterSha256": "5e60e047ce6ac9fa3a251578fe98c32941cb32c18b11befb32b936b50d5dde0c",
+      "sourceContentSha256": "21f674c0d574a515d3ccb321f753e0c19491c1eb95307905c08761b51204f865",
+      "anchor": "## 16.5 बंगाल विभाजन (1905 AD) — कारण, योजना एवं प्रतिक्रिया",
+      "image": "rassetu_b3_early_nationalism.webp",
+      "assetSha256": "f6e62b03b00c22c7a8f85a4cc0fb421ba3a8209e73a081049c14c05cd470ba22",
+      "caption": "कांग्रेस से स्वदेशी तक: आरंभिक राष्ट्रवाद के पड़ाव",
+      "explanation": "कांग्रेस के गठन से बंगाल विभाजन, स्वदेशी और सूरत-विभाजन तक चुने हुए पड़ाव। यह आरंभिक राष्ट्रवाद का संक्षिप्त कालक्रम है; बाद के आंदोलनों के लिए राष्ट्रीय आंदोलन के व्यापक चित्र को देखें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch32/## 16.5 बंगाल विभाजन (1905 AD) — कारण, योजना एवं प्रतिक्रिया",
+        "https://www.ncert.nic.in/textbook/pdf/hess209.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch33",
+      "topicId": "rassetu_b3_revolutionary_networks",
+      "originalChapterSha256": "7929e01b74d46bc51ae59995601b2d3060699faf97d5cb327fb5ed2db73f4290",
+      "sourceContentSha256": "e573d10169bef2e94528741b38113c52b221ce4c35d552c28bd21b4eddbb5e27",
+      "anchor": "## 17.3 क्रांतिकारी आंदोलन का प्रथम चरण (1897–1917 AD)",
+      "image": "rassetu_b3_revolutionary_networks.webp",
+      "assetSha256": "174c3bfc1d7d39d6005739762069f11df41a78a4c6972715b7364898fa3b7b2e",
+      "caption": "क्रांतिकारी गतिविधियां: क्षेत्रीय केंद्र और चरण",
+      "explanation": "अध्याय में उल्लिखित गतिविधियों के कुछ स्थान और दो व्यापक चरण। एक ही संगठन/रणनीति सभी क्षेत्रों में समान नहीं थी; स्थान-रेखाएं योजनात्मक हैं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch33/## 17.3 क्रांतिकारी आंदोलन का प्रथम चरण (1897–1917 AD)",
+        "https://www.ncert.nic.in/textbook/pdf/hess209.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch34",
+      "topicId": "rassetu_b3_revolutionary_networks",
+      "originalChapterSha256": "d53215c3a37232169884b3d8e5d7242459db26d96c51cd0dcbec400dab090b75",
+      "sourceContentSha256": "e573d10169bef2e94528741b38113c52b221ce4c35d552c28bd21b4eddbb5e27",
+      "anchor": "## 17.3 क्रांतिकारी आंदोलन का प्रथम चरण (1897–1917 AD)",
+      "image": "rassetu_b3_revolutionary_networks.webp",
+      "assetSha256": "174c3bfc1d7d39d6005739762069f11df41a78a4c6972715b7364898fa3b7b2e",
+      "caption": "क्रांतिकारी गतिविधियां: क्षेत्रीय केंद्र और चरण",
+      "explanation": "अध्याय में उल्लिखित गतिविधियों के कुछ स्थान और दो व्यापक चरण। एक ही संगठन/रणनीति सभी क्षेत्रों में समान नहीं थी; स्थान-रेखाएं योजनात्मक हैं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch34/## 17.3 क्रांतिकारी आंदोलन का प्रथम चरण (1897–1917 AD)",
+        "https://www.ncert.nic.in/textbook/pdf/hess209.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch37",
+      "topicId": "rassetu_b3_peasant_tribal_movements",
+      "originalChapterSha256": "d5a43de642cca49190266b11aa1f2f67f0b00f3360f73dca19850a3715367b6d",
+      "sourceContentSha256": "9d448b0cc335828aef8b4f9333d2bc0e29f05bd4b31aed4c3004be1987b0c091",
+      "anchor": "## 19.2 19वीं एवं 20वीं शताब्दी के प्रमुख भारतीय किसान आंदोलन",
+      "image": "rassetu_b3_peasant_tribal_movements.webp",
+      "assetSha256": "e00c5ae7f6b363ecaadcbff84faf75b3a11c936748709f4303fbf97e88ca5789",
+      "caption": "किसान और जनजातीय आंदोलनों के चयनित क्षेत्र",
+      "explanation": "चयनित आंदोलनों को क्षेत्र और समय के साथ दिखाया गया है। यह सम्पूर्ण सूची नहीं; किसान, जनजातीय और देसी-रियासत आंदोलनों को अलग श्रेणियों में रखें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch37/## 19.2 19वीं एवं 20वीं शताब्दी के प्रमुख भारतीय किसान आंदोलन",
+        "https://www.ncert.nic.in/textbook/pdf/hess203.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch38",
+      "topicId": "rassetu_b3_peasant_tribal_movements",
+      "originalChapterSha256": "ca7c96622e35f235c12fe7cbc0bc1d677ed4843c5a68b3a8120084c7f04387ac",
+      "sourceContentSha256": "9d448b0cc335828aef8b4f9333d2bc0e29f05bd4b31aed4c3004be1987b0c091",
+      "anchor": "## 19.2 19वीं एवं 20वीं शताब्दी के प्रमुख भारतीय किसान आंदोलन",
+      "image": "rassetu_b3_peasant_tribal_movements.webp",
+      "assetSha256": "e00c5ae7f6b363ecaadcbff84faf75b3a11c936748709f4303fbf97e88ca5789",
+      "caption": "किसान और जनजातीय आंदोलनों के चयनित क्षेत्र",
+      "explanation": "चयनित आंदोलनों को क्षेत्र और समय के साथ दिखाया गया है। यह सम्पूर्ण सूची नहीं; किसान, जनजातीय और देसी-रियासत आंदोलनों को अलग श्रेणियों में रखें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch38/## 19.2 19वीं एवं 20वीं शताब्दी के प्रमुख भारतीय किसान आंदोलन",
+        "https://www.ncert.nic.in/textbook/pdf/hess203.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch39",
+      "topicId": "rassetu_b3_transfer_of_power",
+      "originalChapterSha256": "ccdf0668b58829f060a6ca7989c433a8d46ddf36957c4c5df72b2a6734e91a50",
+      "sourceContentSha256": "dc85a677684d0244711a596097ee9afaf8beb47ba7ebbf751c18b02de296b24d",
+      "anchor": "## 20.4 कैबिनेट मिशन एवं अंतरिम सरकार (1946 AD)",
+      "image": "rassetu_b3_transfer_of_power.webp",
+      "assetSha256": "7eae0dd22e920f9961d3553fdebc787dd82a97a88571f9f2b99528e94cbe25c4",
+      "caption": "कैबिनेट मिशन से स्वतंत्रता तक: संवैधानिक पड़ाव",
+      "explanation": "1946–47 की घटनाओं का संक्षिप्त क्रम। कैबिनेट मिशन की योजना, समूह और प्रस्ताव अलग-अलग चरण थे; बाद की घटनाओं को उसी योजना का स्वतः लागू परिणाम न समझें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch39/## 20.4 कैबिनेट मिशन एवं अंतरिम सरकार (1946 AD)",
+        "https://www.nationalarchives.gov.uk/explore-the-collection/stories/indian-independence-part-two/"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch40",
+      "topicId": "rassetu_b3_transfer_of_power",
+      "originalChapterSha256": "43744374e5e2fcd6e6ead11db7bc25aa6b4ad6b3c2bd699eb99c4cd932f22d79",
+      "sourceContentSha256": "dc85a677684d0244711a596097ee9afaf8beb47ba7ebbf751c18b02de296b24d",
+      "anchor": "## 20.4 कैबिनेट मिशन एवं अंतरिम सरकार (1946 AD)",
+      "image": "rassetu_b3_transfer_of_power.webp",
+      "assetSha256": "7eae0dd22e920f9961d3553fdebc787dd82a97a88571f9f2b99528e94cbe25c4",
+      "caption": "कैबिनेट मिशन से स्वतंत्रता तक: संवैधानिक पड़ाव",
+      "explanation": "1946–47 की घटनाओं का संक्षिप्त क्रम। कैबिनेट मिशन की योजना, समूह और प्रस्ताव अलग-अलग चरण थे; बाद की घटनाओं को उसी योजना का स्वतः लागू परिणाम न समझें।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch40/## 20.4 कैबिनेट मिशन एवं अंतरिम सरकार (1946 AD)",
+        "https://www.nationalarchives.gov.uk/explore-the-collection/stories/indian-independence-part-two/"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch41",
+      "topicId": "rassetu_b3_princely_integration_reorg",
+      "originalChapterSha256": "431e95e7e03049844fc25035393ab527e8373638bddfcf8b762031e94e1a9df3",
+      "sourceContentSha256": "ab09bb1714abf5dee17cf6101420cf805fa128939907ab1e7cba1db5fd08aae3",
+      "anchor": "## 21.2 देशी रियासतों का ऐतिहासिक एकीकरण (Integration of Princely States)",
+      "image": "rassetu_b3_princely_integration_reorg.webp",
+      "assetSha256": "c6a2e484932c3dbf25a8d59faec3c404fa000e1e2b41c364f6ba8a0d4116c8f2",
+      "caption": "रियासतों का एकीकरण और 1956 का राज्यों का पुनर्गठन",
+      "explanation": "1947–49 के विलय और 1956 के राज्य-पुनर्गठन को अलग ऐतिहासिक चरणों के रूप में दिखाया गया है। 1956 का कानूनी पुनर्गठन 1 नवम्बर 1956 से प्रभावी था; चित्र आधुनिक सीमाओं का मानचित्र नहीं है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch41/## 21.2 देशी रियासतों का ऐतिहासिक एकीकरण (Integration of Princely States)",
+        "https://www.indiacode.nic.in/bitstream/123456789/1680/1/a1956-37.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch42",
+      "topicId": "rassetu_b3_princely_integration_reorg",
+      "originalChapterSha256": "562e7b288911e22011f791be5fed5054b1b92b6e06cd0130f86d6ba36d48512b",
+      "sourceContentSha256": "ab09bb1714abf5dee17cf6101420cf805fa128939907ab1e7cba1db5fd08aae3",
+      "anchor": "## 21.2 देशी रियासतों का ऐतिहासिक एकीकरण (Integration of Princely States)",
+      "image": "rassetu_b3_princely_integration_reorg.webp",
+      "assetSha256": "c6a2e484932c3dbf25a8d59faec3c404fa000e1e2b41c364f6ba8a0d4116c8f2",
+      "caption": "रियासतों का एकीकरण और 1956 का राज्यों का पुनर्गठन",
+      "explanation": "1947–49 के विलय और 1956 के राज्य-पुनर्गठन को अलग ऐतिहासिक चरणों के रूप में दिखाया गया है। 1956 का कानूनी पुनर्गठन 1 नवम्बर 1956 से प्रभावी था; चित्र आधुनिक सीमाओं का मानचित्र नहीं है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch42/## 21.2 देशी रियासतों का ऐतिहासिक एकीकरण (Integration of Princely States)",
+        "https://www.indiacode.nic.in/bitstream/123456789/1680/1/a1956-37.pdf"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch01",
+      "topicId": "rassetu_b3_harappan_scene",
+      "originalChapterSha256": "bdcab4e125e518189cce7e6f4eaedc4689e05907cbcf0b2fce8b38d249239a63",
+      "sourceContentSha256": "a2b3556ec133482f9bd0ad4e629ef0f28d7e1f49c2fe56911f2b0d41cbfd6e18",
+      "anchor": "### 2. नगर नियोजन एवं वास्तुकला (Town Planning & Architecture)",
+      "image": "rassetu_b3_harappan_scene.webp",
+      "assetSha256": "269a5eed80743e42435b0c1fa2ff2f960d9fe2b084577ac16e5b53d68a0c47c6",
+      "caption": "हड़प्पाई नगर-जीवन का प्रतिनिधि पुनर्निर्माण",
+      "explanation": "ईंटों के घर, सड़क और जल-निकास पर आधारित प्रतिनिधि दृश्य। यह किसी एक उत्खनित नगर का हूबहू पुनर्निर्माण नहीं है; पुरातात्विक साक्ष्य से कुछ विवरण ही ज्ञात हैं।",
+      "assetType": "generated-representative-image",
+      "generationTool": "built-in image_gen",
+      "generationPrompt": "Use case: historical-scene. Asset type: wide educational textbook illustration. Primary request: representative archaeological reconstruction of an Indus urban street with planned street lines, brick houses, a household well and visible covered drain. Scene: generic Bronze Age city neighborhood, not a named site. Style: naturalistic editorial gouache, historically informed. Composition: landscape 3:2, street-level oblique view. Constraints: representative reconstruction only; no named person/site, no text, labels, signage, watermark, modern infrastructure, speculative dockyard or exact dimensions.",
+      "generatedSourceSha256": "7aa2f86308b62fcd44b9e1deeea4abe2afb82847341e9574bdd496e0da325388",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch01/### 2. नगर नियोजन एवं वास्तुकला (Town Planning & Architecture)"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch02",
+      "topicId": "rassetu_b3_harappan_scene",
+      "originalChapterSha256": "12fabc0ff161f4ba5a15a096d8ab0b4eb3bc54c9daadd3e3eef75319ce02a15c",
+      "sourceContentSha256": "a2b3556ec133482f9bd0ad4e629ef0f28d7e1f49c2fe56911f2b0d41cbfd6e18",
+      "anchor": "### 2. नगर नियोजन एवं वास्तुकला (Town Planning & Architecture)",
+      "image": "rassetu_b3_harappan_scene.webp",
+      "assetSha256": "269a5eed80743e42435b0c1fa2ff2f960d9fe2b084577ac16e5b53d68a0c47c6",
+      "caption": "हड़प्पाई नगर-जीवन का प्रतिनिधि पुनर्निर्माण",
+      "explanation": "ईंटों के घर, सड़क और जल-निकास पर आधारित प्रतिनिधि दृश्य। यह किसी एक उत्खनित नगर का हूबहू पुनर्निर्माण नहीं है; पुरातात्विक साक्ष्य से कुछ विवरण ही ज्ञात हैं।",
+      "assetType": "generated-representative-image",
+      "generationTool": "built-in image_gen",
+      "generationPrompt": "Use case: historical-scene. Asset type: wide educational textbook illustration. Primary request: representative archaeological reconstruction of an Indus urban street with planned street lines, brick houses, a household well and visible covered drain. Scene: generic Bronze Age city neighborhood, not a named site. Style: naturalistic editorial gouache, historically informed. Composition: landscape 3:2, street-level oblique view. Constraints: representative reconstruction only; no named person/site, no text, labels, signage, watermark, modern infrastructure, speculative dockyard or exact dimensions.",
+      "generatedSourceSha256": "7aa2f86308b62fcd44b9e1deeea4abe2afb82847341e9574bdd496e0da325388",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch02/### 2. नगर नियोजन एवं वास्तुकला (Town Planning & Architecture)"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch11",
+      "topicId": "rassetu_b3_chola_town_scene",
+      "originalChapterSha256": "1bd2ffb4c9abacbf31aded9122a99611f37b70407334ff82132f78519bed3bb3",
+      "sourceContentSha256": "6968fc02f33295c1a93a6d271b3a45e4eb44ef244a4affb9a191cdeae3875a38",
+      "anchor": "### 1. संगम युग (300 ई.पू. - 300 ई.): राज्य, समाज एवं साहित्य",
+      "image": "rassetu_b3_chola_town_scene.webp",
+      "assetSha256": "572b9b340468f5a091814118eb5d86cbe1597f3c81a39fe3d7ceecd7ba6ee445",
+      "caption": "दक्षिण भारतीय मंदिर-नगर: प्रतिनिधि दृश्य",
+      "explanation": "मंदिर, शिल्प और नगर-जीवन से प्रेरित प्रतिनिधि चित्रण। किसी विशिष्ट चोल मंदिर, नगर, व्यक्ति या ऐतिहासिक घटना का सटीक दृश्य नहीं।",
+      "assetType": "generated-representative-image",
+      "generationTool": "built-in image_gen",
+      "generationPrompt": "Use case: historical-scene. Asset type: wide educational textbook illustration. Primary request: representative medieval South Indian temple-town scene connecting temple architecture, craft activity and community life. Scene: a generic Chola-period Tamil town; distant Dravidian-style stone tower, shaded market lane, artisans at work. Style: refined editorial gouache, historically informed. Composition: landscape 3:2. Constraints: representative only; no named temple/person, no exact inscription, no text, signage, watermark, modern objects or famous monument replica.",
+      "generatedSourceSha256": "c69440694157e04d91674651d22d94388da53ebe61a748e859d293b7942f4268",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch11/### 1. संगम युग (300 ई.पू. - 300 ई.): राज्य, समाज एवं साहित्य"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch12",
+      "topicId": "rassetu_b3_chola_town_scene",
+      "originalChapterSha256": "7c8fdc624057bafb206b8776f4cb5653b198e6c3c63d0b97a0f685b824a2e1dd",
+      "sourceContentSha256": "6968fc02f33295c1a93a6d271b3a45e4eb44ef244a4affb9a191cdeae3875a38",
+      "anchor": "### 1. संगम युग (300 ई.पू. - 300 ई.): राज्य, समाज एवं साहित्य",
+      "image": "rassetu_b3_chola_town_scene.webp",
+      "assetSha256": "572b9b340468f5a091814118eb5d86cbe1597f3c81a39fe3d7ceecd7ba6ee445",
+      "caption": "दक्षिण भारतीय मंदिर-नगर: प्रतिनिधि दृश्य",
+      "explanation": "मंदिर, शिल्प और नगर-जीवन से प्रेरित प्रतिनिधि चित्रण। किसी विशिष्ट चोल मंदिर, नगर, व्यक्ति या ऐतिहासिक घटना का सटीक दृश्य नहीं।",
+      "assetType": "generated-representative-image",
+      "generationTool": "built-in image_gen",
+      "generationPrompt": "Use case: historical-scene. Asset type: wide educational textbook illustration. Primary request: representative medieval South Indian temple-town scene connecting temple architecture, craft activity and community life. Scene: a generic Chola-period Tamil town; distant Dravidian-style stone tower, shaded market lane, artisans at work. Style: refined editorial gouache, historically informed. Composition: landscape 3:2. Constraints: representative only; no named temple/person, no exact inscription, no text, signage, watermark, modern objects or famous monument replica.",
+      "generatedSourceSha256": "c69440694157e04d91674651d22d94388da53ebe61a748e859d293b7942f4268",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch12/### 1. संगम युग (300 ई.पू. - 300 ई.): राज्य, समाज एवं साहित्य"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch27",
+      "topicId": "rassetu_b3_revolt_1857_scene",
+      "originalChapterSha256": "9d3a9828565c9a2e5723ada288448336e54b5994b7cafaae782afe42f3382e9b",
+      "sourceContentSha256": "72a36f25380c08da09b1bbaa2971431b8bbf0b55570d5785dc9a17d0f1ec183a",
+      "anchor": "### 2.1 1857 के महान विद्रोह के बहुआयामी एवं संचयी कारण",
+      "image": "rassetu_b3_revolt_1857_scene.webp",
+      "assetSha256": "466da91d3f20515b4e435c8c07f7b17ed72dc9c18a9dff1a28fcbcadd7f3382c",
+      "caption": "1857 के उथल-पुथल का प्रतिनिधि दृश्य",
+      "explanation": "सिपाहियों और नागरिकों के विस्थापन से प्रेरित गैर-दस्तावेजी प्रतिनिधि दृश्य। यह किसी विशिष्ट नगर, युद्ध, व्यक्ति या दिन का चित्रण नहीं है।",
+      "assetType": "generated-representative-image",
+      "generationTool": "built-in image_gen",
+      "generationPrompt": "Use case: historical-scene. Asset type: wide educational textbook illustration. Primary request: representative, non-documentary scene evoking the upheaval of the 1857 uprising in north India without depicting a specific battle or named person. Scene: dusty town-edge road, small mixed group of Indian sepoys and civilians moving together, simple period settlement in the distance. Style: restrained realistic editorial gouache. Composition: landscape 3:2, no dramatic combat. Constraints: illustrative atmosphere only; no identifiable portraits, specific event/city, text, labels, signage, watermark, gore, graphic violence or modern objects.",
+      "generatedSourceSha256": "68aa5a7435e5c0bbde1c482c2a6ec4352ea2938aea6c90277606e33976bb5cd5",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch27/### 2.1 1857 के महान विद्रोह के बहुआयामी एवं संचयी कारण"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch28",
+      "topicId": "rassetu_b3_revolt_1857_scene",
+      "originalChapterSha256": "227ff7e5a5eced7540faf5e61885a09e898f0cc0aa8791a73093d9dd8c5758be",
+      "sourceContentSha256": "72a36f25380c08da09b1bbaa2971431b8bbf0b55570d5785dc9a17d0f1ec183a",
+      "anchor": "### 2.1 1857 के महान विद्रोह के बहुआयामी एवं संचयी कारण",
+      "image": "rassetu_b3_revolt_1857_scene.webp",
+      "assetSha256": "466da91d3f20515b4e435c8c07f7b17ed72dc9c18a9dff1a28fcbcadd7f3382c",
+      "caption": "1857 के उथल-पुथल का प्रतिनिधि दृश्य",
+      "explanation": "सिपाहियों और नागरिकों के विस्थापन से प्रेरित गैर-दस्तावेजी प्रतिनिधि दृश्य। यह किसी विशिष्ट नगर, युद्ध, व्यक्ति या दिन का चित्रण नहीं है।",
+      "assetType": "generated-representative-image",
+      "generationTool": "built-in image_gen",
+      "generationPrompt": "Use case: historical-scene. Asset type: wide educational textbook illustration. Primary request: representative, non-documentary scene evoking the upheaval of the 1857 uprising in north India without depicting a specific battle or named person. Scene: dusty town-edge road, small mixed group of Indian sepoys and civilians moving together, simple period settlement in the distance. Style: restrained realistic editorial gouache. Composition: landscape 3:2, no dramatic combat. Constraints: illustrative atmosphere only; no identifiable portraits, specific event/city, text, labels, signage, watermark, gore, graphic violence or modern objects.",
+      "generatedSourceSha256": "68aa5a7435e5c0bbde1c482c2a6ec4352ea2938aea6c90277606e33976bb5cd5",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch28/### 2.1 1857 के महान विद्रोह के बहुआयामी एवं संचयी कारण"
+      ],
+      "asOfDate": "2026-10-08"
+    },
+    {
+      "book": 3,
+      "chapter": "ch35",
+      "topicId": "rassetu_b3_freedom_movement",
+      "originalChapterSha256": "0acf7648de9f48f1bd350c89b0551aa9009df14386bb798f9743637971d89f2e",
+      "sourceContentSha256": "7a36504829e74c2d850e1b5baa5adec72f9e72f6a8b541dd1f84c2aaa6da8572",
+      "anchor": "## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+      "image": "rassetu_b3_freedom_movement.webp",
+      "assetSha256": "84f5d2c44f8171f0cb49aa760609e2e53072ebc4ba415f6d266feeaddb66f4a4",
+      "caption": "भारतीय राष्ट्रीय आंदोलन: चुने हुए पड़ाव",
+      "explanation": "1857, कांग्रेस की स्थापना, स्वदेशी, असहयोग, सविनय अवज्ञा और भारत छोड़ो आंदोलन के चुने हुए मील-पत्थर। यह संपूर्ण कालक्रम नहीं है; प्रत्येक घटना की तिथि और संदर्भ अध्याय में देखें।",
+      "assetType": "editable-vector-timeline",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch35/## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+        "artifacts/rassetu_series/batch6_manifest.json"
+      ]
+    },
+    {
+      "book": 3,
+      "chapter": "ch36",
+      "topicId": "rassetu_b3_freedom_movement",
+      "originalChapterSha256": "50f406eaa1621821efff3df861d77e928b0d23914774ab319a41c2cf998d2772",
+      "sourceContentSha256": "7a36504829e74c2d850e1b5baa5adec72f9e72f6a8b541dd1f84c2aaa6da8572",
+      "anchor": "## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+      "image": "rassetu_b3_freedom_movement.webp",
+      "assetSha256": "84f5d2c44f8171f0cb49aa760609e2e53072ebc4ba415f6d266feeaddb66f4a4",
+      "caption": "भारतीय राष्ट्रीय आंदोलन: चुने हुए पड़ाव",
+      "explanation": "1857, कांग्रेस की स्थापना, स्वदेशी, असहयोग, सविनय अवज्ञा और भारत छोड़ो आंदोलन के चुने हुए मील-पत्थर। यह संपूर्ण कालक्रम नहीं है; प्रत्येक घटना की तिथि और संदर्भ अध्याय में देखें।",
+      "assetType": "editable-vector-timeline",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch36/## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+        "artifacts/rassetu_series/batch6_manifest.json"
+      ]
+    },
+    {
+      "book": 3,
+      "chapter": "ch35",
+      "topicId": "rassetu_b3_salt_march_scene",
+      "originalChapterSha256": "0acf7648de9f48f1bd350c89b0551aa9009df14386bb798f9743637971d89f2e",
+      "sourceContentSha256": "7a36504829e74c2d850e1b5baa5adec72f9e72f6a8b541dd1f84c2aaa6da8572",
+      "anchor": "## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+      "image": "rassetu_b3_salt_march_scene.webp",
+      "assetSha256": "fa9939af0b67ce7acdefae216bf595023113991295e61b119edd8d63edf17b42",
+      "caption": "नमक सत्याग्रह से प्रेरित दृश्य",
+      "explanation": "1930 के नमक सत्याग्रह से प्रेरित प्रतिनिधि दृश्य। यह किसी विशेष दिन, स्थान या ऐतिहासिक व्यक्ति का दस्तावेजी पुनर्निर्माण नहीं है।",
+      "assetType": "generated-representative-image",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch35/## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+        "artifacts/rassetu_series/batch10_manifest.json"
+      ]
+    },
+    {
+      "book": 3,
+      "chapter": "ch36",
+      "topicId": "rassetu_b3_salt_march_scene",
+      "originalChapterSha256": "50f406eaa1621821efff3df861d77e928b0d23914774ab319a41c2cf998d2772",
+      "sourceContentSha256": "7a36504829e74c2d850e1b5baa5adec72f9e72f6a8b541dd1f84c2aaa6da8572",
+      "anchor": "## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+      "image": "rassetu_b3_salt_march_scene.webp",
+      "assetSha256": "fa9939af0b67ce7acdefae216bf595023113991295e61b119edd8d63edf17b42",
+      "caption": "नमक सत्याग्रह से प्रेरित दृश्य",
+      "explanation": "1930 के नमक सत्याग्रह से प्रेरित प्रतिनिधि दृश्य। यह किसी विशेष दिन, स्थान या ऐतिहासिक व्यक्ति का दस्तावेजी पुनर्निर्माण नहीं है।",
+      "assetType": "generated-representative-image",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book3.json#ch36/## 18.1 अध्याय परिचय एवं परीक्षा दृष्टिकोण",
+        "artifacts/rassetu_series/batch10_manifest.json"
+      ]
+    }
+  ]
+}

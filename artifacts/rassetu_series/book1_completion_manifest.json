@@ -1,0 +1,267 @@
+{
+  "version": 1,
+  "batch": "RAS Book 1 planned coverage completion",
+  "distinctGraphics": 13,
+  "placements": [
+    {
+      "chapter": "ch01",
+      "anchor": "## 1.8 तुलनात्मक मास्टर तालिकाएं एवं विभेदन विश्लेषण",
+      "image": "rassetu_b1x_archaeology_locator.webp",
+      "assetSha256": "5818689b78321b8f3ec5f921f96178323132d4eb26f5f0f31921bab29d792bc8",
+      "caption": "राजस्थान के पुरातात्विक स्थल",
+      "explanation": "प्रागैतिहासिक एवं ऐतिहासिक केंद्रों को दिशा-सूचक क्षेत्र और नदी-संकेत के साथ देखने का schematic।",
+      "sourceTextSha256": "43191a5a99f3c28d013a49b22dc7ce0a0891c62a03647ec55f24d7db8cfcebea",
+      "sourceMcqSha256": "aae56a8ac1825d1db2448e0b54b27c171fcd5b62aab35ee842a2706eb9290d32"
+    },
+    {
+      "chapter": "ch02",
+      "anchor": "## 1.8 तुलनात्मक मास्टर तालिकाएं एवं विभेदन विश्लेषण",
+      "image": "rassetu_b1x_archaeology_locator.webp",
+      "assetSha256": "5818689b78321b8f3ec5f921f96178323132d4eb26f5f0f31921bab29d792bc8",
+      "caption": "राजस्थान के पुरातात्विक स्थल",
+      "explanation": "प्रागैतिहासिक एवं ऐतिहासिक केंद्रों को दिशा-सूचक क्षेत्र और नदी-संकेत के साथ देखने का schematic।",
+      "sourceTextSha256": "43191a5a99f3c28d013a49b22dc7ce0a0891c62a03647ec55f24d7db8cfcebea",
+      "sourceMcqSha256": "aae56a8ac1825d1db2448e0b54b27c171fcd5b62aab35ee842a2706eb9290d32"
+    },
+    {
+      "chapter": "ch01",
+      "anchor": "## 1.2 पाषाण काल एवं प्रारंभिक प्रागैतिहासिक अनुसंधान",
+      "image": "rassetu_b1x_prehistoric_sequence.webp",
+      "assetSha256": "2e929c0abeae7cf43c95cff41de363876edd0ddf2622cf829c1ae232bd9ad10d",
+      "caption": "राजस्थान: सांस्कृतिक क्रम",
+      "explanation": "पाषाण से लौह युग तक का क्रम और अध्याय में दिए औजार, बसावट तथा स्थल-संकेत।",
+      "sourceTextSha256": "43191a5a99f3c28d013a49b22dc7ce0a0891c62a03647ec55f24d7db8cfcebea",
+      "sourceMcqSha256": "aae56a8ac1825d1db2448e0b54b27c171fcd5b62aab35ee842a2706eb9290d32"
+    },
+    {
+      "chapter": "ch02",
+      "anchor": "## 1.2 पाषाण काल एवं प्रारंभिक प्रागैतिहासिक अनुसंधान",
+      "image": "rassetu_b1x_prehistoric_sequence.webp",
+      "assetSha256": "2e929c0abeae7cf43c95cff41de363876edd0ddf2622cf829c1ae232bd9ad10d",
+      "caption": "राजस्थान: सांस्कृतिक क्रम",
+      "explanation": "पाषाण से लौह युग तक का क्रम और अध्याय में दिए औजार, बसावट तथा स्थल-संकेत।",
+      "sourceTextSha256": "43191a5a99f3c28d013a49b22dc7ce0a0891c62a03647ec55f24d7db8cfcebea",
+      "sourceMcqSha256": "aae56a8ac1825d1db2448e0b54b27c171fcd5b62aab35ee842a2706eb9290d32"
+    },
+    {
+      "chapter": "ch01",
+      "anchor": "## 1.5 ताम्र-पाषाण युगीन बनास-बेड़च संस्कृति",
+      "image": "rassetu_b1x_kalibanga_ahar_compare.webp",
+      "assetSha256": "1ed6306ff60b51945ec89c1af808219864492edc1783f320b6ea832d13efeb7c",
+      "caption": "कालीबंगा और आहड़–बनास",
+      "explanation": "अध्याय में वर्णित जुते खेत, नगर-खंड, अग्निवेदी, ताम्र औजार और मृद्भांड के प्रमुख भेद।",
+      "sourceTextSha256": "43191a5a99f3c28d013a49b22dc7ce0a0891c62a03647ec55f24d7db8cfcebea",
+      "sourceMcqSha256": "aae56a8ac1825d1db2448e0b54b27c171fcd5b62aab35ee842a2706eb9290d32"
+    },
+    {
+      "chapter": "ch02",
+      "anchor": "## 1.5 ताम्र-पाषाण युगीन बनास-बेड़च संस्कृति",
+      "image": "rassetu_b1x_kalibanga_ahar_compare.webp",
+      "assetSha256": "1ed6306ff60b51945ec89c1af808219864492edc1783f320b6ea832d13efeb7c",
+      "caption": "कालीबंगा और आहड़–बनास",
+      "explanation": "अध्याय में वर्णित जुते खेत, नगर-खंड, अग्निवेदी, ताम्र औजार और मृद्भांड के प्रमुख भेद।",
+      "sourceTextSha256": "43191a5a99f3c28d013a49b22dc7ce0a0891c62a03647ec55f24d7db8cfcebea",
+      "sourceMcqSha256": "aae56a8ac1825d1db2448e0b54b27c171fcd5b62aab35ee842a2706eb9290d32"
+    },
+    {
+      "chapter": "ch15",
+      "anchor": "## 8.7 मास्टर राजवंश तुलनात्मक मैट्रिक्स",
+      "image": "rassetu_b1x_dynasty_parallel_timeline.webp",
+      "assetSha256": "40ff23e6206b08ac6917bd0acaf35f515ede8fcff4461a2ae5a2b8a1fc991df1",
+      "caption": "राजस्थान के राजवंश: समानांतर काल-रेखाएं",
+      "explanation": "वंशों और उनसे जुड़े क्षेत्रीय केंद्रों का विषय-आधारित अवलोकन; पट्टियां अवधि का अनुपात नहीं दिखातीं।",
+      "sourceTextSha256": "5de77b652d2311f964d884a137ffd48488ae092936241a6d9ebf61141beef88f",
+      "sourceMcqSha256": "fd1f3a023c5aec7620f260b8fd62519e0cd4908eda83398afbfc3cb553ee9141"
+    },
+    {
+      "chapter": "ch16",
+      "anchor": "## 8.7 मास्टर राजवंश तुलनात्मक मैट्रिक्स",
+      "image": "rassetu_b1x_dynasty_parallel_timeline.webp",
+      "assetSha256": "40ff23e6206b08ac6917bd0acaf35f515ede8fcff4461a2ae5a2b8a1fc991df1",
+      "caption": "राजस्थान के राजवंश: समानांतर काल-रेखाएं",
+      "explanation": "वंशों और उनसे जुड़े क्षेत्रीय केंद्रों का विषय-आधारित अवलोकन; पट्टियां अवधि का अनुपात नहीं दिखातीं।",
+      "sourceTextSha256": "5de77b652d2311f964d884a137ffd48488ae092936241a6d9ebf61141beef88f",
+      "sourceMcqSha256": "fd1f3a023c5aec7620f260b8fd62519e0cd4908eda83398afbfc3cb553ee9141"
+    },
+    {
+      "chapter": "ch15",
+      "anchor": "## 8.2 जैसलमेर का भाटी राजवंश",
+      "image": "rassetu_b1x_kingdoms_schematic_locator.webp",
+      "assetSha256": "ba1e5589a50deea9950bd3a0b25ea134801a9960fbd09e055d6116db1b974416",
+      "caption": "क्षेत्रीय राजवंश: स्थान और पहचान",
+      "explanation": "पुस्तक में दिए क्षेत्रीय नामों और राजवंशों का दिशात्मक स्मरण मॉडल; सीमाएं नहीं दर्शाई गई हैं।",
+      "sourceTextSha256": "5de77b652d2311f964d884a137ffd48488ae092936241a6d9ebf61141beef88f",
+      "sourceMcqSha256": "fd1f3a023c5aec7620f260b8fd62519e0cd4908eda83398afbfc3cb553ee9141"
+    },
+    {
+      "chapter": "ch16",
+      "anchor": "## 8.2 जैसलमेर का भाटी राजवंश",
+      "image": "rassetu_b1x_kingdoms_schematic_locator.webp",
+      "assetSha256": "ba1e5589a50deea9950bd3a0b25ea134801a9960fbd09e055d6116db1b974416",
+      "caption": "क्षेत्रीय राजवंश: स्थान और पहचान",
+      "explanation": "पुस्तक में दिए क्षेत्रीय नामों और राजवंशों का दिशात्मक स्मरण मॉडल; सीमाएं नहीं दर्शाई गई हैं।",
+      "sourceTextSha256": "5de77b652d2311f964d884a137ffd48488ae092936241a6d9ebf61141beef88f",
+      "sourceMcqSha256": "fd1f3a023c5aec7620f260b8fd62519e0cd4908eda83398afbfc3cb553ee9141"
+    },
+    {
+      "chapter": "ch05",
+      "anchor": "### 1. प्रारंभिक संस्थापक एवं राजधानी परिवर्तन",
+      "image": "rassetu_b1x_mewar_capital_sequence.webp",
+      "assetSha256": "df6868fda59c63f90069d25f9cdabe36c36423792d09ecf00a54b3914d912c03",
+      "caption": "मेवाड़: सत्ता-केंद्र और शाखा क्रम",
+      "explanation": "मेवाड़ के वृत्तांत में वर्णित प्रमुख केंद्र, शाखा परिवर्तन और चुने हुए पड़ाव।",
+      "sourceTextSha256": "b6a513b7755f82881a735e31145b39285ee4dc70d7f38a0a496862c53da26be3",
+      "sourceMcqSha256": "25997f5c681bdfbca5dd19a56263fdf671b1a08b103c27bf8f78b999f266f280"
+    },
+    {
+      "chapter": "ch06",
+      "anchor": "### 1. प्रारंभिक संस्थापक एवं राजधानी परिवर्तन",
+      "image": "rassetu_b1x_mewar_capital_sequence.webp",
+      "assetSha256": "df6868fda59c63f90069d25f9cdabe36c36423792d09ecf00a54b3914d912c03",
+      "caption": "मेवाड़: सत्ता-केंद्र और शाखा क्रम",
+      "explanation": "मेवाड़ के वृत्तांत में वर्णित प्रमुख केंद्र, शाखा परिवर्तन और चुने हुए पड़ाव।",
+      "sourceTextSha256": "b6a513b7755f82881a735e31145b39285ee4dc70d7f38a0a496862c53da26be3",
+      "sourceMcqSha256": "25997f5c681bdfbca5dd19a56263fdf671b1a08b103c27bf8f78b999f266f280"
+    },
+    {
+      "chapter": "ch25",
+      "anchor": "## 13.6 तुलनात्मक विश्लेषण एवं विभेदीकरण तालिकाएं",
+      "image": "rassetu_b1x_fort_capital_schematic.webp",
+      "assetSha256": "c3611ba456adb0d2334789eb55cede018fdb53eb20937985be78861f8403a27e",
+      "caption": "दुर्ग और क्षेत्रीय केंद्र",
+      "explanation": "पुस्तक में वर्णित दुर्गों और भू-आकृतिक संदर्भ का schematic; मार्ग और दूरियां नहीं दर्शाई गई हैं।",
+      "sourceTextSha256": "0d0adf4b07b3d82b5829e179fb5bfa9a6e81e9055c5f64b1c8c08ef6537a75d8",
+      "sourceMcqSha256": "ae6e42227188d177107d9ad3e9a9319a54163c1f915cc70d0424570591a4406f"
+    },
+    {
+      "chapter": "ch26",
+      "anchor": "## 13.6 तुलनात्मक विश्लेषण एवं विभेदीकरण तालिकाएं",
+      "image": "rassetu_b1x_fort_capital_schematic.webp",
+      "assetSha256": "c3611ba456adb0d2334789eb55cede018fdb53eb20937985be78861f8403a27e",
+      "caption": "दुर्ग और क्षेत्रीय केंद्र",
+      "explanation": "पुस्तक में वर्णित दुर्गों और भू-आकृतिक संदर्भ का schematic; मार्ग और दूरियां नहीं दर्शाई गई हैं।",
+      "sourceTextSha256": "0d0adf4b07b3d82b5829e179fb5bfa9a6e81e9055c5f64b1c8c08ef6537a75d8",
+      "sourceMcqSha256": "ae6e42227188d177107d9ad3e9a9319a54163c1f915cc70d0424570591a4406f"
+    },
+    {
+      "chapter": "ch21",
+      "anchor": "## 11.5 तुलनात्मक मास्टर तालिका एवं विभेदन विश्लेषण",
+      "image": "rassetu_b1x_people_movements_timeline.webp",
+      "assetSha256": "35d3a4a6c59272eb40157edceed17cf7b9f1475c18684aaa4ba3470ac8712c07",
+      "caption": "किसान और जनजातीय आंदोलनों के पड़ाव",
+      "explanation": "आंदोलनों, स्थानों और काल-संकेतों का चुनिंदा पुनरावृत्ति क्रम; पूर्ण सूची नहीं।",
+      "sourceTextSha256": "b9a52056aa1a3c9660d0bd62b105e265d6cb54d1cd9d4b233aad903731b5c9d5",
+      "sourceMcqSha256": "86464989066b9323b5b1c0f6c06985a85c181471b186cbb75116e895d1c3ec97"
+    },
+    {
+      "chapter": "ch22",
+      "anchor": "## 11.5 तुलनात्मक मास्टर तालिका एवं विभेदन विश्लेषण",
+      "image": "rassetu_b1x_people_movements_timeline.webp",
+      "assetSha256": "35d3a4a6c59272eb40157edceed17cf7b9f1475c18684aaa4ba3470ac8712c07",
+      "caption": "किसान और जनजातीय आंदोलनों के पड़ाव",
+      "explanation": "आंदोलनों, स्थानों और काल-संकेतों का चुनिंदा पुनरावृत्ति क्रम; पूर्ण सूची नहीं।",
+      "sourceTextSha256": "b9a52056aa1a3c9660d0bd62b105e265d6cb54d1cd9d4b233aad903731b5c9d5",
+      "sourceMcqSha256": "86464989066b9323b5b1c0f6c06985a85c181471b186cbb75116e895d1c3ec97"
+    },
+    {
+      "chapter": "ch23",
+      "anchor": "### 2. राजस्थान के एकीकरण के 7 चरणों का संपूर्ण रोडमैप",
+      "image": "rassetu_b1x_integration_seven_stages.webp",
+      "assetSha256": "21d9173b2afbc1253f0388444a253b133ccee41907ddbd4469577e8d8ccbccb0",
+      "caption": "राजस्थान एकीकरण: सात चरण",
+      "explanation": "अध्याय में दिए सात चरणों के नाम और तिथियां; सहभागी रियासतों की पूरी सूची मूल पाठ में है।",
+      "sourceTextSha256": "8aba9f2a4c0c7a615b44de399333fb74523f9d3359872fad571fa5d631d13834",
+      "sourceMcqSha256": "8be4379ae66cb647afc4b6386d1f2967a65e74aedf1ce4d680efe18373674a44"
+    },
+    {
+      "chapter": "ch24",
+      "anchor": "### 2. राजस्थान के एकीकरण के 7 चरणों का संपूर्ण रोडमैप",
+      "image": "rassetu_b1x_integration_seven_stages.webp",
+      "assetSha256": "21d9173b2afbc1253f0388444a253b133ccee41907ddbd4469577e8d8ccbccb0",
+      "caption": "राजस्थान एकीकरण: सात चरण",
+      "explanation": "अध्याय में दिए सात चरणों के नाम और तिथियां; सहभागी रियासतों की पूरी सूची मूल पाठ में है।",
+      "sourceTextSha256": "8aba9f2a4c0c7a615b44de399333fb74523f9d3359872fad571fa5d631d13834",
+      "sourceMcqSha256": "8be4379ae66cb647afc4b6386d1f2967a65e74aedf1ce4d680efe18373674a44"
+    },
+    {
+      "chapter": "ch29",
+      "anchor": "## 15.2 मृण्मय एवं पॉटरी शिल्प",
+      "image": "rassetu_b1x_craft_material_process.webp",
+      "assetSha256": "b3ef30ae90a1b1fc1b714197b339842ca2e6e0268254637d5faf600cb62c5975",
+      "caption": "राजस्थानी शिल्प: सामग्री से पहचान",
+      "explanation": "शिल्प-सामग्री, तकनीक और अध्याय में दिए उत्पाद-उदाहरणों का वैचारिक संबंध।",
+      "sourceTextSha256": "898e12ce52e90f85d5f6a41f23ae7458bad8acf4c7b95147d3a65aeb4618b36f",
+      "sourceMcqSha256": "798cc2c4ff4396887149b33cbd73a855ab696e4b129e3b813f5f5fb9e0421f15"
+    },
+    {
+      "chapter": "ch30",
+      "anchor": "## 15.2 मृण्मय एवं पॉटरी शिल्प",
+      "image": "rassetu_b1x_craft_material_process.webp",
+      "assetSha256": "b3ef30ae90a1b1fc1b714197b339842ca2e6e0268254637d5faf600cb62c5975",
+      "caption": "राजस्थानी शिल्प: सामग्री से पहचान",
+      "explanation": "शिल्प-सामग्री, तकनीक और अध्याय में दिए उत्पाद-उदाहरणों का वैचारिक संबंध।",
+      "sourceTextSha256": "898e12ce52e90f85d5f6a41f23ae7458bad8acf4c7b95147d3a65aeb4618b36f",
+      "sourceMcqSha256": "798cc2c4ff4396887149b33cbd73a855ab696e4b129e3b813f5f5fb9e0421f15"
+    },
+    {
+      "chapter": "ch39",
+      "anchor": "### 1. राजस्थानी त्योहार चक्र का दार्शनिक आधार",
+      "image": "rassetu_b1x_festival_month_cycle.webp",
+      "assetSha256": "7dee157e833929eff7ac5b40f5a32ad1f726bbdd9eee1b09b91c92b49c92c5d2",
+      "caption": "राजस्थान: त्योहार और मेले का वार्षिक चक्र",
+      "explanation": "विक्रम संवत के मासों के साथ चुने हुए सांस्कृतिक उदाहरण; चंद्र तिथियां हर वर्ष बदलती हैं।",
+      "sourceTextSha256": "b0bf780190cc836788fe6056847cc165757ebc98c82f78046c4796ed248ada5d",
+      "sourceMcqSha256": "c193a41d3045d718722699e99314d8f8897b8b32f1557b66746a84634fc39d2d"
+    },
+    {
+      "chapter": "ch40",
+      "anchor": "### 1. राजस्थानी त्योहार चक्र का दार्शनिक आधार",
+      "image": "rassetu_b1x_festival_month_cycle.webp",
+      "assetSha256": "7dee157e833929eff7ac5b40f5a32ad1f726bbdd9eee1b09b91c92b49c92c5d2",
+      "caption": "राजस्थान: त्योहार और मेले का वार्षिक चक्र",
+      "explanation": "विक्रम संवत के मासों के साथ चुने हुए सांस्कृतिक उदाहरण; चंद्र तिथियां हर वर्ष बदलती हैं।",
+      "sourceTextSha256": "b0bf780190cc836788fe6056847cc165757ebc98c82f78046c4796ed248ada5d",
+      "sourceMcqSha256": "c193a41d3045d718722699e99314d8f8897b8b32f1557b66746a84634fc39d2d"
+    },
+    {
+      "chapter": "ch39",
+      "anchor": "## 20.6 त्वरित स्मरण हेतु 60 एक-पंक्ति पुनरावृत्ति पत्रक",
+      "image": "rassetu_b1x_heritage_concept_web.webp",
+      "assetSha256": "85e5121519fa2e6f279daffcd82f012d3f3acabdc6812234036ab73dcbc4c0ef",
+      "caption": "राजस्थान विरासत: पुनरावृत्ति संकल्पना-जाल",
+      "explanation": "इतिहास, पुरातत्व, कला और सांस्कृतिक परंपराओं को जोड़ने वाला अध्ययन-संगठन मॉडल।",
+      "sourceTextSha256": "b0bf780190cc836788fe6056847cc165757ebc98c82f78046c4796ed248ada5d",
+      "sourceMcqSha256": "c193a41d3045d718722699e99314d8f8897b8b32f1557b66746a84634fc39d2d"
+    },
+    {
+      "chapter": "ch40",
+      "anchor": "## 20.6 त्वरित स्मरण हेतु 60 एक-पंक्ति पुनरावृत्ति पत्रक",
+      "image": "rassetu_b1x_heritage_concept_web.webp",
+      "assetSha256": "85e5121519fa2e6f279daffcd82f012d3f3acabdc6812234036ab73dcbc4c0ef",
+      "caption": "राजस्थान विरासत: पुनरावृत्ति संकल्पना-जाल",
+      "explanation": "इतिहास, पुरातत्व, कला और सांस्कृतिक परंपराओं को जोड़ने वाला अध्ययन-संगठन मॉडल।",
+      "sourceTextSha256": "b0bf780190cc836788fe6056847cc165757ebc98c82f78046c4796ed248ada5d",
+      "sourceMcqSha256": "c193a41d3045d718722699e99314d8f8897b8b32f1557b66746a84634fc39d2d"
+    },
+    {
+      "chapter": "ch39",
+      "anchor": "## 20.4 तुलनात्मक तालिकाएं व भ्रामक युगलों का निवारण",
+      "image": "rassetu_b1x_heritage_recall_grid.webp",
+      "assetSha256": "e73e179c4972633df96a0ce982961b27cbe010bac0baaf7f61f12739cbd87f85",
+      "caption": "विरासत पुनरावृत्ति: मिलान-अभ्यास",
+      "explanation": "स्थल, काल, पहचान और साक्ष्य को जोड़ने का नमूना retrieval अभ्यास; प्रत्येक जोड़ी मूल पाठ से जांचें।",
+      "sourceTextSha256": "b0bf780190cc836788fe6056847cc165757ebc98c82f78046c4796ed248ada5d",
+      "sourceMcqSha256": "c193a41d3045d718722699e99314d8f8897b8b32f1557b66746a84634fc39d2d"
+    },
+    {
+      "chapter": "ch40",
+      "anchor": "## 20.4 तुलनात्मक तालिकाएं व भ्रामक युगलों का निवारण",
+      "image": "rassetu_b1x_heritage_recall_grid.webp",
+      "assetSha256": "e73e179c4972633df96a0ce982961b27cbe010bac0baaf7f61f12739cbd87f85",
+      "caption": "विरासत पुनरावृत्ति: मिलान-अभ्यास",
+      "explanation": "स्थल, काल, पहचान और साक्ष्य को जोड़ने का नमूना retrieval अभ्यास; प्रत्येक जोड़ी मूल पाठ से जांचें।",
+      "sourceTextSha256": "b0bf780190cc836788fe6056847cc165757ebc98c82f78046c4796ed248ada5d",
+      "sourceMcqSha256": "c193a41d3045d718722699e99314d8f8897b8b32f1557b66746a84634fc39d2d"
+    }
+  ]
+}

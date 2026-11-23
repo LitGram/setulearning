@@ -22,17 +22,25 @@ class SubjectScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: (MediaQuery.textScalerOf(context).scale(
+                    Theme.of(context).textTheme.titleMedium?.fontSize ?? 18) *
+                2.8)
+            .clamp(56.0, 160.0),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               subject.name,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
               subject.hindiName,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: colorScheme.onSurfaceVariant,
               ),
@@ -43,7 +51,8 @@ class SubjectScreen extends StatelessWidget {
       body: Consumer<ProgressProvider>(
         builder: (context, progressProvider, child) {
           return ListView(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
             children: [
               // Subject Header Card
               Container(
@@ -68,7 +77,7 @@ class SubjectScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            '8 पुस्तकें (Class 1 से Class 8)',
+                            '${subject.books.length} पुस्तकें उपलब्ध',
                             style: theme.textTheme.titleSmall?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: colorScheme.primary,
@@ -77,6 +86,13 @@ class SubjectScreen extends StatelessWidget {
                           const SizedBox(height: 2),
                           Text(
                             subject.tagline,
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            'अलग-अलग विषयों और परीक्षाओं के लिए अध्ययन सामग्री।',
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: colorScheme.onSurfaceVariant,
                             ),
@@ -90,9 +106,10 @@ class SubjectScreen extends StatelessWidget {
               const SizedBox(height: 16),
 
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
                 child: Text(
-                  'पुस्तक चुनें (Select Book)',
+                  'Choose a book',
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
@@ -100,7 +117,7 @@ class SubjectScreen extends StatelessWidget {
               ),
               const SizedBox(height: 8),
 
-              // 8 Books List
+              // List every book registered for this subject.
               ...subject.books.map((book) {
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 12.0),
@@ -126,7 +143,7 @@ class SubjectScreen extends StatelessWidget {
     final readCount = progressProvider.getReadCountForBook(subject.id, book.id);
 
     return AccessibleCard(
-      semanticLabel: '${book.title}, ${book.level}',
+      semanticLabel: '${book.title}, विषय-आधारित पुस्तक',
       onTap: () {
         Navigator.push(
           context,
@@ -164,33 +181,10 @@ class SubjectScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                      decoration: BoxDecoration(
-                        color: colorScheme.secondaryContainer,
-                        borderRadius: BorderRadius.circular(6),
-                      ),
-                      child: Text(
-                        book.level,
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          color: colorScheme.onSecondaryContainer,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    const Spacer(),
-                    if (readCount > 0)
-                      StatusBadge(
-                        type: BadgeType.inProgress,
-                        customLabel: '$readCount पठित',
-                      ),
-                  ],
-                ),
-                const SizedBox(height: 6),
                 Text(
                   book.title,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
@@ -204,6 +198,13 @@ class SubjectScreen extends StatelessWidget {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                 ),
+                if (readCount > 0) ...[
+                  const SizedBox(height: 8),
+                  StatusBadge(
+                    type: BadgeType.inProgress,
+                    customLabel: '$readCount अध्याय पठित',
+                  ),
+                ],
               ],
             ),
           ),

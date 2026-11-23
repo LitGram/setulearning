@@ -1,0 +1,97 @@
+[
+  {
+    "id": "skeleton",
+    "path": "artifacts/biology_book2/source_images/skeleton.png",
+    "generatedSourcePath": "C:/Users/rishi/.codex/generated_images/01a10cda-b7ed-7a61-b91d-d789dbdafcd0/exec-90b92d9a-5e03-4e68-87be-e9cd9e9ba07f.png"
+  },
+  {
+    "id": "joint",
+    "path": "artifacts/biology_book2/source_images/joint.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-73a4e716-975a-4ae3-a55c-89a9a16f2906.png"
+  },
+  {
+    "id": "sarcomere",
+    "path": "artifacts/biology_book2/source_images/sarcomere.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-f3c4f3c3-3d71-41f4-bd8c-936fb87b2a1b.png"
+  },
+  {
+    "id": "villus",
+    "path": "artifacts/biology_book2/source_images/villus.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-07c4499a-2acf-4c42-b51c-566e15074c9e.png"
+  },
+  {
+    "id": "respiratory",
+    "path": "artifacts/biology_book2/source_images/respiratory.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-b9e2e4cb-78bc-4b0f-a91f-043ed6088f61.png"
+  },
+  {
+    "id": "alveoli",
+    "path": "artifacts/biology_book2/source_images/alveoli.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-dba5b52c-5d5c-4665-9e01-6cde88df8288.png"
+  },
+  {
+    "id": "heart",
+    "path": "artifacts/biology_book2/source_images/heart.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-89f6882f-f4c6-4a51-aca5-a76673659153.png"
+  },
+  {
+    "id": "blood",
+    "path": "artifacts/biology_book2/source_images/blood.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-d16f8b22-348a-4013-ad13-05a92b330b74.png"
+  },
+  {
+    "id": "lymph",
+    "path": "artifacts/biology_book2/source_images/lymph.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-f8c5834c-1025-4ede-867f-e8c941c22558.png"
+  },
+  {
+    "id": "urinary",
+    "path": "artifacts/biology_book2/source_images/urinary.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-86e4f0c2-a96c-4910-b233-f930acec314e.png"
+  },
+  {
+    "id": "nephron",
+    "path": "artifacts/biology_book2/source_images/nephron.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-22d250d5-6c29-49c4-aeb1-a2676dffa4e5.png"
+  },
+  {
+    "id": "neuron",
+    "path": "artifacts/biology_book2/source_images/neuron.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-b2bf65f8-4608-44a4-82c8-6630ea920867.png"
+  },
+  {
+    "id": "brain",
+    "path": "artifacts/biology_book2/source_images/brain.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-0fd75bd0-8c94-4f56-8762-765cebf0b910.png"
+  },
+  {
+    "id": "synapse",
+    "path": "artifacts/biology_book2/source_images/synapse.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-823a76b0-b124-4177-9409-f78e75cc0e28.png"
+  },
+  {
+    "id": "eye",
+    "path": "artifacts/biology_book2/source_images/eye.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-22630378-55ed-4395-9f2d-5860bd23fec8.png"
+  },
+  {
+    "id": "ear",
+    "path": "artifacts/biology_book2/source_images/ear.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-67d9dfc4-7534-466c-80a6-20c49382838e.png"
+  },
+  {
+    "id": "skin",
+    "path": "artifacts/biology_book2/source_images/skin.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-a08d0159-4b32-480d-9aba-33a3e86fca93.png"
+  },
+  {
+    "id": "glands",
+    "path": "artifacts/biology_book2/source_images/glands.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-c5dd90c3-94a2-450e-898c-57b0a9fae8e6.png"
+  },
+  {
+    "id": "antibody",
+    "path": "artifacts/biology_book2/source_images/antibody.png",
+    "generatedSourcePath": "C:\\Users\\rishi\\.codex\\generated_images\\01a10cda-b7ed-7a61-b91d-d789dbdafcd0\\exec-eb96c499-c195-46b1-a03c-e7eb5e179c60.png"
+  }
+]

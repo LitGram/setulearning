@@ -1,0 +1,501 @@
+{
+  "title": "VigyanSetu Physics Books 1 & 2 Vertical Graphics Manifest",
+  "updated_at": "2026-10-07T16:10:02.067Z",
+  "books": [
+    {
+      "book_id": "vigyansetu_b1",
+      "json_asset": "assets/content/vigyansetu/vigyansetu_book1.json",
+      "title": "भौतिकी भाग-1: गति, बल एवं कार्य",
+      "chapters_count": 18,
+      "graphics_count": 39,
+      "aspect_ratio": "1000x1400 vertical portrait",
+      "images": [
+        {
+          "chapter_id": "ch1",
+          "file": "phys1_scientific_method.webp",
+          "caption": "वैज्ञानिक विधि का चक्रीय क्रम: प्रेक्षण से सिद्धांत तक"
+        },
+        {
+          "chapter_id": "ch1",
+          "file": "phys1_reasoning_and_variables.webp",
+          "caption": "वैज्ञानिक तर्क (आगमन बनाम निगमन) एवं नियंत्रित प्रयोग के चर"
+        },
+        {
+          "chapter_id": "ch2",
+          "file": "phys1_si_units_ladder.webp",
+          "caption": "7 SI मूल मात्रक एवं 10 की घातों की मापन सीढ़ी"
+        },
+        {
+          "chapter_id": "ch2",
+          "file": "phys1_dimensional_analysis.webp",
+          "caption": "विमीय विश्लेषण: समांगता का सिद्धांत एवं तीन प्रमुख अनुप्रयोग"
+        },
+        {
+          "chapter_id": "ch3",
+          "file": "phys1_accuracy_vs_precision.webp",
+          "caption": "यथार्थता बनाम परिशुद्धता: लक्ष्य-बोर्ड तुलना मॉडल"
+        },
+        {
+          "chapter_id": "ch3",
+          "file": "phys1_instruments_reading.webp",
+          "caption": "वर्नियर कैलिपर्स एवं स्क्रू गेज का पाठ्यांक एवं अल्पतमांक"
+        },
+        {
+          "chapter_id": "ch4",
+          "file": "phys1_vector_addition_laws.webp",
+          "caption": "सदिश योग: त्रिभुज नियम, समांतर चतुर्भुज नियम एवं घटक वियोजन"
+        },
+        {
+          "chapter_id": "ch4",
+          "file": "phys1_dot_vs_cross_product.webp",
+          "caption": "अदिश गुणनफल (A·B = AB cos θ) बनाम सदिश गुणनफल (A×B = AB sin θ n̂)"
+        },
+        {
+          "chapter_id": "ch5",
+          "file": "phys1_distance_vs_displacement.webp",
+          "caption": "दूरी बनाम विस्थापन: अदिश पथ-लंबाई बनाम सदिश न्यूनतम दूरी"
+        },
+        {
+          "chapter_id": "ch5",
+          "file": "phys1_motion_types_speed.webp",
+          "caption": "एकसमान बनाम त्वरित गति एवं औसत चाल के शॉर्टकट सूत्र"
+        },
+        {
+          "chapter_id": "ch6",
+          "file": "phys1_motion_graphs.webp",
+          "caption": "गति ग्राफ: ढाल (Slope) एवं क्षेत्रफल (Area) का भौतिक अर्थ"
+        },
+        {
+          "chapter_id": "ch6",
+          "file": "phys1_kinematic_equations.webp",
+          "caption": "एकसमान त्वरित गति के समीकरण: ग्राफीय व्युत्पत्ति एवं सूत्र"
+        },
+        {
+          "chapter_id": "ch6",
+          "file": "phys1_galileo_odd_rule.webp",
+          "caption": "गैलीलियो का विषम अंक नियम एवं ऊर्ध्वाधर गति की सममिति"
+        },
+        {
+          "chapter_id": "ch7",
+          "file": "phys1_newtons_laws.webp",
+          "caption": "न्यूटन के गति नियम: जड़त्व, संवेग एवं क्रिया-प्रतिक्रिया"
+        },
+        {
+          "chapter_id": "ch7",
+          "file": "phys1_momentum_conservation.webp",
+          "caption": "रेखीय संवेग संरक्षण: 1D संघट्ट एवं बंदूक का प्रतिक्षेप"
+        },
+        {
+          "chapter_id": "ch7",
+          "file": "phys1_impulse_momentum.webp",
+          "caption": "आवेग-संवेग प्रमेय (J = F·Δt = Δp) एवं आघात बल नियंत्रण"
+        },
+        {
+          "chapter_id": "ch8",
+          "file": "phys1_fundamental_forces.webp",
+          "caption": "प्रकृति के चार मूलभूत बल: आपेक्षिक सामर्थ्य, परास एवं विनिमय कण"
+        },
+        {
+          "chapter_id": "ch8",
+          "file": "phys1_friction_graph_types.webp",
+          "caption": "स्थैतिक, सीमांत एवं गतिज घर्षण: बल वक्र एवं सूक्ष्मदर्शीय तुलना"
+        },
+        {
+          "chapter_id": "ch8",
+          "file": "phys1_free_body_diagram.webp",
+          "caption": "आनत तल पर मुक्त पिंड आरेख (FBD) एवं बलों का वियोजन"
+        },
+        {
+          "chapter_id": "ch9",
+          "file": "phys1_circular_motion.webp",
+          "caption": "एकसमान वृत्तीय गति: स्पर्शरेखीय वेग, अभिकेंद्री त्वरण एवं सड़क का बंकन"
+        },
+        {
+          "chapter_id": "ch9",
+          "file": "phys1_centrifugal_and_cyclist.webp",
+          "caption": "अभिकेंद्री बनाम अपकेंद्रीय बल (छद्म बल) एवं मोड़ पर साइकिल चालक का झुकाव"
+        },
+        {
+          "chapter_id": "ch10",
+          "file": "phys1_work_energy_power.webp",
+          "caption": "कार्य के प्रकार (W = F·s cos θ) एवं मुक्त पतन में यांत्रिक ऊर्जा संरक्षण"
+        },
+        {
+          "chapter_id": "ch10",
+          "file": "phys1_collisions_and_power.webp",
+          "caption": "संघट्ट (प्रत्यास्थ बनाम अप्रत्यास्थ) एवं शक्ति (P = W/t = F·v) का विश्लेषण"
+        },
+        {
+          "chapter_id": "ch11",
+          "file": "phys1_gravitation_and_g.webp",
+          "caption": "सार्वत्रिक गुरुत्वाकर्षण नियम एवं गुरुत्वीय त्वरण 'g' में परिवर्तन के कारक"
+        },
+        {
+          "chapter_id": "ch11",
+          "file": "phys1_keplers_laws.webp",
+          "caption": "केपलर के ग्रहीय गति के तीन नियम: कक्षा, क्षेत्रफलीय चाल एवं आवर्तकाल"
+        },
+        {
+          "chapter_id": "ch12",
+          "file": "phys1_hydrostatic_pressure.webp",
+          "caption": "द्रव-दाब गहराई नियम (P = hρg) एवं द्रव-स्थैतिक विरोधाभास (Hydrostatic Paradox)"
+        },
+        {
+          "chapter_id": "ch12",
+          "file": "phys1_pascals_law_hydraulics.webp",
+          "caption": "पास्कल का नियम: हाइड्रोलिक लिफ्ट, ब्रेक एवं टोरिसेली बैरोमीटर"
+        },
+        {
+          "chapter_id": "ch13",
+          "file": "phys1_buoyancy_archimedes.webp",
+          "caption": "उत्प्लावन एवं आर्किमिडीज सिद्धांत: विस्थापित द्रव का भार एवं प्लवन नियम"
+        },
+        {
+          "chapter_id": "ch13",
+          "file": "phys1_submarine_and_apparent_weight.webp",
+          "caption": "पनडुब्बी का बैलास्ट टैंक नियंत्रण एवं द्रव में आभासी भार हानि"
+        },
+        {
+          "chapter_id": "ch14",
+          "file": "phys1_anomalous_expansion_water.webp",
+          "caption": "जल का असामान्य प्रसार: 4°C पर अधिकतम घनत्व एवं झीलों में जलीय जीवन"
+        },
+        {
+          "chapter_id": "ch14",
+          "file": "phys1_density_hydrometer.webp",
+          "caption": "आपेक्षिक घनत्व, हाइड्रोमीटर एवं लैक्टोमीटर का कार्य सिद्धांत"
+        },
+        {
+          "chapter_id": "ch15",
+          "file": "phys1_surface_tension_viscosity.webp",
+          "caption": "पृष्ठ तनाव (संसंजन बल), केशिकत्व (ज्यूरिन नियम) एवं तरलों की श्यानता"
+        },
+        {
+          "chapter_id": "ch15",
+          "file": "phys1_angle_of_contact.webp",
+          "caption": "स्पर्श कोण (Angle of Contact), मेनिस्कस आकृति एवं ससंजक/आसंजक बल"
+        },
+        {
+          "chapter_id": "ch16",
+          "file": "phys1_elastic_energy_ductile_brittle.webp",
+          "caption": "प्रत्यास्थ स्थितिज ऊर्जा (U = ½ × प्रतिबल × विकृति) एवं तन्य बनाम भंगुर पदार्थ"
+        },
+        {
+          "chapter_id": "ch16",
+          "file": "phys1_stress_strain_curve.webp",
+          "caption": "तन्य धातु का प्रतिबल-विकृति वक्र एवं प्रत्यास्थता मापांक"
+        },
+        {
+          "chapter_id": "ch17",
+          "file": "phys1_levers_classes.webp",
+          "caption": "उत्तोलक के तीन वर्ग (FLE-123 मास्टर ट्रिक) एवं यांत्रिक लाभ"
+        },
+        {
+          "chapter_id": "ch17",
+          "file": "phys1_pulleys_systems.webp",
+          "caption": "घिरनी तंत्र (Pulleys): अचल, चल एवं ब्लॉक-टैकल तंत्र का यांत्रिक लाभ"
+        },
+        {
+          "chapter_id": "ch18",
+          "file": "phys1_physics_global_timeline.webp",
+          "caption": "भौतिकी के वैश्विक मील के पत्थर: गैलीलियो, न्यूटन से क्वांटम युग तक"
+        },
+        {
+          "chapter_id": "ch18",
+          "file": "phys1_physics_milestones_timeline.webp",
+          "caption": "भारतीय भौतिकविदों के मील के पत्थर एवं यांत्रिकी समग्र सूत्र सारांश"
+        }
+      ]
+    },
+    {
+      "book_id": "vigyansetu_b2",
+      "json_asset": "assets/content/vigyansetu/vigyansetu_book2.json",
+      "title": "भौतिकी भाग-2: प्रकाश, ध्वनि एवं विद्युत",
+      "chapters_count": 25,
+      "graphics_count": 56,
+      "aspect_ratio": "1000x1400 vertical portrait",
+      "images": [
+        {
+          "chapter_id": "ch1",
+          "file": "phys2_heat_vs_temperature.webp",
+          "caption": "ऊष्मा (ऊर्जा प्रवाह) बनाम तापमान (औसत गतिज ऊर्जा) का आणविक मॉडल"
+        },
+        {
+          "chapter_id": "ch1",
+          "file": "phys2_thermal_equilibrium_zeroth_law.webp",
+          "caption": "ऊष्मागतिकी का शून्यवां नियम एवं तापीय संतुलन (Zeroth Law of Thermodynamics)"
+        },
+        {
+          "chapter_id": "ch2",
+          "file": "phys2_temperature_scales_comparison.webp",
+          "caption": "प्रमुख ताप पैमाने: सेल्सियस, फारेनहाइट, केल्विन एवं रोमर की तुलना"
+        },
+        {
+          "chapter_id": "ch2",
+          "file": "phys2_mercury_clinical_thermometer.webp",
+          "caption": "डॉक्टरी तापमापी (क्लिनिकल थर्मामीटर) की सूक्ष्म संरचना व संकीर्णन (Constriction/Kink)"
+        },
+        {
+          "chapter_id": "ch3",
+          "file": "phys2_thermal_expansion_coefficients.webp",
+          "caption": "ठोसों में ऊष्मीय प्रसार: रेखीय (α), क्षेत्रीय (β) एवं आयतन (γ) प्रसार गुणांक"
+        },
+        {
+          "chapter_id": "ch3",
+          "file": "phys2_bimetallic_strip_deflection.webp",
+          "caption": "द्विधात्विक पत्ती (Bimetallic Strip): असमान तापीय प्रसार एवं थर्मोस्टेट कार्यविधि"
+        },
+        {
+          "chapter_id": "ch3",
+          "file": "phys2_anomalous_expansion_water.webp",
+          "caption": "जल का असामान्य प्रसार (4 °C पर अधिकतम घनत्व) एवं होप का उपकरण"
+        },
+        {
+          "chapter_id": "ch4",
+          "file": "phys2_calorimetry_principle.webp",
+          "caption": "कैलोरीमिति का मूल सिद्धांत: ऊष्मा हानि = ऊष्मा लाभ एवं जल तुल्यांक"
+        },
+        {
+          "chapter_id": "ch4",
+          "file": "phys2_newtons_law_of_cooling.webp",
+          "caption": "न्यूटन का शीतलन नियम: शीतलन दर व तापांतर का चरघातांकी वक्र"
+        },
+        {
+          "chapter_id": "ch5",
+          "file": "phys2_three_modes_heat_transfer.webp",
+          "caption": "ऊष्मा संचरण की तीन विधियाँ: चालन (ठोस), संवहन (द्रव/गैस) एवं विकिरण (निर्वात)"
+        },
+        {
+          "chapter_id": "ch5",
+          "file": "phys2_stefan_wien_radiation_law.webp",
+          "caption": "कृष्णिका विकिरण: स्टीफन-बोल्ट्ज़मान नियम (E ∝ T⁴) एवं वीन का विस्थापन नियम"
+        },
+        {
+          "chapter_id": "ch6",
+          "file": "phys2_heating_curve_latent_heat.webp",
+          "caption": "जल का संपूर्ण तापन वक्र: संगलन की गुप्त ऊष्मा (80 cal/g) व वाष्पन (540 cal/g)"
+        },
+        {
+          "chapter_id": "ch6",
+          "file": "phys2_evaporative_cooling_pot.webp",
+          "caption": "वाष्पीकरण द्वारा शीतलन की सूक्ष्म प्रक्रिया: मिट्टी का घड़ा (मटका) व पसीना"
+        },
+        {
+          "chapter_id": "ch7",
+          "file": "phys2_first_law_thermodynamics_processes.webp",
+          "caption": "ऊष्मागतिकी का प्रथम नियम (ΔQ = ΔU + ΔW) एवं 4 प्रमुख ऊष्मागतिक प्रक्रम"
+        },
+        {
+          "chapter_id": "ch7",
+          "file": "phys2_carnot_engine_refrigerator_cycle.webp",
+          "caption": "कार्नो ऊष्मा इंजन चक्र (दक्षता η = 1 - T₂/T₁) एवं प्रशीतक (रेफ्रिजरेटर)"
+        },
+        {
+          "chapter_id": "ch8",
+          "file": "phys2_shm_pendulum_energy.webp",
+          "caption": "सरल आवर्त गति (SHM) एवं सरल लोलक में ऊर्जा संरक्षण (KE ⇌ PE)"
+        },
+        {
+          "chapter_id": "ch8",
+          "file": "phys2_transverse_vs_longitudinal_waves.webp",
+          "caption": "अनुप्रस्थ (Transverse) बनाम अनुदैर्ध्य (Longitudinal) तरंगों का सूक्ष्म मॉडल"
+        },
+        {
+          "chapter_id": "ch9",
+          "file": "phys2_sound_velocity_factors.webp",
+          "caption": "ध्वनि का वेग: न्यूटन बनाम लाप्लास संशोधन एवं प्रभावित करने वाले कारक"
+        },
+        {
+          "chapter_id": "ch9",
+          "file": "phys2_sound_pitch_loudness_quality.webp",
+          "caption": "ध्वनि के 3 मौलिक लक्षण: तारत्व (Pitch/आवृत्ति), तीव्रता (Loudness/आयाम) व गुणता (Timbre)"
+        },
+        {
+          "chapter_id": "ch10",
+          "file": "phys2_sound_frequency_spectrum_animals.webp",
+          "caption": "ध्वनि आवृत्ति का संपूर्ण स्पेक्ट्रम: अवश्रव्य (<20 Hz), श्रव्य (20-20,000 Hz) व पराश्रव्य (>20 kHz)"
+        },
+        {
+          "chapter_id": "ch10",
+          "file": "phys2_ultrasound_sonography_lithotripsy.webp",
+          "caption": "पराश्रव्य तरंगों के क्रांतिकारी अनुप्रयोग: सोनोग्राफी (USG) एवं लिथोट्रिप्सी (Lithotripsy)"
+        },
+        {
+          "chapter_id": "ch11",
+          "file": "phys2_echo_reflection_minimum_distance.webp",
+          "caption": "प्रतिध्वनि (Echo) की भौतिकी: श्रवण निर्बंध (0.1 s) एवं न्यूनतम दूरी (17.2 मीटर)"
+        },
+        {
+          "chapter_id": "ch11",
+          "file": "phys2_doppler_effect_sound_sonar.webp",
+          "caption": "ध्वनि में डॉप्लर प्रभाव (आभासी आवृत्ति f') एवं सोनार (SONAR) कार्यप्रणाली"
+        },
+        {
+          "chapter_id": "ch12",
+          "file": "phys2_shadow_umbra_penumbra_pinhole.webp",
+          "caption": "छाया निर्माण: प्रच्छाया (Umbra), उपच्छाया (Penumbra) एवं सूचीछिद्र कैमरा"
+        },
+        {
+          "chapter_id": "ch12",
+          "file": "phys2_solar_and_lunar_eclipse.webp",
+          "caption": "सूर्य ग्रहण (Solar Eclipse - अमावस्या) बनाम चंद्र ग्रहण (Lunar Eclipse - पूर्णिमा)"
+        },
+        {
+          "chapter_id": "ch13",
+          "file": "phys2_plane_mirror_reflection_laws.webp",
+          "caption": "परावर्तन के नियम (∠i = ∠r), विचलन कोण (δ = 180° - 2i) एवं दर्पण घूर्णन"
+        },
+        {
+          "chapter_id": "ch13",
+          "file": "phys2_plane_mirror_image_rules_multiple.webp",
+          "caption": "समतल दर्पण प्रतिबिंब गुण (h/2 न्यूनतम ऊंचाई) व दो झुके दर्पणों में प्रतिबिंब संख्या (n)"
+        },
+        {
+          "chapter_id": "ch14",
+          "file": "phys2_concave_mirror_image_formation.webp",
+          "caption": "अवतल दर्पण (Concave Mirror) द्वारा प्रतिबिंब निर्माण की 6 स्थितियां"
+        },
+        {
+          "chapter_id": "ch14",
+          "file": "phys2_convex_mirror_sign_convention.webp",
+          "caption": "उत्तल दर्पण (Convex Mirror - रियर व्यू) एवं नवीन कार्तीय चिन्ह परिपाटी"
+        },
+        {
+          "chapter_id": "ch15",
+          "file": "phys2_refraction_snell_law_slab.webp",
+          "caption": "प्रकाश का अपवर्तन, स्नेल का नियम (n₁ sin i = n₂ sin r) एवं कांच की सिल्ली"
+        },
+        {
+          "chapter_id": "ch15",
+          "file": "phys2_apparent_depth_atmospheric_refraction.webp",
+          "caption": "आभासी गहराई (h' = h/μ) एवं वायुमंडलीय अपवर्तन: तारों का टिमटिमाना व अग्रिम सूर्योदय"
+        },
+        {
+          "chapter_id": "ch16",
+          "file": "phys2_tir_critical_angle_mirage.webp",
+          "caption": "पूर्ण आंतरिक परावर्तन (TIR), क्रांतिक कोण (sin C = 1/μ) एवं रेगिस्तान में मरीचिका"
+        },
+        {
+          "chapter_id": "ch16",
+          "file": "phys2_optical_fiber_endoscopy_tir.webp",
+          "caption": "प्रकाशीय तंतु (Optical Fiber) संरचना: क्रोड (Core), क्लैडिंग (Cladding) व एंडोस्कोपी"
+        },
+        {
+          "chapter_id": "ch17",
+          "file": "phys2_convex_lens_image_formation_ray_rules.webp",
+          "caption": "उत्तल लेंस (Convex Lens) द्वारा प्रतिबिंब निर्माण की स्थितियां एवं किरण नियम"
+        },
+        {
+          "chapter_id": "ch17",
+          "file": "phys2_concave_lens_power_combination.webp",
+          "caption": "अवतल लेंस (Concave Lens), लेंस क्षमता (P = 1/f डायोप्टर) एवं संयोजन सूत्र"
+        },
+        {
+          "chapter_id": "ch18",
+          "file": "phys2_human_eye_anatomy_accommodation.webp",
+          "caption": "मानव नेत्र की आंतरिक संरचना (कॉर्निया, पुतली, लेंस, रेटिना) एवं समंजन क्षमता"
+        },
+        {
+          "chapter_id": "ch18",
+          "file": "phys2_eye_defects_myopia_hypermetropia.webp",
+          "caption": "नेत्र दोष एवं निवारण: निकट दृष्टि दोष (Myopia) बनाम दूर दृष्टि दोष (Hypermetropia)"
+        },
+        {
+          "chapter_id": "ch19",
+          "file": "phys2_microscope_simple_compound.webp",
+          "caption": "संयुक्त सूक्ष्मदर्शी (Compound Microscope): अभिदृश्यक (Objective) व नेत्रिका (Eyepiece)"
+        },
+        {
+          "chapter_id": "ch19",
+          "file": "phys2_astronomical_terrestrial_telescope.webp",
+          "caption": "खगोलीय दूरदर्शी (Astronomical Telescope) एवं न्यूटोनियन परावर्तक दूरदर्शी"
+        },
+        {
+          "chapter_id": "ch20",
+          "file": "phys2_prism_dispersion_spectrum_vibgyor.webp",
+          "caption": "कांच के प्रिज्म द्वारा वर्ण-विक्षेपण (Dispersion), VIBGYOR स्पेक्ट्रम व न्यूनतम विचलन"
+        },
+        {
+          "chapter_id": "ch20",
+          "file": "phys2_rainbow_formation_scattering_sky.webp",
+          "caption": "इंद्रधनुष निर्माण (अपवर्तन + TIR + विक्षेपण) एवं रैले प्रकीर्णन (नीला आकाश/लाल सूर्य)"
+        },
+        {
+          "chapter_id": "ch21",
+          "file": "phys2_coulomb_law_electrostatic_force.webp",
+          "caption": "कूलॉम का नियम: स्थिर बिंदु आवेशों के मध्य पारस्परिक आकर्षण एवं प्रतिकर्षण बल की ज्यामिति"
+        },
+        {
+          "chapter_id": "ch21",
+          "file": "phys2_electric_field_lines_configurations.webp",
+          "caption": "विद्युत क्षेत्र रेखाएं: एकल आवेश, विद्युत द्विध्रुव एवं समरूप क्षेत्र का रेखा प्रतिरूप"
+        },
+        {
+          "chapter_id": "ch21",
+          "file": "phys2_parallel_plate_capacitor_dielectric.webp",
+          "caption": "समांतर पट्ट संधारित्र एवं परावैद्युत माध्यम: धारिता वृद्धि C = K·ε₀A/d की क्रियाविधि"
+        },
+        {
+          "chapter_id": "ch22",
+          "file": "phys2_ohm_law_vi_characteristic_drift.webp",
+          "caption": "ओम का नियम एवं V-I अभिलाक्षणिक: धात्विक चालक में विभवांतर, धारा एवं इलेक्ट्रॉन अपवाह वेग"
+        },
+        {
+          "chapter_id": "ch22",
+          "file": "phys2_resistors_series_parallel_combinations.webp",
+          "caption": "प्रतिरोधों का श्रेणीक्रम एवं समांतर क्रम संयोजन: तुल्य प्रतिरोध, धारा एवं विभवांतर का विभाजन"
+        },
+        {
+          "chapter_id": "ch22",
+          "file": "phys2_kirchhoff_laws_wheatstone_bridge.webp",
+          "caption": "किरचॉफ के नियम (संधि व लूप नियम) एवं संतुलित व्हीटस्टोन सेतु (P/Q = R/S)"
+        },
+        {
+          "chapter_id": "ch23",
+          "file": "phys2_joule_heating_law_applications.webp",
+          "caption": "जूल का तापन नियम H = I²Rt एवं तापीय उपकरण (हीटर, गीजर, प्रेस)"
+        },
+        {
+          "chapter_id": "ch23",
+          "file": "phys2_electric_fuse_mcb_safety_working.webp",
+          "caption": "विद्युत सुरक्षा युक्तियां: फ्यूज तार (निम्न गलनांक, Sn+Pb) एवं MCB की कार्यप्रणाली"
+        },
+        {
+          "chapter_id": "ch23",
+          "file": "phys2_domestic_wiring_earthing_color_code.webp",
+          "caption": "घरेलू विद्युत परिपथ, समांतर संयोजन, रंग कोड एवं भूसंपर्कन (Earthing) प्रणाली"
+        },
+        {
+          "chapter_id": "ch24",
+          "file": "phys2_magnetic_field_lines_earth_magnetism.webp",
+          "caption": "दंड चुंबक की बल रेखाएं एवं भू-चुंबकत्व के तीन प्रमुख अवयव (दिक्पात, नति व H)"
+        },
+        {
+          "chapter_id": "ch24",
+          "file": "phys2_oersted_experiment_right_hand_thumb_rule.webp",
+          "caption": "ओर्स्टेड का ऐतिहासिक प्रयोग, धारावाही परिनालिका एवं दक्षिण हस्त अंगुष्ठ नियम"
+        },
+        {
+          "chapter_id": "ch24",
+          "file": "phys2_lorentz_force_fleming_left_hand_rule.webp",
+          "caption": "धारावाही चालक पर चुंबकीय बल F = I(L×B) एवं फ्लेमिंग का बाएं हाथ का नियम (FBI)"
+        },
+        {
+          "chapter_id": "ch25",
+          "file": "phys2_faraday_laws_lenz_induction_experiments.webp",
+          "caption": "फैराडे के विद्युत चुंबकीय प्रेरण के नियम एवं लेंज का नियम (ऊर्जा संरक्षण का प्रतिरूप)"
+        },
+        {
+          "chapter_id": "ch25",
+          "file": "phys2_ac_dc_generator_dynamo_working.webp",
+          "caption": "विद्युत जनित्र (AC डायनेमो vs DC डायनेमो): सर्पी वलय (Slip Rings) बनाम विभक्त वलय (Commutator)"
+        },
+        {
+          "chapter_id": "ch25",
+          "file": "phys2_step_up_step_down_transformer_physics.webp",
+          "caption": "ट्रांसफार्मर की संरचना एवं कार्यविधि: उच्चायी (Step-Up) बनाम अपचायी (Step-Down) ट्रांसफार्मर"
+        }
+      ]
+    }
+  ]
+}

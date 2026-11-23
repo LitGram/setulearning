@@ -2,15 +2,14 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:setu_learning/models/book.dart';
-import 'package:setu_learning/models/chapter.dart';
-import 'package:setu_learning/models/mcq.dart';
 import 'package:setu_learning/models/user_progress.dart';
 
 void main() {
   group('JSON Content & Model Validation Tests', () {
     test('MathSetu Book 1 JSON parses properly into models', () {
       final file = File('assets/content/mathsetu/mathsetu_book1.json');
-      expect(file.existsSync(), isTrue, reason: 'mathsetu_book1.json must exist');
+      expect(file.existsSync(), isTrue,
+          reason: 'mathsetu_book1.json must exist');
 
       final content = file.readAsStringSync();
       final Map<String, dynamic> json = jsonDecode(content);
@@ -21,7 +20,6 @@ void main() {
         id: 'mathsetu_b1',
         subjectId: 'mathsetu',
         bookNumber: 1,
-        level: 'Class 1 / Foundation',
         description: 'Test Book',
         jsonAssetPath: 'assets/content/mathsetu/mathsetu_book1.json',
       );
@@ -39,9 +37,11 @@ void main() {
       }
     });
 
-    test('EnglishSetu Book 1 JSON parses properly into models', () {
-      final file = File('assets/content/englishsetu/englishsetu_book1.json');
-      expect(file.existsSync(), isTrue, reason: 'englishsetu_book1.json must exist');
+    test('EnglishSetu literature MCQ book parses properly into models', () {
+      final file =
+          File('assets/content/englishsetu/first_grade_literature_mcqs.json');
+      expect(file.existsSync(), isTrue,
+          reason: 'first_grade_literature_mcqs.json must exist');
 
       final content = file.readAsStringSync();
       final Map<String, dynamic> json = jsonDecode(content);
@@ -49,12 +49,12 @@ void main() {
       expect(json['subject'], equals('EnglishSetu'));
       final book = Book.fromBookJson(
         json,
-        id: 'englishsetu_b1',
+        id: 'englishsetu_first_grade_mcqs',
         subjectId: 'englishsetu',
         bookNumber: 1,
-        level: 'Level 1',
         description: 'Test English Book',
-        jsonAssetPath: 'assets/content/englishsetu/englishsetu_book1.json',
+        jsonAssetPath:
+            'assets/content/englishsetu/first_grade_literature_mcqs.json',
       );
 
       expect(book.chapters.isNotEmpty, isTrue);

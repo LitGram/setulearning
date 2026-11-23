@@ -49,7 +49,8 @@ class Chapter {
       title: json['title'] as String? ?? '',
       subtitle: json['subtitle'] as String?,
       content: (json['content'] as List<dynamic>?)
-              ?.map((item) => ContentBlock.fromJson(item as Map<String, dynamic>))
+              ?.map(
+                  (item) => ContentBlock.fromJson(item as Map<String, dynamic>))
               .toList() ??
           [],
       mcqs: (json['mcqs'] as List<dynamic>?)

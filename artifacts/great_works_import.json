@@ -1,0 +1,3112 @@
+{
+  "novels": {
+    "source": "D:\\new projects\\100 great works\\manuscript\\100-great-novels-guide.epub",
+    "source_sha256": "9dc77f494778c40a109dc6d02409d76e539756f3ead5c893c7dbbe3b1ecdb4c6",
+    "omitted_book_pages": [
+      "EPUB/title.xhtml",
+      "EPUB/copyright.xhtml",
+      "EPUB/dedication.xhtml",
+      "EPUB/nav.xhtml",
+      "EPUB/part_1.xhtml",
+      "EPUB/part_2.xhtml",
+      "EPUB/part_3.xhtml",
+      "EPUB/part_4.xhtml",
+      "EPUB/part_5.xhtml",
+      "EPUB/part_6.xhtml"
+    ],
+    "chapters": [
+      {
+        "id": "ch1",
+        "entry": "EPUB/entry_001.xhtml",
+        "source_text_sha256": "353c4663dcd81185bf32949fd51d88fde3909867fa8ec49694e585b3e07402af"
+      },
+      {
+        "id": "ch2",
+        "entry": "EPUB/entry_002.xhtml",
+        "source_text_sha256": "c674c56fcb6eaf0fb634d177c4ede4ddfedae7cef6d5b21fc6988efdad2abe79"
+      },
+      {
+        "id": "ch3",
+        "entry": "EPUB/entry_003.xhtml",
+        "source_text_sha256": "aa58df249555b1e90a75d60e7b8ce84bb8e20fec35dc1593e29602c7bf6b78b5"
+      },
+      {
+        "id": "ch4",
+        "entry": "EPUB/entry_004.xhtml",
+        "source_text_sha256": "6df95f28c8198b667f7f49174d18d2d2ee70afab9816489e434bacd4e5bb2311"
+      },
+      {
+        "id": "ch5",
+        "entry": "EPUB/entry_005.xhtml",
+        "source_text_sha256": "6ee8b71155b631d57822a7fcb281436dc1b3d0d7dc8f4ffd5e106689ecd55612"
+      },
+      {
+        "id": "ch6",
+        "entry": "EPUB/entry_006.xhtml",
+        "source_text_sha256": "ba50abecb2d1441e4646a9e1a3bf222a135e5efebae692f093f3f5fd135486b6"
+      },
+      {
+        "id": "ch7",
+        "entry": "EPUB/entry_007.xhtml",
+        "source_text_sha256": "abd9ca97875a1194bda57d510045285c359cc0a895c89b937f9084ef86c773c8"
+      },
+      {
+        "id": "ch8",
+        "entry": "EPUB/entry_008.xhtml",
+        "source_text_sha256": "e1f8999a23b5119e14f373cc79b141f4bda856de26acc551e6792f23369fe5f7"
+      },
+      {
+        "id": "ch9",
+        "entry": "EPUB/entry_009.xhtml",
+        "source_text_sha256": "107f1d87a2c0ff586a8fc43adfff5fa2c7923ce4b452ca17a945b8f0af7e62a7"
+      },
+      {
+        "id": "ch10",
+        "entry": "EPUB/entry_010.xhtml",
+        "source_text_sha256": "fd43b7e2d8a9bf1cd7040ea9ec4dd699c102fff4023787be413b5409f84f7b03"
+      },
+      {
+        "id": "ch11",
+        "entry": "EPUB/entry_011.xhtml",
+        "source_text_sha256": "ecf95b99c88d3e75e0f8345ce59f6790c60584ddfef4051741ccb8afd95db485"
+      },
+      {
+        "id": "ch12",
+        "entry": "EPUB/entry_012.xhtml",
+        "source_text_sha256": "c9ca76e5a741bc1b95371766e55acd4a0307b768685689e94a14e5d6ad7d835c"
+      },
+      {
+        "id": "ch13",
+        "entry": "EPUB/entry_013.xhtml",
+        "source_text_sha256": "3a63f0580ed9b0838c87ecfd2a2c8b3fca3760dc46074bd40c6f048608bfc973"
+      },
+      {
+        "id": "ch14",
+        "entry": "EPUB/entry_014.xhtml",
+        "source_text_sha256": "d62592666f8a5e2f0a765ff18aee51b17a4b7eb4459a52f1217763d2b6c945a9"
+      },
+      {
+        "id": "ch15",
+        "entry": "EPUB/entry_015.xhtml",
+        "source_text_sha256": "9e77b07965ea3d8f6115f0f9449571fbdfc04cdc10cc0d635ae3bc4a86c7c42c"
+      },
+      {
+        "id": "ch16",
+        "entry": "EPUB/entry_016.xhtml",
+        "source_text_sha256": "0a9f0fd6338cf99c9c23ae626c096537a3e7a07df206f3691f4bff1c931d185e"
+      },
+      {
+        "id": "ch17",
+        "entry": "EPUB/entry_017.xhtml",
+        "source_text_sha256": "f4d5611088e17c1d24562a1d2d927145ced6fff2f50ad9531f31596c0732b5cf"
+      },
+      {
+        "id": "ch18",
+        "entry": "EPUB/entry_018.xhtml",
+        "source_text_sha256": "ea41fb2422a8eaa14d8f01745cc4e049e80cd9f8ad27eb5c8a82b136aecd1468"
+      },
+      {
+        "id": "ch19",
+        "entry": "EPUB/entry_019.xhtml",
+        "source_text_sha256": "0f509ffbf7f7dfbffc0cb0946cf9d0900a0da936fc2456c2598a6b0701543cff"
+      },
+      {
+        "id": "ch20",
+        "entry": "EPUB/entry_020.xhtml",
+        "source_text_sha256": "44e724add2bdcb2062fbfece1f38c6676ca6acbb750e902cfd944d812b584aa6"
+      },
+      {
+        "id": "ch21",
+        "entry": "EPUB/entry_021.xhtml",
+        "source_text_sha256": "40fbdcff4cdfbfd78b8de5b82e7e21ed0bea330f3cc9fd4da8b82cc3a2127af1"
+      },
+      {
+        "id": "ch22",
+        "entry": "EPUB/entry_022.xhtml",
+        "source_text_sha256": "df51016d917778bae5dc76b8ed24576e298a44277ead13b4d5450081b9a01032"
+      },
+      {
+        "id": "ch23",
+        "entry": "EPUB/entry_023.xhtml",
+        "source_text_sha256": "3d1e598683345343c89c3d1f57526a0ac2cda1415a1b1ad694f01a71fe035485"
+      },
+      {
+        "id": "ch24",
+        "entry": "EPUB/entry_024.xhtml",
+        "source_text_sha256": "158fa9f76b1511dde08c32064db885d7f7fe53eeba51fcf48630a670d12415a2"
+      },
+      {
+        "id": "ch25",
+        "entry": "EPUB/entry_025.xhtml",
+        "source_text_sha256": "3492831368e73e7eb2a2ce17d96862dea7e2396993ed5aaf42b3a1fec5a3fe41"
+      },
+      {
+        "id": "ch26",
+        "entry": "EPUB/entry_026.xhtml",
+        "source_text_sha256": "36790098bf79a6d90d211e82510a32af70a41e189cae7e65be63b0398969f735"
+      },
+      {
+        "id": "ch27",
+        "entry": "EPUB/entry_027.xhtml",
+        "source_text_sha256": "fd05873096d76f2ecfcd35db652e65d7e9da57765960387f973cdd0e5247271b"
+      },
+      {
+        "id": "ch28",
+        "entry": "EPUB/entry_028.xhtml",
+        "source_text_sha256": "bf40ab778af6a9972dd022eca0a26bee5a748034e9d9b1dc901405a9aa82f892"
+      },
+      {
+        "id": "ch29",
+        "entry": "EPUB/entry_029.xhtml",
+        "source_text_sha256": "004d4016f494dd43bb0bc02e6d415d956d805a3a570f17ed242d6ff06fb39910"
+      },
+      {
+        "id": "ch30",
+        "entry": "EPUB/entry_030.xhtml",
+        "source_text_sha256": "7474855181f8eab070095ddb80228bfdf3353455f064a6946fc31134f5f51cb9"
+      },
+      {
+        "id": "ch31",
+        "entry": "EPUB/entry_031.xhtml",
+        "source_text_sha256": "2a2eb48d734f784e184758fab060060b19e8da4fbbd0bb9ec28f50ef64c1b7be"
+      },
+      {
+        "id": "ch32",
+        "entry": "EPUB/entry_032.xhtml",
+        "source_text_sha256": "7860e711f2a8ae420bc42c68a905be81d777cc296679f0b3e255acb8dba4f29e"
+      },
+      {
+        "id": "ch33",
+        "entry": "EPUB/entry_033.xhtml",
+        "source_text_sha256": "5a0cd19b559d665e93f4c55c5ab82607c671a0295cacb60e959af35b779d24bf"
+      },
+      {
+        "id": "ch34",
+        "entry": "EPUB/entry_034.xhtml",
+        "source_text_sha256": "ec85818564b3bca9cf309a35a76935511984a1069561a0f65ccc9b8c3451a0bd"
+      },
+      {
+        "id": "ch35",
+        "entry": "EPUB/entry_035.xhtml",
+        "source_text_sha256": "73e59fb1fe60bbe6aad1002f8af982f3eef112a55a7796f96b724b6ef68a8110"
+      },
+      {
+        "id": "ch36",
+        "entry": "EPUB/entry_036.xhtml",
+        "source_text_sha256": "56ef48f1e3edcd243c2c37402a1a129666f358847c39d65aa38f89ab53ab06ea"
+      },
+      {
+        "id": "ch37",
+        "entry": "EPUB/entry_037.xhtml",
+        "source_text_sha256": "b2bc6b9efd4b5f99832d168e325de854f1e42ceb5250d44eccb2a6adbafa5c56"
+      },
+      {
+        "id": "ch38",
+        "entry": "EPUB/entry_038.xhtml",
+        "source_text_sha256": "b6e02c2ac668521a3d55f830967a0b77b482acb8a56ec83701edfe7b031f1564"
+      },
+      {
+        "id": "ch39",
+        "entry": "EPUB/entry_039.xhtml",
+        "source_text_sha256": "e683c171285a86dfc727bdc26ac915a14063f2269076efe502eaab77397a9622"
+      },
+      {
+        "id": "ch40",
+        "entry": "EPUB/entry_040.xhtml",
+        "source_text_sha256": "a90d43374bdb39f144bf1de75cb9a887106c3b9136ab2cdfbf825e3e4900e692"
+      },
+      {
+        "id": "ch41",
+        "entry": "EPUB/entry_041.xhtml",
+        "source_text_sha256": "3a63eb284fda343c6e6ac9609455992b7a152dd80ccca364269b1ece40335371"
+      },
+      {
+        "id": "ch42",
+        "entry": "EPUB/entry_042.xhtml",
+        "source_text_sha256": "ab1c37decc0327177aa27f8ef655762688811f37bb2c80ff053c68b35f2c6181"
+      },
+      {
+        "id": "ch43",
+        "entry": "EPUB/entry_043.xhtml",
+        "source_text_sha256": "03b14f7e7e003fa857c0943c8b5f85abd722eea7abdd7c2d84078190cb0aee4a"
+      },
+      {
+        "id": "ch44",
+        "entry": "EPUB/entry_044.xhtml",
+        "source_text_sha256": "32ba64a3b0876b17caa735f0e97542e5b220aa1a3f083cb3e90e4ce5c0a7e40e"
+      },
+      {
+        "id": "ch45",
+        "entry": "EPUB/entry_045.xhtml",
+        "source_text_sha256": "2b9dfa856b7501dde30760efe0044db13b2adf7efa47253134ee8df253d315de"
+      },
+      {
+        "id": "ch46",
+        "entry": "EPUB/entry_046.xhtml",
+        "source_text_sha256": "a6f1924b38dc10375964b0b21015db20d6fe02c3b03ee9f6fdcad9862b62389d"
+      },
+      {
+        "id": "ch47",
+        "entry": "EPUB/entry_047.xhtml",
+        "source_text_sha256": "0d0f94c363f5d62b085aa954d3fa427994457ddda11bba942a88a9e92af563d6"
+      },
+      {
+        "id": "ch48",
+        "entry": "EPUB/entry_048.xhtml",
+        "source_text_sha256": "0ecdfcdc7320a0d4511086bce053c91e300e784680bb8f67d26cc8f6a6fcb2a1"
+      },
+      {
+        "id": "ch49",
+        "entry": "EPUB/entry_049.xhtml",
+        "source_text_sha256": "e6506fa5574446967f489067221da953ecfb208e465878c37cd857c2d85aaf87"
+      },
+      {
+        "id": "ch50",
+        "entry": "EPUB/entry_050.xhtml",
+        "source_text_sha256": "6877743cbe0650ee6ab1bbc90071d6a27faec5a8cdfd4abb6a52a8aed4861533"
+      },
+      {
+        "id": "ch51",
+        "entry": "EPUB/entry_051.xhtml",
+        "source_text_sha256": "3e77dbe6fb46fc36b271ab03b96398be238dcc7b484ce1fdd962242017b449b9"
+      },
+      {
+        "id": "ch52",
+        "entry": "EPUB/entry_052.xhtml",
+        "source_text_sha256": "9d16317442ad3c9d22992426312e675b310fc02054d476064b3f7f453ec9a399"
+      },
+      {
+        "id": "ch53",
+        "entry": "EPUB/entry_053.xhtml",
+        "source_text_sha256": "c0077c740a010a9108dddf2d07b54a240f345115f495adc05828ff3f21ebff28"
+      },
+      {
+        "id": "ch54",
+        "entry": "EPUB/entry_054.xhtml",
+        "source_text_sha256": "160a6c6240bcb93a112d3d71905cc62d71ce1513ee03cd1b8cd8128e8e441fda"
+      },
+      {
+        "id": "ch55",
+        "entry": "EPUB/entry_055.xhtml",
+        "source_text_sha256": "0d8e88add001d7cf888c50a35da754b44d6a0ad1e9e9b2957ba560c6c812f894"
+      },
+      {
+        "id": "ch56",
+        "entry": "EPUB/entry_056.xhtml",
+        "source_text_sha256": "00b067fb0c1e300c447b3c907b5a7ed608a599efcfb0578fa007766ed82cc91e"
+      },
+      {
+        "id": "ch57",
+        "entry": "EPUB/entry_057.xhtml",
+        "source_text_sha256": "3167883d6e45b1d1df2925a485fdc3dc5b2774e834086c59b05ca02d882d1c00"
+      },
+      {
+        "id": "ch58",
+        "entry": "EPUB/entry_058.xhtml",
+        "source_text_sha256": "f71720aeabc98c1efc087587a9a2ba6b3934e64a3159703f8564c5954bdcd0a1"
+      },
+      {
+        "id": "ch59",
+        "entry": "EPUB/entry_059.xhtml",
+        "source_text_sha256": "f17a538eff7f39bcc415a32834b2b57303992e5e7fed31dbc74ee48cc40a03ca"
+      },
+      {
+        "id": "ch60",
+        "entry": "EPUB/entry_060.xhtml",
+        "source_text_sha256": "03386377322988c6126f2f143423571eded2d0d4c7d2fab7b0d88ced33d48ae0"
+      },
+      {
+        "id": "ch61",
+        "entry": "EPUB/entry_061.xhtml",
+        "source_text_sha256": "bb832a359b310870829cad1c62cbea5582ed1b9f8e92ebf821ece0efe990f324"
+      },
+      {
+        "id": "ch62",
+        "entry": "EPUB/entry_062.xhtml",
+        "source_text_sha256": "e846cf3d580078534f3319bae57d454d860c2c034bac67e4294e738ed68a68d2"
+      },
+      {
+        "id": "ch63",
+        "entry": "EPUB/entry_063.xhtml",
+        "source_text_sha256": "f960d11e21237d7ef6c9b7990428968230b5b910e251764f6bad1e68c92ffab6"
+      },
+      {
+        "id": "ch64",
+        "entry": "EPUB/entry_064.xhtml",
+        "source_text_sha256": "30a6473abc5bfeed406baed417cfdf0fa1f92566bd1093910d5966db0219d611"
+      },
+      {
+        "id": "ch65",
+        "entry": "EPUB/entry_065.xhtml",
+        "source_text_sha256": "1261cfa26d4f9af5d4582decdc0fb9c1803b0f5602fa1a8024424b85f85564f5"
+      },
+      {
+        "id": "ch66",
+        "entry": "EPUB/entry_066.xhtml",
+        "source_text_sha256": "911c8029c648bd0a9c2a97c4ebea81df1182da2b5bc75249e0ff5bba0d582e2e"
+      },
+      {
+        "id": "ch67",
+        "entry": "EPUB/entry_067.xhtml",
+        "source_text_sha256": "279bf269305a955200ba0be3f9484af5e7c36c1454f5c8bbd978258faa4e6887"
+      },
+      {
+        "id": "ch68",
+        "entry": "EPUB/entry_068.xhtml",
+        "source_text_sha256": "0163c13559169f9e6782df777d9943cba09eb82613a8023a08d4ac513af57388"
+      },
+      {
+        "id": "ch69",
+        "entry": "EPUB/entry_069.xhtml",
+        "source_text_sha256": "91aba49706d12037f2516cc143098a1fcd9131a65621739559345be17cce18cb"
+      },
+      {
+        "id": "ch70",
+        "entry": "EPUB/entry_070.xhtml",
+        "source_text_sha256": "6d7b155f00ec882c82b32a6e3197bda58cf295bd5616801a2cbb4a3da97c3934"
+      },
+      {
+        "id": "ch71",
+        "entry": "EPUB/entry_071.xhtml",
+        "source_text_sha256": "fa78603bc11765aa9a44e14dcd3b49ad5572ccefb92d8ae4c1b4c9f2f726c99f"
+      },
+      {
+        "id": "ch72",
+        "entry": "EPUB/entry_072.xhtml",
+        "source_text_sha256": "b64156ce0c4aabff59b622cfccd92f7696a643a73b051d742daf0d9f9cfbcb4d"
+      },
+      {
+        "id": "ch73",
+        "entry": "EPUB/entry_073.xhtml",
+        "source_text_sha256": "ff457f3a2446693ba2eb54dbf835c0a3786fb874ca2dbe6bf87fcd3f42a4ea2f"
+      },
+      {
+        "id": "ch74",
+        "entry": "EPUB/entry_074.xhtml",
+        "source_text_sha256": "1504253ce1afd65caabd4e66b03daa5a23e30ca0281262d3e2a8359b461aef06"
+      },
+      {
+        "id": "ch75",
+        "entry": "EPUB/entry_075.xhtml",
+        "source_text_sha256": "01901c1ba8a33c38ab2e37161038fc209cdaffb8836e9cecdc377322870d2be5"
+      },
+      {
+        "id": "ch76",
+        "entry": "EPUB/entry_076.xhtml",
+        "source_text_sha256": "73b459e3f0c9729c70b555d7defda950e503dca2779e5ad8d6508957996a00bb"
+      },
+      {
+        "id": "ch77",
+        "entry": "EPUB/entry_077.xhtml",
+        "source_text_sha256": "f40bcfb249264f6e96ec98afc587563fc4b6e7708c57c6b47ee8e562df7e21ca"
+      },
+      {
+        "id": "ch78",
+        "entry": "EPUB/entry_078.xhtml",
+        "source_text_sha256": "bfbd98c527a43c37f94fc849dbec5b4d76b776c2383ddf14886f10cce850a928"
+      },
+      {
+        "id": "ch79",
+        "entry": "EPUB/entry_079.xhtml",
+        "source_text_sha256": "a2bf9a1d4efa0ed73c2bc9dcb6e77123fb0c24f1c889e3866a2ec94978c299fc"
+      },
+      {
+        "id": "ch80",
+        "entry": "EPUB/entry_080.xhtml",
+        "source_text_sha256": "143c172d047ffa69fe8696d6069ef67ee40c1655fee324eb9de46601b17e996f"
+      },
+      {
+        "id": "ch81",
+        "entry": "EPUB/entry_081.xhtml",
+        "source_text_sha256": "14360c3d013cac75c0a882ad4d5835466e80aa5a0fd8de2e4ba1a65dbb9565b7"
+      },
+      {
+        "id": "ch82",
+        "entry": "EPUB/entry_082.xhtml",
+        "source_text_sha256": "cf53d63582311a7e93d436adb7c8337c57bde84489a89e11f019713f06de504a"
+      },
+      {
+        "id": "ch83",
+        "entry": "EPUB/entry_083.xhtml",
+        "source_text_sha256": "d7f65d4298cc50ce7c9cc8151a18280343bb3074979354056b7148a4e69db45e"
+      },
+      {
+        "id": "ch84",
+        "entry": "EPUB/entry_084.xhtml",
+        "source_text_sha256": "095d84533fa42d19a4547d4791dcd77cd57e65c89cd9fe130d1ba222fadbe296"
+      },
+      {
+        "id": "ch85",
+        "entry": "EPUB/entry_085.xhtml",
+        "source_text_sha256": "0e3f50ecbc963b7d83e5494c5cfeab453ccc9899efda21d9ab7d5718fb8347e3"
+      },
+      {
+        "id": "ch86",
+        "entry": "EPUB/entry_086.xhtml",
+        "source_text_sha256": "26136d31c394f926393c78d61feefed9952bd03aaa11badfc9d3233dbc7d353a"
+      },
+      {
+        "id": "ch87",
+        "entry": "EPUB/entry_087.xhtml",
+        "source_text_sha256": "4babdd6380c38999ba5a06ee883b62aa8f2d87e3d185d3031e2c462cf0d0af6a"
+      },
+      {
+        "id": "ch88",
+        "entry": "EPUB/entry_088.xhtml",
+        "source_text_sha256": "6fd84e319de9477d234fc11017a959d039e2adad1852f591d5e07baa0d6dcfcc"
+      },
+      {
+        "id": "ch89",
+        "entry": "EPUB/entry_089.xhtml",
+        "source_text_sha256": "d3a9ae7e1a70dff7ca91f1822f33f45aa537176d3a27d39926b6b201fcfe40cc"
+      },
+      {
+        "id": "ch90",
+        "entry": "EPUB/entry_090.xhtml",
+        "source_text_sha256": "4a89553e770586635f94bfaa026e88aa9b48c5d99e86f2e7188fd6e970770b33"
+      },
+      {
+        "id": "ch91",
+        "entry": "EPUB/entry_091.xhtml",
+        "source_text_sha256": "91e77546efbf9298e024022fca88fe3cb7bf3487f1dc37f38cd701fead7b7a8f"
+      },
+      {
+        "id": "ch92",
+        "entry": "EPUB/entry_092.xhtml",
+        "source_text_sha256": "aaadda22327ba7db1f61323fd538177e685fd5ccabf41e7d4facc46dd82bedf6"
+      },
+      {
+        "id": "ch93",
+        "entry": "EPUB/entry_093.xhtml",
+        "source_text_sha256": "cb068d24b41e7eaf916967104e9d936c5132afcdc0be4d96305ee151fc644c4c"
+      },
+      {
+        "id": "ch94",
+        "entry": "EPUB/entry_094.xhtml",
+        "source_text_sha256": "d5d51a428836490429c277e18d62e9ea99ff53345a8b68dd00401c53e4dc6028"
+      },
+      {
+        "id": "ch95",
+        "entry": "EPUB/entry_095.xhtml",
+        "source_text_sha256": "840083fb7b9ff53112399dec3bbb5c973d947f34430c7663b9cb4d52c4e55a26"
+      },
+      {
+        "id": "ch96",
+        "entry": "EPUB/entry_096.xhtml",
+        "source_text_sha256": "b917a40c5ee746755f657a67ace539480b5d8f8ed6b90d9351518f7f82931f64"
+      },
+      {
+        "id": "ch97",
+        "entry": "EPUB/entry_097.xhtml",
+        "source_text_sha256": "2f2537e819ad75a2c82492de1b47278e07210a6b0b59286674edf0bd14b9cde2"
+      },
+      {
+        "id": "ch98",
+        "entry": "EPUB/entry_098.xhtml",
+        "source_text_sha256": "fc491242c4c00fd20d1820dc80f71056e2af91bd6d0eca85f4c5c990705de101"
+      },
+      {
+        "id": "ch99",
+        "entry": "EPUB/entry_099.xhtml",
+        "source_text_sha256": "b838c61071069cf2cbca953e37f85abca0ea520d97f6e07fc64fe602f8d54ae3"
+      },
+      {
+        "id": "ch100",
+        "entry": "EPUB/entry_100.xhtml",
+        "source_text_sha256": "e91e2f28fd63a8196ea46023aad90a4b49692875ba95827a9e004e967909f1df"
+      }
+    ],
+    "restored_list_or_emphasis_markup": 0
+  },
+  "plays": {
+    "source": "D:\\new projects\\100 great works\\manuscript\\100-great-plays-guide.epub",
+    "source_sha256": "a2fc6da9438695de1d17c8987411b39ce390e817be4f44b51f703e2dd2935bf6",
+    "omitted_book_pages": [
+      "EPUB/title.xhtml",
+      "EPUB/copyright.xhtml",
+      "EPUB/dedication.xhtml",
+      "EPUB/nav.xhtml",
+      "EPUB/part_1.xhtml",
+      "EPUB/part_2.xhtml",
+      "EPUB/part_3.xhtml",
+      "EPUB/part_4.xhtml",
+      "EPUB/part_5.xhtml",
+      "EPUB/part_6.xhtml"
+    ],
+    "chapters": [
+      {
+        "id": "ch1",
+        "entry": "EPUB/entry_001.xhtml",
+        "source_text_sha256": "be8433d8159a2761b39f61a04c2fdc0d29ee5c2d29cb091e61d48d4c87dacfba"
+      },
+      {
+        "id": "ch2",
+        "entry": "EPUB/entry_002.xhtml",
+        "source_text_sha256": "75ad49c63e924a52af5a4a59866914d4cf537931071e194d32871874557b3b03"
+      },
+      {
+        "id": "ch3",
+        "entry": "EPUB/entry_003.xhtml",
+        "source_text_sha256": "60dc754a12c25fb360e8a856b2e392e6c93276f9ac1b8767b19d6092f4f03094"
+      },
+      {
+        "id": "ch4",
+        "entry": "EPUB/entry_004.xhtml",
+        "source_text_sha256": "2c6736dabe954d46ac3dfd659cec50378053807174b1b8e71e8da454d32219f3"
+      },
+      {
+        "id": "ch5",
+        "entry": "EPUB/entry_005.xhtml",
+        "source_text_sha256": "1db833be9d9c8725d98fbcf10b4161efd59b9942743764ef4c0b4b5c46eb32dc"
+      },
+      {
+        "id": "ch6",
+        "entry": "EPUB/entry_006.xhtml",
+        "source_text_sha256": "8172f6dbd6a6ac9e0e344de289166a33f583057658410f4114876f763a9b389c"
+      },
+      {
+        "id": "ch7",
+        "entry": "EPUB/entry_007.xhtml",
+        "source_text_sha256": "7b91d0fee699da12eaa49183e5308b08fe7e57ca3ac8837b61397625916f3832"
+      },
+      {
+        "id": "ch8",
+        "entry": "EPUB/entry_008.xhtml",
+        "source_text_sha256": "e778d7436ab33eebf53667b78a2ab7b634f602a7e4e7fec6ca9c443163f5de9c"
+      },
+      {
+        "id": "ch9",
+        "entry": "EPUB/entry_009.xhtml",
+        "source_text_sha256": "a9bacfeaa6e5b61e0ee32389f8c4fdeb60d996d55a22a05090b79e3d6c1b6e25"
+      },
+      {
+        "id": "ch10",
+        "entry": "EPUB/entry_010.xhtml",
+        "source_text_sha256": "2207df755d132963effa650bb8a0439d9e3c66913b62a460a33e1951bad248b0"
+      },
+      {
+        "id": "ch11",
+        "entry": "EPUB/entry_011.xhtml",
+        "source_text_sha256": "2de62f0515784eed7fbb9ed1d140b1bd69ffea9ecbfabad4844a9ee34ac4f331"
+      },
+      {
+        "id": "ch12",
+        "entry": "EPUB/entry_012.xhtml",
+        "source_text_sha256": "33d0720cae5775208319f05dc8943559d3a8f5727fa9be8a0a3ffcb25af9e920"
+      },
+      {
+        "id": "ch13",
+        "entry": "EPUB/entry_013.xhtml",
+        "source_text_sha256": "6276b8baf847ca24adfc4ccfbf65cdd967317f5c43b25faf072f349692ee2ba6"
+      },
+      {
+        "id": "ch14",
+        "entry": "EPUB/entry_014.xhtml",
+        "source_text_sha256": "34aa6cc9665c36a85d348bda028585f549eb60435b2a67e7b99c96fe67b6a2d1"
+      },
+      {
+        "id": "ch15",
+        "entry": "EPUB/entry_015.xhtml",
+        "source_text_sha256": "76c2792157a2aa9ce800f910206029e30e23b07753124bcbb9f356d781f2f1b5"
+      },
+      {
+        "id": "ch16",
+        "entry": "EPUB/entry_016.xhtml",
+        "source_text_sha256": "4500342a27d6dcf98f29ac6f80e923d8bda3cc067eeae59198e94112b314eb4d"
+      },
+      {
+        "id": "ch17",
+        "entry": "EPUB/entry_017.xhtml",
+        "source_text_sha256": "e92a248a7def3469c8482d86f7e981cceda61ff654b4024a13dfdcf5b7f0b477"
+      },
+      {
+        "id": "ch18",
+        "entry": "EPUB/entry_018.xhtml",
+        "source_text_sha256": "c9caba6513c7e85305a87c67e7fcc94e9f2f4892bb202585ad7af283e9a82d8f"
+      },
+      {
+        "id": "ch19",
+        "entry": "EPUB/entry_019.xhtml",
+        "source_text_sha256": "2d8a4b32b044e3ce72a9dab9c913da4048a995422faea7fb0602fa21c65a1ee3"
+      },
+      {
+        "id": "ch20",
+        "entry": "EPUB/entry_020.xhtml",
+        "source_text_sha256": "44384b3ebef84255da5c5595e69c3d10d8c5fa590ed49583939695c42675a32d"
+      },
+      {
+        "id": "ch21",
+        "entry": "EPUB/entry_021.xhtml",
+        "source_text_sha256": "135709cd1c81fb52ceb4fd91a6cd03b380b1237256da071b49e40da44f4c7cb4"
+      },
+      {
+        "id": "ch22",
+        "entry": "EPUB/entry_022.xhtml",
+        "source_text_sha256": "54f800364854b4b746499aa73bb0f888573277727c2720a95befa8203fdc688d"
+      },
+      {
+        "id": "ch23",
+        "entry": "EPUB/entry_023.xhtml",
+        "source_text_sha256": "30a288e6d453aefb5cbefafc750e2a7e981287c8efdffed7ffc00fb39556013e"
+      },
+      {
+        "id": "ch24",
+        "entry": "EPUB/entry_024.xhtml",
+        "source_text_sha256": "427d37ff5bfe178633d629ce2dc695088e1dec2f74b6ff6779ca8862046e0629"
+      },
+      {
+        "id": "ch25",
+        "entry": "EPUB/entry_025.xhtml",
+        "source_text_sha256": "7ce0cea98ab089bcfdff38b66d7292df66a199fc21ed7a9f5969b7ab57c6ade2"
+      },
+      {
+        "id": "ch26",
+        "entry": "EPUB/entry_026.xhtml",
+        "source_text_sha256": "4ba07eb1463818a9ab39972d71a8f37e6186bc979f059cc390ad5dcfa5ff2e0e"
+      },
+      {
+        "id": "ch27",
+        "entry": "EPUB/entry_027.xhtml",
+        "source_text_sha256": "56e2be8770f2cdda92d627c8faf91dff6c628a48fb2a22507ecf42eabb7de593"
+      },
+      {
+        "id": "ch28",
+        "entry": "EPUB/entry_028.xhtml",
+        "source_text_sha256": "88ed27ab8f6cc4ad9acf024be898e673c078c229561acdc13b85a5aca1df7863"
+      },
+      {
+        "id": "ch29",
+        "entry": "EPUB/entry_029.xhtml",
+        "source_text_sha256": "2e3c482eba353d92a2f40b65165323c6e5f7b7fc1245524234a3636076eaad7c"
+      },
+      {
+        "id": "ch30",
+        "entry": "EPUB/entry_030.xhtml",
+        "source_text_sha256": "91ed9b8fa0f32e02ef8a6def4a41d0ef157c95ea7be51c9be49615fc08cda0b0"
+      },
+      {
+        "id": "ch31",
+        "entry": "EPUB/entry_031.xhtml",
+        "source_text_sha256": "73998bb40f13666cf1d37b87579635b3f5cb68728580bee43b33a62a05d330af"
+      },
+      {
+        "id": "ch32",
+        "entry": "EPUB/entry_032.xhtml",
+        "source_text_sha256": "6bc9fec6bf9859ba2c3de2f99f263a239c31619bbd3705b3744d359d70655c18"
+      },
+      {
+        "id": "ch33",
+        "entry": "EPUB/entry_033.xhtml",
+        "source_text_sha256": "309fe83bd6857e788718aa5831efeb915e453a6f6dfb7c0ffcc9ba41219e800f"
+      },
+      {
+        "id": "ch34",
+        "entry": "EPUB/entry_034.xhtml",
+        "source_text_sha256": "576683524c147cb20c4818a5698ebc3165bc362b151d523091ad1e12c3992118"
+      },
+      {
+        "id": "ch35",
+        "entry": "EPUB/entry_035.xhtml",
+        "source_text_sha256": "9520ab6ba4e6c9cca204f128ee104d8fa01899e894a9e533538649c67f6635df"
+      },
+      {
+        "id": "ch36",
+        "entry": "EPUB/entry_036.xhtml",
+        "source_text_sha256": "964cf000a5b21b7cbd18b80370d35c688eafd35bbce2cc96a190da320c1f3653"
+      },
+      {
+        "id": "ch37",
+        "entry": "EPUB/entry_037.xhtml",
+        "source_text_sha256": "65e57ea35f50106f89805ab53e2a374051ed7b6520665f200ccfc42562f441a1"
+      },
+      {
+        "id": "ch38",
+        "entry": "EPUB/entry_038.xhtml",
+        "source_text_sha256": "8c80382e3d065b718cf4ea10ea2163d096ac7c02e294d5ac81647d0c4cb96340"
+      },
+      {
+        "id": "ch39",
+        "entry": "EPUB/entry_039.xhtml",
+        "source_text_sha256": "097ee9f6b232455890534ec562941d1f86433896db31d54f4fdb44791e37a736"
+      },
+      {
+        "id": "ch40",
+        "entry": "EPUB/entry_040.xhtml",
+        "source_text_sha256": "ec1ba629a8481c7f7ac915a85c773782a73de44071db4e743580ee77c3b46cea"
+      },
+      {
+        "id": "ch41",
+        "entry": "EPUB/entry_041.xhtml",
+        "source_text_sha256": "c1158d6052eb30bd6f8f0346f79189ff46459be16acb64719acfb8e249e20340"
+      },
+      {
+        "id": "ch42",
+        "entry": "EPUB/entry_042.xhtml",
+        "source_text_sha256": "948088b38591a8da663c6d5f768a4dba9c57b620eda2c996daaa972456d50d3c"
+      },
+      {
+        "id": "ch43",
+        "entry": "EPUB/entry_043.xhtml",
+        "source_text_sha256": "f72dc5c95683722c391b4187ca4062ad1e9ab163364dcee89b23d72776f4e086"
+      },
+      {
+        "id": "ch44",
+        "entry": "EPUB/entry_044.xhtml",
+        "source_text_sha256": "236d914c0f67d60b0e9105c6131f35da88f930621233741da1bf5b64ced71175"
+      },
+      {
+        "id": "ch45",
+        "entry": "EPUB/entry_045.xhtml",
+        "source_text_sha256": "50202cb6016360f3a732bc8142df3b6ef2058bb0076854e6bf566174702029fb"
+      },
+      {
+        "id": "ch46",
+        "entry": "EPUB/entry_046.xhtml",
+        "source_text_sha256": "0ab41734e71573cdbc14b32d943155c51bf66b46aad421f9843a625b1a5182a5"
+      },
+      {
+        "id": "ch47",
+        "entry": "EPUB/entry_047.xhtml",
+        "source_text_sha256": "bc33f60b605cde7888ab48e6105500cc678e30a57c68222f7c3cabc9b1bb05a0"
+      },
+      {
+        "id": "ch48",
+        "entry": "EPUB/entry_048.xhtml",
+        "source_text_sha256": "0f3fea9b93e2711ae5f57217e97bda4b0dc16e2a1f11723fe52f08137d01788e"
+      },
+      {
+        "id": "ch49",
+        "entry": "EPUB/entry_049.xhtml",
+        "source_text_sha256": "6a8925e6fb96032cdbc07c506d225b378e436c176edce61dd0b86dacc8daccb8"
+      },
+      {
+        "id": "ch50",
+        "entry": "EPUB/entry_050.xhtml",
+        "source_text_sha256": "d568c8796221a00d38921d4c233a51383f21b644bdf1fbb6dce31c613c66b94d"
+      },
+      {
+        "id": "ch51",
+        "entry": "EPUB/entry_051.xhtml",
+        "source_text_sha256": "2016d7556208a75cf86afa77937ce965bff91616679e02231bde5ecfd580b4e9"
+      },
+      {
+        "id": "ch52",
+        "entry": "EPUB/entry_052.xhtml",
+        "source_text_sha256": "20ce77348b40250b06cd9ffab458b650a527c817f69173483f44b88ff43a65f6"
+      },
+      {
+        "id": "ch53",
+        "entry": "EPUB/entry_053.xhtml",
+        "source_text_sha256": "aed8e064b7ee8733c52ea89346e8f65afed9bfe6af133efc29e087fd5d0119e4"
+      },
+      {
+        "id": "ch54",
+        "entry": "EPUB/entry_054.xhtml",
+        "source_text_sha256": "3fde10d6a720f9ae05f2ed36a8c99508dfeae4f456c7d38ae4aacaeb260300e8"
+      },
+      {
+        "id": "ch55",
+        "entry": "EPUB/entry_055.xhtml",
+        "source_text_sha256": "8757ed1c7db24b5bf4533cf4cc1e2374e788d5b85479e2a218aebcf6c1107820"
+      },
+      {
+        "id": "ch56",
+        "entry": "EPUB/entry_056.xhtml",
+        "source_text_sha256": "1b9b8396e733f94ce20354e020b064fb06f792925e7ea49fb2f66977ee8f1aa2"
+      },
+      {
+        "id": "ch57",
+        "entry": "EPUB/entry_057.xhtml",
+        "source_text_sha256": "4d1fc03f3c6dc67bdc50e237703c3a059cb590b6356644e1c58c0fd5419b410a"
+      },
+      {
+        "id": "ch58",
+        "entry": "EPUB/entry_058.xhtml",
+        "source_text_sha256": "9b5ba59d1465f3ca6ce7013ac485e699f286456cf9b8b810ea5ba370d549bc23"
+      },
+      {
+        "id": "ch59",
+        "entry": "EPUB/entry_059.xhtml",
+        "source_text_sha256": "13fd51eeeca06b969c78c657b07becaf47682288e9ba868314a6b3e10fce588c"
+      },
+      {
+        "id": "ch60",
+        "entry": "EPUB/entry_060.xhtml",
+        "source_text_sha256": "aabf90be0f989d71420f3d132643fdaf7e5ccbc3cc524e927b06d6a8a8037a32"
+      },
+      {
+        "id": "ch61",
+        "entry": "EPUB/entry_061.xhtml",
+        "source_text_sha256": "bbe7a88e1d872acd38cf819964922ea95157c6c9a4fc7e4755b916640e8e2a1f"
+      },
+      {
+        "id": "ch62",
+        "entry": "EPUB/entry_062.xhtml",
+        "source_text_sha256": "ecfe3a4cb9a014bc851d7d1b6b274c67ad359d1f496aac3ed31209037fd061c9"
+      },
+      {
+        "id": "ch63",
+        "entry": "EPUB/entry_063.xhtml",
+        "source_text_sha256": "1e5c721923ce29a983895c3e91161fd456d733c20161272262537bdcd39fd36c"
+      },
+      {
+        "id": "ch64",
+        "entry": "EPUB/entry_064.xhtml",
+        "source_text_sha256": "0efeaaa63ae239257dd178dc990b620f1441b14217676936d0323355b3784685"
+      },
+      {
+        "id": "ch65",
+        "entry": "EPUB/entry_065.xhtml",
+        "source_text_sha256": "6b7c22ee4b75c88111958a770df17cb6085e3ccfbf472caef6338ece48753207"
+      },
+      {
+        "id": "ch66",
+        "entry": "EPUB/entry_066.xhtml",
+        "source_text_sha256": "a2db09669aa53bb6da20bdfcce16114d47c7c10333e92d857e01e95c6e38a0a5"
+      },
+      {
+        "id": "ch67",
+        "entry": "EPUB/entry_067.xhtml",
+        "source_text_sha256": "a3387e9f0167d4012b695de7b0f721485c6813255ff7e80684127b62c6c9e372"
+      },
+      {
+        "id": "ch68",
+        "entry": "EPUB/entry_068.xhtml",
+        "source_text_sha256": "75600a507a989fa17ca5ee638cc7e3a6fcad701293d3453f342851cd75bb8e50"
+      },
+      {
+        "id": "ch69",
+        "entry": "EPUB/entry_069.xhtml",
+        "source_text_sha256": "e14de32aacf38509262e4e8a915db4c77c273fabfc83fc33df2386249b8cb226"
+      },
+      {
+        "id": "ch70",
+        "entry": "EPUB/entry_070.xhtml",
+        "source_text_sha256": "af614640707b5f1c73d917178dd09f9e83b2ee2ae7b16d0278ee2b73a07d5edb"
+      },
+      {
+        "id": "ch71",
+        "entry": "EPUB/entry_071.xhtml",
+        "source_text_sha256": "18e97272e5487fae92fc18894913edc1a33780abaf7a4c1fe99fc6f9fd8c26d9"
+      },
+      {
+        "id": "ch72",
+        "entry": "EPUB/entry_072.xhtml",
+        "source_text_sha256": "3f2d93b0755a52b343af4bd899e5480b8e214e05a2f0b63c43103be5090de3e7"
+      },
+      {
+        "id": "ch73",
+        "entry": "EPUB/entry_073.xhtml",
+        "source_text_sha256": "01305cb9481d78055bb3f74d9a73cfce38c0259b671eecf10485cedaabfac618"
+      },
+      {
+        "id": "ch74",
+        "entry": "EPUB/entry_074.xhtml",
+        "source_text_sha256": "144d3412b0fecbe29203a09be70aefbfd7684e325f5a544bdfee9da4d68fa62c"
+      },
+      {
+        "id": "ch75",
+        "entry": "EPUB/entry_075.xhtml",
+        "source_text_sha256": "a2a3845d354ecdb64f6b4187b6dcd40c6a50409728e5dc487e3613784afaa822"
+      },
+      {
+        "id": "ch76",
+        "entry": "EPUB/entry_076.xhtml",
+        "source_text_sha256": "33582ae9d9a3c7865816a5713d065ed31fb3b12a5b96d1e7510193130600481e"
+      },
+      {
+        "id": "ch77",
+        "entry": "EPUB/entry_077.xhtml",
+        "source_text_sha256": "4d50bff923fd757df76e5014aefe1f3c395c02001c4cf06adb242c602851c4eb"
+      },
+      {
+        "id": "ch78",
+        "entry": "EPUB/entry_078.xhtml",
+        "source_text_sha256": "c9ac8e46999e2ef70506106fe9035ecf03a8d503465cfd7dfc131ecb3d3d3617"
+      },
+      {
+        "id": "ch79",
+        "entry": "EPUB/entry_079.xhtml",
+        "source_text_sha256": "395e4df7ba0bb0ef118a8ca017909276b40f24acdc05c779d8907d551c21c232"
+      },
+      {
+        "id": "ch80",
+        "entry": "EPUB/entry_080.xhtml",
+        "source_text_sha256": "f68b85a70fe2b7592922b8c168c3de1a6c9a30b1d6b8abce681686a79288acf1"
+      },
+      {
+        "id": "ch81",
+        "entry": "EPUB/entry_081.xhtml",
+        "source_text_sha256": "008bda27f64b41a1b567febaeaa622ee590e60556777f79d6e9664d6f04ae8a8"
+      },
+      {
+        "id": "ch82",
+        "entry": "EPUB/entry_082.xhtml",
+        "source_text_sha256": "cb112dba4037a3c014741872e3f1f9e91ec1c2a8196c2c14d125675d253f121c"
+      },
+      {
+        "id": "ch83",
+        "entry": "EPUB/entry_083.xhtml",
+        "source_text_sha256": "51e3cbca4aeb1b0ae03d58322a58d4336081adf9becd4e09e83bf58f5fd5251d"
+      },
+      {
+        "id": "ch84",
+        "entry": "EPUB/entry_084.xhtml",
+        "source_text_sha256": "ef4e0e5adacc22df666c8619b5e7e5ed7609f9b2e0c12bf5a01d38b7e684d924"
+      },
+      {
+        "id": "ch85",
+        "entry": "EPUB/entry_085.xhtml",
+        "source_text_sha256": "57f407f9d7d8c3f140fdd344ac138fe9b80a393682fea85559e5b6d0f09eb83d"
+      },
+      {
+        "id": "ch86",
+        "entry": "EPUB/entry_086.xhtml",
+        "source_text_sha256": "ecad2bd57f897148b638db24e5bdf6c34bb2554da7a061609cfc226b31a1c464"
+      },
+      {
+        "id": "ch87",
+        "entry": "EPUB/entry_087.xhtml",
+        "source_text_sha256": "b132e389ae8f8467599dabab7b045868286711117e23f2470b19ee83c54c1307"
+      },
+      {
+        "id": "ch88",
+        "entry": "EPUB/entry_088.xhtml",
+        "source_text_sha256": "7494973358f105251d6b48898285669897ccd6d7e561121b1abc4955902f8b1c"
+      },
+      {
+        "id": "ch89",
+        "entry": "EPUB/entry_089.xhtml",
+        "source_text_sha256": "70c2f4625e6a3d6ea3086d22fa7d204cbe617b63aa03bbe204a58585ef3841ac"
+      },
+      {
+        "id": "ch90",
+        "entry": "EPUB/entry_090.xhtml",
+        "source_text_sha256": "d51cebe019f28bd551a5ddcb660f305d0236b3eaaa79e5c8b8fe9e6d855d10e7"
+      },
+      {
+        "id": "ch91",
+        "entry": "EPUB/entry_091.xhtml",
+        "source_text_sha256": "7049fef9a3be462858e0f18c8b2bd965c2de9f82f84e7a84843f60d7a49cac0d"
+      },
+      {
+        "id": "ch92",
+        "entry": "EPUB/entry_092.xhtml",
+        "source_text_sha256": "7a48247eefb590a32ded0334ae96b71bf24245a8894503ec1235b4e2a4d5fcb3"
+      },
+      {
+        "id": "ch93",
+        "entry": "EPUB/entry_093.xhtml",
+        "source_text_sha256": "9ae429ddefbbb25e127e2282905d167003f446f94124ea6861ccc06fb313fc66"
+      },
+      {
+        "id": "ch94",
+        "entry": "EPUB/entry_094.xhtml",
+        "source_text_sha256": "d73ad3185076949749d1f330ce14a21fc6c63d5ba0b746d1ea4853c82688fb82"
+      },
+      {
+        "id": "ch95",
+        "entry": "EPUB/entry_095.xhtml",
+        "source_text_sha256": "454546f4900b2cf588e787cd63802143974c96b462390b0e8929d512f6413d41"
+      },
+      {
+        "id": "ch96",
+        "entry": "EPUB/entry_096.xhtml",
+        "source_text_sha256": "042724e19bca5824ad4a3c6525ae84588863d70fd5ea0ea224f464e3bdf97b98"
+      },
+      {
+        "id": "ch97",
+        "entry": "EPUB/entry_097.xhtml",
+        "source_text_sha256": "49d9e0c25bff97dc28f0d7b45b6f4f3216ab3968d1a5d325f294f92349443547"
+      },
+      {
+        "id": "ch98",
+        "entry": "EPUB/entry_098.xhtml",
+        "source_text_sha256": "3d060656dcb5547300abbbefd275649c1a435cc933b7e3386ede4df6662f208a"
+      },
+      {
+        "id": "ch99",
+        "entry": "EPUB/entry_099.xhtml",
+        "source_text_sha256": "58e8f06ac6ef69d17a78004e493d19709a05922e311d949a8bec5f97cf566756"
+      },
+      {
+        "id": "ch100",
+        "entry": "EPUB/entry_100.xhtml",
+        "source_text_sha256": "222c57600ca7e8416434d1960b75d90296ac568cc696775cfa36d6ff7b251d9a"
+      }
+    ],
+    "restored_list_or_emphasis_markup": 0
+  },
+  "poems": {
+    "source": "D:\\new projects\\100 great works\\manuscript\\100-great-poems-guide.epub",
+    "source_sha256": "881adc86704149ceda0561b09429ac0539e118139eac9fd6f8e3ee182b47675d",
+    "omitted_book_pages": [
+      "OEBPS/title.xhtml",
+      "OEBPS/copyright.xhtml",
+      "OEBPS/note.xhtml",
+      "OEBPS/dedication.xhtml",
+      "OEBPS/nav.xhtml",
+      "OEBPS/part_1.xhtml",
+      "OEBPS/part_2.xhtml",
+      "OEBPS/part_3.xhtml",
+      "OEBPS/part_4.xhtml",
+      "OEBPS/part_5.xhtml",
+      "OEBPS/part_6.xhtml"
+    ],
+    "chapters": [
+      {
+        "id": "ch1",
+        "entry": "OEBPS/entry_001.xhtml",
+        "source_text_sha256": "08aa66253154a02562d3ab3465209b05e3a5156c48631a5417d99daeeffc68d1"
+      },
+      {
+        "id": "ch2",
+        "entry": "OEBPS/entry_002.xhtml",
+        "source_text_sha256": "4f45094a7a3251d7286ffc830461178791276b15e66d578c881cff475446abc5"
+      },
+      {
+        "id": "ch3",
+        "entry": "OEBPS/entry_003.xhtml",
+        "source_text_sha256": "872ef68d99ccc9be10370d25b07209e910cb7f3fc907bd08612983917ebf89b9"
+      },
+      {
+        "id": "ch4",
+        "entry": "OEBPS/entry_004.xhtml",
+        "source_text_sha256": "9a83d48a71559ab730e792340d6be2c0464331f6193787252a82846a4b9d1f8a"
+      },
+      {
+        "id": "ch5",
+        "entry": "OEBPS/entry_005.xhtml",
+        "source_text_sha256": "b059b28c66631a84d1dcc76149cfff5afc25b69ee3a92637e9fe66deb0387190"
+      },
+      {
+        "id": "ch6",
+        "entry": "OEBPS/entry_006.xhtml",
+        "source_text_sha256": "61e5506dfe39696850cd032c5f9096ff4bcdb09650d4cb815986c9a3e405a131"
+      },
+      {
+        "id": "ch7",
+        "entry": "OEBPS/entry_007.xhtml",
+        "source_text_sha256": "a8806382205f5a76be5ac5d43ee31216cf7ff84f65b6d92420a0401b7b9bbd76"
+      },
+      {
+        "id": "ch8",
+        "entry": "OEBPS/entry_008.xhtml",
+        "source_text_sha256": "5fbe21f4c656e020b3c7db898c21820111d95fd3f3150fc2545d854e496d3b3f"
+      },
+      {
+        "id": "ch9",
+        "entry": "OEBPS/entry_009.xhtml",
+        "source_text_sha256": "5804d14bc69cd9ae095a6f4c799139257e9a3e21cfa70d546de9d61f319bbd31"
+      },
+      {
+        "id": "ch10",
+        "entry": "OEBPS/entry_010.xhtml",
+        "source_text_sha256": "4e7cb899294688ce95e0c96ddb14acf46c9218ef91506a114aef301f6eb17836"
+      },
+      {
+        "id": "ch11",
+        "entry": "OEBPS/entry_011.xhtml",
+        "source_text_sha256": "9c94373360ab827c506991ea0a6a8e97afd9f8e7363fc6c97d89aaee517870fd"
+      },
+      {
+        "id": "ch12",
+        "entry": "OEBPS/entry_012.xhtml",
+        "source_text_sha256": "8dfae930a1a99c8daa3b6e049a661261c345284ef0d7cd038e1f49c91a2b7c3b"
+      },
+      {
+        "id": "ch13",
+        "entry": "OEBPS/entry_013.xhtml",
+        "source_text_sha256": "f273cfa830ea0af489b47eefed4a74eb6da9dc4c6b4891810b93dd482c252919"
+      },
+      {
+        "id": "ch14",
+        "entry": "OEBPS/entry_014.xhtml",
+        "source_text_sha256": "bb170a27ab2f699fd0e4b4ad81f45d6509b75357676e20d09fac0bb27ea68557"
+      },
+      {
+        "id": "ch15",
+        "entry": "OEBPS/entry_015.xhtml",
+        "source_text_sha256": "6d9de3648367870ea5b18870b71cbaf71ca6d06d3b9f8cfc7c36d6cf7168e4fa"
+      },
+      {
+        "id": "ch16",
+        "entry": "OEBPS/entry_016.xhtml",
+        "source_text_sha256": "58abe91aec4b26ba8bc19d2d0cdc6c85b8b3da8206887a4fb191c09ba4d02512"
+      },
+      {
+        "id": "ch17",
+        "entry": "OEBPS/entry_017.xhtml",
+        "source_text_sha256": "481967275c84c2ce933e7313b061d9f283b83f3ee9d9ade480b23f8ebb149d4f"
+      },
+      {
+        "id": "ch18",
+        "entry": "OEBPS/entry_018.xhtml",
+        "source_text_sha256": "d89ba4a6bc458fc3ac0a8b3918fdb33f93832c198095d585623fad4edd10ea3f"
+      },
+      {
+        "id": "ch19",
+        "entry": "OEBPS/entry_019.xhtml",
+        "source_text_sha256": "21b9b61f50112a5878728069b8648ee1a4a0cd43c0fae5e6aa1c17013b63675f"
+      },
+      {
+        "id": "ch20",
+        "entry": "OEBPS/entry_020.xhtml",
+        "source_text_sha256": "562200e5ca8726ab752d4a1b5d4ba930373a1d821862b1b5d90da9bcc3d280d7"
+      },
+      {
+        "id": "ch21",
+        "entry": "OEBPS/entry_021.xhtml",
+        "source_text_sha256": "a0889e60699142d42b67baa913f2b1c70fcd0d2019c90b3215244e364a0498fa"
+      },
+      {
+        "id": "ch22",
+        "entry": "OEBPS/entry_022.xhtml",
+        "source_text_sha256": "0ec28edf0a94a3dc4fb9fc5be62a0793c67528af62b44b73910161816d6f3a62"
+      },
+      {
+        "id": "ch23",
+        "entry": "OEBPS/entry_023.xhtml",
+        "source_text_sha256": "88c281d805660b0e0c870f19f847cc4cee8c1bc0aa2aac53293dbfa66cd9ccee"
+      },
+      {
+        "id": "ch24",
+        "entry": "OEBPS/entry_024.xhtml",
+        "source_text_sha256": "4a808ca2404eb6979f398fdda0cd145eb06f4956860025b3238904b482658eff"
+      },
+      {
+        "id": "ch25",
+        "entry": "OEBPS/entry_025.xhtml",
+        "source_text_sha256": "31520ec625227f0dbd110543337674abccd532b27304329808d4c1f78ad9c9b6"
+      },
+      {
+        "id": "ch26",
+        "entry": "OEBPS/entry_026.xhtml",
+        "source_text_sha256": "93feac67888147b74360029430403cd8880339eac68a1701da6e4ffef50134c7"
+      },
+      {
+        "id": "ch27",
+        "entry": "OEBPS/entry_027.xhtml",
+        "source_text_sha256": "da43972234febae2320305de0911aa164dc64f312295b212a70a55a5ed6cd1b6"
+      },
+      {
+        "id": "ch28",
+        "entry": "OEBPS/entry_028.xhtml",
+        "source_text_sha256": "bc9eff88c5d9fe0ec27f9409e85879e12e1ff333947ad6fa789de30ad443a08f"
+      },
+      {
+        "id": "ch29",
+        "entry": "OEBPS/entry_029.xhtml",
+        "source_text_sha256": "06f3371901e71a6a699630893450892d6912436156d9a1b0dab574d5c884b59c"
+      },
+      {
+        "id": "ch30",
+        "entry": "OEBPS/entry_030.xhtml",
+        "source_text_sha256": "5bc238be750338f74efe455552d5c53f719229b92edfd0418b30e86fcbc79f48"
+      },
+      {
+        "id": "ch31",
+        "entry": "OEBPS/entry_031.xhtml",
+        "source_text_sha256": "a496ef4ce82c6fb78eb3bd186725bab7d8302adca61e195c3c6b60578249ddb8"
+      },
+      {
+        "id": "ch32",
+        "entry": "OEBPS/entry_032.xhtml",
+        "source_text_sha256": "143c3fc05a3087657cd6bcbb8908f7c9dc935491348eb5ea4ed49ab02a1ea36a"
+      },
+      {
+        "id": "ch33",
+        "entry": "OEBPS/entry_033.xhtml",
+        "source_text_sha256": "9f6d77a400b663f307c3df7c7a9988d8a01bb9d8cd971717740cd21d653ef725"
+      },
+      {
+        "id": "ch34",
+        "entry": "OEBPS/entry_034.xhtml",
+        "source_text_sha256": "96a52792a6b9d0fda249b1013869f48e1da6bbc1754bd2a202afa575cb79a472"
+      },
+      {
+        "id": "ch35",
+        "entry": "OEBPS/entry_035.xhtml",
+        "source_text_sha256": "0500b21a73f1fb08630447c38ad803e9aa5fb757877f805c06dc2a691c41c412"
+      },
+      {
+        "id": "ch36",
+        "entry": "OEBPS/entry_036.xhtml",
+        "source_text_sha256": "094686a41a8f589b81f377370f4575ba88aa60ab88ebd250d9835f9ce6fba43e"
+      },
+      {
+        "id": "ch37",
+        "entry": "OEBPS/entry_037.xhtml",
+        "source_text_sha256": "55fb1fea07a2b30cac5053b8c3843314d28a02281054841222431c13d28980f3"
+      },
+      {
+        "id": "ch38",
+        "entry": "OEBPS/entry_038.xhtml",
+        "source_text_sha256": "9e64b259cfce4af519292559f2890c811c00ef6e4ebee8c97bdfcbcf225cd21d"
+      },
+      {
+        "id": "ch39",
+        "entry": "OEBPS/entry_039.xhtml",
+        "source_text_sha256": "0fb7db77918db6f04093af37f85b4643e794b4c703305adf5c8b4b904b2700dd"
+      },
+      {
+        "id": "ch40",
+        "entry": "OEBPS/entry_040.xhtml",
+        "source_text_sha256": "1508831e953b328fe067231c627729f169614620507a753b955165b24750bcff"
+      },
+      {
+        "id": "ch41",
+        "entry": "OEBPS/entry_041.xhtml",
+        "source_text_sha256": "aafe1637887a68bc319231ab5d1689a9710607c086e39824d39a524ea2667e01"
+      },
+      {
+        "id": "ch42",
+        "entry": "OEBPS/entry_042.xhtml",
+        "source_text_sha256": "8c780ab803b1c29e0ddb77d4fd4d52dae892a09cbd0e9faee81828aee65d8a71"
+      },
+      {
+        "id": "ch43",
+        "entry": "OEBPS/entry_043.xhtml",
+        "source_text_sha256": "fb2abd8e795d23bfd6cdc8e773dbf2219e77a0a62e4a9d8bc5e00a0de4429475"
+      },
+      {
+        "id": "ch44",
+        "entry": "OEBPS/entry_044.xhtml",
+        "source_text_sha256": "08885d699cd5c041ec5d290918ed2c606a703ab3b0fb02b9801d77256ada8cc7"
+      },
+      {
+        "id": "ch45",
+        "entry": "OEBPS/entry_045.xhtml",
+        "source_text_sha256": "3c4997c6cc7dca1868686b0f2a92dd915471fc14bcdb4c90deaec23267c18b32"
+      },
+      {
+        "id": "ch46",
+        "entry": "OEBPS/entry_046.xhtml",
+        "source_text_sha256": "18db608d4f7f4ec5a26df1712a57052d16c3690b980b1e5ee5418de42d0450ed"
+      },
+      {
+        "id": "ch47",
+        "entry": "OEBPS/entry_047.xhtml",
+        "source_text_sha256": "449928a38d37904684d7c67bc8191d0f159ffb3eebbcaf02c6bb0aa979c10238"
+      },
+      {
+        "id": "ch48",
+        "entry": "OEBPS/entry_048.xhtml",
+        "source_text_sha256": "c0fd13c2d35a77b4576b2b7b1f55f9ebce3b316a3670455db32ddc5a17abdea5"
+      },
+      {
+        "id": "ch49",
+        "entry": "OEBPS/entry_049.xhtml",
+        "source_text_sha256": "cd46a82847be59b7698a140f8f3530bc3977d8457c6a8e2449b478ffe71e9b5b"
+      },
+      {
+        "id": "ch50",
+        "entry": "OEBPS/entry_050.xhtml",
+        "source_text_sha256": "35b0e9cdbe2b3e96bd99b826ae6a7be5512cd4d2d0daba2966fd66e8c3c6dba0"
+      },
+      {
+        "id": "ch51",
+        "entry": "OEBPS/entry_051.xhtml",
+        "source_text_sha256": "d1a74c604675baa08bbad522d023c2f1a8e316139c3d94e74016e1fc4f50ba9d"
+      },
+      {
+        "id": "ch52",
+        "entry": "OEBPS/entry_052.xhtml",
+        "source_text_sha256": "e9965247245624ed5cd3aa1bd3119db96cafe9010dfef9b0fb2be6894bc58062"
+      },
+      {
+        "id": "ch53",
+        "entry": "OEBPS/entry_053.xhtml",
+        "source_text_sha256": "411d6f2be1887918d9419593cbc8392250a07d5dcecaa881db881c51f9525499"
+      },
+      {
+        "id": "ch54",
+        "entry": "OEBPS/entry_054.xhtml",
+        "source_text_sha256": "3adc54957b4d62ee0b46667a660e4163ce8e03074ff97caac0c014779633fc23"
+      },
+      {
+        "id": "ch55",
+        "entry": "OEBPS/entry_055.xhtml",
+        "source_text_sha256": "18832fdba5bcdb16240c6ce4ce3d6610bbddb67215f1ba1283147490b2817293"
+      },
+      {
+        "id": "ch56",
+        "entry": "OEBPS/entry_056.xhtml",
+        "source_text_sha256": "c7848869a9936a8b2a4a3cb7695dff00e944cb7e70eb72fed759203019819082"
+      },
+      {
+        "id": "ch57",
+        "entry": "OEBPS/entry_057.xhtml",
+        "source_text_sha256": "1d54756357e2cd815d98cdf873a3d50f0d7013ef424129da90c8a8fc6b4f9980"
+      },
+      {
+        "id": "ch58",
+        "entry": "OEBPS/entry_058.xhtml",
+        "source_text_sha256": "77c0026dd958d6f74c61e4dd6fcaca2204121281f4a5dfa4538e091992e28bb8"
+      },
+      {
+        "id": "ch59",
+        "entry": "OEBPS/entry_059.xhtml",
+        "source_text_sha256": "f688e6077d17245074ad9cb567b6f81e08aa2d97216eae3a92801e2203bf0969"
+      },
+      {
+        "id": "ch60",
+        "entry": "OEBPS/entry_060.xhtml",
+        "source_text_sha256": "9d8e83d125ebf1d3021802730eb332e1d4ce6044fd04f3227098d210b3793e48"
+      },
+      {
+        "id": "ch61",
+        "entry": "OEBPS/entry_061.xhtml",
+        "source_text_sha256": "b721fdafd77d3f8ceb8751bfc6c377ddc782afd1e2d0bf18d7c9f5acd4492c61"
+      },
+      {
+        "id": "ch62",
+        "entry": "OEBPS/entry_062.xhtml",
+        "source_text_sha256": "99cbae7a7572e9839f3ffc8d05d0b29f709c016334f791ce1e97a837943b37c8"
+      },
+      {
+        "id": "ch63",
+        "entry": "OEBPS/entry_063.xhtml",
+        "source_text_sha256": "f16411de2bc7cd917a39920f32d48a6e44c1bc912d9064999207e2ae8e7dc1c4"
+      },
+      {
+        "id": "ch64",
+        "entry": "OEBPS/entry_064.xhtml",
+        "source_text_sha256": "523d900a50c856a8272e099fbdd02ceb1e9fc6e3dacf92e4459ca5d95b3e3332"
+      },
+      {
+        "id": "ch65",
+        "entry": "OEBPS/entry_065.xhtml",
+        "source_text_sha256": "307eb56163f75ae0909ebc373e98c8c7a2544acb98e5b1fa6951322ab67b2230"
+      },
+      {
+        "id": "ch66",
+        "entry": "OEBPS/entry_066.xhtml",
+        "source_text_sha256": "dfad84d9290e5242483977cc9875f8b7ea586ebf5d55af76a1e7196727df391c"
+      },
+      {
+        "id": "ch67",
+        "entry": "OEBPS/entry_067.xhtml",
+        "source_text_sha256": "e931526d329b57579bd6024c82929a791ad152435a570d2e7aaa9a25d9b10813"
+      },
+      {
+        "id": "ch68",
+        "entry": "OEBPS/entry_068.xhtml",
+        "source_text_sha256": "3bb96b4d3835831b4c4accd72171dfa66396785dec609762dcff366b55e68ff7"
+      },
+      {
+        "id": "ch69",
+        "entry": "OEBPS/entry_069.xhtml",
+        "source_text_sha256": "7dc5a3b90baed5af0ba81bc2821fc3b45022f9fe5aaed549c46bbfee00a77f0a"
+      },
+      {
+        "id": "ch70",
+        "entry": "OEBPS/entry_070.xhtml",
+        "source_text_sha256": "8ee60b8934faf3cc6c81ee10efbec795514611197845525f352daeae54c5d3c6"
+      },
+      {
+        "id": "ch71",
+        "entry": "OEBPS/entry_071.xhtml",
+        "source_text_sha256": "323f62c6c1651247a3103248a129bbfe81b354e38990f3277914f13f72696745"
+      },
+      {
+        "id": "ch72",
+        "entry": "OEBPS/entry_072.xhtml",
+        "source_text_sha256": "e0645532b1049c93735e4ddfe8af8336421ed4f935ac4a01abe4ae57186a996b"
+      },
+      {
+        "id": "ch73",
+        "entry": "OEBPS/entry_073.xhtml",
+        "source_text_sha256": "3cc7139e886b2da61be0752f0e5b2842c4d8eaac38b2fb6ad16e3d26176c10cb"
+      },
+      {
+        "id": "ch74",
+        "entry": "OEBPS/entry_074.xhtml",
+        "source_text_sha256": "27e0f8253201efb8da6103a8c92e38bcc699f2e8861a2d74d7a2093f496e7d25"
+      },
+      {
+        "id": "ch75",
+        "entry": "OEBPS/entry_075.xhtml",
+        "source_text_sha256": "27fabfb6b8d40051b86bc48b3ebb708e756b8e2a59a0b230ce4340df2ae903eb"
+      },
+      {
+        "id": "ch76",
+        "entry": "OEBPS/entry_076.xhtml",
+        "source_text_sha256": "0d28c1299de15276dcce025961a0b550d3cefb9cc2edeac6033749d4db8c4163"
+      },
+      {
+        "id": "ch77",
+        "entry": "OEBPS/entry_077.xhtml",
+        "source_text_sha256": "28e27df12c0613aed8aaed006bea5690b1e559c758faf71d5b52d8cb21a5c36e"
+      },
+      {
+        "id": "ch78",
+        "entry": "OEBPS/entry_078.xhtml",
+        "source_text_sha256": "f33876f53424690a553b808ec2a0c751774a4a80210956efd27022cae3ea1fac"
+      },
+      {
+        "id": "ch79",
+        "entry": "OEBPS/entry_079.xhtml",
+        "source_text_sha256": "461087596840df2fd9ec8043f537458e20c1076d43b0847b4d2c5a5204196c24"
+      },
+      {
+        "id": "ch80",
+        "entry": "OEBPS/entry_080.xhtml",
+        "source_text_sha256": "ad91005564d2849b133467d37d2d3dbdf7a0029be002214cd36752d71a4f67e6"
+      },
+      {
+        "id": "ch81",
+        "entry": "OEBPS/entry_081.xhtml",
+        "source_text_sha256": "7ca522aa8cde9e26f9834de4cd866e738a697d1872bdffe8c5108b7b2d341c72"
+      },
+      {
+        "id": "ch82",
+        "entry": "OEBPS/entry_082.xhtml",
+        "source_text_sha256": "954ee8dc96fd3d03bafb0a19b27b96da5aeb9074a9f108ecbf23b2fe1197709e"
+      },
+      {
+        "id": "ch83",
+        "entry": "OEBPS/entry_083.xhtml",
+        "source_text_sha256": "86b38199ca538fbecc569c6e968b4f49e707a33450908d4daafded80e230a320"
+      },
+      {
+        "id": "ch84",
+        "entry": "OEBPS/entry_084.xhtml",
+        "source_text_sha256": "acaccb2dbf7ad4e7ba42e49653db696a7152dccc6c6641af4e0f69db994ae38e"
+      },
+      {
+        "id": "ch85",
+        "entry": "OEBPS/entry_085.xhtml",
+        "source_text_sha256": "aff35713a405704e8431ea4e7119a04a7a183bde508f0d19a968683f875a93c9"
+      },
+      {
+        "id": "ch86",
+        "entry": "OEBPS/entry_086.xhtml",
+        "source_text_sha256": "010d93a091181db19e6c62ea232715aa74baa810e37400d0cb15b9a8b71a367b"
+      },
+      {
+        "id": "ch87",
+        "entry": "OEBPS/entry_087.xhtml",
+        "source_text_sha256": "44921bcdfe88254a72d2c878d5bd1f842c880f6e2cbe2535607b01753c545602"
+      },
+      {
+        "id": "ch88",
+        "entry": "OEBPS/entry_088.xhtml",
+        "source_text_sha256": "86d5f605cd680802056da3d4ac680f24b3c6936db35ad6efed8c4a67bdd2b8e1"
+      },
+      {
+        "id": "ch89",
+        "entry": "OEBPS/entry_089.xhtml",
+        "source_text_sha256": "73480877deb32b3023d4ee9a1cc03dd6ff820942dce8a0d80615204b86a33710"
+      },
+      {
+        "id": "ch90",
+        "entry": "OEBPS/entry_090.xhtml",
+        "source_text_sha256": "e8a26bb6781448e0611c441ff860565f710c700d3cad197a2e53991c8941af11"
+      },
+      {
+        "id": "ch91",
+        "entry": "OEBPS/entry_091.xhtml",
+        "source_text_sha256": "332a71edd445b9e6263c1d64c3a454cc92e3349743ffb7c78b5116dd37dcaadd"
+      },
+      {
+        "id": "ch92",
+        "entry": "OEBPS/entry_092.xhtml",
+        "source_text_sha256": "b2e1f41e51f9fffd88afaf6fdc7e2e0bccf33e5786d8f8a73a2d6943d3ee6519"
+      },
+      {
+        "id": "ch93",
+        "entry": "OEBPS/entry_093.xhtml",
+        "source_text_sha256": "316ca311dfc3aba995deb8d25f317075fef698acccfbe4e3224950c61fdd4606"
+      },
+      {
+        "id": "ch94",
+        "entry": "OEBPS/entry_094.xhtml",
+        "source_text_sha256": "4fa5900a0742c19d5785ee859f65941ee450cbda4edc0d70b858885801c0119b"
+      },
+      {
+        "id": "ch95",
+        "entry": "OEBPS/entry_095.xhtml",
+        "source_text_sha256": "abb98effa6cbb8ff12cc0c5d89ad17f123270252c4fa78c9dba764bbcc534235"
+      },
+      {
+        "id": "ch96",
+        "entry": "OEBPS/entry_096.xhtml",
+        "source_text_sha256": "24a2be5f62f1c002aae58a832c44c3d468008871e6fc3436d317f3ed83b8f481"
+      },
+      {
+        "id": "ch97",
+        "entry": "OEBPS/entry_097.xhtml",
+        "source_text_sha256": "70d781e59eb6987ff03856368ea1ec57e31b088f132845685015f6fbcacfa7bc"
+      },
+      {
+        "id": "ch98",
+        "entry": "OEBPS/entry_098.xhtml",
+        "source_text_sha256": "e2840f8568ce854a2d893f9fab36b8febf36589a079481ca9e4621d24f316e3b"
+      },
+      {
+        "id": "ch99",
+        "entry": "OEBPS/entry_099.xhtml",
+        "source_text_sha256": "8c4246194a0b30596f945d3a078dd6456f9a62936d15eaf876b6cf00ada19489"
+      },
+      {
+        "id": "ch100",
+        "entry": "OEBPS/entry_100.xhtml",
+        "source_text_sha256": "79dec440d3abffbecc4fd0c49343f8f90127e7e33d0bac00e6ccf41440eca351"
+      }
+    ],
+    "restored_list_or_emphasis_markup": 0
+  },
+  "short_stories": {
+    "source": "D:\\new projects\\100 great works\\manuscript\\release-v2\\100 great short stories of all time.epub",
+    "source_sha256": "f34d52912d0bc91a3dd3705f3857f012f80950a8d04abbbd4a14a3824a9bfad0",
+    "omitted_book_pages": [
+      "OEBPS/title.xhtml",
+      "OEBPS/copyright.xhtml",
+      "OEBPS/dedication.xhtml",
+      "OEBPS/nav.xhtml",
+      "OEBPS/part_1.xhtml",
+      "OEBPS/part_2.xhtml",
+      "OEBPS/part_3.xhtml",
+      "OEBPS/part_4.xhtml",
+      "OEBPS/part_5.xhtml",
+      "OEBPS/part_6.xhtml"
+    ],
+    "chapters": [
+      {
+        "id": "ch1",
+        "entry": "OEBPS/entry_001.xhtml",
+        "source_text_sha256": "81ee76300b736558b68af3c77e2729cf4e2a33902597ba45124d1c73e136cfd0"
+      },
+      {
+        "id": "ch2",
+        "entry": "OEBPS/entry_002.xhtml",
+        "source_text_sha256": "a1fc09d376853742c69ed64fec95ab143ad06aa6174c2be56aa297c3770ddd87"
+      },
+      {
+        "id": "ch3",
+        "entry": "OEBPS/entry_003.xhtml",
+        "source_text_sha256": "fadaea55ed8ba185537b00c1333bb1c9d197e878dd920e3bfc634e62aef5e0c9"
+      },
+      {
+        "id": "ch4",
+        "entry": "OEBPS/entry_004.xhtml",
+        "source_text_sha256": "1580c4ec2624fc68dec3e7171610810490e480aabc0b092c4c039fed2fe67b0e"
+      },
+      {
+        "id": "ch5",
+        "entry": "OEBPS/entry_005.xhtml",
+        "source_text_sha256": "00e4b6dedd3ed6e8e34e3dc7dc807c0420318e94082c9880ab37a925ce8fd935"
+      },
+      {
+        "id": "ch6",
+        "entry": "OEBPS/entry_006.xhtml",
+        "source_text_sha256": "4f3f2999c9a8fb2181126ecfaaeb6963e2d548ca51c30d97b6c4e95f170c7940"
+      },
+      {
+        "id": "ch7",
+        "entry": "OEBPS/entry_007.xhtml",
+        "source_text_sha256": "43fc9548e951155daa4852b736f6c9b1be5d83a348c7e0548b5d53b7b3a0fa15"
+      },
+      {
+        "id": "ch8",
+        "entry": "OEBPS/entry_008.xhtml",
+        "source_text_sha256": "eddd4883031f9621ec1ac921c686327fb13a221b8599dbb1fa8540c5dee735d0"
+      },
+      {
+        "id": "ch9",
+        "entry": "OEBPS/entry_009.xhtml",
+        "source_text_sha256": "4cae8e92126471a2bda66a0499dd691eadc0cd16754dee94419f8e1e71715229"
+      },
+      {
+        "id": "ch10",
+        "entry": "OEBPS/entry_010.xhtml",
+        "source_text_sha256": "77b0765c1aab2707ae7d547cc906cb8acd6e1100400458a60467fd8c86fc2452"
+      },
+      {
+        "id": "ch11",
+        "entry": "OEBPS/entry_011.xhtml",
+        "source_text_sha256": "888638993589a4437ba0b689c29f45922d6d6a5a731f4580f7e868fdf8aac156"
+      },
+      {
+        "id": "ch12",
+        "entry": "OEBPS/entry_012.xhtml",
+        "source_text_sha256": "dde25168c66c506b84b4852a6519627939b28e23c39492b2a2ef792886d9077a"
+      },
+      {
+        "id": "ch13",
+        "entry": "OEBPS/entry_013.xhtml",
+        "source_text_sha256": "d74bef24cf957fde3d93e582588bad070ffd520998cf228e59460513bba25f96"
+      },
+      {
+        "id": "ch14",
+        "entry": "OEBPS/entry_014.xhtml",
+        "source_text_sha256": "a6f381caa99d864f97eabc47434329c782001317861224c8283b0f0aa02f4562"
+      },
+      {
+        "id": "ch15",
+        "entry": "OEBPS/entry_015.xhtml",
+        "source_text_sha256": "ece1d4760f38043d315eeb6a861fe54d40a4fec97ee8483405d942980834645f"
+      },
+      {
+        "id": "ch16",
+        "entry": "OEBPS/entry_016.xhtml",
+        "source_text_sha256": "74d87fc4352f738a4393964a9cc364e4d21aab9f0b0762edeadc44a76d7a59ac"
+      },
+      {
+        "id": "ch17",
+        "entry": "OEBPS/entry_017.xhtml",
+        "source_text_sha256": "ed3f9c65a46ff865894d0c1908667fa807c38de6f3b8abfb75ad2801345cca5e"
+      },
+      {
+        "id": "ch18",
+        "entry": "OEBPS/entry_018.xhtml",
+        "source_text_sha256": "1a958cbb08bf44196badaf5de70f6a77252cf8953dde0f6686f858bb63dfed80"
+      },
+      {
+        "id": "ch19",
+        "entry": "OEBPS/entry_019.xhtml",
+        "source_text_sha256": "31e999b6515d7d1c69998f69c2039407fd3b400857fdc6c4d0e4998a3f8594d6"
+      },
+      {
+        "id": "ch20",
+        "entry": "OEBPS/entry_020.xhtml",
+        "source_text_sha256": "818a4362ff63e8c0ed8446013397dc5d11b408bc3d4a6beeb70a274cd160570b"
+      },
+      {
+        "id": "ch21",
+        "entry": "OEBPS/entry_021.xhtml",
+        "source_text_sha256": "207a4fd223d8b9fcdbe7e93cee72b73f48e58c0db6afff6d4cb82888f46b1606"
+      },
+      {
+        "id": "ch22",
+        "entry": "OEBPS/entry_022.xhtml",
+        "source_text_sha256": "2cc6ba7c0b995c1beabdf0cb30d02613d28f5aeed793dc34bcb8cc21e523a41f"
+      },
+      {
+        "id": "ch23",
+        "entry": "OEBPS/entry_023.xhtml",
+        "source_text_sha256": "28ea2e5b9627964a45414e2e7b8607dacaf2fddfd219fe339300353afd4578c0"
+      },
+      {
+        "id": "ch24",
+        "entry": "OEBPS/entry_024.xhtml",
+        "source_text_sha256": "553c9ffa2fcbc4d41aceb6688a60b9261bb8cddb06f9ef0a23640734313c4ea9"
+      },
+      {
+        "id": "ch25",
+        "entry": "OEBPS/entry_025.xhtml",
+        "source_text_sha256": "56a291d5730d4792a359085cc8b60bf67a3d7aba0de5954a5bf5909ff54fa083"
+      },
+      {
+        "id": "ch26",
+        "entry": "OEBPS/entry_026.xhtml",
+        "source_text_sha256": "3684f8dba913b456bf5cfeb07be51a731b36524678ffe96564c28aee2b501df0"
+      },
+      {
+        "id": "ch27",
+        "entry": "OEBPS/entry_027.xhtml",
+        "source_text_sha256": "8c782fc2c6eb31c10c69795b9edb2c5939c87a462fdbf620be128b37706aaebd"
+      },
+      {
+        "id": "ch28",
+        "entry": "OEBPS/entry_028.xhtml",
+        "source_text_sha256": "c6c2ca3e76bf62ce13a95a771cef6820bfc5f586c761ea009a4fc74eb35ccd4f"
+      },
+      {
+        "id": "ch29",
+        "entry": "OEBPS/entry_029.xhtml",
+        "source_text_sha256": "09f1ba0c1c552d4881b3ca3744657eb11c120d5268923c28d8645156c36a3b67"
+      },
+      {
+        "id": "ch30",
+        "entry": "OEBPS/entry_030.xhtml",
+        "source_text_sha256": "c62d3856ab15b04c84f8cd5b660f15fb44cf64550051ae0d06674bcc02124da4"
+      },
+      {
+        "id": "ch31",
+        "entry": "OEBPS/entry_031.xhtml",
+        "source_text_sha256": "0a6e54c595f7e0eab1da7c746d40cf6ffe14563ce388b4933dc8482f343e910f"
+      },
+      {
+        "id": "ch32",
+        "entry": "OEBPS/entry_032.xhtml",
+        "source_text_sha256": "b5902a3ee27fea3435ec43b3b6a8e47122c4713b6ae2f8b5d80204d4e26ae44e"
+      },
+      {
+        "id": "ch33",
+        "entry": "OEBPS/entry_033.xhtml",
+        "source_text_sha256": "802b82df4d276d60d26984aba22f407c8e2989eb7f8c7cc1f74fabc5b9301582"
+      },
+      {
+        "id": "ch34",
+        "entry": "OEBPS/entry_034.xhtml",
+        "source_text_sha256": "6a3a991ef2df8cb82aff041133bae79f97f2388faf08f862821543d017a768f9"
+      },
+      {
+        "id": "ch35",
+        "entry": "OEBPS/entry_035.xhtml",
+        "source_text_sha256": "4dc6b6ae9c0259f0ed1fde1bae77d69a580baf11ab8bc4b336e08c6c2118133c"
+      },
+      {
+        "id": "ch36",
+        "entry": "OEBPS/entry_036.xhtml",
+        "source_text_sha256": "0ca2cc8780623ffe41abb5ae80c5733f956f1d93c949279dc2fa52524bb00c95"
+      },
+      {
+        "id": "ch37",
+        "entry": "OEBPS/entry_037.xhtml",
+        "source_text_sha256": "bb6320ab638e236f69e710d08d94b41abc257b31e5270a353c3db3fb59410753"
+      },
+      {
+        "id": "ch38",
+        "entry": "OEBPS/entry_038.xhtml",
+        "source_text_sha256": "c8af541c223521815d2f0d2991f4bc98c0f046f13ecc0833b10ddcef59543daf"
+      },
+      {
+        "id": "ch39",
+        "entry": "OEBPS/entry_039.xhtml",
+        "source_text_sha256": "6af6511268f706e0988ceecfc0d7db16dfb73c3573ae0b4d86b529360fd0df1c"
+      },
+      {
+        "id": "ch40",
+        "entry": "OEBPS/entry_040.xhtml",
+        "source_text_sha256": "d447606aff2e79aec0688802267364426c44f999546683e752230d251155106d"
+      },
+      {
+        "id": "ch41",
+        "entry": "OEBPS/entry_041.xhtml",
+        "source_text_sha256": "ef5cbc31934db6e1f3afff4897bdd31d359c9dcbde415b680b66522639b7cd56"
+      },
+      {
+        "id": "ch42",
+        "entry": "OEBPS/entry_042.xhtml",
+        "source_text_sha256": "b694670cc28477187dbf900c7626a43aa00ef6d6973324f97647eab72b440ef6"
+      },
+      {
+        "id": "ch43",
+        "entry": "OEBPS/entry_043.xhtml",
+        "source_text_sha256": "cb61caaa66def8a719cae219587fee598e7dff9c61c875dd84ee9eefd080c87d"
+      },
+      {
+        "id": "ch44",
+        "entry": "OEBPS/entry_044.xhtml",
+        "source_text_sha256": "661dccf7131b4f96ba1880d8849ed5548bd14c0504544469a6310c5cafa8f6af"
+      },
+      {
+        "id": "ch45",
+        "entry": "OEBPS/entry_045.xhtml",
+        "source_text_sha256": "1b40caeb939bda5a00920b1b3420a7fcaf6276a1be11d285c0aac64d065845a0"
+      },
+      {
+        "id": "ch46",
+        "entry": "OEBPS/entry_046.xhtml",
+        "source_text_sha256": "020ab6d4d24a6f6e9749d8792865519448b9f662ce69a8264b2bad26eb1d48d9"
+      },
+      {
+        "id": "ch47",
+        "entry": "OEBPS/entry_047.xhtml",
+        "source_text_sha256": "f8818f59bbf294644faa5983af92f2e226381db1479430a955b7e843b00002e9"
+      },
+      {
+        "id": "ch48",
+        "entry": "OEBPS/entry_048.xhtml",
+        "source_text_sha256": "f5eddc96477f2c1f100bbfbe131a84012fd55bb03e24e9c8121443e922b101f6"
+      },
+      {
+        "id": "ch49",
+        "entry": "OEBPS/entry_049.xhtml",
+        "source_text_sha256": "de3b6a110fa8658c90a0fb71785d382ec64f40471e84c40d6ef804ba8a83723d"
+      },
+      {
+        "id": "ch50",
+        "entry": "OEBPS/entry_050.xhtml",
+        "source_text_sha256": "888c047d954468d4fcf155b276784d078074090b0ff5e090f834a663ec03e735"
+      },
+      {
+        "id": "ch51",
+        "entry": "OEBPS/entry_051.xhtml",
+        "source_text_sha256": "e9804ccee3f468371548e3923e4a435428bf83fc2ba384ed4c4a8796a2e3cddf"
+      },
+      {
+        "id": "ch52",
+        "entry": "OEBPS/entry_052.xhtml",
+        "source_text_sha256": "a6fa64ae3ede52cde30c2d15715458bad15e545111ce3e8cf8b1533c35e19409"
+      },
+      {
+        "id": "ch53",
+        "entry": "OEBPS/entry_053.xhtml",
+        "source_text_sha256": "9bf2853f911b632c55dc9e0f5a18d20025c0bffff3d8c0f6b2fea6bc59819921"
+      },
+      {
+        "id": "ch54",
+        "entry": "OEBPS/entry_054.xhtml",
+        "source_text_sha256": "c0da5ba3454a6aa565c905c0caa56bdcb95f334f3a8015adacbfa8a5799ec1a3"
+      },
+      {
+        "id": "ch55",
+        "entry": "OEBPS/entry_055.xhtml",
+        "source_text_sha256": "9a0eeaa7cff642e1e9485109007de834099b28d11cd26c6e4d8376446fa879b7"
+      },
+      {
+        "id": "ch56",
+        "entry": "OEBPS/entry_056.xhtml",
+        "source_text_sha256": "bd4d37b3f63db8f3ccb343aab74074599631d9d0ccdb1c131c75bda190a54d3c"
+      },
+      {
+        "id": "ch57",
+        "entry": "OEBPS/entry_057.xhtml",
+        "source_text_sha256": "8c222454f5ad699c47867f832aeaf6545c680b2b6e339dbaeccbda0da107e912"
+      },
+      {
+        "id": "ch58",
+        "entry": "OEBPS/entry_058.xhtml",
+        "source_text_sha256": "e826c5a11064662aecd8c72942b79ca4aac25bd3bcfed67a1a07c8191452d19e"
+      },
+      {
+        "id": "ch59",
+        "entry": "OEBPS/entry_059.xhtml",
+        "source_text_sha256": "d6ae27d92a389a3ddf42978d11af7c920f2241cd09571fe9e945349a1af0b7b0"
+      },
+      {
+        "id": "ch60",
+        "entry": "OEBPS/entry_060.xhtml",
+        "source_text_sha256": "15e1940b5782ac8303b043335bd159856dc15376c675cab481c76c3b18a167ec"
+      },
+      {
+        "id": "ch61",
+        "entry": "OEBPS/entry_061.xhtml",
+        "source_text_sha256": "eaa165b5a968bd7d0485940bb0109052b1c2b53c3240fe0cf3885b4f97751c6b"
+      },
+      {
+        "id": "ch62",
+        "entry": "OEBPS/entry_062.xhtml",
+        "source_text_sha256": "8759e96edd7b3abb7dba3a4f19962cb98be9bfee82cfc87b50378504c88522ed"
+      },
+      {
+        "id": "ch63",
+        "entry": "OEBPS/entry_063.xhtml",
+        "source_text_sha256": "4c17f5b9ac9b89c8659baab74b620d129ead8996bc854e7e7acc58c723440686"
+      },
+      {
+        "id": "ch64",
+        "entry": "OEBPS/entry_064.xhtml",
+        "source_text_sha256": "b03f18a47dbe44424323a5d172d7fee04dd9dfe71ed6e846381ca48f2360d355"
+      },
+      {
+        "id": "ch65",
+        "entry": "OEBPS/entry_065.xhtml",
+        "source_text_sha256": "3e71623f32ffc2576f3762e429c5039371dcd24e6fd688d0577f597f85d443b9"
+      },
+      {
+        "id": "ch66",
+        "entry": "OEBPS/entry_066.xhtml",
+        "source_text_sha256": "6faec13f29141cc109c58e3cd2389eea73cf8a53217d8d5ebf6baf3f1281144b"
+      },
+      {
+        "id": "ch67",
+        "entry": "OEBPS/entry_067.xhtml",
+        "source_text_sha256": "a967eebe96c9c2f99bbcb167e18d3dfafc8544ae246e276f776b528270a0137a"
+      },
+      {
+        "id": "ch68",
+        "entry": "OEBPS/entry_068.xhtml",
+        "source_text_sha256": "20c6608de865bd3d1f5befd7f79b79c1d1bf4524f1c62caf654dd776935208d9"
+      },
+      {
+        "id": "ch69",
+        "entry": "OEBPS/entry_069.xhtml",
+        "source_text_sha256": "b15db79eeffb9c5fd65e682220f95cea2341b76554d8f27d441c7dc20d77afb8"
+      },
+      {
+        "id": "ch70",
+        "entry": "OEBPS/entry_070.xhtml",
+        "source_text_sha256": "6022ed5fe473f232ca29237f7deab57f192c30da1643b91f624478cd8beee731"
+      },
+      {
+        "id": "ch71",
+        "entry": "OEBPS/entry_071.xhtml",
+        "source_text_sha256": "c80d885e994bcecaf7069db99ab32943a69002ac352200b4e35c99d23c5c54f7"
+      },
+      {
+        "id": "ch72",
+        "entry": "OEBPS/entry_072.xhtml",
+        "source_text_sha256": "cc2ecbec4f9c20ed8dc567dc490fc2b1cd02406bcae1de747bd16f56bac62f91"
+      },
+      {
+        "id": "ch73",
+        "entry": "OEBPS/entry_073.xhtml",
+        "source_text_sha256": "290395225a486ca74ecb6d4d4e34a2eeffff4fbb5df7ac3bc3440ead5abd29af"
+      },
+      {
+        "id": "ch74",
+        "entry": "OEBPS/entry_074.xhtml",
+        "source_text_sha256": "b481e420b46bbc75615311d9e92f198c82b31547a15f4d4c90c060a0db9e8178"
+      },
+      {
+        "id": "ch75",
+        "entry": "OEBPS/entry_075.xhtml",
+        "source_text_sha256": "ada6fda9b9489edb12b98da6ce1b7c04048b0b4cf78f78ffa0e4556386161030"
+      },
+      {
+        "id": "ch76",
+        "entry": "OEBPS/entry_076.xhtml",
+        "source_text_sha256": "d8bc2daa17947f73eed58935d21d65460bc3fb491702e98486b0d137bd81de5b"
+      },
+      {
+        "id": "ch77",
+        "entry": "OEBPS/entry_077.xhtml",
+        "source_text_sha256": "15b636dd315ee670a132f590598640c178f34c39cc44a3e92b1998ee99904f5e"
+      },
+      {
+        "id": "ch78",
+        "entry": "OEBPS/entry_078.xhtml",
+        "source_text_sha256": "496d179e407669cd8f389813f4d78a82dcc6791ad30e8c7ea78cc16346cddba7"
+      },
+      {
+        "id": "ch79",
+        "entry": "OEBPS/entry_079.xhtml",
+        "source_text_sha256": "972d96dc68cb0ce397c769af11bea9b75e0146a8c47a0615fb7c976b0da33d1e"
+      },
+      {
+        "id": "ch80",
+        "entry": "OEBPS/entry_080.xhtml",
+        "source_text_sha256": "f4a6857d8cf8bb38f69a289acddf669d5811a22871eeacf0d33843b0c170791b"
+      },
+      {
+        "id": "ch81",
+        "entry": "OEBPS/entry_081.xhtml",
+        "source_text_sha256": "3fd97ff70403aed8ddb85d7b6d1a5fc8b7aa52608af916cbc76d4a41562b1f46"
+      },
+      {
+        "id": "ch82",
+        "entry": "OEBPS/entry_082.xhtml",
+        "source_text_sha256": "8dc620e3e9c3a7ab0cb9d4f6b7c6696794dec5b48ad773f5b980deed3a135ae1"
+      },
+      {
+        "id": "ch83",
+        "entry": "OEBPS/entry_083.xhtml",
+        "source_text_sha256": "e0e314aa50a64c127ca89544588ee9ed5def2dbd3cd229cf4a4d769089feded8"
+      },
+      {
+        "id": "ch84",
+        "entry": "OEBPS/entry_084.xhtml",
+        "source_text_sha256": "a048ab1c4db2a3655331e5da05d038354431ae954403977684e4b0d368594a01"
+      },
+      {
+        "id": "ch85",
+        "entry": "OEBPS/entry_085.xhtml",
+        "source_text_sha256": "fa576cdab583ba25e884f879024fabd6987718cb14ed963648856adcbc2ba12e"
+      },
+      {
+        "id": "ch86",
+        "entry": "OEBPS/entry_086.xhtml",
+        "source_text_sha256": "e99abfc7d0f6fef00350216570c29d35f5ec8cd1a6cdf27d68441b3d89d13557"
+      },
+      {
+        "id": "ch87",
+        "entry": "OEBPS/entry_087.xhtml",
+        "source_text_sha256": "a5c362ac53b386632756dbf199a63b0fa3e5d1dd3795a716b850842fb051e151"
+      },
+      {
+        "id": "ch88",
+        "entry": "OEBPS/entry_088.xhtml",
+        "source_text_sha256": "998f446ab3045597e80706576ccff2912e56e3e0282e5d04331a4006a6b4ec76"
+      },
+      {
+        "id": "ch89",
+        "entry": "OEBPS/entry_089.xhtml",
+        "source_text_sha256": "9d2e314c39cb30b7f69e6c78968dd31819c5830bb1d175c1b186931579b04af8"
+      },
+      {
+        "id": "ch90",
+        "entry": "OEBPS/entry_090.xhtml",
+        "source_text_sha256": "2289b7b6ef5026afca2eb63c1ceb2dbc0c897d73a619193b35b1c4071881ca32"
+      },
+      {
+        "id": "ch91",
+        "entry": "OEBPS/entry_091.xhtml",
+        "source_text_sha256": "3ba36eb2edb5869d024fd69c72f0076da65288d519b27ac4bc802799d031667a"
+      },
+      {
+        "id": "ch92",
+        "entry": "OEBPS/entry_092.xhtml",
+        "source_text_sha256": "a41d243baa1c5d0541135f4857b781a9a3645870bbca2a012e37cd71375c50eb"
+      },
+      {
+        "id": "ch93",
+        "entry": "OEBPS/entry_093.xhtml",
+        "source_text_sha256": "5a345da5469c999bf2db2cfb8c34d198352f067242ce9aea42918e931a5e2d96"
+      },
+      {
+        "id": "ch94",
+        "entry": "OEBPS/entry_094.xhtml",
+        "source_text_sha256": "99f27081f51faed5f3e937b70ded45893c7dda38ebf4e81778624f804063cec8"
+      },
+      {
+        "id": "ch95",
+        "entry": "OEBPS/entry_095.xhtml",
+        "source_text_sha256": "2e24ad78f548e09e7ac68f0ca15eed8264ae16de5e1ef00fc5defe0f56dc4aa7"
+      },
+      {
+        "id": "ch96",
+        "entry": "OEBPS/entry_096.xhtml",
+        "source_text_sha256": "bcbe05ce54b8edb60efbf82a6d9e501960a4b2f740d049384d4b611b48baedcc"
+      },
+      {
+        "id": "ch97",
+        "entry": "OEBPS/entry_097.xhtml",
+        "source_text_sha256": "b7051587a7c59fdf90cf8b535c44a4550e8aecd14e7daf684d877aaf06229c33"
+      },
+      {
+        "id": "ch98",
+        "entry": "OEBPS/entry_098.xhtml",
+        "source_text_sha256": "4b13cfb621526560f784990212a60da02eae0b0b735ac1e6709140407424f2bd"
+      },
+      {
+        "id": "ch99",
+        "entry": "OEBPS/entry_099.xhtml",
+        "source_text_sha256": "2ca2321f517c7fa22bd0a20edf02970356474d300da1e4026e010ddd06bcc10d"
+      },
+      {
+        "id": "ch100",
+        "entry": "OEBPS/entry_100.xhtml",
+        "source_text_sha256": "0ce0e63717f3ce4b9a015195aeefcaa19125c35dbb697fa95cd74b48b81daab2"
+      }
+    ],
+    "restored_list_or_emphasis_markup": 0
+  },
+  "essays": {
+    "source": "D:\\new projects\\100 great works\\manuscript\\100-great-essays-guide.epub",
+    "source_sha256": "75d6b8389152aa141ab85fce17c517a93909e104bad34c4c45819763a4fe9375",
+    "omitted_book_pages": [
+      "OEBPS/title.xhtml",
+      "OEBPS/copyright.xhtml",
+      "OEBPS/note.xhtml",
+      "OEBPS/contents.xhtml"
+    ],
+    "chapters": [
+      {
+        "id": "ch1",
+        "entry": "OEBPS/entry_001.xhtml",
+        "source_text_sha256": "dfc2b80e42ab061c604bfb3e8c874f4730759491ac3cd48e7bf39064e9d0f55d"
+      },
+      {
+        "id": "ch2",
+        "entry": "OEBPS/entry_002.xhtml",
+        "source_text_sha256": "e5963f1f5686506f7c020760b8baf9f3265f2db97878a044f65599a149014bc7"
+      },
+      {
+        "id": "ch3",
+        "entry": "OEBPS/entry_003.xhtml",
+        "source_text_sha256": "e00a4ea49db14613b3f57b00f739bbec42acf4bfca1a85231dad091646f09114"
+      },
+      {
+        "id": "ch4",
+        "entry": "OEBPS/entry_004.xhtml",
+        "source_text_sha256": "f897a6601e4c03c19294fc3496701d902656d48cd734118100112c9d7efaff79"
+      },
+      {
+        "id": "ch5",
+        "entry": "OEBPS/entry_005.xhtml",
+        "source_text_sha256": "6845df4a8c8b49fe567c67b4abf281508441ecab369425a14618eb6bd3edc37e"
+      },
+      {
+        "id": "ch6",
+        "entry": "OEBPS/entry_006.xhtml",
+        "source_text_sha256": "a41c6eed9f180f7c23bb44d4da217b427d3036d7f0408d49cce9a5ecd68cb43e"
+      },
+      {
+        "id": "ch7",
+        "entry": "OEBPS/entry_007.xhtml",
+        "source_text_sha256": "794ec689ee7fb78b31400107bf20258419b9a20af0e44c2e9525a721d8a470ad"
+      },
+      {
+        "id": "ch8",
+        "entry": "OEBPS/entry_008.xhtml",
+        "source_text_sha256": "c4d76b29adb5877356c386f2140b04b7c9dc527deb5ffdf295fd4697df1bcc91"
+      },
+      {
+        "id": "ch9",
+        "entry": "OEBPS/entry_009.xhtml",
+        "source_text_sha256": "7dafc0b4a8fb1555bc7d7a09a73ba9eb66342bde6fa37133f6f98b81680b81f1"
+      },
+      {
+        "id": "ch10",
+        "entry": "OEBPS/entry_010.xhtml",
+        "source_text_sha256": "07d90a591cab9c7add55e4d68b52eb4be4b1bf18ec5b05d2ca570bc9b3d764af"
+      },
+      {
+        "id": "ch11",
+        "entry": "OEBPS/entry_011.xhtml",
+        "source_text_sha256": "8318412b869c8d2122fd7222ac8b9dec7d43fde3ba502e9b1ffabca1793d24e2"
+      },
+      {
+        "id": "ch12",
+        "entry": "OEBPS/entry_012.xhtml",
+        "source_text_sha256": "ba86fb1dad0d2233cd4b630007992f86680255d5d75612cd42dcdbcbee407e7a"
+      },
+      {
+        "id": "ch13",
+        "entry": "OEBPS/entry_013.xhtml",
+        "source_text_sha256": "9588a6d7fdaf0788905a6ff36fb99db70a2fbc132e01b096d83532123861c57b"
+      },
+      {
+        "id": "ch14",
+        "entry": "OEBPS/entry_014.xhtml",
+        "source_text_sha256": "01ff50255b903821ec70cc40426c8bf4e7102fdb4ace0e1c1c808bfb2421157b"
+      },
+      {
+        "id": "ch15",
+        "entry": "OEBPS/entry_015.xhtml",
+        "source_text_sha256": "002fc8214515e8f2d37a19a866fd338db8b942013b9cbdf95b643376ee32ef9b"
+      },
+      {
+        "id": "ch16",
+        "entry": "OEBPS/entry_016.xhtml",
+        "source_text_sha256": "8e43ab3ba0eee45cc91f838dab7555021e608f2a79f78057fb17bd4d2ff96332"
+      },
+      {
+        "id": "ch17",
+        "entry": "OEBPS/entry_017.xhtml",
+        "source_text_sha256": "66a2a7df3c81eb43b38898b4ee3d3be8ddb596d11f2ef90136088568ad1e0b7b"
+      },
+      {
+        "id": "ch18",
+        "entry": "OEBPS/entry_018.xhtml",
+        "source_text_sha256": "f87b1667df9b5905364b1e03ec8174d94b90257250b406158fe8c82aba28c4bd"
+      },
+      {
+        "id": "ch19",
+        "entry": "OEBPS/entry_019.xhtml",
+        "source_text_sha256": "637d531b73c4eabc59b4997b4f5ccc674a6913f7da4956bf9ff17fb0fb301230"
+      },
+      {
+        "id": "ch20",
+        "entry": "OEBPS/entry_020.xhtml",
+        "source_text_sha256": "fc7bf0807fbfd7e69ed787cc8b62363bd364cafc92427e2ff273305fd94ca898"
+      },
+      {
+        "id": "ch21",
+        "entry": "OEBPS/entry_021.xhtml",
+        "source_text_sha256": "c501fbfc6bc15907d704d58f1e659d494ceed7ed5f219e92a213a84c4ff32a33"
+      },
+      {
+        "id": "ch22",
+        "entry": "OEBPS/entry_022.xhtml",
+        "source_text_sha256": "29fa4d1b9157cdc120c52c948eb00e5fd6138901f0ffe7ee34e9f3fabb3a86c7"
+      },
+      {
+        "id": "ch23",
+        "entry": "OEBPS/entry_023.xhtml",
+        "source_text_sha256": "68751cb874c0298ac9f2b53c9d9034a9fb4b92be07e66812872711307dbf6dcc"
+      },
+      {
+        "id": "ch24",
+        "entry": "OEBPS/entry_024.xhtml",
+        "source_text_sha256": "4276c1e6d8a52ca149a69d434f86ce99997076a5ae55a41feb1876d0912eeba4"
+      },
+      {
+        "id": "ch25",
+        "entry": "OEBPS/entry_025.xhtml",
+        "source_text_sha256": "715854bfe71f22a1e47a871b5413570979281c49dc9cbcfb8ad574569956c370"
+      },
+      {
+        "id": "ch26",
+        "entry": "OEBPS/entry_026.xhtml",
+        "source_text_sha256": "acdf9a80da0a9ff52afa197af7b7c70c774709b74a9363e41f1e9866eb5fcc93"
+      },
+      {
+        "id": "ch27",
+        "entry": "OEBPS/entry_027.xhtml",
+        "source_text_sha256": "3dba6fd7029eacb69b8879d238a283693e11fdf47767ffe00dcf48a20a3289b2"
+      },
+      {
+        "id": "ch28",
+        "entry": "OEBPS/entry_028.xhtml",
+        "source_text_sha256": "577e5d1b22405911174962076dc3fac3270bc8b4cbb254c1aca8d46c29cde481"
+      },
+      {
+        "id": "ch29",
+        "entry": "OEBPS/entry_029.xhtml",
+        "source_text_sha256": "97bd1fbcaf4f08b71e429e131dafb6099176cf687e052e56779bc1ec35a0c9bf"
+      },
+      {
+        "id": "ch30",
+        "entry": "OEBPS/entry_030.xhtml",
+        "source_text_sha256": "462b7675db1e051d901008ee4fdc002926dee2f1cbbda3bef2aedd53ffc799e9"
+      },
+      {
+        "id": "ch31",
+        "entry": "OEBPS/entry_031.xhtml",
+        "source_text_sha256": "2f6f7c84be443daea920e442e337d330b0af0c0c0dcb55313462cf1685e83ce0"
+      },
+      {
+        "id": "ch32",
+        "entry": "OEBPS/entry_032.xhtml",
+        "source_text_sha256": "17dbd25375b086bf275f215a1601b0577848c786186bc1205a91c63c93525368"
+      },
+      {
+        "id": "ch33",
+        "entry": "OEBPS/entry_033.xhtml",
+        "source_text_sha256": "8f31549919b1a476169eb665685079a01a4a219fef825abf57168b73ebf98e62"
+      },
+      {
+        "id": "ch34",
+        "entry": "OEBPS/entry_034.xhtml",
+        "source_text_sha256": "d1fe67aae7d5938bbbf1353c81f90ac71d8ce9aa413edc533581ac08979e2148"
+      },
+      {
+        "id": "ch35",
+        "entry": "OEBPS/entry_035.xhtml",
+        "source_text_sha256": "7b0834ae7784b9a14d709e2e5204b3510a9d194216935510bffc9bef0ad4e5cc"
+      },
+      {
+        "id": "ch36",
+        "entry": "OEBPS/entry_036.xhtml",
+        "source_text_sha256": "ccc0794e7cdce356328dec90bc175b233fa973d0ff6910067c5811a3ce098d45"
+      },
+      {
+        "id": "ch37",
+        "entry": "OEBPS/entry_037.xhtml",
+        "source_text_sha256": "1f100be76bab43d89a74eca2a7e5e2c403d02f651ae64a9840a759f87864afe5"
+      },
+      {
+        "id": "ch38",
+        "entry": "OEBPS/entry_038.xhtml",
+        "source_text_sha256": "68c0551e2652808c4b0a657ed7231dcd7e836077277a1676c41c3ce323af269a"
+      },
+      {
+        "id": "ch39",
+        "entry": "OEBPS/entry_039.xhtml",
+        "source_text_sha256": "69e95173e1e89c2065f9570d6f8b115b3acba96fc620c33cf5baf2fb433b80be"
+      },
+      {
+        "id": "ch40",
+        "entry": "OEBPS/entry_040.xhtml",
+        "source_text_sha256": "494789d3a68bf0a050b1fe450dc30b4a59e473edce11409ab61ca488ebbb2eec"
+      },
+      {
+        "id": "ch41",
+        "entry": "OEBPS/entry_041.xhtml",
+        "source_text_sha256": "0d747e726dd2fed1621004357e52541bc24fe067b200077d61ec0ad41105a3b5"
+      },
+      {
+        "id": "ch42",
+        "entry": "OEBPS/entry_042.xhtml",
+        "source_text_sha256": "ff091409cf8544462e1a1f1acce5236b61bf1cf889b6ec8b9eb7a4e6fc0a3189"
+      },
+      {
+        "id": "ch43",
+        "entry": "OEBPS/entry_043.xhtml",
+        "source_text_sha256": "c199356c2e147552f3d9878fa7e0033e1472371989595e200d4ec87141646c76"
+      },
+      {
+        "id": "ch44",
+        "entry": "OEBPS/entry_044.xhtml",
+        "source_text_sha256": "5d4b65887167a909e0a99cc5c8b6688a922afda4dc8a4c510a275becaecf9ada"
+      },
+      {
+        "id": "ch45",
+        "entry": "OEBPS/entry_045.xhtml",
+        "source_text_sha256": "6ae95a93240ebfe301c804eacbaf57bc3988d1f0f9980047df5e6b09da0ec990"
+      },
+      {
+        "id": "ch46",
+        "entry": "OEBPS/entry_046.xhtml",
+        "source_text_sha256": "280646752e80dd3c921ab9498d51e312b80b6c7cfc43f2ea097081067fe688b0"
+      },
+      {
+        "id": "ch47",
+        "entry": "OEBPS/entry_047.xhtml",
+        "source_text_sha256": "7cb6a4a5f379fa74854fbcfdee31fd517400dec3a2523101cf7d295ba7ceab0f"
+      },
+      {
+        "id": "ch48",
+        "entry": "OEBPS/entry_048.xhtml",
+        "source_text_sha256": "6b10d631ea2223c1d54b7b5dd40a89fac0f1d0d3c99c6c809c977820ee59a573"
+      },
+      {
+        "id": "ch49",
+        "entry": "OEBPS/entry_049.xhtml",
+        "source_text_sha256": "41a235c943b23bc22026957e7107379d551464e6a448bd2e5dbaaaeb526c24e8"
+      },
+      {
+        "id": "ch50",
+        "entry": "OEBPS/entry_050.xhtml",
+        "source_text_sha256": "af67f90e3db668f8ae094d8e949accbfe1557c63b6da42c3672b28d32c1b6a35"
+      },
+      {
+        "id": "ch51",
+        "entry": "OEBPS/entry_051.xhtml",
+        "source_text_sha256": "13719829ac1ae194c2c6ebcec67ae7cff3438d688eec21f8e1a7739503458e37"
+      },
+      {
+        "id": "ch52",
+        "entry": "OEBPS/entry_052.xhtml",
+        "source_text_sha256": "f395f9f524a880e0d3ebc314ca4a922f8c46879c18a31746d991d547ba4a42f0"
+      },
+      {
+        "id": "ch53",
+        "entry": "OEBPS/entry_053.xhtml",
+        "source_text_sha256": "27c12aa50ffe9bcf4ec8136206a0d42a49831127b11c384a8975f0da247e89d4"
+      },
+      {
+        "id": "ch54",
+        "entry": "OEBPS/entry_054.xhtml",
+        "source_text_sha256": "05e97dd0d88c1e3cb543edc052d4b6dee888f9bf3fa4978d96e78115804f2040"
+      },
+      {
+        "id": "ch55",
+        "entry": "OEBPS/entry_055.xhtml",
+        "source_text_sha256": "cc196609c154455da1643d622567e47bc5bf53e50b1457042a54a6f165844dce"
+      },
+      {
+        "id": "ch56",
+        "entry": "OEBPS/entry_056.xhtml",
+        "source_text_sha256": "2b91bd2804cab134252dab3aa9892683ddbf66f53d3f2266e7554be0dd845cd6"
+      },
+      {
+        "id": "ch57",
+        "entry": "OEBPS/entry_057.xhtml",
+        "source_text_sha256": "691cd4d0c14cf523ba5ea6a2b45591c797b27a2a883050e16fd0ed6d6c9a267e"
+      },
+      {
+        "id": "ch58",
+        "entry": "OEBPS/entry_058.xhtml",
+        "source_text_sha256": "0d54496cee9da5b41f21a9f6628acb74831059ab0bf171f0a24e8273e40709b9"
+      },
+      {
+        "id": "ch59",
+        "entry": "OEBPS/entry_059.xhtml",
+        "source_text_sha256": "a2af12bd3011dbd432afc0ef37e8d92c4aa35625d374992a9af5eec7e88b1bd1"
+      },
+      {
+        "id": "ch60",
+        "entry": "OEBPS/entry_060.xhtml",
+        "source_text_sha256": "e55fd7c8e49c28aa0b2c3a8f1985eef149c645f29d4ecffd02d92ee43ee0eb21"
+      },
+      {
+        "id": "ch61",
+        "entry": "OEBPS/entry_061.xhtml",
+        "source_text_sha256": "3f4341d0a7be188df70aa21b4a8f1e7d9054b90fc3b9b77138a83de8de5ece74"
+      },
+      {
+        "id": "ch62",
+        "entry": "OEBPS/entry_062.xhtml",
+        "source_text_sha256": "1e27d18ad80bff5af1bc660757e87c476865836b91aabe26398514c7ec88c55a"
+      },
+      {
+        "id": "ch63",
+        "entry": "OEBPS/entry_063.xhtml",
+        "source_text_sha256": "e6a2433b30cb742dd99df53459e7b4acce4f0a9bb4c728dc805c0ce153094dcc"
+      },
+      {
+        "id": "ch64",
+        "entry": "OEBPS/entry_064.xhtml",
+        "source_text_sha256": "9db60ca878d946687515a7c6e014d91be0a67737f7237b1d7358355737530662"
+      },
+      {
+        "id": "ch65",
+        "entry": "OEBPS/entry_065.xhtml",
+        "source_text_sha256": "8dc46b898ae18760757620c873d8d5bb7661fb7c0037654eb594aaec048a54b2"
+      },
+      {
+        "id": "ch66",
+        "entry": "OEBPS/entry_066.xhtml",
+        "source_text_sha256": "474e6130601be754620f42198d2d9ee95ef0bce6fb6802e87194d23e5acd1bc7"
+      },
+      {
+        "id": "ch67",
+        "entry": "OEBPS/entry_067.xhtml",
+        "source_text_sha256": "426481192c3b04f056e35c3ab066ef86f5b9ccef15f52b61e056a12d3c68633c"
+      },
+      {
+        "id": "ch68",
+        "entry": "OEBPS/entry_068.xhtml",
+        "source_text_sha256": "b6a26c54ccf1545e412b938ed1860c707b92a1e5fc07cab8bfa7460560a0f093"
+      },
+      {
+        "id": "ch69",
+        "entry": "OEBPS/entry_069.xhtml",
+        "source_text_sha256": "8efbdc8d976065633e2ff2947eb8e8f766005a9158419a4cf4dd236884daa7d3"
+      },
+      {
+        "id": "ch70",
+        "entry": "OEBPS/entry_070.xhtml",
+        "source_text_sha256": "4812db08845afffbabbee85075e42137b508c0765ca57e70a783f8dba69d2c1c"
+      },
+      {
+        "id": "ch71",
+        "entry": "OEBPS/entry_071.xhtml",
+        "source_text_sha256": "691e8b4f34fc054b8f49c8dd1033bfa50006ba6c8c05be367a714a4aed753135"
+      },
+      {
+        "id": "ch72",
+        "entry": "OEBPS/entry_072.xhtml",
+        "source_text_sha256": "5e5f3e457af525575a40edf2f06f3b7da97f17d69bd1bf04d48d00febccba248"
+      },
+      {
+        "id": "ch73",
+        "entry": "OEBPS/entry_073.xhtml",
+        "source_text_sha256": "c38d7ea297b2dcfec481d50da98aaf214c5f6f3ddab410403ab8a0461b8a5ab1"
+      },
+      {
+        "id": "ch74",
+        "entry": "OEBPS/entry_074.xhtml",
+        "source_text_sha256": "6a5994b9af52630af9c5041368a1d74f7ff38a3dfed4eee3a52726d45ae0575c"
+      },
+      {
+        "id": "ch75",
+        "entry": "OEBPS/entry_075.xhtml",
+        "source_text_sha256": "eb11f16424fcf5cd24862fb5aa2854be560add984e45ce89d3a3ff04f84811f7"
+      },
+      {
+        "id": "ch76",
+        "entry": "OEBPS/entry_076.xhtml",
+        "source_text_sha256": "21a85c74f8736c5499177275ac2315ce4e96a5ae85d9316bfe4d0ff620f50f9e"
+      },
+      {
+        "id": "ch77",
+        "entry": "OEBPS/entry_077.xhtml",
+        "source_text_sha256": "d601e4e851327876fc0a3eb77571685c6e851dff4f671c65ca220e6e81f67446"
+      },
+      {
+        "id": "ch78",
+        "entry": "OEBPS/entry_078.xhtml",
+        "source_text_sha256": "9047191867b61e418e1d45d0cd369595eec4ea28d520968a3f6ece5739286c34"
+      },
+      {
+        "id": "ch79",
+        "entry": "OEBPS/entry_079.xhtml",
+        "source_text_sha256": "4bbb98ab7d7e0ba4b3237559b60fd8f6fa8b3959fd55afab02931fce46cc1ae3"
+      },
+      {
+        "id": "ch80",
+        "entry": "OEBPS/entry_080.xhtml",
+        "source_text_sha256": "4b50b503bbc628da15054821f7c1966beb399f8021a2a93307a62a03932da11f"
+      },
+      {
+        "id": "ch81",
+        "entry": "OEBPS/entry_081.xhtml",
+        "source_text_sha256": "d8936d3dd89d392b2bd42078149edd8009654b180e0608af435b35f1faad28a0"
+      },
+      {
+        "id": "ch82",
+        "entry": "OEBPS/entry_082.xhtml",
+        "source_text_sha256": "021531a90a5108f44f590bd0570485a608abd829e8a3d31a5e5f7c933c44e7f1"
+      },
+      {
+        "id": "ch83",
+        "entry": "OEBPS/entry_083.xhtml",
+        "source_text_sha256": "99345d4c6dc203bfb497d7dcc202ca139ab5a0d24b42540be6e08c696b5fc76d"
+      },
+      {
+        "id": "ch84",
+        "entry": "OEBPS/entry_084.xhtml",
+        "source_text_sha256": "948cc7fbc741dcacd39002a4a6148dcf5aaaefe162ae968cf2a7956b1eb7a332"
+      },
+      {
+        "id": "ch85",
+        "entry": "OEBPS/entry_085.xhtml",
+        "source_text_sha256": "2f606117df6b7afb0f8944672068befdef6151a3e28907e05d2fd20e34f7ceba"
+      },
+      {
+        "id": "ch86",
+        "entry": "OEBPS/entry_086.xhtml",
+        "source_text_sha256": "58fa5bd64eca217c6bbbb4cf55bb8b974f9e743beb745bd7e5b262beb47c09f5"
+      },
+      {
+        "id": "ch87",
+        "entry": "OEBPS/entry_087.xhtml",
+        "source_text_sha256": "bfe0a4918e6f60120ca794bfa2609290df574a448a448e2fccb80501d197e873"
+      },
+      {
+        "id": "ch88",
+        "entry": "OEBPS/entry_088.xhtml",
+        "source_text_sha256": "fc6e18fb5693ffa62f761dbfdc51bf71adefeb360547d43f60d016d78147974f"
+      },
+      {
+        "id": "ch89",
+        "entry": "OEBPS/entry_089.xhtml",
+        "source_text_sha256": "f059541df943fcf2fa2b4d3346b60491919741252c4266d5be15f76ca4d57b99"
+      },
+      {
+        "id": "ch90",
+        "entry": "OEBPS/entry_090.xhtml",
+        "source_text_sha256": "a0774070916f83dcc38c8c15e7e8d173c987dd199ea81513f8909d7fd43932ea"
+      },
+      {
+        "id": "ch91",
+        "entry": "OEBPS/entry_091.xhtml",
+        "source_text_sha256": "cef43e19ff4ea5f50b3534984a16de495d1722f7437d71a5e21acb1ccb61064b"
+      },
+      {
+        "id": "ch92",
+        "entry": "OEBPS/entry_092.xhtml",
+        "source_text_sha256": "0dbf8be1609d9b6b19381728fd2e344b03774d751e09a697a2eeff777a6f63d9"
+      },
+      {
+        "id": "ch93",
+        "entry": "OEBPS/entry_093.xhtml",
+        "source_text_sha256": "cb368d9e619b5ac8d41c2ef59caf26081b0f1c8e396ed3a357bca252948e4b59"
+      },
+      {
+        "id": "ch94",
+        "entry": "OEBPS/entry_094.xhtml",
+        "source_text_sha256": "306e2452f136c049935c396fccf89cbd400ce62b6ecf10ad159e41b988cb3132"
+      },
+      {
+        "id": "ch95",
+        "entry": "OEBPS/entry_095.xhtml",
+        "source_text_sha256": "9ade0cd2f16e8b120251cd0d12be6d4fc41eb62895249b27e6d9d65db85d557d"
+      },
+      {
+        "id": "ch96",
+        "entry": "OEBPS/entry_096.xhtml",
+        "source_text_sha256": "f5f7ba58c10a0283afa6e25789b398bc72b728675b69e0efcb685557b74119a1"
+      },
+      {
+        "id": "ch97",
+        "entry": "OEBPS/entry_097.xhtml",
+        "source_text_sha256": "235910e9e48f2aff3978ad5aa5a80b21434bac7a9ffd94ba1ed359974d8715c8"
+      },
+      {
+        "id": "ch98",
+        "entry": "OEBPS/entry_098.xhtml",
+        "source_text_sha256": "8a0c651d7faafc30662ef77deb4883f4d11786fe0be2e1c2bd8b2cc97b03bf26"
+      },
+      {
+        "id": "ch99",
+        "entry": "OEBPS/entry_099.xhtml",
+        "source_text_sha256": "6c1dcb7d8e563780362c6aee4c346a01821a11d65e178b985f0e9fc292d5c47a"
+      },
+      {
+        "id": "ch100",
+        "entry": "OEBPS/entry_100.xhtml",
+        "source_text_sha256": "7ad5df7437fae5d5e7d4bdbbb70f1a2a63181ab10a727d146227c491adf92163"
+      }
+    ],
+    "restored_list_or_emphasis_markup": 0
+  },
+  "critical_works": {
+    "source": "D:\\new projects\\100 great works\\manuscript\\100-great-critical-works-guide.epub",
+    "source_sha256": "77387dad8aafe7938401279a7ec8d8093f1e85175c327f8716391988611aabd2",
+    "omitted_book_pages": [
+      "OEBPS/title.xhtml",
+      "OEBPS/copyright.xhtml",
+      "OEBPS/note.xhtml",
+      "OEBPS/dedication.xhtml",
+      "OEBPS/nav.xhtml",
+      "OEBPS/part_1.xhtml",
+      "OEBPS/part_2.xhtml",
+      "OEBPS/part_3.xhtml",
+      "OEBPS/part_4.xhtml",
+      "OEBPS/part_5.xhtml",
+      "OEBPS/part_6.xhtml"
+    ],
+    "chapters": [
+      {
+        "id": "ch1",
+        "entry": "OEBPS/entry_001.xhtml",
+        "source_text_sha256": "4f9d27216f726e16ae4d370f6eb48a005ac0ad22b14a91cd5aadad4e64eb7745"
+      },
+      {
+        "id": "ch2",
+        "entry": "OEBPS/entry_002.xhtml",
+        "source_text_sha256": "614b74ffaac1764852d5f67ecd3f7cfd3cbaca9dfafefe9e8180b7925b413a2e"
+      },
+      {
+        "id": "ch3",
+        "entry": "OEBPS/entry_003.xhtml",
+        "source_text_sha256": "4eed7dc66512bfdc5cf8be06caeff664b90bb1ce648ba6f56687ae9fa849ad12"
+      },
+      {
+        "id": "ch4",
+        "entry": "OEBPS/entry_004.xhtml",
+        "source_text_sha256": "e02e63bbb60eb98dcde03dd6f5aa484e4143e18ad370d1686cf98c27613f6cbb"
+      },
+      {
+        "id": "ch5",
+        "entry": "OEBPS/entry_005.xhtml",
+        "source_text_sha256": "82dabd4e3c933e9758ade28cfab5d90b694cd17f5d47a8c14b28e059e07d6b8c"
+      },
+      {
+        "id": "ch6",
+        "entry": "OEBPS/entry_006.xhtml",
+        "source_text_sha256": "e9f51f375eccb57d38f7cbc59a2282937b589058b0f5123ad0d90b5403060f03"
+      },
+      {
+        "id": "ch7",
+        "entry": "OEBPS/entry_007.xhtml",
+        "source_text_sha256": "f3c94684ba753558f9d466117843dbc82b2ffde88c4f906b5c74e8e60588e55b"
+      },
+      {
+        "id": "ch8",
+        "entry": "OEBPS/entry_008.xhtml",
+        "source_text_sha256": "7aceb7134d3a39e1c97faa5af1130e8bedafe5396782aab1f0070b2663a4c15d"
+      },
+      {
+        "id": "ch9",
+        "entry": "OEBPS/entry_009.xhtml",
+        "source_text_sha256": "c7183675f34233a361bde587d82ec42a80fdffec85f55c410b2207744a9c237c"
+      },
+      {
+        "id": "ch10",
+        "entry": "OEBPS/entry_010.xhtml",
+        "source_text_sha256": "79d77593f214c18f77a09f76ee3cd5f0e8b2cfb06ed4e4c5fe703ace5f83b5d9"
+      },
+      {
+        "id": "ch11",
+        "entry": "OEBPS/entry_011.xhtml",
+        "source_text_sha256": "e703b7ba82a4791af2d32b55e64864f0a52e589a68465bec1e360a7ed9be26dc"
+      },
+      {
+        "id": "ch12",
+        "entry": "OEBPS/entry_012.xhtml",
+        "source_text_sha256": "db11a1cea27895e6dc20fa80308055f211563709538ee3a967e0639cff43947e"
+      },
+      {
+        "id": "ch13",
+        "entry": "OEBPS/entry_013.xhtml",
+        "source_text_sha256": "b4c2a9dec27aee046407888568d9a8238f0bc84d338631ea1e1f606d04b0a7dd"
+      },
+      {
+        "id": "ch14",
+        "entry": "OEBPS/entry_014.xhtml",
+        "source_text_sha256": "dfae5eba4c24afadbdf1cdb7a76fec237238010032cd40a8cf5909ed1e118f09"
+      },
+      {
+        "id": "ch15",
+        "entry": "OEBPS/entry_015.xhtml",
+        "source_text_sha256": "0f787348eceb2a6355a0ade98d701c719f055602e6a73671726a694683a6e907"
+      },
+      {
+        "id": "ch16",
+        "entry": "OEBPS/entry_016.xhtml",
+        "source_text_sha256": "fe08a6d012ab91f1374be8bc2da1f8cbfb461e771e68558b5e2593ccd3caf14a"
+      },
+      {
+        "id": "ch17",
+        "entry": "OEBPS/entry_017.xhtml",
+        "source_text_sha256": "ad824c49c1792e0ca09d04ee2a80f5d12630ec2a1f06f5bcab02de8af26315f4"
+      },
+      {
+        "id": "ch18",
+        "entry": "OEBPS/entry_018.xhtml",
+        "source_text_sha256": "694f2104bc1266dfc24278ca3f906da7bb8723adc657030a29bf5fbd31097623"
+      },
+      {
+        "id": "ch19",
+        "entry": "OEBPS/entry_019.xhtml",
+        "source_text_sha256": "908657993a3bab36ea98174ec53a466b10dda34ac76a0dd757931fc303667d09"
+      },
+      {
+        "id": "ch20",
+        "entry": "OEBPS/entry_020.xhtml",
+        "source_text_sha256": "7e29b4ab9527237d06bfc31bc78412f1c429dac2af73e5bd16875f87bfeb7291"
+      },
+      {
+        "id": "ch21",
+        "entry": "OEBPS/entry_021.xhtml",
+        "source_text_sha256": "5cc51455283c1412c1f7d22ce6f6a1eb721c4b0b334073086dcda22792554b43"
+      },
+      {
+        "id": "ch22",
+        "entry": "OEBPS/entry_022.xhtml",
+        "source_text_sha256": "2a1631d00b79d92888232c891a7c955657bf23e9097983438fa03647dc6c116a"
+      },
+      {
+        "id": "ch23",
+        "entry": "OEBPS/entry_023.xhtml",
+        "source_text_sha256": "85a8f1120a6ca9a3499ad70a9c713138d58439fb127a9e16eb540f4c70283926"
+      },
+      {
+        "id": "ch24",
+        "entry": "OEBPS/entry_024.xhtml",
+        "source_text_sha256": "20d7d3b30c1653f9ab6e04203a17add82d10e6dc15d2ae07d41922d2f271bfa0"
+      },
+      {
+        "id": "ch25",
+        "entry": "OEBPS/entry_025.xhtml",
+        "source_text_sha256": "44a54a9843344f0d21fbee5daef5a401632db0e28a1d07d2b974c2da87738d54"
+      },
+      {
+        "id": "ch26",
+        "entry": "OEBPS/entry_026.xhtml",
+        "source_text_sha256": "ea05f846a571594495ea48a1d106b985e9007a5bbfdff4d46d56542f2765b5e4"
+      },
+      {
+        "id": "ch27",
+        "entry": "OEBPS/entry_027.xhtml",
+        "source_text_sha256": "be02c7d857d41a0018fa76abd4aff1a84318c5473d68044fc66e5551128133be"
+      },
+      {
+        "id": "ch28",
+        "entry": "OEBPS/entry_028.xhtml",
+        "source_text_sha256": "1317987830e4c147cd775363507eba15835f5425019b89cede8841904c12770a"
+      },
+      {
+        "id": "ch29",
+        "entry": "OEBPS/entry_029.xhtml",
+        "source_text_sha256": "eb7a4a66debfbda44e8d5a32c2a49d3431efd14a60a843dfd36d727fcbdd737e"
+      },
+      {
+        "id": "ch30",
+        "entry": "OEBPS/entry_030.xhtml",
+        "source_text_sha256": "2a5d8180b647ad54ae54e493cc1a123153f07ab1faf4e16a72443ea298db31c1"
+      },
+      {
+        "id": "ch31",
+        "entry": "OEBPS/entry_031.xhtml",
+        "source_text_sha256": "b531f7aac68371f8cecab317eced71e4d93ea00e203652950fc2e40d3e734d75"
+      },
+      {
+        "id": "ch32",
+        "entry": "OEBPS/entry_032.xhtml",
+        "source_text_sha256": "d058e50d656b151921f91a7c358572d4137c4a9a1a21ae0dbfeb1df161bc55e0"
+      },
+      {
+        "id": "ch33",
+        "entry": "OEBPS/entry_033.xhtml",
+        "source_text_sha256": "f112cd74d9395cdc12d1b9b03e9f8e2618895e83bcf00cc1a0c18b311eb1d79a"
+      },
+      {
+        "id": "ch34",
+        "entry": "OEBPS/entry_034.xhtml",
+        "source_text_sha256": "bc7800279b33025cbd95ebdce3385c6e07293ed30a78334160471f22a37e06b8"
+      },
+      {
+        "id": "ch35",
+        "entry": "OEBPS/entry_035.xhtml",
+        "source_text_sha256": "af871349cb94c43d024cd7a4bf30ccf48e44b7b0aac88e74743a7115addf3058"
+      },
+      {
+        "id": "ch36",
+        "entry": "OEBPS/entry_036.xhtml",
+        "source_text_sha256": "a736ca6c658793570dae5924c8532c59fce2c8fefe76fa9fc36d136266ed2fe6"
+      },
+      {
+        "id": "ch37",
+        "entry": "OEBPS/entry_037.xhtml",
+        "source_text_sha256": "80ca1006a375494c42408deee27446d9227eadfb809b68e7386885888d118e02"
+      },
+      {
+        "id": "ch38",
+        "entry": "OEBPS/entry_038.xhtml",
+        "source_text_sha256": "e065c31234cbdcd69b4ef11e8bc39deb5775242683ab2bb1a7579f2df90cce16"
+      },
+      {
+        "id": "ch39",
+        "entry": "OEBPS/entry_039.xhtml",
+        "source_text_sha256": "0bdee793ece46a50bbe2f8dfa18496b415ee047dd34de3d9089aa44826ca7f68"
+      },
+      {
+        "id": "ch40",
+        "entry": "OEBPS/entry_040.xhtml",
+        "source_text_sha256": "35bffc1527545325a15bac0d07b09079f23a2322249f873872a0c1977a38e9fa"
+      },
+      {
+        "id": "ch41",
+        "entry": "OEBPS/entry_041.xhtml",
+        "source_text_sha256": "3806a8f64abdc6ade61bb0230bfa2850482f8b05b0729d9b90e77bfb3e474a2f"
+      },
+      {
+        "id": "ch42",
+        "entry": "OEBPS/entry_042.xhtml",
+        "source_text_sha256": "d5fa3a2983eb9a73cdda422e17d8c9560c0adf965f7758577996f7c8a277f3f8"
+      },
+      {
+        "id": "ch43",
+        "entry": "OEBPS/entry_043.xhtml",
+        "source_text_sha256": "c570f8eefe12576817942fe838fd3cab1137f616f8dd15d5d6dd574cafea9979"
+      },
+      {
+        "id": "ch44",
+        "entry": "OEBPS/entry_044.xhtml",
+        "source_text_sha256": "9d3e1d363cb39555029bee0c7abfc1f8892d8e13dcec3131c94478593c81f9d4"
+      },
+      {
+        "id": "ch45",
+        "entry": "OEBPS/entry_045.xhtml",
+        "source_text_sha256": "53133718f3247a69c7fab039724aabe56365c9f78860f490b6bab2f59cc12279"
+      },
+      {
+        "id": "ch46",
+        "entry": "OEBPS/entry_046.xhtml",
+        "source_text_sha256": "1f979ca2dd8848c9aed4093ddc60c958003378c322bb2fd607f2df0fd7dabb9e"
+      },
+      {
+        "id": "ch47",
+        "entry": "OEBPS/entry_047.xhtml",
+        "source_text_sha256": "cf3b3ef51aae8f28458a8500d8cdd629460d14b1dd338939e82343abb30fb2c3"
+      },
+      {
+        "id": "ch48",
+        "entry": "OEBPS/entry_048.xhtml",
+        "source_text_sha256": "b921a62b5977eea9b83f019f03a3bacdf2e4ab16bcf1bd121868a0ec8a11aedd"
+      },
+      {
+        "id": "ch49",
+        "entry": "OEBPS/entry_049.xhtml",
+        "source_text_sha256": "a4a89b91de043bd247fae2cf2a69cf5c521695dbb10b2b0ff9acceb227d63ecf"
+      },
+      {
+        "id": "ch50",
+        "entry": "OEBPS/entry_050.xhtml",
+        "source_text_sha256": "5188a2bf26fe7cffeaec4bfc0b502bb31f52b0a1b9e6fce2ade2effc5694bd36"
+      },
+      {
+        "id": "ch51",
+        "entry": "OEBPS/entry_051.xhtml",
+        "source_text_sha256": "d1452dfbe1d6a37ebb0cb427fbedb1e55470e7a09a9fc30e9010021b83266c34"
+      },
+      {
+        "id": "ch52",
+        "entry": "OEBPS/entry_052.xhtml",
+        "source_text_sha256": "a7f1bfd4ac034e5f82002c79fc76d9aef0ccf74081a2f7143d4cbcff06e5f01c"
+      },
+      {
+        "id": "ch53",
+        "entry": "OEBPS/entry_053.xhtml",
+        "source_text_sha256": "26d08f293ad2b5602b0ab9cc9cb80d05cf6f18eb75be62d7e321b323d82772f8"
+      },
+      {
+        "id": "ch54",
+        "entry": "OEBPS/entry_054.xhtml",
+        "source_text_sha256": "e64b525da4fc9b92f76ea1962ee59b86ca136d1b615e1a38dbabc05b0c4ec82f"
+      },
+      {
+        "id": "ch55",
+        "entry": "OEBPS/entry_055.xhtml",
+        "source_text_sha256": "029e8cfeb96b33b7c646468ee4bcb97d7da850e843cb8e130f50c8fdbdaee576"
+      },
+      {
+        "id": "ch56",
+        "entry": "OEBPS/entry_056.xhtml",
+        "source_text_sha256": "8a35445deb8aa091dc1d916eac1b8ec257021da2b8af06e4d00fe146d8feb65a"
+      },
+      {
+        "id": "ch57",
+        "entry": "OEBPS/entry_057.xhtml",
+        "source_text_sha256": "f10d8e25f0907e96177cc1e0c92d8b9e1f5857848ffb9341ba9ba8b8459aaa88"
+      },
+      {
+        "id": "ch58",
+        "entry": "OEBPS/entry_058.xhtml",
+        "source_text_sha256": "e28e8ffe1632dca633537b53f99534c6d37dc5b2ba1b54e62dea5d008f06cfff"
+      },
+      {
+        "id": "ch59",
+        "entry": "OEBPS/entry_059.xhtml",
+        "source_text_sha256": "d6ea82b3a2a44e63934140fdd078586a99c6d05957d140cfa5f2ec3d0fec3c8c"
+      },
+      {
+        "id": "ch60",
+        "entry": "OEBPS/entry_060.xhtml",
+        "source_text_sha256": "b37ed4e6079e204dc8bb15d99ebf940e39c497859e3d6de4ab5e0bf08eea2631"
+      },
+      {
+        "id": "ch61",
+        "entry": "OEBPS/entry_061.xhtml",
+        "source_text_sha256": "9c366afc69181e936aa53da00ed6a1c83f04cd2a9150380f836bcbc28a406a16"
+      },
+      {
+        "id": "ch62",
+        "entry": "OEBPS/entry_062.xhtml",
+        "source_text_sha256": "7764afb22549c85f47747d066a01be07213b5bb4ca3872e6abf87ea47d3f4d9a"
+      },
+      {
+        "id": "ch63",
+        "entry": "OEBPS/entry_063.xhtml",
+        "source_text_sha256": "1d5cec42a9f355ae76a1ffd46b08438b66cc9c4dc7cc620f97213219ae470d0c"
+      },
+      {
+        "id": "ch64",
+        "entry": "OEBPS/entry_064.xhtml",
+        "source_text_sha256": "3667ff3f4007ca9f51af1e222ef1e67d0202c5ae948f4f470a5999d97c2d634a"
+      },
+      {
+        "id": "ch65",
+        "entry": "OEBPS/entry_065.xhtml",
+        "source_text_sha256": "4dd8c9d38dc35d123e36fd762571e77502decd3cc0943244dfb26e3a112624da"
+      },
+      {
+        "id": "ch66",
+        "entry": "OEBPS/entry_066.xhtml",
+        "source_text_sha256": "0e584a47892e86e84ca1c48463599d261cf2cfefed0b89e396e81fb1a49a19ed"
+      },
+      {
+        "id": "ch67",
+        "entry": "OEBPS/entry_067.xhtml",
+        "source_text_sha256": "70ff1b29561dc89605e5b191818b0df453f97fc858f7c9a6b9502d8558c0584a"
+      },
+      {
+        "id": "ch68",
+        "entry": "OEBPS/entry_068.xhtml",
+        "source_text_sha256": "90798039bb9dba2fa7eac92739fee6e4e27796dee8f52f3d87892a8c991d3002"
+      },
+      {
+        "id": "ch69",
+        "entry": "OEBPS/entry_069.xhtml",
+        "source_text_sha256": "115312e2447474c585de555d79955e3f04e45f6afc6843d5c9d8a5146c3600df"
+      },
+      {
+        "id": "ch70",
+        "entry": "OEBPS/entry_070.xhtml",
+        "source_text_sha256": "550f09cbe81b107645b3091b00f5ffe3e2ebf1806ac8835068169a7c89291e4e"
+      },
+      {
+        "id": "ch71",
+        "entry": "OEBPS/entry_071.xhtml",
+        "source_text_sha256": "421fc261122768f7dbe958bdd87b54f74f84eabf00936c5a2dbae64c529342a1"
+      },
+      {
+        "id": "ch72",
+        "entry": "OEBPS/entry_072.xhtml",
+        "source_text_sha256": "4b2d948bc2c5771fedd44569ccd868258f93ed8dbee564b0ba5d791cfac81ddb"
+      },
+      {
+        "id": "ch73",
+        "entry": "OEBPS/entry_073.xhtml",
+        "source_text_sha256": "8c15766374545d02da5173829b771f211a4a5cae9a7383c475655ea7fa939515"
+      },
+      {
+        "id": "ch74",
+        "entry": "OEBPS/entry_074.xhtml",
+        "source_text_sha256": "530addc08903ab39f4171187f78945d4a239689d3383d74a2fa0c4228cf1197d"
+      },
+      {
+        "id": "ch75",
+        "entry": "OEBPS/entry_075.xhtml",
+        "source_text_sha256": "7cbe1a1f800619a806cbe5d2c1a95b9fc3b872a68d607bb1dbb1b96e8598dcf1"
+      },
+      {
+        "id": "ch76",
+        "entry": "OEBPS/entry_076.xhtml",
+        "source_text_sha256": "797b3a08ca44bb33ca0df695a7e284a5360200b95e5eb16a7e0cdd1b2deedc85"
+      },
+      {
+        "id": "ch77",
+        "entry": "OEBPS/entry_077.xhtml",
+        "source_text_sha256": "533847498056a31db7367834e76c131e7afc37408c9232f34bd9d37c48d91015"
+      },
+      {
+        "id": "ch78",
+        "entry": "OEBPS/entry_078.xhtml",
+        "source_text_sha256": "95836aa8ac2ff742c0d6e06ec864d6638428bbc4e20878cb130b87044005ae16"
+      },
+      {
+        "id": "ch79",
+        "entry": "OEBPS/entry_079.xhtml",
+        "source_text_sha256": "e0f4c42132cb1e15ecca90998ed7dd63d92e35445869066dae7e26caa6138042"
+      },
+      {
+        "id": "ch80",
+        "entry": "OEBPS/entry_080.xhtml",
+        "source_text_sha256": "74914b1f5595266edf4f92041a36aa9d73a66f259348ef2e5a2dd01cdce4a417"
+      },
+      {
+        "id": "ch81",
+        "entry": "OEBPS/entry_081.xhtml",
+        "source_text_sha256": "72f064624e87c04757476d190576ab784468f78bfe4aaeae97868dabeb7e4fc3"
+      },
+      {
+        "id": "ch82",
+        "entry": "OEBPS/entry_082.xhtml",
+        "source_text_sha256": "c702fc37492f338fc15f7187f4ecd4775b751627a355d6c7ff34357605ff1740"
+      },
+      {
+        "id": "ch83",
+        "entry": "OEBPS/entry_083.xhtml",
+        "source_text_sha256": "a522ec11a2055c8671e9143e86acda6fbab761b4a72fbe07ad98f9882983ded2"
+      },
+      {
+        "id": "ch84",
+        "entry": "OEBPS/entry_084.xhtml",
+        "source_text_sha256": "8b9a003d167229a97269963c80c66f9caf6cf8631f0d1aff70a4875e54bd63a2"
+      },
+      {
+        "id": "ch85",
+        "entry": "OEBPS/entry_085.xhtml",
+        "source_text_sha256": "bddc34b5d1ac94a79abb113b510f467953c7ce14d40826487ec5feded71c5aa3"
+      },
+      {
+        "id": "ch86",
+        "entry": "OEBPS/entry_086.xhtml",
+        "source_text_sha256": "8205effe9f44986fdb09d01fb4abf9f204c00025f4096953afbdc1382807d7f8"
+      },
+      {
+        "id": "ch87",
+        "entry": "OEBPS/entry_087.xhtml",
+        "source_text_sha256": "80e76529b8615c344fb9d12acc7e6e0dc506903b0647a17b591cdd201225c0d1"
+      },
+      {
+        "id": "ch88",
+        "entry": "OEBPS/entry_088.xhtml",
+        "source_text_sha256": "cba98589f2772adbdcf16150fdf36c0ec55a33e2eea42488df8a88c2c4547d43"
+      },
+      {
+        "id": "ch89",
+        "entry": "OEBPS/entry_089.xhtml",
+        "source_text_sha256": "f1c48a603b08e8ec9a3745c110174b54bf747796de6655065170f4f08858c6d7"
+      },
+      {
+        "id": "ch90",
+        "entry": "OEBPS/entry_090.xhtml",
+        "source_text_sha256": "e009c4b179877f24be6a6fae645ce114ec09ddc4b6b00d2fd99cd58d7bbd9cde"
+      },
+      {
+        "id": "ch91",
+        "entry": "OEBPS/entry_091.xhtml",
+        "source_text_sha256": "60523b9443c9e78aebdf2c20589ce3f161d2681b97150ff2679b6dc150cbe45d"
+      },
+      {
+        "id": "ch92",
+        "entry": "OEBPS/entry_092.xhtml",
+        "source_text_sha256": "35306c4f6551b326d7a1742b3366c4910019d4a28108a302fcfdb0487bab3d85"
+      },
+      {
+        "id": "ch93",
+        "entry": "OEBPS/entry_093.xhtml",
+        "source_text_sha256": "39d83e8a01fc74a8b73ea73b5cd428f0759d176fe7236892543f93c5abecfff6"
+      },
+      {
+        "id": "ch94",
+        "entry": "OEBPS/entry_094.xhtml",
+        "source_text_sha256": "8aa2c42e6ed3f5ba95d156710bd346f7b9220b13f49045da2a877198a6c3844f"
+      },
+      {
+        "id": "ch95",
+        "entry": "OEBPS/entry_095.xhtml",
+        "source_text_sha256": "c04196cc02804e608697d57ff7f421838dd1c7c9fd14d9bd153e4a19d8f9d64d"
+      },
+      {
+        "id": "ch96",
+        "entry": "OEBPS/entry_096.xhtml",
+        "source_text_sha256": "b9ce4a84fa4e9e3c9cd73a92a5871a3ebd62a6f61e30a4db4b2a37fa06be67e1"
+      },
+      {
+        "id": "ch97",
+        "entry": "OEBPS/entry_097.xhtml",
+        "source_text_sha256": "5170587137c5013dd5a744582f87cc13cc1a204c2ebd6936791733392bf8fe80"
+      },
+      {
+        "id": "ch98",
+        "entry": "OEBPS/entry_098.xhtml",
+        "source_text_sha256": "12ea19e8b9a1b4991027fed042686c4582d84f0ea834c9d43dbe0e42aa9b362f"
+      },
+      {
+        "id": "ch99",
+        "entry": "OEBPS/entry_099.xhtml",
+        "source_text_sha256": "7a8cfb523adbc337e6ba707dc0338bc3340b9407664b2c7dd1e5b0cefd00a60a"
+      },
+      {
+        "id": "ch100",
+        "entry": "OEBPS/entry_100.xhtml",
+        "source_text_sha256": "7fa2df480bd7d8fd4198d355ed146cf7bf5a3046ed1dfb04f063e1d175b1bce6"
+      }
+    ],
+    "restored_list_or_emphasis_markup": 173
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "batch": "Book 6 complete lesson coverage",
+  "placements": [
+    {
+      "book": 6,
+      "chapter": "ch05",
+      "originalChapterSha256": "b037b88d61909e1cc2b6bb439407b3b700cce27e0a9e8a34d83037199d4dd574",
+      "anchor": "### 2.2 30-सेकंड शॉर्ट-ट्रिक बॉक्स (Decision Flowchart)",
+      "image": "rassetu_b6_course_of_action_filter.webp",
+      "caption": "उचित कार्यवाही: तीन प्रश्नों की निर्णय-कसौटी",
+      "explanation": "तीन प्रश्नों की फिल्टर प्रक्रिया; किसी प्रश्न पर विफल विकल्प हटाएं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch06",
+      "originalChapterSha256": "0076977e44746ba2bcbb0728eae0833b2108e1bc5c105e13314ff09bbfb8f500",
+      "anchor": "### 2.2 30-सेकंड शॉर्ट-ट्रिक बॉक्स (Decision Flowchart)",
+      "image": "rassetu_b6_course_of_action_filter.webp",
+      "caption": "उचित कार्यवाही: तीन प्रश्नों की निर्णय-कसौटी",
+      "explanation": "तीन प्रश्नों की फिल्टर प्रक्रिया; किसी प्रश्न पर विफल विकल्प हटाएं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch07",
+      "originalChapterSha256": "74878ed5e5a820706f0074dc5921f19d9a57675091b6eecbbad6a920cc991a8f",
+      "anchor": "### 2.1 पैराग्राफ-आधारित तर्क का तीन-चरणीय मॉडल",
+      "image": "rassetu_b6_argument_cause_effect.webp",
+      "caption": "कारण–प्रभाव तर्क: दावे की कड़ी परखें",
+      "explanation": "सांकेतिक दावा, प्रमाण और वैकल्पिक कारण; X/Y किसी वास्तविक घटना के बारे में नहीं हैं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch08",
+      "originalChapterSha256": "07ab16c9d85bc3cb6d4d8f457c17b596dae75327a11357b8fd43e45d557ebdf3",
+      "anchor": "### 2.1 पैराग्राफ-आधारित तर्क का तीन-चरणीय मॉडल",
+      "image": "rassetu_b6_argument_cause_effect.webp",
+      "caption": "कारण–प्रभाव तर्क: दावे की कड़ी परखें",
+      "explanation": "सांकेतिक दावा, प्रमाण और वैकल्पिक कारण; X/Y किसी वास्तविक घटना के बारे में नहीं हैं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch11",
+      "originalChapterSha256": "197b20d9c6ba121e407c2a897b9a55cb5907f117a37a1d54f510285ecd440530",
+      "anchor": "### 2.1 अंग्रेजी वर्णमाला के स्थान-मान एवं याद रखने के सूत्र",
+      "image": "rassetu_b6_coding_alphabet_map.webp",
+      "caption": "कोडिंग–डिकोडिंग: वर्णमाला और चक्रीय शिफ्ट",
+      "explanation": "A–Z स्थान, विपरीत-अक्षर योग 27 और चक्रीय +2 उदाहरण।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch12",
+      "originalChapterSha256": "ce7260b19f4a43fb3812f80becf03726f1b873ed73f5308113b36f71e2392b66",
+      "anchor": "### 2.1 अंग्रेजी वर्णमाला के स्थान-मान एवं याद रखने के सूत्र",
+      "image": "rassetu_b6_coding_alphabet_map.webp",
+      "caption": "कोडिंग–डिकोडिंग: वर्णमाला और चक्रीय शिफ्ट",
+      "explanation": "A–Z स्थान, विपरीत-अक्षर योग 27 और चक्रीय +2 उदाहरण।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch33",
+      "originalChapterSha256": "c6bb46d1ce857bfcefbeef2860e1a604baf6dc6b35fcd8e24de0aac9bd85daef",
+      "anchor": "### 2.1 आंकड़ा विश्लेषण के चार प्रमुख प्रारूप एवं डेटा पठन तकनीक",
+      "image": "rassetu_b6_data_interpretation_reading.webp",
+      "caption": "आंकड़ा व्याख्या: चार कदम में चार्ट पढ़ें",
+      "explanation": "स्पष्ट रूप से काल्पनिक दो-बार अभ्यास चार्ट और तुलना प्रक्रिया।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch34",
+      "originalChapterSha256": "ef32e3baa6656016a3b83288c717665eb55bf2008dae0d68f0e4fb98e082e04c",
+      "anchor": "### 2.1 आंकड़ा विश्लेषण के चार प्रमुख प्रारूप एवं डेटा पठन तकनीक",
+      "image": "rassetu_b6_data_interpretation_reading.webp",
+      "caption": "आंकड़ा व्याख्या: चार कदम में चार्ट पढ़ें",
+      "explanation": "स्पष्ट रूप से काल्पनिक दो-बार अभ्यास चार्ट और तुलना प्रक्रिया।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch35",
+      "originalChapterSha256": "cf000d0ef9749b2594a21f5a1a245d5c488aa83df482425c02ee7d7230281506",
+      "anchor": "### 2.1 गणना के मूलभूत सिद्धांत (Fundamental Counting Principles)",
+      "image": "rassetu_b6_permutation_combination.webp",
+      "caption": "क्रमचय और संचय: व्यवस्था बनाम चयन",
+      "explanation": "तीन व्यक्तियों में से दो: क्रम-निरपेक्ष चयन के 3 और क्रमबद्ध व्यवस्थाओं के 6 तरीके।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch36",
+      "originalChapterSha256": "6f374aedcf65e46c1ec477d9886ee3d39da340e060e0f9a4df3bebafacd4b1bd",
+      "anchor": "### 2.1 गणना के मूलभूत सिद्धांत (Fundamental Counting Principles)",
+      "image": "rassetu_b6_permutation_combination.webp",
+      "caption": "क्रमचय और संचय: व्यवस्था बनाम चयन",
+      "explanation": "तीन व्यक्तियों में से दो: क्रम-निरपेक्ष चयन के 3 और क्रमबद्ध व्यवस्थाओं के 6 तरीके।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch39",
+      "originalChapterSha256": "9f3dc4ffcf68360bba3b3bd099c413429929bdca1b0065ce31a0689216faabd9",
+      "anchor": "### 2.1 नीतियां, अधिनियम एवं बड़े नीतिगत निर्णय 2026",
+      "image": "rassetu_b6_current_affairs_verification.webp",
+      "caption": "समसामयिकी: स्रोत से परीक्षा-संबंध तक",
+      "explanation": "तथ्य-सत्यापन का स्थिर कार्यप्रवाह; इसमें कोई समय-संवेदी दावा नहीं जोड़ा गया।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch40",
+      "originalChapterSha256": "4343097514c5fca9195b4fe304a89e9410c06da2ccfc4cad7f24114858366b72",
+      "anchor": "### 2.1 नीतियां, अधिनियम एवं बड़े नीतिगत निर्णय 2026",
+      "image": "rassetu_b6_current_affairs_verification.webp",
+      "caption": "समसामयिकी: स्रोत से परीक्षा-संबंध तक",
+      "explanation": "तथ्य-सत्यापन का स्थिर कार्यप्रवाह; इसमें कोई समय-संवेदी दावा नहीं जोड़ा गया।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch41",
+      "originalChapterSha256": "df765efbeeffccfefecbbb6312ce55cbb343d642067cb56591ea09f3c3b25fb6",
+      "anchor": "### 3.2 RPSC 5वां विकल्प ओएमआर अंकन मास्टर प्रोटोकॉल",
+      "image": "rassetu_b6_omr_fifth_option_workflow.webp",
+      "caption": "पांचवां विकल्प: OMR भरने की सुरक्षित जांच",
+      "explanation": "OMR जांच-सूची; विकल्प, ऋणात्मक अंकन और समय-सीमा वर्तमान आधिकारिक अधिसूचना से मिलाएं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch42",
+      "originalChapterSha256": "959761c62053549a4592225fcbbcca111178a2c854d61dd5a4049e2e59b1e9e6",
+      "anchor": "### 3.2 RPSC 5वां विकल्प ओएमआर अंकन मास्टर प्रोटोकॉल",
+      "image": "rassetu_b6_omr_fifth_option_workflow.webp",
+      "caption": "पांचवां विकल्प: OMR भरने की सुरक्षित जांच",
+      "explanation": "OMR जांच-सूची; विकल्प, ऋणात्मक अंकन और समय-सीमा वर्तमान आधिकारिक अधिसूचना से मिलाएं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch43",
+      "originalChapterSha256": "a5162aeb8b9db7742b4aa1e29dac0b53cc122267df6a63f7f0753f4908185402",
+      "anchor": "## 22.1 अध्याय परिचय एवं अभ्यास निर्देश",
+      "image": "rassetu_b6_question_bank_review_loop.webp",
+      "caption": "मास्टर प्रश्न बैंक: हल करें, जांचें, सुधारें",
+      "explanation": "प्रश्न हल करने, उत्तर-कुंजी और व्याख्या से सीखने तथा त्रुटि-पुनरावृत्ति का अभ्यास-चक्र।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch44",
+      "originalChapterSha256": "84a6ff57eef84cbd813275b08708c28f2b68e47871775d83e04884b3171d40f2",
+      "anchor": "## 22.1 अध्याय परिचय एवं अभ्यास निर्देश",
+      "image": "rassetu_b6_question_bank_review_loop.webp",
+      "caption": "मास्टर प्रश्न बैंक: हल करें, जांचें, सुधारें",
+      "explanation": "प्रश्न हल करने, उत्तर-कुंजी और व्याख्या से सीखने तथा त्रुटि-पुनरावृत्ति का अभ्यास-चक्र।"
+    }
+  ]
+}

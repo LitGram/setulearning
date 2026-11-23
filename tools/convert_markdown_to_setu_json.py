@@ -9,6 +9,7 @@ import json
 import os
 import re
 import sys
+from audit_chapter_completeness import reading_blocks
 
 def parse_markdown_chapter(filepath, chapter_id="ch1"):
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -130,7 +131,7 @@ def parse_markdown_chapter(filepath, chapter_id="ch1"):
         "id": chapter_id,
         "title": title,
         "subtitle": subtitle if subtitle else None,
-        "content": content_blocks[:15], # clean curated length
+        "content": reading_blocks(text), # Preserve teaching and revision sections.
         "mcqs": mcqs[:10]
     }
 

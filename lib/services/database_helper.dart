@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
@@ -22,6 +21,7 @@ class DatabaseHelper {
       _database = await _initDB('setu_learning.db');
       return _database;
     } catch (e) {
+      if (!kIsWeb && defaultTargetPlatform == TargetPlatform.android) rethrow;
       debugPrint('Database initialization fallback to memory: $e');
       return null;
     }
@@ -158,7 +158,8 @@ class DatabaseHelper {
     }
   }
 
-  Future<int> getReadChaptersCount({required String subjectId, String? bookId}) async {
+  Future<int> getReadChaptersCount(
+      {required String subjectId, String? bookId}) async {
     final db = await database;
     if (db != null) {
       String where = 'subject_id = ? AND is_read = 1';
@@ -179,6 +180,25 @@ class DatabaseHelper {
               (bookId == null || p.bookId == bookId) &&
               p.isRead)
           .length;
+    }
+  }
+
+  Future<Set<String>> getAllReadChapterKeys() async {
+    final db = await database;
+    if (db != null) {
+      final maps = await db.query(
+        'chapter_progress',
+        columns: ['subject_id', 'book_id', 'chapter_id'],
+        where: 'is_read = 1',
+      );
+      return maps
+          .map((m) => '${m['subject_id']}_${m['book_id']}_${m['chapter_id']}')
+          .toSet();
+    } else {
+      return _memChapterProgress.entries
+          .where((e) => e.value.isRead)
+          .map((e) => e.key)
+          .toSet();
     }
   }
 
@@ -212,10 +232,12 @@ class DatabaseHelper {
       }
       return null;
     } else {
-      final matches = _memQuizRecords.where((q) =>
-          q.subjectId == subjectId &&
-          q.bookId == bookId &&
-          q.chapterId == chapterId).toList();
+      final matches = _memQuizRecords
+          .where((q) =>
+              q.subjectId == subjectId &&
+              q.bookId == bookId &&
+              q.chapterId == chapterId)
+          .toList();
       if (matches.isEmpty) return null;
       matches.sort((a, b) => b.score.compareTo(a.score));
       return matches.first;
@@ -249,6 +271,34 @@ class DatabaseHelper {
               record.score > resultMap[record.chapterId]!.score) {
             resultMap[record.chapterId] = record;
           }
+        }
+      }
+    }
+    return resultMap;
+  }
+
+  Future<Map<String, QuizRecord>> getAllBestScores() async {
+    final db = await database;
+    final Map<String, QuizRecord> resultMap = {};
+
+    if (db != null) {
+      final maps = await db.query(
+        'quiz_scores',
+        orderBy: 'score DESC, completed_at DESC',
+      );
+      for (final map in maps) {
+        final record = QuizRecord.fromMap(map);
+        final key = '${record.subjectId}_${record.bookId}_${record.chapterId}';
+        if (!resultMap.containsKey(key)) {
+          resultMap[key] = record;
+        }
+      }
+    } else {
+      for (final record in _memQuizRecords) {
+        final key = '${record.subjectId}_${record.bookId}_${record.chapterId}';
+        if (!resultMap.containsKey(key) ||
+            record.score > resultMap[key]!.score) {
+          resultMap[key] = record;
         }
       }
     }

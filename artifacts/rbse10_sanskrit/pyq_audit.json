@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "solved_occurrences": 234,
+  "official_papers": 18,
+  "by_paper": {
+    "2026_main": 13,
+    "2026_supplementary": 13,
+    "2025_main": 13,
+    "2025_supplementary": 13,
+    "2024_main": 13,
+    "2024_supplementary": 13,
+    "2023_main": 13,
+    "2022_main": 13,
+    "2020_main": 13,
+    "2020_supplementary": 13,
+    "2019_main": 13,
+    "2018_main": 13,
+    "2018_supplementary": 13,
+    "2017_main": 13,
+    "2017_supplementary": 13,
+    "2016_main": 13,
+    "2015_main": 13,
+    "2014_main": 13
+  },
+  "unique_solution_concepts": 45,
+  "revision_mcqs": 18,
+  "figures": 12,
+  "max_summary_words_per_source": 66,
+  "coverage": "selected questions and subparts; not every full paper",
+  "omitted": "2021 image-only PDF; unselected subquestions"
+}

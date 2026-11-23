@@ -1,0 +1,211 @@
+[
+  {
+    "id": "2026_main",
+    "year": 2026,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/Sec/S-07.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/index.htm",
+    "pages": 16,
+    "sha256": "be124e7a5942b33d0224834dc6d821fe686b03f49e71d42f4c4770f20643fee8",
+    "file": "artifacts\\rbse10_science\\papers\\2026_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2026_main.txt"
+  },
+  {
+    "id": "2026_supplementary",
+    "year": 2026,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/SecSUP/S-07.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/index.htm",
+    "pages": 16,
+    "sha256": "d34e4b02fa40bc6f2a3ec2096bc8f80f44ec311aee589b66334bf13c28ebef1c",
+    "file": "artifacts\\rbse10_science\\papers\\2026_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2026_supplementary.txt"
+  },
+  {
+    "id": "2025_main",
+    "year": 2025,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/Sec/S-07.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/index.htm",
+    "pages": 16,
+    "sha256": "fba3980f154986f35afbfea5d72eb38a9c2d86d2c6f89aca399661e75c8631a6",
+    "file": "artifacts\\rbse10_science\\papers\\2025_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2025_main.txt"
+  },
+  {
+    "id": "2025_supplementary",
+    "year": 2025,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/SecSUP/S-07.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/index.htm",
+    "pages": 16,
+    "sha256": "5f1e60c1bff5fcafd37f8be21cf920374a5c36743d53b14d6950b1146f74d3ed",
+    "file": "artifacts\\rbse10_science\\papers\\2025_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2025_supplementary.txt"
+  },
+  {
+    "id": "2024_main",
+    "year": 2024,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/Sec/S-07.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/index.htm",
+    "pages": 16,
+    "sha256": "54d9110ba034177e4705ab7bf8c5744b2d2ac4e9643d75fe5fe887a679298cc5",
+    "file": "artifacts\\rbse10_science\\papers\\2024_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2024_main.txt"
+  },
+  {
+    "id": "2024_supplementary",
+    "year": 2024,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/SecSUP/S-07.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/index.htm",
+    "pages": 16,
+    "sha256": "74537b188444788afb659da8b90cdcd8355c027c4f9ad50559ccb5d1d9d56942",
+    "file": "artifacts\\rbse10_science\\papers\\2024_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2024_supplementary.txt"
+  },
+  {
+    "id": "2023_main",
+    "year": 2023,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2023/Sec/S-07.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2023/index.htm",
+    "pages": 16,
+    "sha256": "f347d582f0f0510390f4f391bf1e54a621e3b803c42340e313fd36eb9dfd8efc",
+    "file": "artifacts\\rbse10_science\\papers\\2023_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2023_main.txt"
+  },
+  {
+    "id": "2022_main",
+    "year": 2022,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2022/Sec/S-07.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2022/index.htm",
+    "pages": 16,
+    "sha256": "a4a5c1503f8f511869639571f31cde76e2af8e93cb5d59ece91a4afbd75f02d7",
+    "file": "artifacts\\rbse10_science\\papers\\2022_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2022_main.txt"
+  },
+  {
+    "id": "2021_main",
+    "year": 2021,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2021/Sec/S-07-Science.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2021/index.htm",
+    "pages": 18,
+    "sha256": "977955c715bc54e44bee7b047953e91d4e517e796fdc9734102f1e6e12133e8d",
+    "file": "artifacts\\rbse10_science\\papers\\2021_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2021_main.txt"
+  },
+  {
+    "id": "2020_main",
+    "year": 2020,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/Sec/S-07-Science.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/index.htm",
+    "pages": 12,
+    "sha256": "9fc8bcce50ae6cbd8cf33fac829ec2f297d76ed46f4bbe9bc45fa37497100aad",
+    "file": "artifacts\\rbse10_science\\papers\\2020_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2020_main.txt"
+  },
+  {
+    "id": "2020_supplementary",
+    "year": 2020,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/SecSUP/S-07.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/index.htm",
+    "pages": 12,
+    "sha256": "62e9ad18f0600e755b038f69d38c7ce31bbe049b4c4191837379219a20421d52",
+    "file": "artifacts\\rbse10_science\\papers\\2020_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2020_supplementary.txt"
+  },
+  {
+    "id": "2019_main",
+    "year": 2019,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2019/Sec/S-07-Science-E-H.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2019/index.htm",
+    "pages": 12,
+    "sha256": "263b997acdf332736ad6930a14193f77fa05d396225317c9ec481ce6a4d6dfa5",
+    "file": "artifacts\\rbse10_science\\papers\\2019_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2019_main.txt"
+  },
+  {
+    "id": "2018_main",
+    "year": 2018,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/Sec/S-07-Science-E-H.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/index.htm",
+    "pages": 12,
+    "sha256": "b333cb05736b6f789ce88bb9ec2ae5849c64629a4fe616f58eb885916c289637",
+    "file": "artifacts\\rbse10_science\\papers\\2018_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2018_main.txt"
+  },
+  {
+    "id": "2018_supplementary",
+    "year": 2018,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/SUPP/Sec/S-07-Science.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/index.htm",
+    "pages": 12,
+    "sha256": "57acfd21518e930eb330afe9a9ac473ab2de468a6bf57e1d61fe6449c5bb2b3e",
+    "file": "artifacts\\rbse10_science\\papers\\2018_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2018_supplementary.txt"
+  },
+  {
+    "id": "2017_main",
+    "year": 2017,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/Sec/S-07-Science-E-H.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/index.htm",
+    "pages": 12,
+    "sha256": "a878467b5efe17e50ffaf23de9104f9e0f45fbea815e7839e3ace9d0c9cbc0bf",
+    "file": "artifacts\\rbse10_science\\papers\\2017_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2017_main.txt"
+  },
+  {
+    "id": "2017_supplementary",
+    "year": 2017,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/SUPP/Sec/S-07-Science.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/index.htm",
+    "pages": 12,
+    "sha256": "abe659c20d84ca3b8d999a9bd54acef8d1523340ece2563acdd73d5d75568fb5",
+    "file": "artifacts\\rbse10_science\\papers\\2017_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2017_supplementary.txt"
+  },
+  {
+    "id": "2016_main",
+    "year": 2016,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2016/Sec/S-07-Science.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2016/index.htm",
+    "pages": 8,
+    "sha256": "24e0f00d3104e62c342044d740e48d821b0dd48d4536c5c4f0e8a6e1243bb4e8",
+    "file": "artifacts\\rbse10_science\\papers\\2016_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2016_main.txt"
+  },
+  {
+    "id": "2015_main",
+    "year": 2015,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2015/Sec/S-07-Science-15.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2015/index.htm",
+    "pages": 7,
+    "sha256": "c0b7b2d0520be799d398d4b65b4a9e774cd783c9045966046a1623916df59cd1",
+    "file": "artifacts\\rbse10_science\\papers\\2015_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2015_main.txt"
+  },
+  {
+    "id": "2014_main",
+    "year": 2014,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2014/Sec/S-07-Science-14.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2014/index.htm",
+    "pages": 11,
+    "sha256": "30ae23dcfcade58346e3597740a8d5c9c69fccba4b79a4602f41133ba897ebb4",
+    "file": "artifacts\\rbse10_science\\papers\\2014_main.pdf",
+    "text_file": "artifacts\\rbse10_science\\papers\\2014_main.txt"
+  }
+]

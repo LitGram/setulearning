@@ -1,0 +1,50 @@
+{
+  "apk": "apk_output\\SetuLearning-LitGram-Release.apk",
+  "sha256": "2de994118091ef0e277ee7e9825aec5606602f09fce848212e6f485b15e406ee",
+  "bytes": 122343175,
+  "bundled_content_by_folder": {
+    "englishsetu": 13,
+    "greatworks": 6,
+    "mathsetu": 8,
+    "mscphysics": 4,
+    "rassetu": 6,
+    "rassetu_supplementary": 6,
+    "ugcnet_commerce": 1,
+    "ugcnet_english": 1,
+    "ugcnet_hindi": 1,
+    "ugcnet_history": 1,
+    "ugcnet_political_science": 1,
+    "vigyansetu": 8
+  },
+  "book_files": 56,
+  "native_libraries": [
+    "lib/arm64-v8a/libapp.so",
+    "lib/arm64-v8a/libdartjni.so",
+    "lib/arm64-v8a/libdatastore_shared_counter.so",
+    "lib/arm64-v8a/libflutter.so",
+    "lib/armeabi-v7a/libapp.so",
+    "lib/armeabi-v7a/libdartjni.so",
+    "lib/armeabi-v7a/libdatastore_shared_counter.so",
+    "lib/armeabi-v7a/libflutter.so",
+    "lib/x86_64/libapp.so",
+    "lib/x86_64/libdartjni.so",
+    "lib/x86_64/libdatastore_shared_counter.so",
+    "lib/x86_64/libflutter.so"
+  ],
+  "dex_sdk_matches": {
+    "com/google/firebase": false,
+    "com/google/android/gms/ads": false,
+    "com/facebook": false,
+    "com/tekartik/sqflite": true,
+    "io/flutter/plugins/sharedpreferences": true,
+    "webviewflutter": false,
+    "crashlytics": false
+  },
+  "source_content_comparison": {
+    "identical": 48,
+    "different": 8,
+    "not_in_current_source": 0
+  },
+  "remote_markdown_images": [],
+  "missing_explicit_image_assets": []
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-03",
+  "status": "Import and verification complete; APK build deferred by user",
+  "books": {
+    "Mathematical Physics": 67,
+    "Classical Mechanics": 48,
+    "Quantum Mechanics I": 52,
+    "Statistical Physics": 27
+  },
+  "chapterCount": 194,
+  "retainedSourceLines": 7057,
+  "sourceFilesUnchanged": true,
+  "coverage": "Complete retained non-presentation character coverage, in source order",
+  "publicationComparisons": "All teaching headings and literal equation blocks present",
+  "repeatableImportCommand": "python tools/import_msc_physics.py --check",
+  "flutterTestCommand": "flutter test --no-pub --reporter expanded",
+  "passedTests": 123,
+  "testLog": "artifacts/mscphysics_all_tests.log",
+  "staticAnalysis": {
+    "command": "dart analyze",
+    "result": "No issues found",
+    "log": "artifacts/mscphysics_analysis_full.log"
+  },
+  "renderVerification": {
+    "physicsChapters": 194,
+    "phoneWidth": 320,
+    "textScale": 1.8,
+    "result": "All visible text matches independent visibility oracle; no widget layout exceptions",
+    "equationNotation": "Original Unicode / literal notation; no speculative TeX conversion",
+    "existingUniqueTexExpressionsParsed": 19849,
+    "existingTexFailures": 0
+  },
+  "navigation": "Home to M.Sc. Physics, chapter-list search, open chapter, Next, Previous, return to chapter list passed for all four books",
+  "screenshotProtection": "Public chapter lists allow capture; chapter readers request protection; exit restores capture. Existing quiz/protection regression tests pass. Native Android handler unchanged.",
+  "greatWorks": {
+    "critical_works": 100,
+    "essays": 100,
+    "novels": 100,
+    "plays": 100,
+    "poems": 100,
+    "short_stories": 100
+  },
+  "apkBuilt": false,
+  "packagedApkAssetsVerified": false,
+  "limitations": [
+    "Source equations use Unicode and literal notation, not TeX. Preserved without speculative conversion.",
+    "Sources contain open-answer practice; none supplies genuine MCQ choices with an explicit answer key.",
+    "Repeated/skipped source topic numbers are retained; stable sequential chapter IDs keep navigation distinct.",
+    "Mathematical Physics repeats a Bessel generating formula beside a stray fence; both formula occurrences are retained, with the missing opening fence repaired.",
+    "Screenshot checks use mocked Android channel acknowledgements; no new hardware-device capture test was run.",
+    "Updated APK build and packaged-asset verification deferred until the user explicitly requests the build.",
+    "The current app has no bookmark implementation to migrate; existing reading progress, resume/history, search and navigation were preserved."
+  ]
+}

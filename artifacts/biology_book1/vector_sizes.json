@@ -1,0 +1,114 @@
+[
+  {
+    "id": "organisation",
+    "bytes": 30510
+  },
+  {
+    "id": "taxonomy",
+    "bytes": 30426
+  },
+  {
+    "id": "domains",
+    "bytes": 47550
+  },
+  {
+    "id": "prokaryote_eukaryote",
+    "bytes": 46042
+  },
+  {
+    "id": "secretory_pathway",
+    "bytes": 32068
+  },
+  {
+    "id": "meiosis",
+    "bytes": 47676
+  },
+  {
+    "id": "plant_tissues",
+    "bytes": 35124
+  },
+  {
+    "id": "biomolecules",
+    "bytes": 43800
+  },
+  {
+    "id": "dna_rna",
+    "bytes": 33918
+  },
+  {
+    "id": "enzyme_action",
+    "bytes": 43098
+  },
+  {
+    "id": "virus_bacterium",
+    "bytes": 38816
+  },
+  {
+    "id": "fermentation",
+    "bytes": 35698
+  },
+  {
+    "id": "nitrogen_fixation",
+    "bytes": 42910
+  },
+  {
+    "id": "sewage_biogas",
+    "bytes": 42690
+  },
+  {
+    "id": "plant_groups",
+    "bytes": 50354
+  },
+  {
+    "id": "alternation",
+    "bytes": 33276
+  },
+  {
+    "id": "monohybrid",
+    "bytes": 19618
+  },
+  {
+    "id": "dihybrid",
+    "bytes": 36622
+  },
+  {
+    "id": "test_cross",
+    "bytes": 33282
+  },
+  {
+    "id": "dominance",
+    "bytes": 37908
+  },
+  {
+    "id": "sex_determination",
+    "bytes": 36264
+  },
+  {
+    "id": "abo",
+    "bytes": 34922
+  },
+  {
+    "id": "linkage",
+    "bytes": 38116
+  },
+  {
+    "id": "mutations",
+    "bytes": 35260
+  },
+  {
+    "id": "nondisjunction",
+    "bytes": 45410
+  },
+  {
+    "id": "selection",
+    "bytes": 45876
+  },
+  {
+    "id": "evolution_tree",
+    "bytes": 36692
+  },
+  {
+    "id": "revision_map",
+    "bytes": 40888
+  }
+]

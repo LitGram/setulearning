@@ -1,0 +1,198 @@
+{
+  "chapters": [
+    {
+      "id": "pun_kav_ch01",
+      "file": "10th rbse\\07_punjabi\\kav_ch01_sheikh_farid_guru_nanak.md",
+      "mcqs": 15,
+      "blocks": 70,
+      "characters": 23939,
+      "marks": 3
+    },
+    {
+      "id": "pun_kav_ch02",
+      "file": "10th rbse\\07_punjabi\\kav_ch02_guru_amardas_guru_ramdas.md",
+      "mcqs": 15,
+      "blocks": 70,
+      "characters": 22071,
+      "marks": 3
+    },
+    {
+      "id": "pun_kav_ch03",
+      "file": "10th rbse\\07_punjabi\\kav_ch03_bhai_gurdas.md",
+      "mcqs": 15,
+      "blocks": 69,
+      "characters": 21231,
+      "marks": 3
+    },
+    {
+      "id": "pun_kav_ch04",
+      "file": "10th rbse\\07_punjabi\\kav_ch04_mian_wajid_bulleh_shah.md",
+      "mcqs": 15,
+      "blocks": 70,
+      "characters": 23090,
+      "marks": 3
+    },
+    {
+      "id": "pun_kav_ch05",
+      "file": "10th rbse\\07_punjabi\\kav_ch05_bhai_vir_singh_chatrik.md",
+      "mcqs": 15,
+      "blocks": 70,
+      "characters": 23154,
+      "marks": 3
+    },
+    {
+      "id": "pun_kav_ch06",
+      "file": "10th rbse\\07_punjabi\\kav_ch06_mohan_singh_amrita_pritam.md",
+      "mcqs": 15,
+      "blocks": 70,
+      "characters": 24018,
+      "marks": 3
+    },
+    {
+      "id": "pun_kav_ch07",
+      "file": "10th rbse\\07_punjabi\\kav_ch07_shiv_kumar_surjit_patar.md",
+      "mcqs": 15,
+      "blocks": 70,
+      "characters": 24655,
+      "marks": 2
+    },
+    {
+      "id": "pun_nib_ch08",
+      "file": "10th rbse\\07_punjabi\\nib_ch08_kirat_puran_singh.md",
+      "mcqs": 15,
+      "blocks": 69,
+      "characters": 21031,
+      "marks": 2
+    },
+    {
+      "id": "pun_nib_ch09",
+      "file": "10th rbse\\07_punjabi\\nib_ch09_ganga_din_teja_singh.md",
+      "mcqs": 15,
+      "blocks": 69,
+      "characters": 20433,
+      "marks": 2
+    },
+    {
+      "id": "pun_nib_ch10",
+      "file": "10th rbse\\07_punjabi\\nib_ch10_flying_sikh_milkha_singh.md",
+      "mcqs": 15,
+      "blocks": 69,
+      "characters": 22625,
+      "marks": 2
+    },
+    {
+      "id": "pun_nib_ch11",
+      "file": "10th rbse\\07_punjabi\\nib_ch11_maharaja_ganga_singh.md",
+      "mcqs": 15,
+      "blocks": 72,
+      "characters": 23749,
+      "marks": 3
+    },
+    {
+      "id": "pun_nib_ch12",
+      "file": "10th rbse\\07_punjabi\\nib_ch12_rajasthan_prasidh_kile.md",
+      "mcqs": 15,
+      "blocks": 69,
+      "characters": 23857,
+      "marks": 2
+    },
+    {
+      "id": "pun_nib_ch13",
+      "file": "10th rbse\\07_punjabi\\nib_ch13_bhai_mardana_ji.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 22283,
+      "marks": 2
+    },
+    {
+      "id": "pun_kah_ch14",
+      "file": "10th rbse\\07_punjabi\\kah_ch14_pahuta_pandhi.md",
+      "mcqs": 15,
+      "blocks": 69,
+      "characters": 22377,
+      "marks": 3
+    },
+    {
+      "id": "pun_kah_ch15",
+      "file": "10th rbse\\07_punjabi\\kah_ch15_pemi_de_niane.md",
+      "mcqs": 15,
+      "blocks": 69,
+      "characters": 21536,
+      "marks": 3
+    },
+    {
+      "id": "pun_kah_ch16",
+      "file": "10th rbse\\07_punjabi\\kah_ch16_sanjhi_kandh.md",
+      "mcqs": 15,
+      "blocks": 68,
+      "characters": 19578,
+      "marks": 3
+    },
+    {
+      "id": "pun_kah_ch17",
+      "file": "10th rbse\\07_punjabi\\kah_ch17_dudh_da_chhappar.md",
+      "mcqs": 15,
+      "blocks": 68,
+      "characters": 20772,
+      "marks": 3
+    },
+    {
+      "id": "pun_kah_ch18",
+      "file": "10th rbse\\07_punjabi\\kah_ch18_khoon.md",
+      "mcqs": 15,
+      "blocks": 68,
+      "characters": 20036,
+      "marks": 2
+    },
+    {
+      "id": "pun_vya_ch19",
+      "file": "10th rbse\\07_punjabi\\vya_ch19_bhasha_upbhasha_dhuni_lipi.md",
+      "mcqs": 15,
+      "blocks": 77,
+      "characters": 22164,
+      "marks": 6
+    },
+    {
+      "id": "pun_vya_ch20",
+      "file": "10th rbse\\07_punjabi\\vya_ch20_arth_bodh_virodhi_samanarthak_bahuarthak.md",
+      "mcqs": 15,
+      "blocks": 74,
+      "characters": 21811,
+      "marks": 9
+    },
+    {
+      "id": "pun_rac_ch21",
+      "file": "10th rbse\\07_punjabi\\rac_ch21_anditha_paira.md",
+      "mcqs": 15,
+      "blocks": 72,
+      "characters": 21181,
+      "marks": 10
+    },
+    {
+      "id": "pun_rac_ch22",
+      "file": "10th rbse\\07_punjabi\\rac_ch22_nibandh_ate_patar_rachna.md",
+      "mcqs": 15,
+      "blocks": 76,
+      "characters": 25537,
+      "marks": 8
+    },
+    {
+      "id": "pun_ch23",
+      "file": "10th rbse/07_punjabi/ch23_solved_board_papers.md",
+      "mcqs": 18,
+      "blocks": 616,
+      "characters": 211126,
+      "marks": 0,
+      "solved_questions": 221,
+      "papers": 17
+    }
+  ],
+  "total_mcqs": 348,
+  "solved_pyqs": 221,
+  "official_papers": 17,
+  "pending": [
+    "regular 2026-27 syllabus confirmation",
+    "unselected past-paper subquestions and image-only 2021 file",
+    "independent Punjabi subject-expert review"
+  ]
+}

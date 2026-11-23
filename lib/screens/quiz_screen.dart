@@ -1,3 +1,5 @@
+import 'dart:convert';
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/book.dart';
@@ -5,7 +7,11 @@ import '../models/chapter.dart';
 import '../models/mcq.dart';
 import '../models/subject.dart';
 import '../providers/progress_provider.dart';
+import '../widgets/study_action_row.dart';
 import '../widgets/accessible_card.dart';
+import '../widgets/markdown_content.dart';
+import '../widgets/screenshot_protected_screen.dart';
+import '../services/study_session_store.dart';
 
 class QuizScreen extends StatefulWidget {
   final Subject subject;
@@ -25,83 +31,289 @@ class QuizScreen extends StatefulWidget {
 
 class _QuizScreenState extends State<QuizScreen> {
   int _questionIndex = 0;
-  final Map<int, int> _selectedAnswers = {}; // questionIndex -> selectedOptionIndex
+  final Map<int, int> _selectedAnswers =
+      {}; // questionIndex -> selectedOptionIndex
   bool _submittedCurrent = false;
   int _score = 0;
   bool _isQuizComplete = false;
 
   List<MCQ> get _mcqs => widget.chapter.mcqs;
 
-  void _selectOption(int optionIndex) {
-    if (_submittedCurrent) return;
-    setState(() {
-      _selectedAnswers[_questionIndex] = optionIndex;
+  final Set<int> _checked = {};
+  final Set<int> _skipped = {};
+  final Map<int, Set<int>> _hiddenOptions = {};
+  bool _loadingDraft = true;
+  bool _savingResult = false;
+  bool _resultSaved = false;
+  bool _allowExit = false;
+  bool _saveFailed = false;
+  Future<void> _pendingSave = Future.value();
+  String get _draftKey => StudySessionStore.key(
+      'quiz', widget.subject.id, widget.book.id, widget.chapter.id);
+  String get _signature => jsonEncode(
+      _mcqs.map((q) => [q.question, q.options, q.correctIndex]).toList());
+
+  @override
+  void initState() {
+    super.initState();
+    _loadDraft();
+  }
+
+  Future<void> _loadDraft() async {
+    try {
+      final draft = await StudySessionStore.read(_draftKey);
+      if (!mounted) return;
+      if (draft != null && draft['signature'] == _signature) {
+        setState(() => _loadingDraft = false);
+        final resume = await showDialog<bool>(
+            context: context,
+            barrierDismissible: false,
+            builder: (context) => AlertDialog(
+                    title: const Text('Resume practice?'),
+                    content: const Text(
+                        'Your unfinished answers are saved on this device.'),
+                    actions: [
+                      TextButton(
+                          onPressed: () => Navigator.pop(context, false),
+                          child: const Text('Start again')),
+                      FilledButton(
+                          onPressed: () => Navigator.pop(context, true),
+                          child: const Text('Resume'))
+                    ]));
+        if (!mounted) return;
+        if (resume == true) {
+          final answers = draft['answers'] as Map<String, dynamic>;
+          for (final entry in answers.entries) {
+            final index = int.parse(entry.key);
+            final option = entry.value as int;
+            if (index >= 0 &&
+                index < _mcqs.length &&
+                option >= 0 &&
+                option < _mcqs[index].options.length) {
+              _selectedAnswers[index] = option;
+            }
+          }
+          _checked.addAll((draft['checked'] as List)
+              .cast<int>()
+              .where(_selectedAnswers.containsKey));
+          _skipped.addAll((draft['skipped'] as List? ?? []).cast<int>().where(
+              (i) => i >= 0 && i < _mcqs.length && !_checked.contains(i)));
+          final hidden = draft['hiddenOptions'] as Map<String, dynamic>? ?? {};
+          for (final entry in hidden.entries) {
+            final i = int.tryParse(entry.key);
+            if (i == null || i < 0 || i >= _mcqs.length) continue;
+            final options = (entry.value as List).cast<int>().toSet();
+            if (options.length == 2 &&
+                _mcqs[i].options.length >= 4 &&
+                options.every((o) =>
+                    o >= 0 &&
+                    o < _mcqs[i].options.length &&
+                    o != _mcqs[i].correctIndex)) {
+              _hiddenOptions[i] = options;
+              if (!_checked.contains(i) &&
+                  options.contains(_selectedAnswers[i])) {
+                _selectedAnswers.remove(i);
+              }
+            }
+          }
+          _questionIndex = (draft['index'] as int).clamp(0, _mcqs.length - 1);
+          _score = _checked
+              .where((i) => _selectedAnswers[i] == _mcqs[i].correctIndex)
+              .length;
+          _submittedCurrent = _checked.contains(_questionIndex);
+        } else {
+          await StudySessionStore.remove(_draftKey);
+        }
+      }
+    } catch (_) {
+      _saveFailed = true;
+    }
+    if (mounted) setState(() => _loadingDraft = false);
+  }
+
+  Future<void> _saveDraft() {
+    final data = {
+      'signature': _signature,
+      'index': _questionIndex,
+      'answers': _selectedAnswers.map((key, value) => MapEntry('$key', value)),
+      'checked': _checked.toList(),
+      'skipped': _skipped.toList(),
+      'hiddenOptions':
+          _hiddenOptions.map((key, value) => MapEntry('$key', value.toList())),
+    };
+    _pendingSave = _pendingSave.then((_) async {
+      try {
+        await StudySessionStore.write(_draftKey, data);
+        if (mounted) setState(() => _saveFailed = false);
+      } catch (_) {
+        if (mounted) setState(() => _saveFailed = true);
+      }
+    });
+    return _pendingSave;
+  }
+
+  Future<void> _exit() async {
+    final exit = await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+                title: const Text('Leave practice?'),
+                content: const Text('Save your answers and resume later.'),
+                actions: [
+                  TextButton(
+                      onPressed: () => Navigator.pop(context, false),
+                      child: const Text('Keep practicing')),
+                  FilledButton(
+                      onPressed: () => Navigator.pop(context, true),
+                      child: const Text('Save & exit'))
+                ]));
+    if (exit != true || !mounted) return;
+    await _saveDraft();
+    if (!mounted || _saveFailed) return;
+    setState(() => _allowExit = true);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) Navigator.pop(context);
     });
   }
 
+  void _selectOption(int optionIndex) {
+    if (_submittedCurrent ||
+        (_hiddenOptions[_questionIndex]?.contains(optionIndex) ?? false)) {
+      return;
+    }
+    setState(() {
+      _selectedAnswers[_questionIndex] = optionIndex;
+    });
+    _saveDraft();
+  }
+
   void _checkCurrentAnswer() {
-    if (_selectedAnswers[_questionIndex] == null) return;
+    if (_submittedCurrent || _selectedAnswers[_questionIndex] == null) return;
 
     final selected = _selectedAnswers[_questionIndex]!;
     final correct = _mcqs[_questionIndex].correctIndex;
 
     setState(() {
       _submittedCurrent = true;
+      _checked.add(_questionIndex);
+      _skipped.remove(_questionIndex);
       if (selected == correct) {
         _score++;
       }
     });
+    _saveDraft();
   }
 
   void _nextQuestion() {
     if (_questionIndex < _mcqs.length - 1) {
       setState(() {
         _questionIndex++;
-        _submittedCurrent = _selectedAnswers.containsKey(_questionIndex);
+        _submittedCurrent = _checked.contains(_questionIndex);
       });
+      _saveDraft();
     } else {
       _finishQuiz();
     }
+  }
+
+  void _skipQuestion() {
+    if (_submittedCurrent) return;
+    setState(() {
+      _selectedAnswers.remove(_questionIndex);
+      _skipped.add(_questionIndex);
+    });
+    _saveDraft();
+    _nextQuestion();
+  }
+
+  void _useFiftyFifty() {
+    final question = _mcqs[_questionIndex];
+    if (_submittedCurrent ||
+        _hiddenOptions.containsKey(_questionIndex) ||
+        question.options.length < 4) {
+      return;
+    }
+    final incorrect = List.generate(question.options.length, (i) => i)
+        .where((i) => i != question.correctIndex)
+        .toList()
+      ..shuffle(Random());
+    setState(() {
+      final hidden = incorrect.take(2).toSet();
+      _hiddenOptions[_questionIndex] = hidden;
+      if (hidden.contains(_selectedAnswers[_questionIndex])) {
+        _selectedAnswers.remove(_questionIndex);
+      }
+    });
+    _saveDraft();
   }
 
   void _previousQuestion() {
     if (_questionIndex > 0) {
       setState(() {
         _questionIndex--;
-        _submittedCurrent = _selectedAnswers.containsKey(_questionIndex);
+        _submittedCurrent = _checked.contains(_questionIndex);
       });
+      _saveDraft();
     }
   }
 
   Future<void> _finishQuiz() async {
+    if (_savingResult || _resultSaved) return;
     setState(() {
       _isQuizComplete = true;
+      _savingResult = true;
     });
-
-    final progress = Provider.of<ProgressProvider>(context, listen: false);
-    await progress.recordQuizScore(
-      subjectId: widget.subject.id,
-      bookId: widget.book.id,
-      chapterId: widget.chapter.id,
-      score: _score,
-      total: _mcqs.length,
-    );
+    try {
+      await context.read<ProgressProvider>().recordQuizScore(
+          subjectId: widget.subject.id,
+          bookId: widget.book.id,
+          chapterId: widget.chapter.id,
+          score: _score,
+          total: _mcqs.length);
+      _resultSaved = true;
+      await _pendingSave;
+      await StudySessionStore.remove(_draftKey);
+    } catch (_) {
+      _saveFailed = true;
+    }
+    if (mounted) setState(() => _savingResult = false);
   }
 
   void _resetQuiz() {
     setState(() {
       _questionIndex = 0;
       _selectedAnswers.clear();
+      _checked.clear();
+      _skipped.clear();
+      _hiddenOptions.clear();
+      _resultSaved = false;
+      _saveFailed = false;
       _submittedCurrent = false;
       _score = 0;
       _isQuizComplete = false;
     });
+    _saveDraft();
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) => PopScope(
+        canPop: _allowExit ||
+            _resultSaved ||
+            (_selectedAnswers.isEmpty &&
+                _skipped.isEmpty &&
+                _hiddenOptions.isEmpty),
+        onPopInvokedWithResult: (didPop, result) {
+          if (!didPop) _exit();
+        },
+        child: ScreenshotProtectedScreen(child: _buildQuiz(context)),
+      );
+
+  Widget _buildQuiz(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
+
+    if (_loadingDraft) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
 
     if (_mcqs.isEmpty) {
       return Scaffold(
@@ -119,7 +331,7 @@ class _QuizScreenState extends State<QuizScreen> {
               const SizedBox(height: 16),
               FilledButton(
                 onPressed: () => Navigator.pop(context),
-                child: const Text('वापस जाएं'),
+                child: const Text('Go back'),
               ),
             ],
           ),
@@ -137,11 +349,15 @@ class _QuizScreenState extends State<QuizScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: (MediaQuery.textScalerOf(context).scale(
+                    Theme.of(context).textTheme.titleMedium?.fontSize ?? 18) *
+                2.8)
+            .clamp(56.0, 160.0),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'अभ्यास प्रश्नोत्तरी',
+              'Practice',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
@@ -159,6 +375,12 @@ class _QuizScreenState extends State<QuizScreen> {
       ),
       body: Column(
         children: [
+          if (_saveFailed)
+            MaterialBanner(
+                content: const Text('Answers could not be saved.'),
+                actions: [
+                  TextButton(onPressed: _saveDraft, child: const Text('Retry'))
+                ]),
           // Linear progress bar
           LinearProgressIndicator(
             value: (_questionIndex + 1) / _mcqs.length,
@@ -167,20 +389,24 @@ class _QuizScreenState extends State<QuizScreen> {
 
           Expanded(
             child: ListView(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
               children: [
                 // Question Header
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                Wrap(
+                  spacing: 16,
+                  runSpacing: 8,
+                  alignment: WrapAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 12, vertical: 6),
                       decoration: BoxDecoration(
                         color: colorScheme.primaryContainer,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
-                        'प्रश्न ${_questionIndex + 1} / ${_mcqs.length}',
+                        'Question ${_questionIndex + 1} of ${_mcqs.length}',
                         style: theme.textTheme.labelMedium?.copyWith(
                           color: colorScheme.onPrimaryContainer,
                           fontWeight: FontWeight.bold,
@@ -188,7 +414,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                     ),
                     Text(
-                      'वर्तमान स्कोर: $_score',
+                      'Score: $_score',
                       style: theme.textTheme.labelMedium?.copyWith(
                         color: colorScheme.onSurfaceVariant,
                         fontWeight: FontWeight.w600,
@@ -208,8 +434,8 @@ class _QuizScreenState extends State<QuizScreen> {
                       color: colorScheme.outlineVariant,
                     ),
                   ),
-                  child: Text(
-                    currentMcq.question,
+                  child: MarkdownContent(
+                    data: currentMcq.question,
                     style: theme.textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.bold,
                       height: 1.4,
@@ -218,8 +444,35 @@ class _QuizScreenState extends State<QuizScreen> {
                 ),
                 const SizedBox(height: 18),
 
+                if (currentMcq.options.length >= 4) ...[
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: OutlinedButton.icon(
+                      onPressed: _submittedCurrent ||
+                              _hiddenOptions.containsKey(_questionIndex)
+                          ? null
+                          : _useFiftyFifty,
+                      icon: const Icon(Icons.auto_awesome_rounded),
+                      label: Text(_hiddenOptions.containsKey(_questionIndex)
+                          ? '50–50 used'
+                          : '50–50 lifeline'),
+                    ),
+                  ),
+                  if (_hiddenOptions.containsKey(_questionIndex))
+                    Semantics(
+                        liveRegion: true,
+                        child: const Text('Two incorrect options removed.')),
+                  const SizedBox(height: 12),
+                ],
+
                 // Options List
-                ...currentMcq.options.asMap().entries.map((entry) {
+                ...currentMcq.options
+                    .asMap()
+                    .entries
+                    .where((entry) =>
+                        !(_hiddenOptions[_questionIndex]?.contains(entry.key) ??
+                            false))
+                    .map((entry) {
                   final optIdx = entry.key;
                   final optText = entry.value;
                   final isSelected = selectedOption == optIdx;
@@ -255,11 +508,14 @@ class _QuizScreenState extends State<QuizScreen> {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 12.0),
                     child: AccessibleCard(
+                      selected: isSelected,
                       color: cardBg,
                       border: border,
                       semanticLabel:
-                          'विकल्प ${optionLetters[optIdx]}: $optText ${isSelected ? "चयनित" : ""}',
-                      onTap: () => _selectOption(optIdx),
+                          'Option ${optionLetters[optIdx]}: $optText ${isSelected ? "Selected" : ""} ${_submittedCurrent ? (isCorrect ? "Correct answer" : isSelected ? "Incorrect answer" : "") : ""}',
+                      onTap: _submittedCurrent
+                          ? null
+                          : () => _selectOption(optIdx),
                       child: Row(
                         children: [
                           Container(
@@ -285,14 +541,15 @@ class _QuizScreenState extends State<QuizScreen> {
                           ),
                           const SizedBox(width: 14),
                           Expanded(
-                            child: Text(
-                              optText,
+                            child: IgnorePointer(
+                                child: MarkdownContent(
+                              data: optText,
                               style: theme.textTheme.bodyLarge?.copyWith(
                                 fontWeight: isSelected
                                     ? FontWeight.bold
                                     : FontWeight.normal,
                               ),
-                            ),
+                            )),
                           ),
                           if (statusIcon != null) ...[
                             const SizedBox(width: 8),
@@ -304,6 +561,16 @@ class _QuizScreenState extends State<QuizScreen> {
                   );
                 }),
 
+                if (_submittedCurrent)
+                  Semantics(
+                      liveRegion: true,
+                      child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          child: Text(
+                              selectedOption == currentMcq.correctIndex
+                                  ? 'Correct answer'
+                                  : 'Not quite. The correct answer is ${optionLetters[currentMcq.correctIndex]}.',
+                              style: theme.textTheme.titleSmall))),
                 // Explanation Box (if submitted)
                 if (_submittedCurrent && currentMcq.explanation != null) ...[
                   const SizedBox(height: 12),
@@ -330,15 +597,15 @@ class _QuizScreenState extends State<QuizScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'स्पष्टीकरण (Explanation):',
+                                'Explanation',
                                 style: theme.textTheme.labelMedium?.copyWith(
                                   fontWeight: FontWeight.bold,
                                   color: colorScheme.secondary,
                                 ),
                               ),
                               const SizedBox(height: 4),
-                              Text(
-                                currentMcq.explanation!,
+                              MarkdownContent(
+                                data: currentMcq.explanation!,
                                 style: theme.textTheme.bodyMedium?.copyWith(
                                   color: colorScheme.onSecondaryContainer,
                                 ),
@@ -368,28 +635,31 @@ class _QuizScreenState extends State<QuizScreen> {
               ),
             ),
             child: SafeArea(
-              child: Row(
+              child: StudyActionRow(
                 children: [
                   if (_questionIndex > 0)
                     OutlinedButton(
                       onPressed: _previousQuestion,
-                      child: const Text('पिछला'),
+                      child: const Text('Previous'),
                     ),
                   if (_questionIndex > 0) const SizedBox(width: 10),
+                  if (!_submittedCurrent)
+                    TextButton(
+                        onPressed: _skipQuestion, child: const Text('Skip')),
                   Expanded(
                     child: !_submittedCurrent
                         ? FilledButton(
                             onPressed: selectedOption != null
                                 ? _checkCurrentAnswer
                                 : null,
-                            child: const Text('जांचें (Check Answer)'),
+                            child: const Text('Check answer'),
                           )
                         : FilledButton(
                             onPressed: _nextQuestion,
                             child: Text(
                               _questionIndex < _mcqs.length - 1
-                                  ? 'अगला प्रश्न'
-                                  : 'परिणाम देखें (View Results)',
+                                  ? 'Next question'
+                                  : 'View results',
                             ),
                           ),
                   ),
@@ -410,7 +680,11 @@ class _QuizScreenState extends State<QuizScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('प्रश्नोत्तरी परिणाम'),
+        toolbarHeight: (MediaQuery.textScalerOf(context).scale(
+                    Theme.of(context).textTheme.titleMedium?.fontSize ?? 18) *
+                2.8)
+            .clamp(56.0, 160.0),
+        title: const Text('Practice results'),
         automaticallyImplyLeading: false,
       ),
       body: Center(
@@ -461,13 +735,15 @@ class _QuizScreenState extends State<QuizScreen> {
                     color: colorScheme.outlineVariant,
                   ),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                child: Wrap(
+                  spacing: 24,
+                  runSpacing: 16,
+                  alignment: WrapAlignment.center,
                   children: [
                     Column(
                       children: [
                         Text(
-                          'कुल प्रश्न',
+                          'Questions',
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: colorScheme.onSurfaceVariant,
                           ),
@@ -489,7 +765,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     Column(
                       children: [
                         Text(
-                          'सही उत्तर',
+                          'Correct answers',
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: colorScheme.onSurfaceVariant,
                           ),
@@ -512,7 +788,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     Column(
                       children: [
                         Text(
-                          'प्रतिशत',
+                          'Score',
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: colorScheme.onSurfaceVariant,
                           ),
@@ -522,7 +798,9 @@ class _QuizScreenState extends State<QuizScreen> {
                           '${percentage.toStringAsFixed(0)}%',
                           style: theme.textTheme.titleLarge?.copyWith(
                             fontWeight: FontWeight.bold,
-                            color: isPassed ? colorScheme.primary : colorScheme.error,
+                            color: isPassed
+                                ? colorScheme.primary
+                                : colorScheme.error,
                           ),
                         ),
                       ],
@@ -532,12 +810,66 @@ class _QuizScreenState extends State<QuizScreen> {
               ),
               const SizedBox(height: 32),
 
+              Text('${_mcqs.length - _checked.length} skipped / unanswered'),
+              if (_checked.length < _mcqs.length)
+                ExpansionTile(
+                  title: const Text('Review skipped questions'),
+                  children: [
+                    for (var i = 0; i < _mcqs.length; i++)
+                      if (!_checked.contains(i))
+                        Padding(
+                            padding: const EdgeInsets.all(16),
+                            child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  MarkdownContent(data: _mcqs[i].question),
+                                  MarkdownContent(
+                                      data:
+                                          'Correct answer: ${_mcqs[i].options[_mcqs[i].correctIndex]}'),
+                                  if (_mcqs[i].explanation != null)
+                                    MarkdownContent(
+                                        data: _mcqs[i].explanation!),
+                                ])),
+                  ],
+                ),
+
+              Text(_savingResult
+                  ? 'Saving progress…'
+                  : _resultSaved
+                      ? 'Progress saved'
+                      : 'Progress not saved'),
+              if (!_resultSaved && !_savingResult)
+                TextButton(
+                    onPressed: _finishQuiz, child: const Text('Retry saving')),
+              if (_checked
+                  .any((i) => _selectedAnswers[i] != _mcqs[i].correctIndex))
+                ExpansionTile(
+                    title: const Text('Review incorrect answers'),
+                    children: [
+                      ..._checked
+                          .where((i) =>
+                              _selectedAnswers[i] != _mcqs[i].correctIndex)
+                          .map((i) => Padding(
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    MarkdownContent(data: _mcqs[i].question),
+                                    const SizedBox(height: 8),
+                                    MarkdownContent(
+                                        data:
+                                            'Correct answer: ${_mcqs[i].options[_mcqs[i].correctIndex]}'),
+                                    if (_mcqs[i].explanation != null)
+                                      MarkdownContent(
+                                          data: _mcqs[i].explanation!),
+                                  ]))),
+                    ]),
               // Actions
               SizedBox(
                 width: double.infinity,
                 child: FilledButton.icon(
                   icon: const Icon(Icons.arrow_back_rounded),
-                  label: const Text('अध्याय पर वापस जाएं'),
+                  label: const Text('Back to chapter'),
                   onPressed: () => Navigator.pop(context),
                 ),
               ),
@@ -546,8 +878,8 @@ class _QuizScreenState extends State<QuizScreen> {
                 width: double.infinity,
                 child: OutlinedButton.icon(
                   icon: const Icon(Icons.refresh_rounded),
-                  label: const Text('क्विज पुनः दें (Retake)'),
-                  onPressed: _resetQuiz,
+                  label: const Text('Try again'),
+                  onPressed: _savingResult || !_resultSaved ? null : _resetQuiz,
                 ),
               ),
             ],

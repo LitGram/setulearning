@@ -7,6 +7,7 @@ import '../providers/progress_provider.dart';
 import '../services/content_service.dart';
 import '../widgets/accessible_card.dart';
 import '../widgets/status_badge.dart';
+import '../widgets/progress_state_panel.dart';
 import 'chapter_screen.dart';
 
 class BookScreen extends StatefulWidget {
@@ -25,6 +26,8 @@ class BookScreen extends StatefulWidget {
 
 class _BookScreenState extends State<BookScreen> {
   late Future<Book> _loadBookFuture;
+  String _query = '';
+  bool _unreadOnly = false;
 
   @override
   void initState() {
@@ -44,6 +47,10 @@ class _BookScreenState extends State<BookScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: (MediaQuery.textScalerOf(context).scale(
+                    Theme.of(context).textTheme.titleMedium?.fontSize ?? 18) *
+                2.8)
+            .clamp(56.0, 160.0),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -56,7 +63,7 @@ class _BookScreenState extends State<BookScreen> {
               overflow: TextOverflow.ellipsis,
             ),
             Text(
-              '${widget.subject.name} • ${widget.book.level}',
+              '${widget.subject.name} • पुस्तक ${widget.book.bookNumber}',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: colorScheme.onSurfaceVariant,
               ),
@@ -92,7 +99,8 @@ class _BookScreenState extends State<BookScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.error_outline_rounded, size: 48, color: colorScheme.error),
+                    Icon(Icons.error_outline_rounded,
+                        size: 48, color: colorScheme.error),
                     const SizedBox(height: 12),
                     Text(
                       'पुस्तक लोड करने में समस्या आई',
@@ -104,11 +112,11 @@ class _BookScreenState extends State<BookScreen> {
                     FilledButton(
                       onPressed: () {
                         setState(() {
-                          _loadBookFuture =
-                              ContentService.instance.loadBookContent(widget.book);
+                          _loadBookFuture = ContentService.instance
+                              .loadBookContent(widget.book);
                         });
                       },
-                      child: const Text('पुनः प्रयास करें'),
+                      child: const Text('Retry'),
                     ),
                   ],
                 ),
@@ -122,8 +130,10 @@ class _BookScreenState extends State<BookScreen> {
           return Consumer<ProgressProvider>(
             builder: (context, progressProvider, child) {
               return ListView(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 16.0, vertical: 12.0),
                 children: [
+                  const ProgressStatePanel(),
                   // Book Overview Header
                   Container(
                     padding: const EdgeInsets.all(16.0),
@@ -137,23 +147,25 @@ class _BookScreenState extends State<BookScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
+                        Wrap(
+                          spacing: 16,
+                          runSpacing: 8,
                           children: [
                             Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 10, vertical: 4),
                               decoration: BoxDecoration(
                                 color: colorScheme.primary,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
-                                widget.book.level,
+                                'पाठ्यक्रम खंड ${widget.book.bookNumber}',
                                 style: theme.textTheme.labelSmall?.copyWith(
                                   color: colorScheme.onPrimary,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
-                            const Spacer(),
                             Text(
                               'कुल अध्याय: ${chapters.length}',
                               style: theme.textTheme.labelMedium?.copyWith(
@@ -183,9 +195,10 @@ class _BookScreenState extends State<BookScreen> {
                   const SizedBox(height: 18),
 
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 4.0, vertical: 4.0),
                     child: Text(
-                      'अध्याय सूची (Table of Contents)',
+                      'Chapters',
                       style: theme.textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
@@ -193,8 +206,46 @@ class _BookScreenState extends State<BookScreen> {
                   ),
                   const SizedBox(height: 8),
 
+                  TextField(
+                    decoration: const InputDecoration(
+                        labelText: 'Search chapters',
+                        prefixIcon: Icon(Icons.search),
+                        border: OutlineInputBorder()),
+                    onChanged: (value) =>
+                        setState(() => _query = value.trim().toLowerCase()),
+                  ),
+                  const SizedBox(height: 12),
+                  Wrap(spacing: 8, children: [
+                    FilterChip(
+                        label: const Text('Unread'),
+                        selected: _unreadOnly,
+                        onSelected: (value) =>
+                            setState(() => _unreadOnly = value)),
+                  ]),
+                  const SizedBox(height: 12),
+                  if (!chapters.any((chapter) =>
+                      '${chapter.title} ${chapter.subtitle ?? ''}'
+                          .toLowerCase()
+                          .contains(_query) &&
+                      (!_unreadOnly ||
+                          !progressProvider.isChapterRead(
+                              widget.subject.id, book.id, chapter.id))))
+                    const Padding(
+                        padding: EdgeInsets.all(16),
+                        child: Text(
+                            'No matching chapters. Try another word or clear the filter.')),
                   // Chapters List
-                  ...chapters.asMap().entries.map((entry) {
+                  ...chapters
+                      .asMap()
+                      .entries
+                      .where((entry) =>
+                          '${entry.value.title} ${entry.value.subtitle ?? ''}'
+                              .toLowerCase()
+                              .contains(_query) &&
+                          (!_unreadOnly ||
+                              !progressProvider.isChapterRead(
+                                  widget.subject.id, book.id, entry.value.id)))
+                      .map((entry) {
                     final index = entry.key;
                     final chapter = entry.value;
                     return Padding(
@@ -228,11 +279,14 @@ class _BookScreenState extends State<BookScreen> {
   ) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
-    final isRead = progressProvider.isChapterRead(widget.subject.id, book.id, chapter.id);
-    final quizRecord = progressProvider.getBestQuizScore(widget.subject.id, book.id, chapter.id);
+    final isRead =
+        progressProvider.isChapterRead(widget.subject.id, book.id, chapter.id);
+    final quizRecord = progressProvider.getBestQuizScore(
+        widget.subject.id, book.id, chapter.id);
 
     return AccessibleCard(
-      semanticLabel: 'अध्याय $index: ${chapter.title}, ${isRead ? "पठित" : "अपठित"}',
+      semanticLabel:
+          'अध्याय $index: ${chapter.title}, ${isRead ? "पठित" : "अपठित"}',
       onTap: () {
         Navigator.push(
           context,
@@ -258,12 +312,14 @@ class _BookScreenState extends State<BookScreen> {
                   : colorScheme.surfaceVariant,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(
-                color: isRead ? colorScheme.primary : colorScheme.outlineVariant,
+                color:
+                    isRead ? colorScheme.primary : colorScheme.outlineVariant,
               ),
             ),
             child: Center(
               child: isRead
-                  ? Icon(Icons.check_rounded, color: colorScheme.primary, size: 22)
+                  ? Icon(Icons.check_rounded,
+                      color: colorScheme.primary, size: 22)
                   : Text(
                       '$index',
                       style: theme.textTheme.titleSmall?.copyWith(
@@ -299,9 +355,11 @@ class _BookScreenState extends State<BookScreen> {
                   runSpacing: 4,
                   children: [
                     if (isRead)
-                      const StatusBadge(type: BadgeType.completed, customLabel: 'पठित')
+                      const StatusBadge(
+                          type: BadgeType.completed, customLabel: 'Read')
                     else
-                      const StatusBadge(type: BadgeType.notStarted, customLabel: 'अपठित'),
+                      const StatusBadge(
+                          type: BadgeType.notStarted, customLabel: 'Unread'),
                     if (quizRecord != null)
                       StatusBadge(
                         type: quizRecord.percentage >= 60

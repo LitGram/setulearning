@@ -1,0 +1,61 @@
+- generic: Indus Appstore
+- img "Building"
+- generic: Shiwali
+- img "Chevron"
+- list:
+  - link "Overview" [expanded]:
+    - /url: /home/2377093/overview?versionId=2377093%40mv%409223370245013406947
+    - generic: Overview
+  - link "Growth Studio":
+    - /url: /home/2377093/growth-studio
+    - generic: Growth Studio
+  - link "Offers":
+    - /url: /home/2377093/offers?versionId=2377093%40mv%409223370245013406947
+    - generic: Offers
+  - link "Ratings & Reviews":
+    - /url: /home/2377093/ratings?versionId=2377093%40mv%409223370245013406947
+    - generic: Ratings & Reviews
+  - link "Statistics":
+    - /url: /home/2377093/statistics?versionId=2377093%40mv%409223370245013406947
+    - generic: Statistics
+  - link "Marketing Resources":
+    - /url: /home/2377093/marketing-resources?versionId=2377093%40mv%409223370245013406947
+    - generic: Marketing Resources
+  - link "Help Center":
+    - /url: /help-center?id=2377093&versionId=2377093%40mv%409223370245013406947
+    - generic: Help Center
+- list:
+  - button "SS individual Shiwali Sharma":
+    - generic: SS
+    - generic: individual
+    - generic: Shiwali Sharma
+- main:
+  - link "left Homepage":
+    - /url: /home
+    - img "left"
+    - generic: Homepage
+  - heading "App Overview" [level=1]
+  - button "Edit Details"
+  - button [active]
+  - generic: Google Play Synchronization
+  - generic: Not Connected
+  - button "No Google Play account linked Connect a service account to sync metadata, screenshots, and version details automatically.":
+    - paragraph: No Google Play account linked
+    - paragraph: Connect a service account to sync metadata, screenshots, and version details automatically.
+  - img "icon"
+  - generic: Setu Learning
+  - generic: com.litgram.setulearning
+  - generic: In Review
+  - generic: Education
+  - generic: App Title
+  - generic: Setu Learning
+  - combobox:
+    - generic: English
+  - generic: Short Descriptions
+  - generic: Offline exam companion with books, quizzes & notes for RPSC, UGC NET & Science.
+  - generic: Descriptions
+  - generic: "Setu Learning is an offline-first educational companion designed for students, researchers, and competitive exam aspirants across India. Developed by educators Shiwali Sharma and Mukesh K Sharma, Setu Learning provides structured, high-yield study libraries, interactive practice questions, and clear conceptual notes. Key Features & Subject Modules: • RPSC & State Civil Services (RAS Setu): Comprehensive coverage of History, Art & Culture, Indian & Rajasthan Polity, Economy, Geography, Science & Technology, and Reasoning. • NTA UGC NET Master Series: In-depth paper modules for UGC NET English, Hindi Literature, Political Science, History, and Commerce. • Vigyan Setu & Science Foundations: Modular guides for General Science, Biology, and MSc Physics. • Language, Literature & General Studies: English Setu, Maths Setu, and Great Works master library. Why Choose Setu Learning: ✓ 100% Offline Access: Read books and notes anywhere without internet connectivity. ✓ High-Yield Practice: Chapter-wise MCQs with detailed explanations and fast revision points. ✓ Distraction-Free UI: Clean, eye-friendly typography with built-in dark and light reading modes. ✓ Built by Educators: Content curated by experienced academicians with authentic references."
+  - generic: Screenshots
+  - region "Notifications (F8)":
+    - list
+- alert: Overview | Indus Appstore Developer

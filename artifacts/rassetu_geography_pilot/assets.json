@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rassetu_b2_watershed",
+    "source": "artifacts/rassetu_geography_pilot/svg/rassetu_b2_watershed.svg",
+    "file": "assets/images/rassetu_b2_watershed.webp",
+    "bytes": 52886
+  },
+  {
+    "id": "rassetu_b2_drainage",
+    "source": "artifacts/rassetu_geography_pilot/svg/rassetu_b2_drainage.svg",
+    "file": "assets/images/rassetu_b2_drainage.webp",
+    "bytes": 51610
+  },
+  {
+    "id": "rassetu_b2_monsoon",
+    "source": "artifacts/rassetu_geography_pilot/svg/rassetu_b2_monsoon.svg",
+    "file": "assets/images/rassetu_b2_monsoon.webp",
+    "bytes": 46994
+  },
+  {
+    "id": "rassetu_b2_crop_belts",
+    "source": "artifacts/rassetu_geography_pilot/svg/rassetu_b2_crop_belts.svg",
+    "file": "assets/images/rassetu_b2_crop_belts.webp",
+    "bytes": 45802
+  },
+  {
+    "id": "rassetu_b2_water_harvesting",
+    "source": "artifacts/rassetu_geography_pilot/svg/rassetu_b2_water_harvesting.svg",
+    "file": "assets/images/rassetu_b2_water_harvesting.webp",
+    "bytes": 35986
+  }
+]

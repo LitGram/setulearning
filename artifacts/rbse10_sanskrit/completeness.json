@@ -1,0 +1,191 @@
+{
+  "chapters": [
+    {
+      "id": "san_she_ch01",
+      "file": "10th rbse\\06_sanskrit\\she_ch01_shuchiparyavaranam.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 18781,
+      "marks": 4
+    },
+    {
+      "id": "san_she_ch02",
+      "file": "10th rbse\\06_sanskrit\\she_ch02_buddhirbalavati_sada.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 18777,
+      "marks": 4
+    },
+    {
+      "id": "san_she_ch03",
+      "file": "10th rbse\\06_sanskrit\\she_ch03_shishulalanam.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 18068,
+      "marks": 4
+    },
+    {
+      "id": "san_she_ch04",
+      "file": "10th rbse\\06_sanskrit\\she_ch04_janani_tulyavatsala.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 18307,
+      "marks": 3
+    },
+    {
+      "id": "san_she_ch05",
+      "file": "10th rbse\\06_sanskrit\\she_ch05_subhashitani.md",
+      "mcqs": 15,
+      "blocks": 70,
+      "characters": 18822,
+      "marks": 4
+    },
+    {
+      "id": "san_she_ch06",
+      "file": "10th rbse\\06_sanskrit\\she_ch06_sauhardam_prakriteh_shobha.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 18565,
+      "marks": 3
+    },
+    {
+      "id": "san_she_ch07",
+      "file": "10th rbse\\06_sanskrit\\she_ch07_vichitrah_sakshi.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 18962,
+      "marks": 3
+    },
+    {
+      "id": "san_she_ch08",
+      "file": "10th rbse\\06_sanskrit\\she_ch08_suktayah.md",
+      "mcqs": 15,
+      "blocks": 70,
+      "characters": 18696,
+      "marks": 3
+    },
+    {
+      "id": "san_she_ch09",
+      "file": "10th rbse\\06_sanskrit\\she_ch09_bhukampavibhishika.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 18788,
+      "marks": 2
+    },
+    {
+      "id": "san_she_ch10",
+      "file": "10th rbse\\06_sanskrit\\she_ch10_anyoktayah.md",
+      "mcqs": 15,
+      "blocks": 70,
+      "characters": 19215,
+      "marks": 3
+    },
+    {
+      "id": "san_vya_ch11",
+      "file": "10th rbse\\06_sanskrit\\vya_ch11_sandhi_prakaranam.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 22400,
+      "marks": 4
+    },
+    {
+      "id": "san_vya_ch12",
+      "file": "10th rbse\\06_sanskrit\\vya_ch12_samasa_prakaranam.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 21577,
+      "marks": 4
+    },
+    {
+      "id": "san_vya_ch13",
+      "file": "10th rbse\\06_sanskrit\\vya_ch13_pratyaya_prakaranam.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 22346,
+      "marks": 4
+    },
+    {
+      "id": "san_vya_ch14",
+      "file": "10th rbse\\06_sanskrit\\vya_ch14_avyaya_padani.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 20512,
+      "marks": 3
+    },
+    {
+      "id": "san_vya_ch15",
+      "file": "10th rbse\\06_sanskrit\\vya_ch15_samaya_lekhanam.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 20593,
+      "marks": 2
+    },
+    {
+      "id": "san_vya_ch16",
+      "file": "10th rbse\\06_sanskrit\\vya_ch16_vachya_parivartanam.md",
+      "mcqs": 15,
+      "blocks": 72,
+      "characters": 21322,
+      "marks": 3
+    },
+    {
+      "id": "san_vya_ch17",
+      "file": "10th rbse\\06_sanskrit\\vya_ch17_karaka_ashuddhi_samshodhanam.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 23952,
+      "marks": 4
+    },
+    {
+      "id": "san_vya_ch18",
+      "file": "10th rbse\\06_sanskrit\\rac_ch18_apathita_avabodhanam.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 23655,
+      "marks": 8
+    },
+    {
+      "id": "san_vya_ch19",
+      "file": "10th rbse\\06_sanskrit\\rac_ch19_patra_lekhanam.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 22134,
+      "marks": 4
+    },
+    {
+      "id": "san_vya_ch20",
+      "file": "10th rbse\\06_sanskrit\\rac_ch20_chitra_varnanam_samvada.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 21234,
+      "marks": 4
+    },
+    {
+      "id": "san_vya_ch21",
+      "file": "10th rbse\\06_sanskrit\\rac_ch21_anuvada_ghatanakrama.md",
+      "mcqs": 15,
+      "blocks": 71,
+      "characters": 26369,
+      "marks": 7
+    },
+    {
+      "id": "san_ch22",
+      "file": "10th rbse/06_sanskrit/ch22_solved_board_papers.md",
+      "mcqs": 18,
+      "blocks": 584,
+      "characters": 153994,
+      "marks": 0,
+      "solved_questions": 234,
+      "papers": 18
+    }
+  ],
+  "total_mcqs": 333,
+  "solved_pyqs": 234,
+  "official_papers": 18,
+  "pending": [
+    "regular 2026-27 syllabus confirmation",
+    "exhaustive NCERT Abhyaswaan Bhav question coverage",
+    "unselected past-paper questions and image-only 2021 file",
+    "independent Sanskrit Acharya review"
+  ]
+}

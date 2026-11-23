@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "batch": "Generated representative scene illustrations",
+  "placements": [
+    {
+      "book": 1,
+      "chapter": "ch25",
+      "originalChapterSha256": "0d6b6b0e726e2abc97e895a1ca424d209e0ffe3af15325b7b2ee8c65801fd6bd",
+      "anchor": "## 13.2 दुर्ग (किले) वास्तुकला — वर्गीकरण एवं प्रमुख दुर्ग",
+      "image": "rassetu_b1_fort_landscape_scene.webp",
+      "caption": "राजस्थान का पहाड़ी दुर्ग-परिदृश्य",
+      "explanation": "राजस्थान के पहाड़ी किलों और पथरीले भू-दृश्य से प्रेरित संयुक्त दृश्य। यह किसी नामित दुर्ग का सटीक ऐतिहासिक पुनर्निर्माण नहीं है।"
+    },
+    {
+      "book": 1,
+      "chapter": "ch26",
+      "originalChapterSha256": "311b629c07fd90dfc57bd015de4ea241972efa0494d22f160366a2db2244bea5",
+      "anchor": "## 13.2 दुर्ग (किले) वास्तुकला — वर्गीकरण एवं प्रमुख दुर्ग",
+      "image": "rassetu_b1_fort_landscape_scene.webp",
+      "caption": "राजस्थान का पहाड़ी दुर्ग-परिदृश्य",
+      "explanation": "राजस्थान के पहाड़ी किलों और पथरीले भू-दृश्य से प्रेरित संयुक्त दृश्य। यह किसी नामित दुर्ग का सटीक ऐतिहासिक पुनर्निर्माण नहीं है।"
+    },
+    {
+      "book": 1,
+      "chapter": "ch31",
+      "originalChapterSha256": "10516372814eef75679c233b45595c31397cb28f955ed2e2765aacf850f46177",
+      "anchor": "## 16.2 शास्त्रीय एवं लोक नृत्य (Classical & Folk Dances of Rajasthan)",
+      "image": "rassetu_b1_folk_dance_scene.webp",
+      "caption": "घूमर-प्रेरित सामूहिक नृत्य दृश्य",
+      "explanation": "राजस्थानी सामूहिक नृत्य से प्रेरित प्रतिनिधि कला-दृश्य। परिधान और प्रस्तुति व्याख्यात्मक हैं; इसे किसी विशिष्ट समुदाय या प्रदर्शन का दस्तावेजी चित्र न मानें।"
+    },
+    {
+      "book": 1,
+      "chapter": "ch32",
+      "originalChapterSha256": "1e91a4c4160fac897176a761abe62d2bad37b2f4a799034005555ddb24bb45ba",
+      "anchor": "## 16.2 शास्त्रीय एवं लोक नृत्य (Classical & Folk Dances of Rajasthan)",
+      "image": "rassetu_b1_folk_dance_scene.webp",
+      "caption": "घूमर-प्रेरित सामूहिक नृत्य दृश्य",
+      "explanation": "राजस्थानी सामूहिक नृत्य से प्रेरित प्रतिनिधि कला-दृश्य। परिधान और प्रस्तुति व्याख्यात्मक हैं; इसे किसी विशिष्ट समुदाय या प्रदर्शन का दस्तावेजी चित्र न मानें।"
+    },
+    {
+      "book": 2,
+      "chapter": "ch01",
+      "originalChapterSha256": "bf89c95cbf350592ad93b322d0ed72f53b2d77a750fd15816006cc6d1bda74d6",
+      "anchor": "### 2.1 अरावली पर्वतमाला की भूगर्भिक उत्पत्ति",
+      "image": "rassetu_b2_aravalli_landscape_scene.webp",
+      "caption": "अरावली और जल-विभाजन का प्रतिनिधि भू-दृश्य",
+      "explanation": "अरावली की निम्न पहाड़ियों और दोनों ओर के जल-बहाव की संकल्पनात्मक कलात्मक झलक। यह सटीक स्थलाकृतिक/वर्षा मानचित्र या पैमाने पर बना अनुप्रस्थ काट नहीं है।"
+    }
+  ]
+}

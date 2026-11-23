@@ -1,0 +1,170 @@
+[
+  {
+    "chapter": "ch1",
+    "sha256": "d0a1b1a4f94350c9ec0cad09f391ec7bd39221257c013dbd5e6d1ab7ad5795d8",
+    "originalBlocks": 60,
+    "mcqs": 45,
+    "figures": 2
+  },
+  {
+    "chapter": "ch2",
+    "sha256": "2fa281a5e12ad5422d8bf4063e72f42fa3dd805a3813eee2f371257031b684a1",
+    "originalBlocks": 55,
+    "mcqs": 45,
+    "figures": 4
+  },
+  {
+    "chapter": "ch3",
+    "sha256": "1b28aeb46b03722fe3071e19cac119831293e986ec94262735054ff2af2be02c",
+    "originalBlocks": 61,
+    "mcqs": 45,
+    "figures": 4
+  },
+  {
+    "chapter": "ch4",
+    "sha256": "2e1b6695356f231306e773d8c1c155ead4a2be24db8364eab9bf20f66688033c",
+    "originalBlocks": 61,
+    "mcqs": 45,
+    "figures": 3
+  },
+  {
+    "chapter": "ch5",
+    "sha256": "826f6f422e43c5e9dd998c1ba57e4cb61fc1175ba0e1a4d2c763174646e07f37",
+    "originalBlocks": 78,
+    "mcqs": 45,
+    "figures": 4
+  },
+  {
+    "chapter": "ch6",
+    "sha256": "e0e443e16d9f2e4a01b5363770ae38453ca3374f00357be624f7bda86ae1904f",
+    "originalBlocks": 57,
+    "mcqs": 45,
+    "figures": 2
+  },
+  {
+    "chapter": "ch7",
+    "sha256": "3f61f362b8c3dbc64e0131f82a093d308194fec7b5618f64c2942f2eb4d326f9",
+    "originalBlocks": 64,
+    "mcqs": 45,
+    "figures": 4
+  },
+  {
+    "chapter": "ch8",
+    "sha256": "5b51c2f3224ee55cc595ca513e6158261122df4fa5956d056699857150cdf788",
+    "originalBlocks": 66,
+    "mcqs": 45,
+    "figures": 4
+  },
+  {
+    "chapter": "ch9",
+    "sha256": "ce59b55dc7e18171aeaaaf1efb5616b1ece5f8feaeb5a1c301d00df0fdb86182",
+    "originalBlocks": 63,
+    "mcqs": 45,
+    "figures": 4
+  },
+  {
+    "chapter": "ch10",
+    "sha256": "765cd41385d94662a719b7d8d7cb85e5b3b3b868c626b60a0bd21f1875da54b5",
+    "originalBlocks": 94,
+    "mcqs": 45,
+    "figures": 3
+  },
+  {
+    "chapter": "ch11",
+    "sha256": "54bf33fb24edc8c0d63bd2f10bdf39ddbae1b1bea9ab04b3a5ace80571c58e6d",
+    "originalBlocks": 82,
+    "mcqs": 45,
+    "figures": 4
+  },
+  {
+    "chapter": "ch12",
+    "sha256": "be46b54301f658e3ca9e52d51fbaff8f1f97ad3cf93a15fbf0938e085e087b1e",
+    "originalBlocks": 74,
+    "mcqs": 45,
+    "figures": 2
+  },
+  {
+    "chapter": "ch13",
+    "sha256": "8fe45e40796877d6023f6ae2f5139ba92c886949885ac8932d06770e05dff1a9",
+    "originalBlocks": 80,
+    "mcqs": 45,
+    "figures": 2
+  },
+  {
+    "chapter": "ch14",
+    "sha256": "1572afa0632105d95775aee81bcb64922012b56f85a094843f0cace37b7d74aa",
+    "originalBlocks": 73,
+    "mcqs": 45,
+    "figures": 2
+  },
+  {
+    "chapter": "ch15",
+    "sha256": "c4dc71d55745773e019620a2e9119d98502bbc7e3997e934fd0cb7514263170a",
+    "originalBlocks": 72,
+    "mcqs": 45,
+    "figures": 2
+  },
+  {
+    "chapter": "ch16",
+    "sha256": "2baefafc3531688db279b5498e2f6579118347bee36b657f6d1ebe7aa07c9efd",
+    "originalBlocks": 74,
+    "mcqs": 45,
+    "figures": 3
+  },
+  {
+    "chapter": "ch17",
+    "sha256": "6a553de9050530d1b065c29dfce35f8c90b4257df38772a8fd78f4465060c4b0",
+    "originalBlocks": 68,
+    "mcqs": 45,
+    "figures": 3
+  },
+  {
+    "chapter": "ch18",
+    "sha256": "ded0e69d7e0662137364753c448934e2e10dc25206215ddb32a1d1d1fb3828a1",
+    "originalBlocks": 79,
+    "mcqs": 45,
+    "figures": 3
+  },
+  {
+    "chapter": "ch19",
+    "sha256": "1227ee62192ecb455d51debf3f4ccbc5e84c2c97fd531c422e1eb6261a80266c",
+    "originalBlocks": 76,
+    "mcqs": 45,
+    "figures": 2
+  },
+  {
+    "chapter": "ch20",
+    "sha256": "a30565d49db7bc372e87f3d6af878e4da446e3d78712b26415f9c8c4c7a2c0ae",
+    "originalBlocks": 77,
+    "mcqs": 45,
+    "figures": 2
+  },
+  {
+    "chapter": "ch21",
+    "sha256": "b15a4cdc7cc6b7093936b5648984c881b25875b1066d4141a352440d806b44c0",
+    "originalBlocks": 71,
+    "mcqs": 45,
+    "figures": 2
+  },
+  {
+    "chapter": "ch22",
+    "sha256": "672c723e3491d6bbe4ad608a286c4511cf5ea701f5d192814d46e2795c9c78fe",
+    "originalBlocks": 65,
+    "mcqs": 45,
+    "figures": 1
+  },
+  {
+    "chapter": "ch23",
+    "sha256": "44f9ba9996e58c022c338f1fc98197c683f8759b4152a56508797a40c20f5aa4",
+    "originalBlocks": 76,
+    "mcqs": 45,
+    "figures": 1
+  },
+  {
+    "chapter": "ch24",
+    "sha256": "eb4675b39e54577e3042a5941b7008d3e134f3445ae3c29668d5c7e3d34f9cea",
+    "originalBlocks": 47,
+    "mcqs": 100,
+    "figures": 1
+  }
+]

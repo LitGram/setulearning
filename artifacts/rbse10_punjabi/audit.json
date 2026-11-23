@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "chapters": 23,
+  "core_chapters": 22,
+  "core_mcqs": 330,
+  "total_mcqs": 348,
+  "correct_option_distribution": {
+    "3": 82,
+    "2": 83,
+    "1": 83,
+    "0": 82
+  },
+  "core_figures": 22,
+  "source_retention": "all authored Gurmukhi/Hindi paragraphs, poetry verses, grammar tables and answers retained",
+  "zero_raw_latex_and_ascii_boxes": true,
+  "previous_year_chapter": {
+    "status": "pass",
+    "solved_occurrences": 221,
+    "official_papers": 17,
+    "by_paper": {
+      "2026_main": 13,
+      "2026_supplementary": 13,
+      "2025_main": 13,
+      "2025_supplementary": 13,
+      "2024_main": 13,
+      "2024_supplementary": 13,
+      "2023_main": 13,
+      "2022_main": 13,
+      "2020_main": 13,
+      "2020_supplementary": 13,
+      "2019_main": 13,
+      "2018_main": 13,
+      "2018_supplementary": 13,
+      "2017_main": 13,
+      "2016_main": 13,
+      "2015_main": 13,
+      "2014_main": 13
+    },
+    "unique_solution_concepts": 24,
+    "revision_mcqs": 18,
+    "figures": 12,
+    "max_summary_words_per_source": 156,
+    "coverage": "selected questions and subparts; not every full paper",
+    "omitted": "2021 image-only PDF; unselected subquestions"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "apk": "D:\\new projects\\setu learning android app\\apk_output\\SetuLearning-UGC-NET-Commerce-Release-20261009.apk",
+  "filename": "SetuLearning-UGC-NET-Commerce-Release-20261009.apk",
+  "sizeBytes": 120860335,
+  "sizeMB": 115.26,
+  "sha256": "76896043510e12ee924c3decb1df413e685b221f854160cdf86f28037261b3b5",
+  "zipIntegrityVerified": true,
+  "ugcnetCommercePackaged": true,
+  "totalChapters": 65,
+  "totalMCQs": 3250,
+  "bundledJsonMatchesLocal": true
+}

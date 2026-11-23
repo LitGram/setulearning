@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../models/user_progress.dart';
 import '../services/database_helper.dart';
+import '../services/study_session_store.dart';
+import '../services/chapter_identity.dart';
 
 class ProgressProvider extends ChangeNotifier {
   final DatabaseHelper _dbHelper = DatabaseHelper.instance;
@@ -9,6 +11,7 @@ class ProgressProvider extends ChangeNotifier {
   final Map<String, QuizRecord> _bestScores = {};
   LastPosition? _lastPosition;
   bool _isLoading = true;
+  String? loadError;
 
   bool get isLoading => _isLoading;
   LastPosition? get lastPosition => _lastPosition;
@@ -19,12 +22,28 @@ class ProgressProvider extends ChangeNotifier {
 
   Future<void> loadProgress() async {
     _isLoading = true;
+    loadError = null;
     notifyListeners();
 
     try {
       _lastPosition = await _dbHelper.getLastPosition();
-      // Additional cached progress can be populated as subjects/books are opened
+      final readKeys = await _dbHelper.getAllReadChapterKeys();
+      _readChapterKeys.clear();
+      _readChapterKeys.addAll(readKeys
+          .where((key) => !ChapterIdentity.isRetiredProgressKey(key))
+          .map(ChapterIdentity.canonicalProgressKey));
+
+      final scores = await _dbHelper.getAllBestScores();
+      _bestScores.clear();
+      for (final entry in scores.entries) {
+        final key = ChapterIdentity.canonicalProgressKey(entry.key);
+        if (!_bestScores.containsKey(key) ||
+            entry.value.score > _bestScores[key]!.score) {
+          _bestScores[key] = entry.value;
+        }
+      }
     } catch (e) {
+      loadError = e.toString();
       debugPrint('Error loading progress from database: $e');
     } finally {
       _isLoading = false;
@@ -33,23 +52,35 @@ class ProgressProvider extends ChangeNotifier {
   }
 
   String _key(String subjectId, String bookId, String chapterId) =>
-      '${subjectId}_${bookId}_$chapterId';
+      '${subjectId}_${bookId}_${ChapterIdentity.canonical(subjectId, bookId, chapterId)}';
 
   Future<void> ensureBookLoaded(String subjectId, String bookId) async {
-    final readIds = await _dbHelper.getReadChapterIds(
-      subjectId: subjectId,
-      bookId: bookId,
-    );
-    for (final chId in readIds) {
-      _readChapterKeys.add(_key(subjectId, bookId, chId));
-    }
+    try {
+      final readIds = await _dbHelper.getReadChapterIds(
+        subjectId: subjectId,
+        bookId: bookId,
+      );
+      for (final chId in readIds) {
+        if (ChapterIdentity.isRetiredProgressKey(
+            '${subjectId}_${bookId}_$chId')) {
+          continue;
+        }
+        _readChapterKeys.add(_key(subjectId, bookId, chId));
+      }
 
-    final scores = await _dbHelper.getBestScoresForBook(
-      subjectId: subjectId,
-      bookId: bookId,
-    );
-    for (final entry in scores.entries) {
-      _bestScores[_key(subjectId, bookId, entry.key)] = entry.value;
+      final scores = await _dbHelper.getBestScoresForBook(
+        subjectId: subjectId,
+        bookId: bookId,
+      );
+      for (final entry in scores.entries) {
+        final key = _key(subjectId, bookId, entry.key);
+        if (!_bestScores.containsKey(key) ||
+            entry.value.score > _bestScores[key]!.score) {
+          _bestScores[key] = entry.value;
+        }
+      }
+    } catch (error) {
+      loadError = error.toString();
     }
     notifyListeners();
   }
@@ -58,7 +89,8 @@ class ProgressProvider extends ChangeNotifier {
     return _readChapterKeys.contains(_key(subjectId, bookId, chapterId));
   }
 
-  QuizRecord? getBestQuizScore(String subjectId, String bookId, String chapterId) {
+  QuizRecord? getBestQuizScore(
+      String subjectId, String bookId, String chapterId) {
     return _bestScores[_key(subjectId, bookId, chapterId)];
   }
 
@@ -69,12 +101,12 @@ class ProgressProvider extends ChangeNotifier {
   }) async {
     final key = _key(subjectId, bookId, chapterId);
     if (!_readChapterKeys.contains(key)) {
-      _readChapterKeys.add(key);
       await _dbHelper.markChapterRead(
         subjectId: subjectId,
         bookId: bookId,
         chapterId: chapterId,
       );
+      _readChapterKeys.add(key);
       notifyListeners();
     }
   }
@@ -102,8 +134,6 @@ class ProgressProvider extends ChangeNotifier {
     if (existing == null || score > existing.score) {
       _bestScores[key] = record;
     }
-    // Also mark chapter as read if attempted quiz
-    markChapterRead(subjectId: subjectId, bookId: bookId, chapterId: chapterId);
     notifyListeners();
   }
 
@@ -141,6 +171,7 @@ class ProgressProvider extends ChangeNotifier {
 
   Future<void> resetAllProgress() async {
     await _dbHelper.resetAllProgress();
+    await StudySessionStore.reset();
     _readChapterKeys.clear();
     _bestScores.clear();
     _lastPosition = null;

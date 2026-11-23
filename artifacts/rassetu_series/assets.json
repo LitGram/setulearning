@@ -1,0 +1,762 @@
+[
+  {
+    "book": 1,
+    "id": "rassetu_b1_prehistory_sequence",
+    "file": "assets/images/rassetu_b1_prehistory_sequence.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_prehistory_sequence.svg",
+    "bytes": 36460,
+    "title": "राजस्थान: प्रागैतिहासिक सांस्कृतिक क्रम"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1_archaeology_sites",
+    "file": "assets/images/rassetu_b1_archaeology_sites.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_archaeology_sites.svg",
+    "bytes": 37376,
+    "title": "राजस्थान के प्रमुख पुरातात्विक स्थल: स्थान-स्मरण मॉडल"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1_rajasthan_dynasties",
+    "file": "assets/images/rassetu_b1_rajasthan_dynasties.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_rajasthan_dynasties.svg",
+    "bytes": 33570,
+    "title": "राजस्थान के प्रमुख राजवंश: कालक्रम रूपरेखा"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1_princely_integration",
+    "file": "assets/images/rassetu_b1_princely_integration.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_princely_integration.svg",
+    "bytes": 30270,
+    "title": "राजस्थान का एकीकरण: चरणबद्ध प्रक्रिया"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1_fort_architecture",
+    "file": "assets/images/rassetu_b1_fort_architecture.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_fort_architecture.svg",
+    "bytes": 34716,
+    "title": "दुर्ग स्थापत्य: रक्षा के प्राकृतिक आधार"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1_painting_schools",
+    "file": "assets/images/rassetu_b1_painting_schools.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_painting_schools.svg",
+    "bytes": 37666,
+    "title": "राजस्थानी चित्रशैली: तुलनात्मक अध्ययन"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1_folk_music_instruments",
+    "file": "assets/images/rassetu_b1_folk_music_instruments.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_folk_music_instruments.svg",
+    "bytes": 31312,
+    "title": "लोकसंगीत: वाद्य-परिवार पहचान"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1_folk_dance_regions",
+    "file": "assets/images/rassetu_b1_folk_dance_regions.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_folk_dance_regions.svg",
+    "bytes": 31434,
+    "title": "लोकनृत्य: परंपरा से क्षेत्र-स्मरण"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1_crafts_textiles",
+    "file": "assets/images/rassetu_b1_crafts_textiles.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_crafts_textiles.svg",
+    "bytes": 34326,
+    "title": "राजस्थान के शिल्प: सामग्री से उत्पाद तक"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1_language_dialects",
+    "file": "assets/images/rassetu_b1_language_dialects.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1_language_dialects.svg",
+    "bytes": 30718,
+    "title": "राजस्थानी भाषा-क्षेत्र: बोली-समूह तुलना"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_indus_sites",
+    "file": "assets/images/rassetu_b3_indus_sites.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_indus_sites.svg",
+    "bytes": 34988,
+    "title": "सिंधु सभ्यता: प्रमुख स्थल और विशेषताएं"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_ancient_periods",
+    "file": "assets/images/rassetu_b3_ancient_periods.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_ancient_periods.svg",
+    "bytes": 30880,
+    "title": "प्राचीन भारत: प्रमुख राजवंश और कालखंड"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_buddhism_jainism",
+    "file": "assets/images/rassetu_b3_buddhism_jainism.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_buddhism_jainism.svg",
+    "bytes": 28502,
+    "title": "बौद्ध और जैन परंपरा: मुख्य अवधारणा तुलना"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_maurya_admin",
+    "file": "assets/images/rassetu_b3_maurya_admin.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_maurya_admin.svg",
+    "bytes": 30086,
+    "title": "मौर्य प्रशासन: केंद्र से स्थानीय स्तर तक"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_gupta_maurya",
+    "file": "assets/images/rassetu_b3_gupta_maurya.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_gupta_maurya.svg",
+    "bytes": 30562,
+    "title": "मौर्य और गुप्त शासन: संरचना की तुलना"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_south_india_dynasties",
+    "file": "assets/images/rassetu_b3_south_india_dynasties.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_south_india_dynasties.svg",
+    "bytes": 33260,
+    "title": "दक्षिण भारत के राजवंश: क्षेत्र और पहचान"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_delhi_sultanate",
+    "file": "assets/images/rassetu_b3_delhi_sultanate.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_delhi_sultanate.svg",
+    "bytes": 27476,
+    "title": "दिल्ली सल्तनत: राजवंशीय क्रम"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_vijayanagara_bahmani",
+    "file": "assets/images/rassetu_b3_vijayanagara_bahmani.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_vijayanagara_bahmani.svg",
+    "bytes": 30300,
+    "title": "विजयनगर और बहमनी: दक्षिणी सत्ता की तुलना"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_mughal_period",
+    "file": "assets/images/rassetu_b3_mughal_period.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_mughal_period.svg",
+    "bytes": 29722,
+    "title": "मुगल काल: शासक और प्रमुख पड़ाव"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_freedom_movement",
+    "file": "assets/images/rassetu_b3_freedom_movement.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_freedom_movement.svg",
+    "bytes": 32254,
+    "title": "भारतीय राष्ट्रीय आंदोलन: घटनाक्रम"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_gandhian_movements",
+    "file": "assets/images/rassetu_b3_gandhian_movements.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_gandhian_movements.svg",
+    "bytes": 33318,
+    "title": "गांधीवादी आंदोलनों का कारण–रणनीति–परिणाम"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_constitution_india",
+    "file": "assets/images/rassetu_b3_constitution_india.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_constitution_india.svg",
+    "bytes": 28990,
+    "title": "संविधान निर्माण और स्वतंत्रता की ओर"
+  },
+  {
+    "book": 4,
+    "id": "rassetu_b4_constitutional_evolution",
+    "file": "assets/images/rassetu_b4_constitutional_evolution.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b4_constitutional_evolution.svg",
+    "bytes": 30364,
+    "title": "भारतीय संवैधानिक विकास: प्रमुख पड़ाव"
+  },
+  {
+    "book": 4,
+    "id": "rassetu_b4_preamble_constitution",
+    "file": "assets/images/rassetu_b4_preamble_constitution.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b4_preamble_constitution.svg",
+    "bytes": 41708,
+    "title": "संविधान: मूल्यों और अधिकारों का संबंध"
+  },
+  {
+    "book": 4,
+    "id": "rassetu_b4_rights_duties",
+    "file": "assets/images/rassetu_b4_rights_duties.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b4_rights_duties.svg",
+    "bytes": 35552,
+    "title": "मौलिक अधिकार, नीति-निदेशक तत्व और कर्तव्य"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_flow_व_ध_यक_स_अध_न_यम_तक",
+    "file": "assets/images/rassetu_b6_flow_व_ध_यक_स_अध_न_यम_तक.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_flow_व_ध_यक_स_अध_न_यम_तक.svg",
+    "bytes": 28100,
+    "title": "विधेयक से अधिनियम तक"
+  },
+  {
+    "book": 4,
+    "id": "rassetu_b4_budget_funds",
+    "file": "assets/images/rassetu_b4_budget_funds.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b4_budget_funds.svg",
+    "bytes": 37868,
+    "title": "भारत की सार्वजनिक निधियां: तुलना"
+  },
+  {
+    "book": 4,
+    "id": "rassetu_b4_federal_relations",
+    "file": "assets/images/rassetu_b4_federal_relations.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b4_federal_relations.svg",
+    "bytes": 27582,
+    "title": "संघ–राज्य संबंध: तीन आयाम"
+  },
+  {
+    "book": 4,
+    "id": "rassetu_b4_emergency_types",
+    "file": "assets/images/rassetu_b4_emergency_types.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b4_emergency_types.svg",
+    "bytes": 30412,
+    "title": "आपातकालीन प्रावधान: प्रकार और संवैधानिक प्रक्रिया"
+  },
+  {
+    "book": 4,
+    "id": "rassetu_b4_institution_र_जस_थ_न_स_थ_न_य_श_सन_स_स_थ_गत_स_तर",
+    "file": "assets/images/rassetu_b4_institution_र_जस_थ_न_स_थ_न_य_श_सन_स_स_थ_गत_स_तर.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b4_institution_र_जस_थ_न_स_थ_न_य_श_सन_स_स_थ_गत_स_तर.svg",
+    "bytes": 28460,
+    "title": "राजस्थान स्थानीय शासन: संस्थागत स्तर"
+  },
+  {
+    "book": 4,
+    "id": "rassetu_b4_raj_admin_hierarchy",
+    "file": "assets/images/rassetu_b4_raj_admin_hierarchy.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b4_raj_admin_hierarchy.svg",
+    "bytes": 34638,
+    "title": "राजस्थान प्रशासन: नीति से स्थानीय क्रियान्वयन"
+  },
+  {
+    "book": 4,
+    "id": "rassetu_b4_court_hierarchy",
+    "file": "assets/images/rassetu_b4_court_hierarchy.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b4_court_hierarchy.svg",
+    "bytes": 30604,
+    "title": "न्यायपालिका: न्यायालयों का सामान्य क्रम"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_flow_अर_थव_यवस_थ_क_चक_र_य_प_रव_ह",
+    "file": "assets/images/rassetu_b6_flow_अर_थव_यवस_थ_क_चक_र_य_प_रव_ह.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_flow_अर_थव_यवस_थ_क_चक_र_य_प_रव_ह.svg",
+    "bytes": 26044,
+    "title": "अर्थव्यवस्था का चक्रीय प्रवाह"
+  },
+  {
+    "book": 5,
+    "id": "rassetu_b5_gdp_price_indicators",
+    "file": "assets/images/rassetu_b5_gdp_price_indicators.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b5_gdp_price_indicators.svg",
+    "bytes": 34246,
+    "title": "आर्थिक संकेतक: क्या मापते हैं?"
+  },
+  {
+    "book": 5,
+    "id": "rassetu_b5_inflation_policy",
+    "file": "assets/images/rassetu_b5_inflation_policy.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b5_inflation_policy.svg",
+    "bytes": 41548,
+    "title": "मुद्रास्फीति: मौद्रिक और राजकोषीय प्रतिक्रिया"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_flow_क_ष_ब_ज_र_म_ल_य_श_खल_",
+    "file": "assets/images/rassetu_b6_flow_क_ष_ब_ज_र_म_ल_य_श_खल_.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_flow_क_ष_ब_ज_र_म_ल_य_श_खल_.svg",
+    "bytes": 25290,
+    "title": "कृषि बाजार मूल्य शृंखला"
+  },
+  {
+    "book": 5,
+    "id": "rassetu_b5_rajasthan_crop_concepts",
+    "file": "assets/images/rassetu_b5_rajasthan_crop_concepts.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b5_rajasthan_crop_concepts.svg",
+    "bytes": 36638,
+    "title": "राजस्थान कृषि: जल, फसल और आजीविका"
+  },
+  {
+    "book": 5,
+    "id": "rassetu_b5_renewable_energy",
+    "file": "assets/images/rassetu_b5_renewable_energy.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b5_renewable_energy.svg",
+    "bytes": 29718,
+    "title": "ऊर्जा संक्रमण: स्रोत से उपयोग तक"
+  },
+  {
+    "book": 5,
+    "id": "rassetu_b5_fiscal_federalism",
+    "file": "assets/images/rassetu_b5_fiscal_federalism.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b5_fiscal_federalism.svg",
+    "bytes": 35196,
+    "title": "राजकोषीय संघवाद: कर और हस्तांतरण"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_flow_ज_व_प_र_द_य_ग_क_क_स_म_न_य_चरण",
+    "file": "assets/images/rassetu_b6_flow_ज_व_प_र_द_य_ग_क_क_स_म_न_य_चरण.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_flow_ज_व_प_र_द_य_ग_क_क_स_म_न_य_चरण.svg",
+    "bytes": 26690,
+    "title": "जैव प्रौद्योगिकी के सामान्य चरण"
+  },
+  {
+    "book": 5,
+    "id": "rassetu_b5_spacecraft_system",
+    "file": "assets/images/rassetu_b5_spacecraft_system.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b5_spacecraft_system.svg",
+    "bytes": 33632,
+    "title": "उपग्रह प्रणाली: प्रक्षेपण से सेवा तक"
+  },
+  {
+    "book": 5,
+    "id": "rassetu_b5_ecosystem_foodweb",
+    "file": "assets/images/rassetu_b5_ecosystem_foodweb.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b5_ecosystem_foodweb.svg",
+    "bytes": 35738,
+    "title": "पारिस्थितिकी तंत्र: ऊर्जा और पदार्थ"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_deduction_induction",
+    "file": "assets/images/rassetu_b6_deduction_induction.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_deduction_induction.svg",
+    "bytes": 31210,
+    "title": "निगमन और आगमन: तर्क का अंतर"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_flow_कथन_म_ल_य_कन",
+    "file": "assets/images/rassetu_b6_flow_कथन_म_ल_य_कन.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_flow_कथन_म_ल_य_कन.svg",
+    "bytes": 23314,
+    "title": "कथन मूल्यांकन"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_number_series",
+    "file": "assets/images/rassetu_b6_number_series.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_number_series.svg",
+    "bytes": 30614,
+    "title": "संख्या-श्रृंखला: पैटर्न खोजने के चरण"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_family_tree",
+    "file": "assets/images/rassetu_b6_family_tree.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_family_tree.svg",
+    "bytes": 32658,
+    "title": "रक्त-संबंध: वंशवृक्ष आरेख"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_venn_models",
+    "file": "assets/images/rassetu_b6_venn_models.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_venn_models.svg",
+    "bytes": 35922,
+    "title": "वेन आरेख: समुच्चय संबंध"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_ranking_formula",
+    "file": "assets/images/rassetu_b6_ranking_formula.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_ranking_formula.svg",
+    "bytes": 30588,
+    "title": "क्रम परीक्षण: कुल स्थान का सूत्र"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_mirror_water",
+    "file": "assets/images/rassetu_b6_mirror_water.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_mirror_water.svg",
+    "bytes": 29698,
+    "title": "दर्पण और जल-प्रतिबिंब: परिवर्तन"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_number_system",
+    "file": "assets/images/rassetu_b6_number_system.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_number_system.svg",
+    "bytes": 35284,
+    "title": "संख्या पद्धति: समावेशन संबंध"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_ratio_proportion",
+    "file": "assets/images/rassetu_b6_ratio_proportion.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_ratio_proportion.svg",
+    "bytes": 25082,
+    "title": "अनुपात और समानुपात"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_percent_fraction",
+    "file": "assets/images/rassetu_b6_percent_fraction.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_percent_fraction.svg",
+    "bytes": 27412,
+    "title": "प्रतिशत–भिन्न–दशमलव: समान मान"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_simple_compound_interest",
+    "file": "assets/images/rassetu_b6_simple_compound_interest.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_simple_compound_interest.svg",
+    "bytes": 30646,
+    "title": "साधारण और चक्रवृद्धि ब्याज"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_geometry_shapes",
+    "file": "assets/images/rassetu_b6_geometry_shapes.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_geometry_shapes.svg",
+    "bytes": 34716,
+    "title": "त्रिभुज: प्रकार और क्षेत्रफल"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_mean_median_mode",
+    "file": "assets/images/rassetu_b6_mean_median_mode.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_mean_median_mode.svg",
+    "bytes": 28580,
+    "title": "माध्य, माध्यिका और बहुलक"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_probability",
+    "file": "assets/images/rassetu_b6_probability.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_probability.svg",
+    "bytes": 33980,
+    "title": "प्रायिकता: अनुकूल परिणाम / कुल समान संभावित परिणाम"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_archaeology_locator",
+    "file": "assets/images/rassetu_b1x_archaeology_locator.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_archaeology_locator.svg",
+    "bytes": 56574,
+    "title": "राजस्थान के पुरातात्विक स्थल"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_prehistoric_sequence",
+    "file": "assets/images/rassetu_b1x_prehistoric_sequence.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_prehistoric_sequence.svg",
+    "bytes": 62996,
+    "title": "राजस्थान: सांस्कृतिक क्रम"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_kalibanga_ahar_compare",
+    "file": "assets/images/rassetu_b1x_kalibanga_ahar_compare.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_kalibanga_ahar_compare.svg",
+    "bytes": 60136,
+    "title": "कालीबंगा और आहड़–बनास"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_dynasty_parallel_timeline",
+    "file": "assets/images/rassetu_b1x_dynasty_parallel_timeline.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_dynasty_parallel_timeline.svg",
+    "bytes": 55808,
+    "title": "राजस्थान के राजवंश: समानांतर काल-रेखाएं"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_kingdoms_schematic_locator",
+    "file": "assets/images/rassetu_b1x_kingdoms_schematic_locator.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_kingdoms_schematic_locator.svg",
+    "bytes": 51148,
+    "title": "क्षेत्रीय राजवंश: स्थान और पहचान"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_mewar_capital_sequence",
+    "file": "assets/images/rassetu_b1x_mewar_capital_sequence.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_mewar_capital_sequence.svg",
+    "bytes": 44016,
+    "title": "मेवाड़: सत्ता-केंद्र और शाखा क्रम"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_fort_capital_schematic",
+    "file": "assets/images/rassetu_b1x_fort_capital_schematic.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_fort_capital_schematic.svg",
+    "bytes": 44624,
+    "title": "दुर्ग और क्षेत्रीय केंद्र"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_people_movements_timeline",
+    "file": "assets/images/rassetu_b1x_people_movements_timeline.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_people_movements_timeline.svg",
+    "bytes": 48414,
+    "title": "किसान और जनजातीय आंदोलनों के पड़ाव"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_integration_seven_stages",
+    "file": "assets/images/rassetu_b1x_integration_seven_stages.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_integration_seven_stages.svg",
+    "bytes": 58818,
+    "title": "राजस्थान एकीकरण: सात चरण"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_craft_material_process",
+    "file": "assets/images/rassetu_b1x_craft_material_process.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_craft_material_process.svg",
+    "bytes": 59736,
+    "title": "राजस्थानी शिल्प: सामग्री से पहचान"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_festival_month_cycle",
+    "file": "assets/images/rassetu_b1x_festival_month_cycle.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_festival_month_cycle.svg",
+    "bytes": 52474,
+    "title": "राजस्थान: त्योहार और मेले का वार्षिक चक्र"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_heritage_concept_web",
+    "file": "assets/images/rassetu_b1x_heritage_concept_web.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_heritage_concept_web.svg",
+    "bytes": 50354,
+    "title": "राजस्थान विरासत: पुनरावृत्ति संकल्पना-जाल"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_heritage_recall_grid",
+    "file": "assets/images/rassetu_b1x_heritage_recall_grid.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b1x_heritage_recall_grid.svg",
+    "bytes": 54996,
+    "title": "विरासत पुनरावृत्ति: मिलान-अभ्यास"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_prehistory_scene",
+    "file": "assets/images/rassetu_b1x_prehistory_scene.webp",
+    "source": "generated representative illustration via built-in imagegen",
+    "bytes": 451110,
+    "title": "पूर्व-ऐतिहासिक बस्ती: प्रतिनिधि पुनर्निर्माण"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_painting_scene",
+    "file": "assets/images/rassetu_b1x_painting_scene.webp",
+    "source": "generated representative illustration via built-in imagegen",
+    "bytes": 256388,
+    "title": "लघुचित्र निर्माण की प्रतिनिधि कार्यशाला"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_craft_scene",
+    "file": "assets/images/rassetu_b1x_craft_scene.webp",
+    "source": "generated representative illustration via built-in imagegen",
+    "bytes": 298280,
+    "title": "हाथ से ब्लॉक-प्रिंटिंग: प्रतिनिधि दृश्य"
+  },
+  {
+    "book": 1,
+    "id": "rassetu_b1x_folk_music_scene",
+    "file": "assets/images/rassetu_b1x_folk_music_scene.webp",
+    "source": "generated representative illustration via built-in imagegen",
+    "bytes": 238578,
+    "title": "लोकसंगीत का सामूहिक आयोजन: प्रतिनिधि दृश्य"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_harappan_sites_planning",
+    "file": "assets/images/rassetu_b3_harappan_sites_planning.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_harappan_sites_planning.svg",
+    "bytes": 91474,
+    "title": "हड़प्पाई स्थल और नगर-योजना का पुरातात्विक साक्ष्य"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_vedic_geography_shift",
+    "file": "assets/images/rassetu_b3_vedic_geography_shift.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_vedic_geography_shift.svg",
+    "bytes": 74718,
+    "title": "वैदिक काल: क्षेत्रीय विस्तार का सांकेतिक मॉडल"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_mahajanapada_magadh",
+    "file": "assets/images/rassetu_b3_mahajanapada_magadh.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_mahajanapada_magadh.svg",
+    "bytes": 70904,
+    "title": "16 महाजनपद और मगध के उत्कर्ष का स्थानिक संदर्भ"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_buddhism_jainism_compare",
+    "file": "assets/images/rassetu_b3_buddhism_jainism_compare.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_buddhism_jainism_compare.svg",
+    "bytes": 71932,
+    "title": "बौद्ध और जैन शिक्षाएं: तुलना और साधना-पथ"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_maurya_saptanga_edicts",
+    "file": "assets/images/rassetu_b3_maurya_saptanga_edicts.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_maurya_saptanga_edicts.svg",
+    "bytes": 67052,
+    "title": "मौर्यकालीन राज्य-विचार: सप्तांग सिद्धांत"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_gupta_harsha_knowledge",
+    "file": "assets/images/rassetu_b3_gupta_harsha_knowledge.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_gupta_harsha_knowledge.svg",
+    "bytes": 68372,
+    "title": "गुप्त और गुप्तोत्तर काल: ज्ञान-परंपरा के कुछ पड़ाव"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_south_india_governance",
+    "file": "assets/images/rassetu_b3_south_india_governance.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_south_india_governance.svg",
+    "bytes": 71112,
+    "title": "दक्षिण भारत के प्रमुख सत्ता-केंद्र और चोल स्थानीय संस्थाएं"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_delhi_sultanate_system",
+    "file": "assets/images/rassetu_b3_delhi_sultanate_system.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_delhi_sultanate_system.svg",
+    "bytes": 76116,
+    "title": "दिल्ली सल्तनत: राजवंश-क्रम और खिलजी बाजार-नियमन"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_vijayanagara_bahmani_1565",
+    "file": "assets/images/rassetu_b3_vijayanagara_bahmani_1565.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_vijayanagara_bahmani_1565.svg",
+    "bytes": 69582,
+    "title": "विजयनगर और दक्कन: 1565 का स्थानिक संदर्भ"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_mughal_mansabdari_dahsala",
+    "file": "assets/images/rassetu_b3_mughal_mansabdari_dahsala.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_mughal_mansabdari_dahsala.svg",
+    "bytes": 74244,
+    "title": "मुगल प्रशासन: मनसब और दहसाला के अलग तंत्र"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_bhakti_sufi_network",
+    "file": "assets/images/rassetu_b3_bhakti_sufi_network.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_bhakti_sufi_network.svg",
+    "bytes": 74208,
+    "title": "भक्ति और सूफी परंपराएं: विविध पथ, अलग संस्थाएं"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_european_expansion",
+    "file": "assets/images/rassetu_b3_european_expansion.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_european_expansion.svg",
+    "bytes": 72346,
+    "title": "यूरोपीय व्यापार से औपनिवेशिक सत्ता तक: चुने हुए पड़ाव"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_revolt_1857_centres",
+    "file": "assets/images/rassetu_b3_revolt_1857_centres.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_revolt_1857_centres.svg",
+    "bytes": 63420,
+    "title": "1857–58: विद्रोह के प्रमुख केंद्र और नेता"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_reform_movements",
+    "file": "assets/images/rassetu_b3_reform_movements.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_reform_movements.svg",
+    "bytes": 69966,
+    "title": "उन्नीसवीं सदी के सुधार आंदोलन: क्षेत्र और अलग प्राथमिकताएं"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_early_nationalism",
+    "file": "assets/images/rassetu_b3_early_nationalism.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_early_nationalism.svg",
+    "bytes": 61768,
+    "title": "कांग्रेस से स्वदेशी तक: आरंभिक राष्ट्रवाद के पड़ाव"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_revolutionary_networks",
+    "file": "assets/images/rassetu_b3_revolutionary_networks.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_revolutionary_networks.svg",
+    "bytes": 63268,
+    "title": "क्रांतिकारी गतिविधियां: क्षेत्रीय केंद्र और चरण"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_peasant_tribal_movements",
+    "file": "assets/images/rassetu_b3_peasant_tribal_movements.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_peasant_tribal_movements.svg",
+    "bytes": 69414,
+    "title": "किसान और जनजातीय आंदोलनों के चयनित क्षेत्र"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_transfer_of_power",
+    "file": "assets/images/rassetu_b3_transfer_of_power.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_transfer_of_power.svg",
+    "bytes": 57672,
+    "title": "कैबिनेट मिशन से स्वतंत्रता तक: संवैधानिक पड़ाव"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_princely_integration_reorg",
+    "file": "assets/images/rassetu_b3_princely_integration_reorg.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b3_princely_integration_reorg.svg",
+    "bytes": 70916,
+    "title": "रियासतों का एकीकरण और 1956 का राज्यों का पुनर्गठन"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_harappan_scene",
+    "file": "assets/images/rassetu_b3_harappan_scene.webp",
+    "source": "generated representative image",
+    "bytes": 372206,
+    "title": "हड़प्पाई नगर-जीवन का प्रतिनिधि पुनर्निर्माण"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_chola_town_scene",
+    "file": "assets/images/rassetu_b3_chola_town_scene.webp",
+    "source": "generated representative image",
+    "bytes": 409112,
+    "title": "दक्षिण भारतीय मंदिर-नगर: प्रतिनिधि दृश्य"
+  },
+  {
+    "book": 3,
+    "id": "rassetu_b3_revolt_1857_scene",
+    "file": "assets/images/rassetu_b3_revolt_1857_scene.webp",
+    "source": "generated representative image",
+    "bytes": 370762,
+    "title": "1857 के उथल-पुथल का प्रतिनिधि दृश्य"
+  }
+]

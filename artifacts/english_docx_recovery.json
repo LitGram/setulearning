@@ -1,0 +1,2029 @@
+{
+  "books": [
+    {
+      "asset": "assets/content/englishsetu/phonetics_objective_guide.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\AN OBJECTIVE APPROACH TO English Phonetics.docx",
+      "sourceSha256": "8577542389c27fb1cf1c3d1147e687091e0af6b141914f94b05b7d441c961a6d",
+      "assetSha256": "129a0c6a6f030d881b87250e1a3a2f75c9c15cde31bcb080006942a29824d1e7",
+      "sourceBlocks": 2073,
+      "excludedLeadingBlocks": 8,
+      "retainedBlocks": 2065,
+      "retainedTables": 0,
+      "images": [],
+      "chapterCount": 1,
+      "preservedKeyedQuestions": 15,
+      "sourcePayloadSha256": "d54cdde483e6cdcd0d034c16780eb9e086d5c7f0708570f2b44a4596c3975643",
+      "recoveredPayloadSha256": "d54cdde483e6cdcd0d034c16780eb9e086d5c7f0708570f2b44a4596c3975643",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Main study material",
+          "blocks": 2065
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/geoffrey_leech_grammar.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\AN OBJECTIVE APPROACH TO G LEECH.docx",
+      "sourceSha256": "732ad08e2fd29236e8b4c4ed032e533822df080ac911b477d6ea0d327bfb4b4a",
+      "assetSha256": "62ed573b300bffc5ce857ed36f5b5025417bfb619fffd1c5a055d1bf25e7381d",
+      "sourceBlocks": 2494,
+      "excludedLeadingBlocks": 9,
+      "retainedBlocks": 2485,
+      "retainedTables": 0,
+      "images": [],
+      "chapterCount": 1,
+      "preservedKeyedQuestions": 89,
+      "sourcePayloadSha256": "714deb1e6da991f3a33dae9748668844c2456cb5c89c7f515312c318a80c71c1",
+      "recoveredPayloadSha256": "714deb1e6da991f3a33dae9748668844c2456cb5c89c7f515312c318a80c71c1",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Main study material",
+          "blocks": 2485
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/first_grade_literature_1.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\RPSC First Grade (part 1).docx",
+      "sourceSha256": "0b546a3b6517c05db0610853f6e781e234d6d3d80135754f6102e55a1e2991a8",
+      "assetSha256": "507a98311945f95d27b36053c16a5cb4315ae2976405d655e81432ab0f02e372",
+      "sourceBlocks": 17196,
+      "excludedLeadingBlocks": 54,
+      "retainedBlocks": 17142,
+      "retainedTables": 0,
+      "images": [],
+      "chapterCount": 22,
+      "preservedKeyedQuestions": 445,
+      "sourcePayloadSha256": "c1c86a1a6ad779a066ab3a9e7d6b9db6ca82c2908f97d5f1d73a9227220eae23",
+      "recoveredPayloadSha256": "c1c86a1a6ad779a066ab3a9e7d6b9db6ca82c2908f97d5f1d73a9227220eae23",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Main study material",
+          "blocks": 56
+        },
+        {
+          "id": "docx_ch2",
+          "title": "Main study material",
+          "blocks": 241
+        },
+        {
+          "id": "docx_ch3",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch4",
+          "title": "Main study material",
+          "blocks": 281
+        },
+        {
+          "id": "docx_ch5",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch6",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch7",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch8",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch9",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch10",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch11",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch12",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch13",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch14",
+          "title": "Main study material",
+          "blocks": 10519
+        },
+        {
+          "id": "docx_ch15",
+          "title": "Main study material",
+          "blocks": 876
+        },
+        {
+          "id": "docx_ch16",
+          "title": "Main study material",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch17",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch18",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch19",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch20",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch21",
+          "title": "Main study material",
+          "blocks": 213
+        },
+        {
+          "id": "docx_ch22",
+          "title": "Main study material",
+          "blocks": 1826
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/first_grade_literature_2.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\first grade literature part 2.docx",
+      "sourceSha256": "0f09bdca3cea0d0721c986d702f0a7fb436fcd6d48515a6f21e323747e6a0273",
+      "assetSha256": "9dac9e246ddf51a4287f1dfe2d4532d317b7d0b2421ca88870bf005ff877a430",
+      "sourceBlocks": 14752,
+      "excludedLeadingBlocks": 14,
+      "retainedBlocks": 14738,
+      "retainedTables": 0,
+      "images": [],
+      "chapterCount": 58,
+      "preservedKeyedQuestions": 2055,
+      "sourcePayloadSha256": "78a0045399e104f5b7f566b8ccec3cfab8c53f0bd2ebb5396b674e5c55664228",
+      "recoveredPayloadSha256": "78a0045399e104f5b7f566b8ccec3cfab8c53f0bd2ebb5396b674e5c55664228",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Main study material",
+          "blocks": 10
+        },
+        {
+          "id": "docx_ch2",
+          "title": "As You Like It",
+          "blocks": 84
+        },
+        {
+          "id": "docx_ch3",
+          "title": "Act I",
+          "blocks": 81
+        },
+        {
+          "id": "docx_ch4",
+          "title": "Act II",
+          "blocks": 91
+        },
+        {
+          "id": "docx_ch5",
+          "title": "Act III",
+          "blocks": 121
+        },
+        {
+          "id": "docx_ch6",
+          "title": "Act IV",
+          "blocks": 61
+        },
+        {
+          "id": "docx_ch7",
+          "title": "Act V",
+          "blocks": 121
+        },
+        {
+          "id": "docx_ch8",
+          "title": "The Mayor of Casterbridge",
+          "blocks": 66
+        },
+        {
+          "id": "docx_ch9",
+          "title": "Set: 1",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch10",
+          "title": "Set: 2",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch11",
+          "title": "Set: 3",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch12",
+          "title": "Set: 4",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch13",
+          "title": "Set: 5",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch14",
+          "title": "Set: 6",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch15",
+          "title": "Set: 7",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch16",
+          "title": "Set: 8",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch17",
+          "title": "Set: 9",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch18",
+          "title": "Set: 10",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch19",
+          "title": "Set: 11",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch20",
+          "title": "Set: 12",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch21",
+          "title": "Set: 13",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch22",
+          "title": "Set: 14",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch23",
+          "title": "Set: 15",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch24",
+          "title": "Set: 16",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch25",
+          "title": "Set: 17",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch26",
+          "title": "Set: 18",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch27",
+          "title": "Set: 19",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch28",
+          "title": "Set: 20",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch29",
+          "title": "Set: 21",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch30",
+          "title": "Set: 22",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch31",
+          "title": "Set: 23",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch32",
+          "title": "Set: 24",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch33",
+          "title": "Set: 25",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch34",
+          "title": "Set: 26",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch35",
+          "title": "Set: 27",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch36",
+          "title": "Set: 28",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch37",
+          "title": "Set: 29",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch38",
+          "title": "Set: 30",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch39",
+          "title": "Set: 31",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch40",
+          "title": "Set: 32",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch41",
+          "title": "Set: 33",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch42",
+          "title": "Set: 34",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch43",
+          "title": "Set: 35",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch44",
+          "title": "Set: 36",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch45",
+          "title": "Set: 37",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch46",
+          "title": "Set: 38",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch47",
+          "title": "Set: 39",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch48",
+          "title": "Set: 40",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch49",
+          "title": "Set: 41",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch50",
+          "title": "Set: 42",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch51",
+          "title": "Set: 43",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch52",
+          "title": "Set: 44",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch53",
+          "title": "Set: 45",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch54",
+          "title": "Set: 46",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch55",
+          "title": "Set: 47",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch56",
+          "title": "The Waste Land – T.S. Eliot",
+          "blocks": 1987
+        },
+        {
+          "id": "docx_ch57",
+          "title": "Varieties of Language",
+          "blocks": 978
+        },
+        {
+          "id": "docx_ch58",
+          "title": "The Birthday Party – Harold Pinter",
+          "blocks": 2631
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/shakespeare_mcqs.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\Mastering Shakespeare MCQs for RPSC Exams.docx",
+      "sourceSha256": "e4418fdc5e727a6be76f6be0667966ac8b51665c04f65614c73b99148dbf5888",
+      "assetSha256": "747820feb61ebd8873acc4904d2fd6ac3ed9af5a704102f50c1b0f8e15658738",
+      "sourceBlocks": 8029,
+      "excludedLeadingBlocks": 11,
+      "retainedBlocks": 8018,
+      "retainedTables": 0,
+      "images": [],
+      "chapterCount": 28,
+      "preservedKeyedQuestions": 1111,
+      "sourcePayloadSha256": "f53e75b16ff25e0fe4f8bc9224ecd1a025c85a3f41b6eeb35d8973baccff0b9b",
+      "recoveredPayloadSha256": "f53e75b16ff25e0fe4f8bc9224ecd1a025c85a3f41b6eeb35d8973baccff0b9b",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Introduction",
+          "blocks": 10
+        },
+        {
+          "id": "docx_ch2",
+          "title": "Macbeth",
+          "blocks": 178
+        },
+        {
+          "id": "docx_ch3",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch4",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch5",
+          "title": "Set 4",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch6",
+          "title": "Set 5",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch7",
+          "title": "Set 1",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch8",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch9",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch10",
+          "title": "Set 4",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch11",
+          "title": "Set 1",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch12",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch13",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch14",
+          "title": "Set 4",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch15",
+          "title": "Set 5",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch16",
+          "title": "Set 1",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch17",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch18",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch19",
+          "title": "Set 4",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch20",
+          "title": "Set 5",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch21",
+          "title": "Set 6",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch22",
+          "title": "Set 7",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch23",
+          "title": "Set 1",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch24",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch25",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch26",
+          "title": "Set 4",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch27",
+          "title": "Set 5",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch28",
+          "title": "As You Like It",
+          "blocks": 3426
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/mayor_casterbridge_mcqs.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\mayor of casterbridge.docx",
+      "sourceSha256": "1b61f7143b5e2ccf769c0e77d7a12535741723ac2c0e77f17942217270206fbb",
+      "assetSha256": "2426d8dfe0f77679a3b52271aa2ad9893615de3ba6612458794f9cfa08c6d815",
+      "sourceBlocks": 8528,
+      "excludedLeadingBlocks": 0,
+      "retainedBlocks": 8528,
+      "retainedTables": 0,
+      "images": [],
+      "chapterCount": 49,
+      "preservedKeyedQuestions": 1281,
+      "sourcePayloadSha256": "344346ad42c9ce2b033f6dc8c6556bcf10897bce8f875c3dd716d20a29522a22",
+      "recoveredPayloadSha256": "344346ad42c9ce2b033f6dc8c6556bcf10897bce8f875c3dd716d20a29522a22",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Main study material",
+          "blocks": 12
+        },
+        {
+          "id": "docx_ch2",
+          "title": "Introduction by the Author",
+          "blocks": 9
+        },
+        {
+          "id": "docx_ch3",
+          "title": "Set: 1",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch4",
+          "title": "Set: 2",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch5",
+          "title": "Set: 3",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch6",
+          "title": "Set: 4",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch7",
+          "title": "Set: 5",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch8",
+          "title": "Set: 6",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch9",
+          "title": "Set: 7",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch10",
+          "title": "Set: 8",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch11",
+          "title": "Set: 9",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch12",
+          "title": "Set: 10",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch13",
+          "title": "Set: 11",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch14",
+          "title": "Set: 12",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch15",
+          "title": "Set: 13",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch16",
+          "title": "Set: 14",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch17",
+          "title": "Set: 15",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch18",
+          "title": "Set: 16",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch19",
+          "title": "Set: 17",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch20",
+          "title": "Set: 18",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch21",
+          "title": "Set: 19",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch22",
+          "title": "Set: 20",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch23",
+          "title": "Set: 21",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch24",
+          "title": "Set: 22",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch25",
+          "title": "Set: 23",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch26",
+          "title": "Set: 24",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch27",
+          "title": "Set: 25",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch28",
+          "title": "Set: 26",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch29",
+          "title": "Set: 27",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch30",
+          "title": "Set: 28",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch31",
+          "title": "Set: 29",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch32",
+          "title": "Set: 30",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch33",
+          "title": "Set: 31",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch34",
+          "title": "Set: 32",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch35",
+          "title": "Set: 33",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch36",
+          "title": "Set: 34",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch37",
+          "title": "Set: 35",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch38",
+          "title": "Set: 36",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch39",
+          "title": "Set: 37",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch40",
+          "title": "Set: 38",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch41",
+          "title": "Set: 39",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch42",
+          "title": "Set: 40",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch43",
+          "title": "Set: 41",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch44",
+          "title": "Set: 42",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch45",
+          "title": "Set: 43",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch46",
+          "title": "Set: 44",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch47",
+          "title": "Set: 45",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch48",
+          "title": "Set: 46",
+          "blocks": 181
+        },
+        {
+          "id": "docx_ch49",
+          "title": "Set: 47",
+          "blocks": 181
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/pg_topics_mcqs.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\pg rpsc.docx",
+      "sourceSha256": "778acd28ec06453ab5ca07677586f48f5d9fa9a58a6ac586800a57015155f866",
+      "assetSha256": "cdb291852e4699974f8cdefbaff93f04dc63db73588af5c63083dda7cecd546f",
+      "sourceBlocks": 8530,
+      "excludedLeadingBlocks": 0,
+      "retainedBlocks": 8530,
+      "retainedTables": 0,
+      "images": [],
+      "chapterCount": 9,
+      "preservedKeyedQuestions": 1219,
+      "sourcePayloadSha256": "e58aa5143e48db12ff2abc8f94f7fa8bf7279996162d52ddebd5477c62e7e279",
+      "recoveredPayloadSha256": "e58aa5143e48db12ff2abc8f94f7fa8bf7279996162d52ddebd5477c62e7e279",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Main study material",
+          "blocks": 2543
+        },
+        {
+          "id": "docx_ch2",
+          "title": "Main study material",
+          "blocks": 876
+        },
+        {
+          "id": "docx_ch3",
+          "title": "Main study material",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch4",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch5",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch6",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch7",
+          "title": "Main study material",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch8",
+          "title": "Main study material",
+          "blocks": 213
+        },
+        {
+          "id": "docx_ch9",
+          "title": "Main study material",
+          "blocks": 3878
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/first_grade_literature_mcqs.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\RPSC First Grade Exam MCQs on Literature.docx",
+      "sourceSha256": "299cbce4c522caee072577e0ddab75600c947fad151111256b4b030122cbe546",
+      "assetSha256": "3ab85550de2dff298238d24eeb49c8a4d0a13f7c014dda7a2d1010062da00724",
+      "sourceBlocks": 20913,
+      "excludedLeadingBlocks": 0,
+      "retainedBlocks": 20913,
+      "retainedTables": 0,
+      "images": [
+        {
+          "file": "docx_424f4899d14f_image1.png",
+          "sha256": "b1b8bfe713bc944af6055f93a75b051c78e6d31da1bad64268166ad66b810a48"
+        },
+        {
+          "file": "docx_424f4899d14f_image2.png",
+          "sha256": "8034138fd48b92196c72b76f4f88661c41a4568a0dfcb9683e946916bc3f570f"
+        },
+        {
+          "file": "docx_424f4899d14f_image3.png",
+          "sha256": "cccac798365fa79bea57e142385b3ca63a2dc857f393989298a9c2d8e65eeeb7"
+        },
+        {
+          "file": "docx_424f4899d14f_image4.png",
+          "sha256": "91ce37fb06a2b3152bbf7a8e9558d055056d73a3b6e0853edf22206f54cf6eda"
+        },
+        {
+          "file": "docx_424f4899d14f_image5.png",
+          "sha256": "a90bcdacda2cafb4b7da42aee4bd13b75b1b0382f0ff0204faa11de229bac847"
+        },
+        {
+          "file": "docx_424f4899d14f_image6.png",
+          "sha256": "06259a855e38292df7d26ac6239109ef075ebb42f7af73e72bc10f2f885f7c3e"
+        },
+        {
+          "file": "docx_424f4899d14f_image7.png",
+          "sha256": "6d3d34139975887cb26c83c114b6c216ac82ab267cd684f74fdce8bb5bf8c382"
+        },
+        {
+          "file": "docx_424f4899d14f_image8.png",
+          "sha256": "d10e2eda36b8d11de62b99983210d0815cbdc1dcbb8b81c86b281e0a22ac3195"
+        },
+        {
+          "file": "docx_424f4899d14f_image9.png",
+          "sha256": "c54e9018ab3cadf8c4e718ccb872ed0570fc21d3551092fb3868b1f1f42ffbdc"
+        },
+        {
+          "file": "docx_424f4899d14f_image10.png",
+          "sha256": "8d5a414b3d752e74ea69f0241d7221f44e756c7d4213ec161d17effd1b415074"
+        },
+        {
+          "file": "docx_424f4899d14f_image11.png",
+          "sha256": "cd4f30ff2c76a194fcb8cc2744696c2e2e64dcf03beb7207e16d1fe49b42ea75"
+        },
+        {
+          "file": "docx_424f4899d14f_image12.png",
+          "sha256": "20fc18b19aad1cb17d0b6127f6d5c35918882fd1f8ddab830f4b688a28bfaeb9"
+        },
+        {
+          "file": "docx_424f4899d14f_image13.png",
+          "sha256": "3c383b19169835435795b1326082a3b849d77e89e713858da767178339a67cdb"
+        },
+        {
+          "file": "docx_424f4899d14f_image14.png",
+          "sha256": "dde6f6a11be4edee523d2452b9733b077e1c6e5047c3fbe5698ab896c2632f18"
+        },
+        {
+          "file": "docx_424f4899d14f_image15.png",
+          "sha256": "c1bbbbe52dd9177f3031c351a47c245dfddf8c8c2d07ceb8b4cd930e4c7537dd"
+        },
+        {
+          "file": "docx_424f4899d14f_image16.png",
+          "sha256": "6dab4a044104d55da22155216823c32a1b753b0bc5d2644ac328db58e5eca6dd"
+        },
+        {
+          "file": "docx_424f4899d14f_image17.png",
+          "sha256": "a037b81e7529d93acc1e5398b68e85c8e180fcacf46785b053ad7b0e760b88eb"
+        },
+        {
+          "file": "docx_424f4899d14f_image18.png",
+          "sha256": "bf400a0d8aa7b875f93fdb6a3a13ecdf1024b6f8fa38cb7c38b1cc60a2bc5545"
+        },
+        {
+          "file": "docx_424f4899d14f_image19.png",
+          "sha256": "018b29cfa2095fc439519566bdccae50f60533baf3e5a13d3c009474ad17a459"
+        },
+        {
+          "file": "docx_424f4899d14f_image20.png",
+          "sha256": "569e48dcafc813dcda795bee360f0ec1fb46f6d91cacedd81a2798f11f1c01f8"
+        },
+        {
+          "file": "docx_424f4899d14f_image21.png",
+          "sha256": "6198062697acb059dacf0616bae55f1fa1b144bdabc953ead17a63473502b6ad"
+        },
+        {
+          "file": "docx_424f4899d14f_image22.png",
+          "sha256": "65c93bc9d1f83d929cd65a37c7b2ec52eb57151d4c7f2326e25c855317bd0724"
+        },
+        {
+          "file": "docx_424f4899d14f_image23.png",
+          "sha256": "ce9bfbcbdf184e3ba4a976b1a5fa3f0009f7928aef0a272a123229b6217b0208"
+        }
+      ],
+      "chapterCount": 70,
+      "preservedKeyedQuestions": 2413,
+      "sourcePayloadSha256": "540145dab4cb79a7dd403af63e72ff6dd1bf804a6bd484cbdffd96c66f2dcbb3",
+      "recoveredPayloadSha256": "540145dab4cb79a7dd403af63e72ff6dd1bf804a6bd484cbdffd96c66f2dcbb3",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Main study material",
+          "blocks": 12
+        },
+        {
+          "id": "docx_ch2",
+          "title": "Introduction by the Author",
+          "blocks": 13
+        },
+        {
+          "id": "docx_ch3",
+          "title": "Free Bonus Practice Tests!!",
+          "blocks": 8
+        },
+        {
+          "id": "docx_ch4",
+          "title": "Bonus Free Practice Tests",
+          "blocks": 158
+        },
+        {
+          "id": "docx_ch5",
+          "title": "Set 2",
+          "blocks": 234
+        },
+        {
+          "id": "docx_ch6",
+          "title": "Set 3",
+          "blocks": 253
+        },
+        {
+          "id": "docx_ch7",
+          "title": "Set 4",
+          "blocks": 303
+        },
+        {
+          "id": "docx_ch8",
+          "title": "Set 5",
+          "blocks": 253
+        },
+        {
+          "id": "docx_ch9",
+          "title": "Set 6",
+          "blocks": 378
+        },
+        {
+          "id": "docx_ch10",
+          "title": "Set 7",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch11",
+          "title": "Set 8",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch12",
+          "title": "Set 9",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch13",
+          "title": "Set 10",
+          "blocks": 152
+        },
+        {
+          "id": "docx_ch14",
+          "title": "Set 11",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch15",
+          "title": "Set 12",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch16",
+          "title": "Set 13",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch17",
+          "title": "Set 14",
+          "blocks": 253
+        },
+        {
+          "id": "docx_ch18",
+          "title": "Set 15",
+          "blocks": 303
+        },
+        {
+          "id": "docx_ch19",
+          "title": "On His Blindness",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch20",
+          "title": "Set 2",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch21",
+          "title": "Go and Catch a Falling Star",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch22",
+          "title": "Set 2",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch23",
+          "title": "Daffodils",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch24",
+          "title": "Set 2",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch25",
+          "title": "Ode to the West Wind",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch26",
+          "title": "Set 2",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch27",
+          "title": "Ode on a Grecian Urn",
+          "blocks": 491
+        },
+        {
+          "id": "docx_ch28",
+          "title": "Set 2",
+          "blocks": 246
+        },
+        {
+          "id": "docx_ch29",
+          "title": "My Last Duchess",
+          "blocks": 332
+        },
+        {
+          "id": "docx_ch30",
+          "title": "Night of the Scorpion",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch31",
+          "title": "Set 2",
+          "blocks": 106
+        },
+        {
+          "id": "docx_ch32",
+          "title": "The Dance of the Eunuchs",
+          "blocks": 253
+        },
+        {
+          "id": "docx_ch33",
+          "title": "In Praise of Chimney Sweepers",
+          "blocks": 141
+        },
+        {
+          "id": "docx_ch34",
+          "title": "Set 2",
+          "blocks": 281
+        },
+        {
+          "id": "docx_ch35",
+          "title": "Set 3",
+          "blocks": 281
+        },
+        {
+          "id": "docx_ch36",
+          "title": "Of Studies",
+          "blocks": 37
+        },
+        {
+          "id": "docx_ch37",
+          "title": "Set 1",
+          "blocks": 351
+        },
+        {
+          "id": "docx_ch38",
+          "title": "Literary Forms",
+          "blocks": 1898
+        },
+        {
+          "id": "docx_ch39",
+          "title": "Figures of Speech",
+          "blocks": 211
+        },
+        {
+          "id": "docx_ch40",
+          "title": "Set 2",
+          "blocks": 337
+        },
+        {
+          "id": "docx_ch41",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch42",
+          "title": "Set 4",
+          "blocks": 243
+        },
+        {
+          "id": "docx_ch43",
+          "title": "Macbeth",
+          "blocks": 178
+        },
+        {
+          "id": "docx_ch44",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch45",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch46",
+          "title": "Set 4",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch47",
+          "title": "Set 5",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch48",
+          "title": "Set 1",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch49",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch50",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch51",
+          "title": "Set 4",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch52",
+          "title": "Set 1",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch53",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch54",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch55",
+          "title": "Set 4",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch56",
+          "title": "Set 5",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch57",
+          "title": "Set 1",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch58",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch59",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch60",
+          "title": "Set 4",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch61",
+          "title": "Set 5",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch62",
+          "title": "Set 6",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch63",
+          "title": "Set 7",
+          "blocks": 177
+        },
+        {
+          "id": "docx_ch64",
+          "title": "Set 1",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch65",
+          "title": "Set 2",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch66",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch67",
+          "title": "Set 4",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch68",
+          "title": "Set 5",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch69",
+          "title": "As You Like It",
+          "blocks": 3426
+        },
+        {
+          "id": "docx_ch70",
+          "title": "The Waste Land – T.S. Eliot",
+          "blocks": 1926
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/vendor_of_sweets_mcqs.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\Vendor of sweets.docx",
+      "sourceSha256": "ecbb99da85ae76068496c3d66a49ad2b2024cdd801b7f2f73d4e85ac2fc4b32f",
+      "assetSha256": "8b999059394f225b708f97a60b006d969c8a733440dba99347fcba1b2bc86a74",
+      "sourceBlocks": 9187,
+      "excludedLeadingBlocks": 0,
+      "retainedBlocks": 9187,
+      "retainedTables": 0,
+      "images": [],
+      "chapterCount": 14,
+      "preservedKeyedQuestions": 1223,
+      "sourcePayloadSha256": "e7192e129a2a5642607e76bfb584710439772f11e30f9cf3369ade80c7a15cd9",
+      "recoveredPayloadSha256": "e7192e129a2a5642607e76bfb584710439772f11e30f9cf3369ade80c7a15cd9",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Main study material",
+          "blocks": 22
+        },
+        {
+          "id": "docx_ch2",
+          "title": "Chapter 1",
+          "blocks": 353
+        },
+        {
+          "id": "docx_ch3",
+          "title": "Chapter 2",
+          "blocks": 353
+        },
+        {
+          "id": "docx_ch4",
+          "title": "Chapter 3",
+          "blocks": 881
+        },
+        {
+          "id": "docx_ch5",
+          "title": "Chapter 4",
+          "blocks": 529
+        },
+        {
+          "id": "docx_ch6",
+          "title": "Chapter 5",
+          "blocks": 1057
+        },
+        {
+          "id": "docx_ch7",
+          "title": "Chapter 6",
+          "blocks": 1057
+        },
+        {
+          "id": "docx_ch8",
+          "title": "Chapter 7",
+          "blocks": 881
+        },
+        {
+          "id": "docx_ch9",
+          "title": "Chapter 8",
+          "blocks": 705
+        },
+        {
+          "id": "docx_ch10",
+          "title": "Chapter 9",
+          "blocks": 353
+        },
+        {
+          "id": "docx_ch11",
+          "title": "Chapter 10",
+          "blocks": 705
+        },
+        {
+          "id": "docx_ch12",
+          "title": "Chapter 11",
+          "blocks": 353
+        },
+        {
+          "id": "docx_ch13",
+          "title": "Chapter 12",
+          "blocks": 1409
+        },
+        {
+          "id": "docx_ch14",
+          "title": "Chapter 13",
+          "blocks": 529
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/second_grade_guide.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\second grade new syllabus book.docx",
+      "sourceSha256": "5fecfe43914e4918bd0daac3bffd39e3daa33a3ac78d9d0cf9a3d7a29e045ff2",
+      "assetSha256": "6fdcd7b9fb1f34751e81836503713e5e1034ed88464ea2d2bf3abf2354dc95bf",
+      "sourceBlocks": 13199,
+      "excludedLeadingBlocks": 0,
+      "retainedBlocks": 13199,
+      "retainedTables": 36,
+      "images": [],
+      "chapterCount": 75,
+      "preservedKeyedQuestions": 0,
+      "sourcePayloadSha256": "616bb6ad8e7557e2ed0ea967ecd9d4475d29df8334a64e0b8d37bf85ade2be6e",
+      "recoveredPayloadSha256": "616bb6ad8e7557e2ed0ea967ecd9d4475d29df8334a64e0b8d37bf85ade2be6e",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Chapter 1 - Literary Devices",
+          "blocks": 235
+        },
+        {
+          "id": "docx_ch2",
+          "title": "Chapter 2 - Literary Terms",
+          "blocks": 397
+        },
+        {
+          "id": "docx_ch3",
+          "title": "Chapter 3 - Poetic Forms",
+          "blocks": 376
+        },
+        {
+          "id": "docx_ch4",
+          "title": "Chapter 4: An Acquaintance with Major Literary Periods",
+          "blocks": 623
+        },
+        {
+          "id": "docx_ch5",
+          "title": "Chapter 5: Movement Facts",
+          "blocks": 262
+        },
+        {
+          "id": "docx_ch6",
+          "title": "Chapter 6: Shakespeare - Sonnet 30",
+          "blocks": 369
+        },
+        {
+          "id": "docx_ch7",
+          "title": "Chapter 7: Milton - On His 23rd Birthday",
+          "blocks": 422
+        },
+        {
+          "id": "docx_ch8",
+          "title": "Chapter 8: Donne - The Sunne Rising",
+          "blocks": 371
+        },
+        {
+          "id": "docx_ch9",
+          "title": "Chapter 9: Dryden - A Song for St. Cecilia's Day",
+          "blocks": 443
+        },
+        {
+          "id": "docx_ch10",
+          "title": "Chapter 10: Wordsworth - The Solitary Reaper",
+          "blocks": 259
+        },
+        {
+          "id": "docx_ch11",
+          "title": "Chapter 11: Keats - A Thing of Beauty",
+          "blocks": 200
+        },
+        {
+          "id": "docx_ch12",
+          "title": "Chapter 12: Browning - The Last Ride Together",
+          "blocks": 225
+        },
+        {
+          "id": "docx_ch13",
+          "title": "Chapter 13: Tennyson - Ulysses",
+          "blocks": 300
+        },
+        {
+          "id": "docx_ch14",
+          "title": "Chapter 14: T.S. Eliot - The Love Song of J. Alfred Prufrock",
+          "blocks": 474
+        },
+        {
+          "id": "docx_ch15",
+          "title": "Chapter 15: Pablo Neruda - Keeping Quiet",
+          "blocks": 481
+        },
+        {
+          "id": "docx_ch16",
+          "title": "Chapter 16: Nissim Ezekiel - Night of the Scorpion",
+          "blocks": 469
+        },
+        {
+          "id": "docx_ch17",
+          "title": "Chapter 17: Kamala Das - My Mother at Sixty-Six",
+          "blocks": 468
+        },
+        {
+          "id": "docx_ch18",
+          "title": "Chapter 18: Arun Kolatkar - The Bus",
+          "blocks": 517
+        },
+        {
+          "id": "docx_ch19",
+          "title": "Chapter 19: Aurobindo - The Pilgrim of Night",
+          "blocks": 326
+        },
+        {
+          "id": "docx_ch20",
+          "title": "Chapter 20: Dutt - Our Casuarina Tree",
+          "blocks": 517
+        },
+        {
+          "id": "docx_ch21",
+          "title": "Chapter 21: Bacon - Of Studies",
+          "blocks": 463
+        },
+        {
+          "id": "docx_ch22",
+          "title": "Chapter 22: Addison - Meditations in Westminster Abbey",
+          "blocks": 581
+        },
+        {
+          "id": "docx_ch23",
+          "title": "Chapter 23: Lamb - My Relations",
+          "blocks": 344
+        },
+        {
+          "id": "docx_ch24",
+          "title": "Chapter 24: Shaw - Freedom",
+          "blocks": 408
+        },
+        {
+          "id": "docx_ch25",
+          "title": "Chapter 25: Daudet - The Last Lesson",
+          "blocks": 328
+        },
+        {
+          "id": "docx_ch26",
+          "title": "Chapter 26: Buck - The Enemy",
+          "blocks": 476
+        },
+        {
+          "id": "docx_ch27",
+          "title": "Chapter 27: A Tale of Two Cities",
+          "blocks": 99
+        },
+        {
+          "id": "docx_ch28",
+          "title": "Chapter 1: The Period",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch29",
+          "title": "Chapter 2: The Mail",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch30",
+          "title": "Chapter 3: The Night Shadows",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch31",
+          "title": "Chapter 4: The Preparation",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch32",
+          "title": "Chapter 5: The Wine-Shop",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch33",
+          "title": "Chapter 6: The Shoemaker",
+          "blocks": 3
+        },
+        {
+          "id": "docx_ch34",
+          "title": "Chapter 1: Five Years Later",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch35",
+          "title": "Chapter 2: A Sight",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch36",
+          "title": "Chapter 3: A Disappointment",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch37",
+          "title": "Chapter 4: Congratulatory",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch38",
+          "title": "Chapter 5: The Jackal",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch39",
+          "title": "Chapter 6: Hundreds of People",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch40",
+          "title": "Chapter 7: Monseigneur in Town",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch41",
+          "title": "Chapter 8: Monseigneur in the Country",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch42",
+          "title": "Chapter 9: The Gorgon's Head",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch43",
+          "title": "Chapter 10: Two Promises",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch44",
+          "title": "Chapter 11: A Companion Picture",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch45",
+          "title": "Chapter 12: The Fellow of Delicacy",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch46",
+          "title": "Chapter 13: The Fellow of No Delicacy",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch47",
+          "title": "Chapter 14: The Honest Tradesman",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch48",
+          "title": "Chapter 15: Knitting",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch49",
+          "title": "Chapter 16: Still Knitting",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch50",
+          "title": "Chapter 17: One Night",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch51",
+          "title": "Chapter 18: Nine Days",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch52",
+          "title": "Chapter 19: An Opinion",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch53",
+          "title": "Chapter 20: A Plea",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch54",
+          "title": "Chapter 21: Echoing Footsteps",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch55",
+          "title": "Chapter 22: The Sea Still Rises",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch56",
+          "title": "Chapter 23: Fire Rises",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch57",
+          "title": "Chapter 24: Drawn to the Loadstone Rock",
+          "blocks": 3
+        },
+        {
+          "id": "docx_ch58",
+          "title": "Chapter 1: In Secret",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch59",
+          "title": "Chapter 2: The Grindstone",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch60",
+          "title": "Chapter 3: The Shadow",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch61",
+          "title": "Chapter 4: Calm in Storm",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch62",
+          "title": "Chapter 5: The Wood-Sawyer",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch63",
+          "title": "Chapter 6: Triumph",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch64",
+          "title": "Chapter 7: A Knock at the Door",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch65",
+          "title": "Chapter 8: A Hand at Cards",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch66",
+          "title": "Chapter 9: The Game Made",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch67",
+          "title": "Chapter 10: The Substance of the Shadow",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch68",
+          "title": "Chapter 11: Dusk",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch69",
+          "title": "Chapter 12: Darkness",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch70",
+          "title": "Chapter 13: Fifty-Two",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch71",
+          "title": "Chapter 14: The Knitting Done",
+          "blocks": 2
+        },
+        {
+          "id": "docx_ch72",
+          "title": "Chapter 15: The Footsteps Die Out Forever",
+          "blocks": 225
+        },
+        {
+          "id": "docx_ch73",
+          "title": "Chapter 28: Malgudi Days",
+          "blocks": 775
+        },
+        {
+          "id": "docx_ch74",
+          "title": "Chapter 29: Macbeth",
+          "blocks": 821
+        },
+        {
+          "id": "docx_ch75",
+          "title": "Chapter 30: A Marriage Proposal",
+          "blocks": 855
+        }
+      ]
+    },
+    {
+      "asset": "assets/content/englishsetu/second_grade_literature.json",
+      "source": "D:\\new projects\\desktop books archive\\source_docx\\second grade.docx",
+      "sourceSha256": "c543a4ed97d56675eb7c8f6ba84982d3ea3985f56dac06b11410a4fc5acd3daf",
+      "assetSha256": "04a648096d0b61cdbd50ef71f2b2263a8d06acf707a4d8c541095a18cb008d4d",
+      "sourceBlocks": 16624,
+      "excludedLeadingBlocks": 0,
+      "retainedBlocks": 16624,
+      "retainedTables": 0,
+      "images": [],
+      "chapterCount": 22,
+      "preservedKeyedQuestions": 2127,
+      "sourcePayloadSha256": "b8d165be3fbd46c3cb35fba52a2e939fc15cf670aa8b4db6b3482af5b3016467",
+      "recoveredPayloadSha256": "b8d165be3fbd46c3cb35fba52a2e939fc15cf670aa8b4db6b3482af5b3016467",
+      "chapters": [
+        {
+          "id": "docx_ch1",
+          "title": "Main study material",
+          "blocks": 62
+        },
+        {
+          "id": "docx_ch2",
+          "title": "Rabindra Nath Tagore",
+          "blocks": 880
+        },
+        {
+          "id": "docx_ch3",
+          "title": "Mulk Raj Anand",
+          "blocks": 1322
+        },
+        {
+          "id": "docx_ch4",
+          "title": "R.K. Narayan",
+          "blocks": 893
+        },
+        {
+          "id": "docx_ch5",
+          "title": "Sarojini Naidu",
+          "blocks": 887
+        },
+        {
+          "id": "docx_ch6",
+          "title": "Toru Dutt",
+          "blocks": 880
+        },
+        {
+          "id": "docx_ch7",
+          "title": "Nissim Ezekiel",
+          "blocks": 399
+        },
+        {
+          "id": "docx_ch8",
+          "title": "Ruskin Bond",
+          "blocks": 398
+        },
+        {
+          "id": "docx_ch9",
+          "title": "Arun Kolatkar",
+          "blocks": 298
+        },
+        {
+          "id": "docx_ch10",
+          "title": "Anita Desai",
+          "blocks": 539
+        },
+        {
+          "id": "docx_ch11",
+          "title": "Shashi Deshpande",
+          "blocks": 411
+        },
+        {
+          "id": "docx_ch12",
+          "title": "Kamala Das",
+          "blocks": 409
+        },
+        {
+          "id": "docx_ch13",
+          "title": "Jayanta Mahapatra",
+          "blocks": 373
+        },
+        {
+          "id": "docx_ch14",
+          "title": "Amitav Ghosh",
+          "blocks": 360
+        },
+        {
+          "id": "docx_ch15",
+          "title": "Manju Kapur",
+          "blocks": 337
+        },
+        {
+          "id": "docx_ch16",
+          "title": "Arundhati Roy",
+          "blocks": 367
+        },
+        {
+          "id": "docx_ch17",
+          "title": "Literary Forms",
+          "blocks": 1859
+        },
+        {
+          "id": "docx_ch18",
+          "title": "Set 3",
+          "blocks": 176
+        },
+        {
+          "id": "docx_ch19",
+          "title": "Set 4",
+          "blocks": 106
+        },
+        {
+          "id": "docx_ch20",
+          "title": "Set 5",
+          "blocks": 241
+        },
+        {
+          "id": "docx_ch21",
+          "title": "Major Literary Periods",
+          "blocks": 2873
+        },
+        {
+          "id": "docx_ch22",
+          "title": "Literary Movements",
+          "blocks": 2554
+        }
+      ]
+    }
+  ]
+}

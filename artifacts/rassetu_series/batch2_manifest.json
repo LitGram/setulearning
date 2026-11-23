@@ -1,0 +1,312 @@
+{
+  "version": 1,
+  "batch": "Book 4–6 reasoning, governance, economy and technology",
+  "placements": [
+    {
+      "book": 6,
+      "chapter": "ch01",
+      "originalChapterSha256": "129f70c2233ee148e82026360b377bee20595e728b9d591010014a292b121073",
+      "anchor": "### 2.1 निगमनात्मक तर्क",
+      "image": "rassetu_b6_deduction_induction.webp",
+      "caption": "निगमन और आगमन",
+      "explanation": "सामान्य से विशिष्ट निगमन और उदाहरणों से सामान्यीकरण करने वाला आगमन तर्क अलग प्रक्रियाएं हैं। चित्र में दिए गए वाक्य केवल नमूना रूप हैं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch02",
+      "originalChapterSha256": "d0119e0135a8df5425c85158d26c8b998f610d09b302839dac6cdc3e87f683ed",
+      "anchor": "### 2.1 निगमनात्मक तर्क",
+      "image": "rassetu_b6_deduction_induction.webp",
+      "caption": "निगमन और आगमन",
+      "explanation": "सामान्य से विशिष्ट निगमन और उदाहरणों से सामान्यीकरण करने वाला आगमन तर्क अलग प्रक्रियाएं हैं। चित्र में दिए गए वाक्य केवल नमूना रूप हैं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch03",
+      "originalChapterSha256": "a40055bce95f82ed6ea8112075d57c6a790f695de4357a0a9e292ec0c2f5ff8f",
+      "anchor": "### 2.1 कथन एवं पूर्वधारणाएं",
+      "image": "rassetu_b6_flow_कथन_म_ल_य_कन.webp",
+      "caption": "कथन का मूल्यांकन",
+      "explanation": "तर्क, पूर्वधारणा और निष्कर्ष पहचानने का अभ्यास मॉडल। किसी वास्तविक प्रश्न का उत्तर उसके पूरे कथन पर निर्भर है।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch04",
+      "originalChapterSha256": "413af43ac396d672ab11e63243a04322713e8aac0ed4028bf7066856ee0b2f9d",
+      "anchor": "### 2.1 कथन एवं पूर्वधारणाएं",
+      "image": "rassetu_b6_flow_कथन_म_ल_य_कन.webp",
+      "caption": "कथन का मूल्यांकन",
+      "explanation": "तर्क, पूर्वधारणा और निष्कर्ष पहचानने का अभ्यास मॉडल। किसी वास्तविक प्रश्न का उत्तर उसके पूरे कथन पर निर्भर है।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch09",
+      "originalChapterSha256": "c30608ed515c6950490996104f1fabdbe8f59f8a0922198df70fd8f7e98b8ac1",
+      "anchor": "### 2.1 संख्या श्रृंखला के 8 प्रमुख मास्टर पैटर्न",
+      "image": "rassetu_b6_number_series.webp",
+      "caption": "संख्या-श्रृंखला के चरण",
+      "explanation": "श्रृंखला में अंतर, अनुपात और वैकल्पिक पदों को जांचने का अभ्यास क्रम। हर प्रश्न में एक ही पैटर्न लागू नहीं होता।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch10",
+      "originalChapterSha256": "d6820a3c2d41cbd233fb001729eca96d0017c05b8914b2d7f3c08d70715b3834",
+      "anchor": "### 2.1 संख्या श्रृंखला के 8 प्रमुख मास्टर पैटर्न",
+      "image": "rassetu_b6_number_series.webp",
+      "caption": "संख्या-श्रृंखला के चरण",
+      "explanation": "श्रृंखला में अंतर, अनुपात और वैकल्पिक पदों को जांचने का अभ्यास क्रम। हर प्रश्न में एक ही पैटर्न लागू नहीं होता।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch13",
+      "originalChapterSha256": "592065b678387bee7cd219db0e9c4b01d276f08236a614136ec7d66331e00ab1",
+      "anchor": "### 2.1 रक्त संबंध: वंशवृक्ष",
+      "image": "rassetu_b6_family_tree.webp",
+      "caption": "वंशवृक्ष संकेत",
+      "explanation": "वंशवृक्ष में वृत्त और वर्ग प्रचलित परीक्षा-प्रतीक हैं। वास्तविक संबंध वही मानें जो प्रश्न में दिए हों।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch14",
+      "originalChapterSha256": "eed6a81213d66dbf5c0e4174541d6e539943dcc9e561ec372ba2bcf3e0fb245b",
+      "anchor": "### 2.1 रक्त संबंध: वंशवृक्ष",
+      "image": "rassetu_b6_family_tree.webp",
+      "caption": "वंशवृक्ष संकेत",
+      "explanation": "वंशवृक्ष में वृत्त और वर्ग प्रचलित परीक्षा-प्रतीक हैं। वास्तविक संबंध वही मानें जो प्रश्न में दिए हों।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch15",
+      "originalChapterSha256": "90d378bc182c8c82118992dc534879c936a9a151d9504a9e9decf818330ed5d9",
+      "anchor": "### 2.1 वेन आरेख के 10 मानक प्रारूप",
+      "image": "rassetu_b6_venn_models.webp",
+      "caption": "समुच्चय और प्रतिच्छेद",
+      "explanation": "दो समुच्चयों और उनके साझा भाग का प्रतिनिधि वेन मॉडल। कौन-सा क्षेत्र छायांकित होगा, यह प्रश्न के कथन पर निर्भर है।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch16",
+      "originalChapterSha256": "a4b372ee9c9bf98db5406bb8b1b95929060f7fe74b1191aa2253682d0c62922e",
+      "anchor": "### 2.1 वेन आरेख के 10 मानक प्रारूप",
+      "image": "rassetu_b6_venn_models.webp",
+      "caption": "समुच्चय और प्रतिच्छेद",
+      "explanation": "दो समुच्चयों और उनके साझा भाग का प्रतिनिधि वेन मॉडल। कौन-सा क्षेत्र छायांकित होगा, यह प्रश्न के कथन पर निर्भर है।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch17",
+      "originalChapterSha256": "7da80f74d604ad6ebe8416b078119597b102510acc0af2657591c911f9da1242",
+      "anchor": "### 2.1 क्रम परीक्षण",
+      "image": "rassetu_b6_ranking_formula.webp",
+      "caption": "क्रम-स्थान सूत्र",
+      "explanation": "एक पंक्ति में कुल स्थान निकालने का नमूना: बाएं से स्थान + दाएं से स्थान − 1। प्रश्न की व्यवस्था पहले जांचें।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch18",
+      "originalChapterSha256": "441cbf269247b1c0e6dd4ac1b71fc56c54f97293e6bf59758bda42cd4b06f145",
+      "anchor": "### 2.1 क्रम परीक्षण",
+      "image": "rassetu_b6_ranking_formula.webp",
+      "caption": "क्रम-स्थान सूत्र",
+      "explanation": "एक पंक्ति में कुल स्थान निकालने का नमूना: बाएं से स्थान + दाएं से स्थान − 1। प्रश्न की व्यवस्था पहले जांचें।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch19",
+      "originalChapterSha256": "fe1c96e50b493bef6080a695a88655c92d369a6b60f67654c0d8c8f8fe1d212a",
+      "anchor": "### 2.1 दर्पण एवं जल प्रतिबिंब",
+      "image": "rassetu_b6_mirror_water.webp",
+      "caption": "दर्पण और जल प्रतिबिंब",
+      "explanation": "सामान्य दर्पण-प्रतिबिंब में पार्श्व उलटाव और जल-प्रतिबिंब में ऊर्ध्व उलटाव का सरलीकृत मॉडल।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch20",
+      "originalChapterSha256": "2dcf40a4e9193f00b2b6de9ebfd928adcbabe5838a6a7380434149161de4feb3",
+      "anchor": "### 2.1 दर्पण एवं जल प्रतिबिंब",
+      "image": "rassetu_b6_mirror_water.webp",
+      "caption": "दर्पण और जल प्रतिबिंब",
+      "explanation": "सामान्य दर्पण-प्रतिबिंब में पार्श्व उलटाव और जल-प्रतिबिंब में ऊर्ध्व उलटाव का सरलीकृत मॉडल।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch21",
+      "originalChapterSha256": "cf6e58d13a1376c61304a5ce2f7a5f691122db5aefd5e2f0cc77b1aee8cfe570",
+      "anchor": "### 2.1 संख्याओं का पदानुक्रम एवं वर्गीकरण",
+      "image": "rassetu_b6_number_system.webp",
+      "caption": "संख्या समुच्चयों का संबंध",
+      "explanation": "वास्तविक संख्याओं में परिमेय और अपरिमेय उपसमुच्चय अलग हैं। पूर्णांक, पूर्ण संख्याओं और प्राकृतिक संख्याओं की परिभाषा भी देखें।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch22",
+      "originalChapterSha256": "9a1298e929849ec69c04a8b6c1e247cba923f7e89951785dae6f590e75e0b22f",
+      "anchor": "### 2.1 संख्याओं का पदानुक्रम एवं वर्गीकरण",
+      "image": "rassetu_b6_number_system.webp",
+      "caption": "संख्या समुच्चयों का संबंध",
+      "explanation": "वास्तविक संख्याओं में परिमेय और अपरिमेय उपसमुच्चय अलग हैं। पूर्णांक, पूर्ण संख्याओं और प्राकृतिक संख्याओं की परिभाषा भी देखें।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch23",
+      "originalChapterSha256": "b73dd3d1985228d0c3f6f1b8ac928157c61706fb37455e23245bbfe140a8ef6e",
+      "anchor": "### 2.1 अनुपात एवं समानुपात",
+      "image": "rassetu_b6_ratio_proportion.webp",
+      "caption": "अनुपात और समानुपात",
+      "explanation": "समानुपात a:b = c:d में b और d शून्य नहीं होते; क्रॉस-गुणन से ad = bc मिलता है।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch24",
+      "originalChapterSha256": "6d8e847d274bbfc2399197d9f35bb5979cc7ce631363d920adbd2c3d839d1ef3",
+      "anchor": "### 2.1 अनुपात एवं समानुपात",
+      "image": "rassetu_b6_ratio_proportion.webp",
+      "caption": "अनुपात और समानुपात",
+      "explanation": "समानुपात a:b = c:d में b और d शून्य नहीं होते; क्रॉस-गुणन से ad = bc मिलता है।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch25",
+      "originalChapterSha256": "b8056eb74735f56b1c8fcd97e793aaeab0742dfcbed1b7e70ba90199ba982e6c",
+      "anchor": "### 2.1 प्रतिशत एवं मानक भिन्न रूपांतरण तालिका",
+      "image": "rassetu_b6_percent_fraction.webp",
+      "caption": "भिन्न, प्रतिशत और दशमलव",
+      "explanation": "समान मान के कुछ प्रतिनिधि रूपांतरण। अन्य भिन्नों के लिए अंश को हर से भाग देकर प्रतिशत निकालें।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch26",
+      "originalChapterSha256": "5b73a1486d2be6c9af5d91e564b6ee1d6b1eb6f47965ccb4d39a7c2e5e54f75a",
+      "anchor": "### 2.1 प्रतिशत एवं मानक भिन्न रूपांतरण तालिका",
+      "image": "rassetu_b6_percent_fraction.webp",
+      "caption": "भिन्न, प्रतिशत और दशमलव",
+      "explanation": "समान मान के कुछ प्रतिनिधि रूपांतरण। अन्य भिन्नों के लिए अंश को हर से भाग देकर प्रतिशत निकालें।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch27",
+      "originalChapterSha256": "adf12488a7646a0f0c2a8b08ed4a5c0542b9f4caebd28ad0c85c190ec7e0e776",
+      "anchor": "### 2.1 साधारण ब्याज",
+      "image": "rassetu_b6_simple_compound_interest.webp",
+      "caption": "साधारण और चक्रवृद्धि ब्याज",
+      "explanation": "सूत्र में वार्षिक दर और वार्षिक चक्रवृद्धि की मूल धारणा है; अन्य चक्र-अवधि पर दर और समय को समायोजित करें।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch28",
+      "originalChapterSha256": "63c5bf81899ddfcb7e034e19a7d82e2036153dbd248fc94c718aa6c3b566eef9",
+      "anchor": "### 2.1 साधारण ब्याज",
+      "image": "rassetu_b6_simple_compound_interest.webp",
+      "caption": "साधारण और चक्रवृद्धि ब्याज",
+      "explanation": "सूत्र में वार्षिक दर और वार्षिक चक्रवृद्धि की मूल धारणा है; अन्य चक्र-अवधि पर दर और समय को समायोजित करें।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch29",
+      "originalChapterSha256": "b93a8868aa9dc6a791f673c5133bed485287c3eed3b0da67e83f12e174ae0f71",
+      "anchor": "### 2.1 त्रिभुज",
+      "image": "rassetu_b6_geometry_shapes.webp",
+      "caption": "त्रिभुज: क्षेत्रफल और कोण",
+      "explanation": "त्रिभुज का क्षेत्रफल ½ × आधार × लंबवत ऊंचाई और आंतरिक कोणों का योग 180° होता है। आकृतियां पैमाने पर नहीं हैं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch30",
+      "originalChapterSha256": "2f6bc7790caf508c2ab9e59f7b065411521ffce23928e96b074855c52db51a35",
+      "anchor": "### 2.1 त्रिभुज",
+      "image": "rassetu_b6_geometry_shapes.webp",
+      "caption": "त्रिभुज: क्षेत्रफल और कोण",
+      "explanation": "त्रिभुज का क्षेत्रफल ½ × आधार × लंबवत ऊंचाई और आंतरिक कोणों का योग 180° होता है। आकृतियां पैमाने पर नहीं हैं।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch31",
+      "originalChapterSha256": "83d5a00a955024a3b5a232ba2e4bac489c4bd0e16d46d6dc5650900a2c1403fb",
+      "anchor": "### 2.1 केंद्रीय प्रवृत्ति के माप",
+      "image": "rassetu_b6_mean_median_mode.webp",
+      "caption": "माध्य, माध्यिका और बहुलक",
+      "explanation": "केंद्रीय प्रवृत्ति के तीन अलग माप; कौन-सा उपयोगी है, यह डेटा और प्रश्न पर निर्भर करता है।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch32",
+      "originalChapterSha256": "edf7ab0d5d3652269fdf961a19945385193743b57c834f3ff4b50f3a66e2bf8f",
+      "anchor": "### 2.1 केंद्रीय प्रवृत्ति के माप",
+      "image": "rassetu_b6_mean_median_mode.webp",
+      "caption": "माध्य, माध्यिका और बहुलक",
+      "explanation": "केंद्रीय प्रवृत्ति के तीन अलग माप; कौन-सा उपयोगी है, यह डेटा और प्रश्न पर निर्भर करता है।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch37",
+      "originalChapterSha256": "6a07d44ad2a44f70d092e3c9617d1d09bdeb01c0365f75b051e2b9fe207702f8",
+      "anchor": "### 2.1 शास्त्रीय प्रायिकता",
+      "image": "rassetu_b6_probability.webp",
+      "caption": "शास्त्रीय प्रायिकता",
+      "explanation": "सूत्र समान-संभावित परिणामों की धारणा पर है। उदाहरण निष्पक्ष छह-पक्षीय पासे का है।"
+    },
+    {
+      "book": 6,
+      "chapter": "ch38",
+      "originalChapterSha256": "baef9d0b1c643b8a4b4c44227a3ca07b9e99a77c9e5b8c06fd5427ef3847c034",
+      "anchor": "### 2.1 शास्त्रीय प्रायिकता",
+      "image": "rassetu_b6_probability.webp",
+      "caption": "शास्त्रीय प्रायिकता",
+      "explanation": "सूत्र समान-संभावित परिणामों की धारणा पर है। उदाहरण निष्पक्ष छह-पक्षीय पासे का है।"
+    },
+    {
+      "book": 4,
+      "chapter": "ch11",
+      "originalChapterSha256": "7f4b34d6472e56c4807a7395267f5b035e791134647bedf8697559d680ad5a22",
+      "anchor": "### 2.4 विधायी प्रक्रिया एवं विधेयकों के प्रकार",
+      "image": "rassetu_b4_bill_to_act.webp",
+      "caption": "विधेयक से अधिनियम तक",
+      "explanation": "यह साधारण विधेयक के मार्ग का संक्षिप्त मॉडल है। धन विधेयक और संविधान संशोधन विधेयक की प्रक्रिया अलग हो सकती है।"
+    },
+    {
+      "book": 4,
+      "chapter": "ch12",
+      "originalChapterSha256": "78e4d5cde47924d6583a9e904f46ae902e43d0d1544357422e0f3bab130bf6d2",
+      "anchor": "### 2.4 विधायी प्रक्रिया एवं विधेयकों के प्रकार",
+      "image": "rassetu_b4_bill_to_act.webp",
+      "caption": "विधेयक से अधिनियम तक",
+      "explanation": "यह साधारण विधेयक के मार्ग का संक्षिप्त मॉडल है। धन विधेयक और संविधान संशोधन विधेयक की प्रक्रिया अलग हो सकती है।"
+    },
+    {
+      "book": 5,
+      "chapter": "ch11",
+      "originalChapterSha256": "04063b3f5a6732d182ab8e8f2d763fece90ac9be3a1f09e49a866ce81afc41cb",
+      "anchor": "### 2.1 भारतीय कृषि का संरचनात्मक ढांचा",
+      "image": "rassetu_b5_agriculture_value_chain.webp",
+      "caption": "कृषि उत्पाद की मूल्य-शृंखला",
+      "explanation": "उत्पादक से उपभोक्ता तक के कुछ सामान्य चरण। वास्तविक विपणन मार्ग, संस्थाएं और मूल्य-वितरण अलग-अलग होते हैं।"
+    },
+    {
+      "book": 5,
+      "chapter": "ch12",
+      "originalChapterSha256": "e4e9a3789fa97fd079cbd7d9b114813efbbf1da394176b87244c7a7a0578782a",
+      "anchor": "### 2.1 भारतीय कृषि का संरचनात्मक ढांचा",
+      "image": "rassetu_b5_agriculture_value_chain.webp",
+      "caption": "कृषि उत्पाद की मूल्य-शृंखला",
+      "explanation": "उत्पादक से उपभोक्ता तक के कुछ सामान्य चरण। वास्तविक विपणन मार्ग, संस्थाएं और मूल्य-वितरण अलग-अलग होते हैं।"
+    },
+    {
+      "book": 5,
+      "chapter": "ch41",
+      "originalChapterSha256": "9c32084402554fda7003eb0590bab5134435b77a68f8cfaa7041dea2c6c95f33",
+      "anchor": "### 2.3 आनुवंशिक अभियांत्रिकी एवं पुनर्योजक डीएनए तकनीक",
+      "image": "rassetu_b5_biotechnology_steps.webp",
+      "caption": "जैव-प्रौद्योगिकी का सामान्य कार्य-प्रवाह",
+      "explanation": "विभिन्न तकनीकों में चरण, जांच और नियमन अलग होते हैं; यह किसी खास जीन-संपादन या उत्पाद की प्रक्रिया नहीं है।"
+    },
+    {
+      "book": 5,
+      "chapter": "ch42",
+      "originalChapterSha256": "afeb36ffa2d89fb6714bc5968aa2733e428f00173c363a0b26666bf0b87e13bf",
+      "anchor": "### 2.3 आनुवंशिक अभियांत्रिकी एवं पुनर्योजक डीएनए तकनीक",
+      "image": "rassetu_b5_biotechnology_steps.webp",
+      "caption": "जैव-प्रौद्योगिकी का सामान्य कार्य-प्रवाह",
+      "explanation": "विभिन्न तकनीकों में चरण, जांच और नियमन अलग होते हैं; यह किसी खास जीन-संपादन या उत्पाद की प्रक्रिया नहीं है।"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "batch": "RAS Book 1 representative image scenes",
+  "distinctImages": 4,
+  "placements": [
+    {
+      "chapter": "ch01",
+      "anchor": "## 1.4 कांस्य युगीन सिंधु-सरस्वती सभ्यता",
+      "image": "rassetu_b1x_prehistory_scene.webp",
+      "assetSha256": "fde27c3b1bf96c43c6e6a6cb32d7d2b99d04d84722300ab4f33905848a9eee4a",
+      "caption": "पूर्व-ऐतिहासिक बस्ती: प्रतिनिधि पुनर्निर्माण",
+      "explanation": "अरावली के निकट नदी-तट पर मिट्टी के घर, बर्तन-निर्माण और पशुपालन की एक शैक्षिक कल्पना। यह किसी नामित पुरातात्विक स्थल या उत्खनन का हूबहू चित्रण नहीं है।",
+      "sourceTextSha256": "43191a5a99f3c28d013a49b22dc7ce0a0891c62a03647ec55f24d7db8cfcebea",
+      "sourceMcqSha256": "aae56a8ac1825d1db2448e0b54b27c171fcd5b62aab35ee842a2706eb9290d32"
+    },
+    {
+      "chapter": "ch02",
+      "anchor": "## 1.4 कांस्य युगीन सिंधु-सरस्वती सभ्यता",
+      "image": "rassetu_b1x_prehistory_scene.webp",
+      "assetSha256": "fde27c3b1bf96c43c6e6a6cb32d7d2b99d04d84722300ab4f33905848a9eee4a",
+      "caption": "पूर्व-ऐतिहासिक बस्ती: प्रतिनिधि पुनर्निर्माण",
+      "explanation": "अरावली के निकट नदी-तट पर मिट्टी के घर, बर्तन-निर्माण और पशुपालन की एक शैक्षिक कल्पना। यह किसी नामित पुरातात्विक स्थल या उत्खनन का हूबहू चित्रण नहीं है।",
+      "sourceTextSha256": "43191a5a99f3c28d013a49b22dc7ce0a0891c62a03647ec55f24d7db8cfcebea",
+      "sourceMcqSha256": "aae56a8ac1825d1db2448e0b54b27c171fcd5b62aab35ee842a2706eb9290d32"
+    },
+    {
+      "chapter": "ch27",
+      "anchor": "## 14.2 मेवाड़ स्कूल ऑफ पेंटिंग्स",
+      "image": "rassetu_b1x_painting_scene.webp",
+      "assetSha256": "97f82eb53074b8de595618650be87f9e0b79ee4a32c42aadd11ebebf5b528ffd",
+      "caption": "लघुचित्र निर्माण की प्रतिनिधि कार्यशाला",
+      "explanation": "सूक्ष्म चित्रांकन और रंग-तैयारी से प्रेरित प्रतिनिधि दृश्य; इसे किसी विशिष्ट चित्रशाला, कलाकार, समय या शैली का दस्तावेजी चित्र न मानें।",
+      "sourceTextSha256": "7f512b00fab4839f34efdc8a45afa2731dd9b2e22394ddb014e1d11feeddb5fe",
+      "sourceMcqSha256": "450353d16753e0fa55fe18d6fb50046e505aa32e33ed3846e35b64ac2a4d4e47"
+    },
+    {
+      "chapter": "ch28",
+      "anchor": "## 14.2 मेवाड़ स्कूल ऑफ पेंटिंग्स",
+      "image": "rassetu_b1x_painting_scene.webp",
+      "assetSha256": "97f82eb53074b8de595618650be87f9e0b79ee4a32c42aadd11ebebf5b528ffd",
+      "caption": "लघुचित्र निर्माण की प्रतिनिधि कार्यशाला",
+      "explanation": "सूक्ष्म चित्रांकन और रंग-तैयारी से प्रेरित प्रतिनिधि दृश्य; इसे किसी विशिष्ट चित्रशाला, कलाकार, समय या शैली का दस्तावेजी चित्र न मानें।",
+      "sourceTextSha256": "7f512b00fab4839f34efdc8a45afa2731dd9b2e22394ddb014e1d11feeddb5fe",
+      "sourceMcqSha256": "450353d16753e0fa55fe18d6fb50046e505aa32e33ed3846e35b64ac2a4d4e47"
+    },
+    {
+      "chapter": "ch29",
+      "anchor": "## 15.4 वस्त्र शिल्प, छपाई एवं बंधेज कला",
+      "image": "rassetu_b1x_craft_scene.webp",
+      "assetSha256": "ef5bc7a019d64232d8f25c525ac84c8aca778fa718948f6ef0ee6db107dc3b79",
+      "caption": "हाथ से ब्लॉक-प्रिंटिंग: प्रतिनिधि दृश्य",
+      "explanation": "कपड़े पर लकड़ी के ठप्पे से छपाई की प्रतिनिधि कार्यशाला; यह किसी खास केंद्र या कारीगर का सटीक चित्र नहीं है।",
+      "sourceTextSha256": "898e12ce52e90f85d5f6a41f23ae7458bad8acf4c7b95147d3a65aeb4618b36f",
+      "sourceMcqSha256": "798cc2c4ff4396887149b33cbd73a855ab696e4b129e3b813f5f5fb9e0421f15"
+    },
+    {
+      "chapter": "ch30",
+      "anchor": "## 15.4 वस्त्र शिल्प, छपाई एवं बंधेज कला",
+      "image": "rassetu_b1x_craft_scene.webp",
+      "assetSha256": "ef5bc7a019d64232d8f25c525ac84c8aca778fa718948f6ef0ee6db107dc3b79",
+      "caption": "हाथ से ब्लॉक-प्रिंटिंग: प्रतिनिधि दृश्य",
+      "explanation": "कपड़े पर लकड़ी के ठप्पे से छपाई की प्रतिनिधि कार्यशाला; यह किसी खास केंद्र या कारीगर का सटीक चित्र नहीं है।",
+      "sourceTextSha256": "898e12ce52e90f85d5f6a41f23ae7458bad8acf4c7b95147d3a65aeb4618b36f",
+      "sourceMcqSha256": "798cc2c4ff4396887149b33cbd73a855ab696e4b129e3b813f5f5fb9e0421f15"
+    },
+    {
+      "chapter": "ch31",
+      "anchor": "## 16.4 लोक संगीत एवं गायकी परंपराएं",
+      "image": "rassetu_b1x_folk_music_scene.webp",
+      "assetSha256": "e9e1dff10c2e3803804d3aef0fe6c61c37abba9900e879e38b1106d4233e96c3",
+      "caption": "लोकसंगीत का सामूहिक आयोजन: प्रतिनिधि दृश्य",
+      "explanation": "तार, वायु और ताल वाद्यों के साथ एक प्रतिनिधि संगीत-संगत; किसी विशिष्ट समुदाय, आयोजन या स्थान का दावा नहीं।",
+      "sourceTextSha256": "fb46ce45af0bd29fbc9508c0b9a5663bb470ca395c1c4a8b006a95924bec0b61",
+      "sourceMcqSha256": "4180c7694ae7b6dbe2cfcd6b161d492dc50747d63ff048ebe2fc866296f06db6"
+    },
+    {
+      "chapter": "ch32",
+      "anchor": "## 16.4 लोक संगीत एवं गायकी परंपराएं",
+      "image": "rassetu_b1x_folk_music_scene.webp",
+      "assetSha256": "e9e1dff10c2e3803804d3aef0fe6c61c37abba9900e879e38b1106d4233e96c3",
+      "caption": "लोकसंगीत का सामूहिक आयोजन: प्रतिनिधि दृश्य",
+      "explanation": "तार, वायु और ताल वाद्यों के साथ एक प्रतिनिधि संगीत-संगत; किसी विशिष्ट समुदाय, आयोजन या स्थान का दावा नहीं।",
+      "sourceTextSha256": "fb46ce45af0bd29fbc9508c0b9a5663bb470ca395c1c4a8b006a95924bec0b61",
+      "sourceMcqSha256": "4180c7694ae7b6dbe2cfcd6b161d492dc50747d63ff048ebe2fc866296f06db6"
+    }
+  ]
+}

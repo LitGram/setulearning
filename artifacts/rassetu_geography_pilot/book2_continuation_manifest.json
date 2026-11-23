@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "batch": "Book 2 continuation — uncovered geography topics",
+  "asset": "assets/content/rassetu/rassetu_book2.json",
+  "chapters": [
+    {
+      "book": 2,
+      "chapter": "ch01",
+      "originalChapterSha256": "44b3254a4b7585bf7bfdc5cc391faa76cb84b3994dbe25c6f4d791782fac241e",
+      "sourceContentSha256": "b662a94e74904a32a2706a543d909e63a63f64dea1da34dcdd96738e089f3131",
+      "anchor": "### 2.2 थार मरुस्थल की उत्पत्ति एवं वायुगतिकीय बालुका स्तूप निर्माण (Aerodynamic Sand Dynamics)",
+      "image": "rassetu_b2_dune_formation.webp",
+      "assetSha256": "9833695309cd878b308a1d67a5072d80a0ba1323fb444b2578b63e2f7646a7e3",
+      "caption": "बालुका स्तूपों की आकृति और पवन",
+      "explanation": "बरखान में एक मुख्य पवन-दिशा, पैरॉबोलिक स्तूप में वनस्पति से रुका मध्य भाग, और तारा स्तूप में बदलती पवन-दिशाएं दिखाने वाला सांकेतिक मॉडल। आकृतियां पैमाने पर नहीं हैं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch01/### 2.2 थार मरुस्थल की उत्पत्ति एवं वायुगतिकीय बालुका स्तूप निर्माण (Aerodynamic Sand Dynamics)"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch01",
+      "originalChapterSha256": "44b3254a4b7585bf7bfdc5cc391faa76cb84b3994dbe25c6f4d791782fac241e",
+      "sourceContentSha256": "b662a94e74904a32a2706a543d909e63a63f64dea1da34dcdd96738e089f3131",
+      "anchor": "### 2.4 चंबल बेसिन में उत्खात स्थलाकृति (Badland Topography) का भू-आकृतिक विज्ञान",
+      "image": "rassetu_b2_chambal_ravines.webp",
+      "assetSha256": "a1f8954705bf9eb61bbb3f19df99cab70a10067c634d57e7842f0ae99d3c0a56",
+      "caption": "बीहड़ बनने की प्रक्रिया",
+      "explanation": "ढाल पर बहता वर्षाजल पहले छोटी नालियां काटता है; उनका विस्तार गहरी अवनालिकाओं और बीहड़ भू-आकृति में होता है। यह स्थलरूप का सांकेतिक अनुप्रस्थ दृश्य है।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch01/### 2.4 चंबल बेसिन में उत्खात स्थलाकृति (Badland Topography) का भू-आकृतिक विज्ञान"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch03",
+      "originalChapterSha256": "e455cc0933b4a1ea7c010ad6b8541486284930e1c8f575f673b0841ee0ba8bca",
+      "sourceContentSha256": "e73da76f0075d1cb1acbe689bb424c516460adc309d2be96d9b30d09a886db09",
+      "anchor": "### 2.2 लूणी नदी का बालोतरा के बाद लवणीय होने का भू-रासायनिक कारण (Geochemistry of Luni's Salinity)",
+      "image": "rassetu_b2_luni_salinity.webp",
+      "assetSha256": "739ec88f52a944d276af16066a8f4ce82760b6e0061d27d5ee0c666df04e46ef",
+      "caption": "लूणी नदी के जल में लवणता का क्रम",
+      "explanation": "पुस्तक में दिए गए कारणों का सांकेतिक क्रम: ऊपरी प्रवाह में सामान्य खनिज मात्रा, फिर शुष्क पश्चिमी बेसिन में मिट्टी और लवणीय धूल से घुले लवणों का नदी में मिलना। स्थान और प्रवाह पैमाने पर नहीं हैं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch03/### 2.2 लूणी नदी का बालोतरा के बाद लवणीय होने का भू-रासायनिक कारण (Geochemistry of Luni's Salinity)"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch03",
+      "originalChapterSha256": "e455cc0933b4a1ea7c010ad6b8541486284930e1c8f575f673b0841ee0ba8bca",
+      "sourceContentSha256": "e73da76f0075d1cb1acbe689bb424c516460adc309d2be96d9b30d09a886db09",
+      "anchor": "### 2.3 सांभर झील बेसिन में अंतःस्थलीय अपवाह एवं नमक निर्माण की प्रक्रिया",
+      "image": "rassetu_b2_sambhar_salt_basin.webp",
+      "assetSha256": "5570bd1af14b0cf8c13afb677c5dd4df9b88a7eb6143b4baad95e392a43fd07d",
+      "caption": "सांभर बेसिन और नमक बनने का मॉडल",
+      "explanation": "चारों ओर से आने वाला अपवाह घुले लवण बंद बेसिन में पहुंचाता है। वाष्पीकरण से नमकीन जल सघन होता है; क्यारों में नमक प्राप्त किया जाता है। सांकेतिक अनुप्रस्थ दृश्य, पैमाने पर नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch03/### 2.3 सांभर झील बेसिन में अंतःस्थलीय अपवाह एवं नमक निर्माण की प्रक्रिया"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch27",
+      "originalChapterSha256": "263926dcabdf48e09be6804eb7d5edbdfe52124e2a1021cb13874154cc52f498",
+      "sourceContentSha256": "cb07480eaa5ff51aa6f092e37ebd5cdf23e08eed50a3aa077caeb2ccbefb5add",
+      "anchor": "### 2.1 भारत की भूगर्भिक संरचना एवं प्लेट विवर्तनिकी (Plate Tectonics)",
+      "image": "rassetu_b2_india_plate_tectonics.webp",
+      "assetSha256": "7918320fdb99d3bef375dec1339233d69498816e1baeb1e08ed4dd2340f8a67a",
+      "caption": "भारतीय प्लेट और हिमालय का निर्माण",
+      "explanation": "तीन चरणों का सांकेतिक मॉडल: भारतीय प्लेट का उत्तर की ओर बढ़ना, यूरेशियन प्लेट से अभिसरण और टेथिस क्षेत्र के अवसादों का वलन; आगे अग्रगर्त में नदी-निक्षेप से उत्तरी मैदान बनना। आकृतियां पैमाने पर नहीं हैं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch27/### 2.1 भारत की भूगर्भिक संरचना एवं प्लेट विवर्तनिकी (Plate Tectonics)"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch01",
+      "originalChapterSha256": "44b3254a4b7585bf7bfdc5cc391faa76cb84b3994dbe25c6f4d791782fac241e",
+      "sourceContentSha256": "b662a94e74904a32a2706a543d909e63a63f64dea1da34dcdd96738e089f3131",
+      "anchor": "### 3.3 चारों भौतिक विभागों का प्रामाणिक तुलनात्मक पदानुक्रम",
+      "image": "rassetu_b2_rajasthan_physiography.webp",
+      "assetSha256": "0a6be77f04585095c2470960845449990793707303d248df183d017ebab0eae2",
+      "caption": "राजस्थान के भू-आकृतिक प्रदेश",
+      "explanation": "थार मरुस्थलीय प्रदेश, अरावली पर्वतीय प्रदेश, पूर्वी मैदान और हाड़ौती पठार का सांकेतिक क्षेत्र-क्रम। जिला-सीमा मानचित्र नहीं; पैमाने पर नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch01/### 3.3 चारों भौतिक विभागों का प्रामाणिक तुलनात्मक पदानुक्रम"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch07",
+      "originalChapterSha256": "e26dfdbf2de744d7eef43ec283e99529d94a8358e2134012d93cf870a393b0c3",
+      "sourceContentSha256": "56465d9964a095df4a40606552d4f1e076f50cc1811f9705e2fd81ce1ac9273e",
+      "anchor": "### 2.1 चैंपियन एवं सेठ के अनुसार राजस्थान के वन प्रारूप (Forest Ecology & Dynamics)",
+      "image": "rassetu_b2_forest_ecology.webp",
+      "assetSha256": "bc651633665dc7f34422eae92e47d1f0ef428b23c02c487a0a38a1eb76e4f754",
+      "caption": "वन-रूपों में पर्यावरणीय अंतर",
+      "explanation": "पुस्तक में दिए पांच वन-समूह और उनकी मुख्य पारिस्थितिक दशाएं। क्षेत्र-वितरण व्यापक संकेत है; वर्तमान वनावरण प्रतिशत या जिला-सीमा नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch07/### 2.1 चैंपियन एवं सेठ के अनुसार राजस्थान के वन प्रारूप (Forest Ecology & Dynamics)"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch09",
+      "originalChapterSha256": "7108d1b6258215cde7d3ec28ae1d259fe0513bd7174a69c1560b576eaf81168c",
+      "sourceContentSha256": "aa7cda5ea49ae88581e42b4f3f1394046bde20026985b343d68403e613101abf",
+      "anchor": "### 2.1 पैतृक शैल (Parent Rock) एवं राजस्थान की मृदा उत्पत्ति का संबंध",
+      "image": "rassetu_b2_soil_parent_material.webp",
+      "assetSha256": "67377b711112f920c4b309469621402bd3f259400cf80de507a26fd306acf674",
+      "caption": "पैतृक पदार्थ और मृदा का संबंध",
+      "explanation": "पुस्तक में दिए उदाहरण: बेसाल्ट, नदीय जलोढ़, नाइस/शिस्ट और क्वार्ट्ज बालू से बनने वाले मृदा-समूह। कारण-संबंध का सांकेतिक चित्र, मृदा-सीमा मानचित्र नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch09/### 2.1 पैतृक शैल (Parent Rock) एवं राजस्थान की मृदा उत्पत्ति का संबंध"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch15",
+      "originalChapterSha256": "5b107b3afa776fc5ce53f435c4182d899b05ba7b38dc5abc3ee56c93290a30af",
+      "sourceContentSha256": "2ede963e54d18cf541c47c9ddc3f47ab9b5954e9c0592e2b3c07470426dae9f0",
+      "anchor": "### 2.1 राजस्थान में जल संकट: भौतिक पृष्ठभूमि एवं सांख्यिकीय वास्तविकता",
+      "image": "rassetu_b2_water_stress.webp",
+      "assetSha256": "07cfb0416b3f510ccd8d4010d77fb221401ba7c1036209d3cf1f0500abed5507",
+      "caption": "जल की उपलब्धता पर भौतिक दबाव",
+      "explanation": "कम और अनिश्चित वर्षा, उच्च वाष्पीकरण, सीमित स्थानीय सतही जल और भूजल पर निर्भरता से बनने वाले जल-दबाव का सांकेतिक मॉडल। बदलते आंकड़े, ब्लॉक-गणना और परियोजना क्षमता शामिल नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch15/### 2.1 राजस्थान में जल संकट: भौतिक पृष्ठभूमि एवं सांख्यिकीय वास्तविकता"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch27",
+      "originalChapterSha256": "263926dcabdf48e09be6804eb7d5edbdfe52124e2a1021cb13874154cc52f498",
+      "sourceContentSha256": "cb07480eaa5ff51aa6f092e37ebd5cdf23e08eed50a3aa077caeb2ccbefb5add",
+      "anchor": "### 2.6 तटीय मैदान एवं द्वीप समूह",
+      "image": "rassetu_b2_india_physiography.webp",
+      "assetSha256": "b104cdbda674a930de738da8f80cf514ef29eee049246ecc4e3984f7996d2b78",
+      "caption": "भारत के प्रमुख भू-आकृतिक विभाग",
+      "explanation": "हिमालय, उत्तरी मैदान, प्रायद्वीपीय पठार, तटीय मैदान और द्वीप समूह को एक सांकेतिक प्रोफाइल में दिखाया गया है। यह मानचित्र नहीं; आकृतियां और दूरी पैमाने पर नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "https://www.ncert.nic.in/textbook/pdf/iess102.pdf"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch29",
+      "originalChapterSha256": "7dfcfb9048f04a2d478ba05487274940fd6558b8cf54ba1793873eebc877d0cf",
+      "sourceContentSha256": "5f564c5107cc6807772cf9395be8f63428ac5de48ad21301e2c4bfd190f166ea",
+      "anchor": "### 2.2 मानसून उत्पत्ति के शास्त्रीय एवं आधुनिक वैज्ञानिक सिद्धांत",
+      "image": "rassetu_b2_india_monsoon_mechanism.webp",
+      "assetSha256": "2c1e2872c2852b4dd5889db569bc7100f524a34ad581d5c23bd220722992723f",
+      "caption": "मौसमी दाब-ढाल और नमी-युक्त पवन",
+      "explanation": "सरलीकृत तंत्र: मौसमी तापीय अंतर और निम्न-दाब क्षेत्र की ओर नमी-युक्त पवन का प्रवाह; भूमध्य रेखा पार करती पवनें दक्षिण-पश्चिम दिशा से भारत में प्रवेश करती हैं। यह मौसम-पूर्वानुमान या वर्तमान मानसून स्थिति नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/913"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch31",
+      "originalChapterSha256": "afc5907f8edca0a85ff4cf1c724cde63f5182b3ed10a90d930c25d32519e3088",
+      "sourceContentSha256": "9f919b7f5d69e7fd42fd5b907c8ad433746f95ca4f98e05408720b52862af8e8",
+      "anchor": "### 2.1 भारतीय अपवाह तंत्र का वर्गीकरण",
+      "image": "rassetu_b2_india_drainage_compare.webp",
+      "assetSha256": "3ad03f30b9153827436b97512ae87d93d3261f8ff4ac27f2ea04dc20b9b267ad",
+      "caption": "दो बड़े नदी-तंत्रों की तुलना",
+      "explanation": "हिमालयी नदियों को हिम-पिघलन और वर्षा से जल मिलता है; प्रायद्वीपीय नदियां मुख्यतः वर्षा-आधारित हैं। घाटियां सांकेतिक हैं; किसी नदी का मापित मार्ग नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch31/### 2.1 भारतीय अपवाह तंत्र का वर्गीकरण"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch45",
+      "originalChapterSha256": "e649e9e467d4d9dc3efcaaae3d6ddbc4a6df0fa6c51c01a28ea795717b5249df",
+      "sourceContentSha256": "05048afad2c943c5f47d37ca08568a84bd3ad666724f6d61c7988582b70825aa",
+      "anchor": "### 2.1 डी. व्हिटलसी का विश्व कृषि वर्गीकरण (Derwent Whittlesey's Classification - 1936)",
+      "image": "rassetu_b2_whittlesey_framework.webp",
+      "assetSha256": "ab7b67375766ba1a2b3fb168e8794b5bf3428fb0982bf78e684d586ac81ca8eb",
+      "caption": "कृषि प्रदेश पहचानने के पांच मानदंड",
+      "explanation": "1936 के व्हिटलसी वर्गीकरण में कृषि प्रदेशों की पहचान के पांच कार्यात्मक मानदंड दिखाए गए हैं। यह वर्गीकरण-ढांचा है, वर्तमान उत्पादन या देश-सीमा मानचित्र नहीं।",
+      "assetType": "editable-vector-diagram",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch45/### 2.1 डी. व्हिटलसी का विश्व कृषि वर्गीकरण (Derwent Whittlesey's Classification - 1936)"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch01",
+      "originalChapterSha256": "44b3254a4b7585bf7bfdc5cc391faa76cb84b3994dbe25c6f4d791782fac241e",
+      "sourceContentSha256": "b662a94e74904a32a2706a543d909e63a63f64dea1da34dcdd96738e089f3131",
+      "anchor": "### 2.2 थार मरुस्थल की उत्पत्ति एवं वायुगतिकीय बालुका स्तूप निर्माण (Aerodynamic Sand Dynamics)",
+      "image": "rassetu_b2_thar_dunes_scene.webp",
+      "assetSha256": "df2432f8187c7a9de4018cd8ee58564709106ef14cae14ff01f7181aee3f5b15",
+      "caption": "थार के बालुका स्तूप: प्रतिनिधि दृश्य",
+      "explanation": "पवन से बने बालुका स्तूपों और विरल मरुस्थलीय वनस्पति का प्रतिनिधि चित्रण — केवल शैक्षिक समझ हेतु; किसी नामित स्थान का वास्तविक दृश्य नहीं।",
+      "assetType": "generated-representative-image",
+      "generationPrompt": "Use case: educational textbook image for Rajasthan geography. Asset type: wide representative scene illustration. Scene: Thar Desert in western Rajasthan, sweeping wind-shaped crescent dunes with sparse hardy desert grasses and a few khejri-like trees at the far edge, warm late-afternoon light, natural ochre and muted green palette. Style: polished, realistic gouache-meets-editorial illustration, clear landforms and restrained detail, suitable for a high-school geography reader on a phone. Composition: landscape 3:2, broad dune forms readable at small size, no people or buildings, no labels or text. Constraints: representative atmosphere only, not a literal depiction of a named place or exact topographic map; no signage, no watermark, no text.",
+      "sourceReferences": [
+        "https://pubs.usgs.gov/gip/deserts/dunes/",
+        "https://www.doi.gov/sites/default/files/usgs-dune-models.508.pdf"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch07",
+      "originalChapterSha256": "e26dfdbf2de744d7eef43ec283e99529d94a8358e2134012d93cf870a393b0c3",
+      "sourceContentSha256": "56465d9964a095df4a40606552d4f1e076f50cc1811f9705e2fd81ce1ac9273e",
+      "anchor": "### 2.3 गोडावण (Great Indian Bustard) के संकट एवं प्रजनन परियोजनाएं (Project Godawan)",
+      "image": "rassetu_b2_woodland_scene.webp",
+      "assetSha256": "434fa3b4a0498cbdb7314b2cfc8713e1a1ee40d534c46a4eede3853e085372d7",
+      "caption": "शुष्क वन और घासभूमि: प्रतिनिधि दृश्य",
+      "explanation": "शुष्क झाड़ीदार वनस्पति और घासभूमि का प्रतिनिधि चित्रण — केवल शैक्षिक समझ हेतु; किसी नामित वन, अभयारण्य या सटीक प्रजाति-सूची का चित्र नहीं।",
+      "assetType": "generated-representative-image",
+      "generationPrompt": "Use case: high-school Rajasthan geography textbook scene. Asset type: wide representative ecosystem illustration. Scene: semi-arid woodland and grassland in Rajasthan, low native grasses and thorny scrub, a few broad-canopy dhok and khejri-like trees, open dry-season landscape with distant low hills, warm clear light and restrained earth-green palette. Style: polished realistic editorial gouache illustration, scientifically plausible plants, clear layered habitat, calm documentary composition. Landscape 3:2. No people, buildings, fences, roads, power lines, labels, text, watermark, or dramatic fantasy wildlife. Representative atmosphere only; not a literal depiction of a named reserve or exact species inventory.",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch07/2.1"
+      ]
+    },
+    {
+      "book": 2,
+      "chapter": "ch13",
+      "originalChapterSha256": "f958f95f2e89605596150ae10c96f7213e51b02547af64480bbe609723af01f4",
+      "sourceContentSha256": "3d5e33ad5246a742f6262035878905c684aa8323155832d2505c01f9a9f64899",
+      "anchor": "### 2.1 थार मरुस्थल में पशुपालन का पारिस्थितिकीय महत्व (Ecological Resilience)",
+      "image": "rassetu_b2_pastoral_scene.webp",
+      "assetSha256": "a7862ae3959ac8d182c8c1153ca62e14518c6edc1ced1a312529b3e80363b3be",
+      "caption": "थार में पशुधन और चरागाह: प्रतिनिधि दृश्य",
+      "explanation": "ऊंट, भेड़ और बकरियों के साथ शुष्क चरागाह का प्रतिनिधि चित्रण — केवल शैक्षिक समझ हेतु; पशु किसी विशिष्ट नस्ल के सटीक चित्र नहीं हैं।",
+      "assetType": "generated-representative-image",
+      "generationPrompt": "Use case: high-school Rajasthan geography textbook scene. Asset type: wide representative pastoral ecology illustration. Scene: open Thar Desert rangeland in western Rajasthan, a small mixed herd of hardy local-style sheep and goats grazing sparse dry grasses, one camel in the background, a distant khejri tree, soft evening light, natural ochre and muted olive palette. Style: polished realistic gouache-meets-editorial illustration, respectful and educational, animals anatomically plausible and not identifiable as specific registered breeds. Landscape 3:2, clear foreground animals, uncluttered. No people, buildings, text, signage, watermark, or specific location. Representative illustration only, not a literal depiction.",
+      "sourceReferences": [
+        "assets/content/rassetu/rassetu_book2.json#ch13/2.1"
+      ]
+    }
+  ]
+}

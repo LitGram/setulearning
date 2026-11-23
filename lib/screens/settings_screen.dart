@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
 import '../widgets/accessible_card.dart';
+import '../widgets/reset_progress_button.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -14,7 +15,11 @@ class SettingsScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('सेटिंग्स एवं परिचय (Settings)'),
+        toolbarHeight: (MediaQuery.textScalerOf(context).scale(
+                    Theme.of(context).textTheme.titleMedium?.fontSize ?? 18) *
+                2.8)
+            .clamp(56.0, 160.0),
+        title: const Text('Settings'),
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
@@ -23,7 +28,7 @@ class SettingsScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
             child: Text(
-              'पठन सुगमता (Accessibility & Text)',
+              'Reading',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
@@ -38,12 +43,13 @@ class SettingsScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      'अक्षर आकार (Font Scale)',
+                    Expanded(
+                        child: Text(
+                      'Text size',
                       style: theme.textTheme.titleSmall?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
-                    ),
+                    )),
                     Text(
                       '${(themeProvider.fontScale * 100).toInt()}%',
                       style: theme.textTheme.labelMedium?.copyWith(
@@ -57,8 +63,8 @@ class SettingsScreen extends StatelessWidget {
                 Slider(
                   value: themeProvider.fontScale,
                   min: 0.85,
-                  max: 1.35,
-                  divisions: 5,
+                  max: 1.4,
+                  divisions: 11,
                   label: '${(themeProvider.fontScale * 100).toInt()}%',
                   onChanged: (newScale) {
                     themeProvider.setFontScale(newScale);
@@ -86,7 +92,7 @@ class SettingsScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
             child: Text(
-              'थीम (Appearance)',
+              'Appearance',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
@@ -98,7 +104,7 @@ class SettingsScreen extends StatelessWidget {
             child: Column(
               children: [
                 RadioListTile<ThemeMode>(
-                  title: const Text('सिस्टम डिफ़ॉल्ट (System Default)'),
+                  title: const Text('System default'),
                   value: ThemeMode.system,
                   groupValue: themeProvider.themeMode,
                   onChanged: (val) {
@@ -106,7 +112,7 @@ class SettingsScreen extends StatelessWidget {
                   },
                 ),
                 RadioListTile<ThemeMode>(
-                  title: const Text('लाइट मोड (Light Mode)'),
+                  title: const Text('Light mode'),
                   value: ThemeMode.light,
                   groupValue: themeProvider.themeMode,
                   onChanged: (val) {
@@ -114,7 +120,7 @@ class SettingsScreen extends StatelessWidget {
                   },
                 ),
                 RadioListTile<ThemeMode>(
-                  title: const Text('डार्क मोड (Dark Mode)'),
+                  title: const Text('Dark mode'),
                   value: ThemeMode.dark,
                   groupValue: themeProvider.themeMode,
                   onChanged: (val) {
@@ -130,7 +136,7 @@ class SettingsScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
             child: Text(
-              'ऐप परिचय (About Setu Learning)',
+              'About Setu Learning',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
@@ -144,7 +150,20 @@ class SettingsScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Icon(Icons.verified_user_rounded, color: colorScheme.primary, size: 28),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: Image.asset(
+                        'assets/icons/app_logo.png',
+                        width: 36,
+                        height: 36,
+                        fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) => Icon(
+                          Icons.verified_user_rounded,
+                          color: colorScheme.primary,
+                          size: 28,
+                        ),
+                      ),
+                    ),
                     const SizedBox(width: 12),
                     Expanded(
                       child: Column(
@@ -169,27 +188,30 @@ class SettingsScreen extends StatelessWidget {
                 ),
                 const Divider(height: 24),
                 Text(
-                  'सेतु शिक्षण श्रृंखला (Setu Series) स्कूली एवं प्रतियोगी परीक्षा विद्यार्थियों के लिए पूर्णतः ऑफ़लाइन, संकल्पना-केंद्रित एवं व्यवस्थित अध्ययन सामग्री प्रदान करता है। इसमें MathSetu, EnglishSetu और VigyanSetu जैसे प्रमुख विषयों की संपूर्ण 8-8 पुस्तकें सम्मिलित हैं।',
+                  'सेतु लर्निंग स्कूली, कॉलेज और प्रतियोगी परीक्षा के विद्यार्थियों के लिए विषयवार अध्ययन सामग्री उपलब्ध कराता है। MathSetu, VigyanSetu, EnglishSetu, RASSetu और अन्य विषयों की पुस्तकें ऑफ़लाइन पढ़ी जा सकती हैं।',
                   style: theme.textTheme.bodyMedium?.copyWith(height: 1.5),
                 ),
                 const SizedBox(height: 14),
                 Row(
                   children: [
-                    Icon(Icons.wifi_off_rounded, size: 18, color: colorScheme.secondary),
+                    Icon(Icons.wifi_off_rounded,
+                        size: 18, color: colorScheme.secondary),
                     const SizedBox(width: 8),
-                    Text(
-                      '100% Offline-First (इंटरनेट की आवश्यकता नहीं)',
+                    Flexible(
+                        child: Text(
+                      'Works offline',
                       style: theme.textTheme.labelSmall?.copyWith(
                         fontWeight: FontWeight.bold,
                         color: colorScheme.secondary,
                       ),
-                    ),
+                    )),
                   ],
                 ),
               ],
             ),
           ),
           const SizedBox(height: 24),
+          const ResetProgressButton(),
         ],
       ),
     );

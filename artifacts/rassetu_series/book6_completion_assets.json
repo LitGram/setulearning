@@ -1,0 +1,66 @@
+[
+  {
+    "book": 6,
+    "id": "rassetu_b6_course_of_action_filter",
+    "file": "assets/images/rassetu_b6_course_of_action_filter.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_course_of_action_filter.svg",
+    "bytes": 61262,
+    "title": "उचित कार्यवाही: तीन प्रश्नों की निर्णय-कसौटी"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_argument_cause_effect",
+    "file": "assets/images/rassetu_b6_argument_cause_effect.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_argument_cause_effect.svg",
+    "bytes": 48884,
+    "title": "कारण–प्रभाव तर्क: दावे की कड़ी परखें"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_coding_alphabet_map",
+    "file": "assets/images/rassetu_b6_coding_alphabet_map.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_coding_alphabet_map.svg",
+    "bytes": 55270,
+    "title": "कोडिंग–डिकोडिंग: वर्णमाला और चक्रीय शिफ्ट"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_data_interpretation_reading",
+    "file": "assets/images/rassetu_b6_data_interpretation_reading.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_data_interpretation_reading.svg",
+    "bytes": 43092,
+    "title": "आंकड़ा व्याख्या: चार कदम में चार्ट पढ़ें"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_permutation_combination",
+    "file": "assets/images/rassetu_b6_permutation_combination.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_permutation_combination.svg",
+    "bytes": 52016,
+    "title": "क्रमचय और संचय: व्यवस्था बनाम चयन"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_current_affairs_verification",
+    "file": "assets/images/rassetu_b6_current_affairs_verification.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_current_affairs_verification.svg",
+    "bytes": 50154,
+    "title": "समसामयिकी: स्रोत से परीक्षा-संबंध तक"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_omr_fifth_option_workflow",
+    "file": "assets/images/rassetu_b6_omr_fifth_option_workflow.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_omr_fifth_option_workflow.svg",
+    "bytes": 56476,
+    "title": "पांचवां विकल्प: OMR भरने की सुरक्षित जांच"
+  },
+  {
+    "book": 6,
+    "id": "rassetu_b6_question_bank_review_loop",
+    "file": "assets/images/rassetu_b6_question_bank_review_loop.webp",
+    "source": "artifacts/rassetu_series/svg/rassetu_b6_question_bank_review_loop.svg",
+    "bytes": 55012,
+    "title": "मास्टर प्रश्न बैंक: हल करें, जांचें, सुधारें"
+  }
+]

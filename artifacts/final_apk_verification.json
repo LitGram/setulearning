@@ -1,0 +1,18 @@
+{
+  "apk": "D:\\new projects\\setu learning android app\\apk_output\\SetuLearning-Great-Works-Protected.apk",
+  "bytes": 81101893,
+  "sha256": "5fa9d9413e95e30f86dc7fb8bf19a0f7bfbc3e8a62e1c43136d5ef95a8d74f00",
+  "great_works_books": 6,
+  "great_works_chapters": 600,
+  "native_screenshot_bridge_verified": true,
+  "automated_tests_passed": 101,
+  "protected_screens": [
+    "ChapterScreen",
+    "QuizScreen"
+  ],
+  "public_screens": [
+    "HomeScreen",
+    "SubjectScreen",
+    "BookScreen"
+  ]
+}

@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 
+class AppSpacing {
+  static const double small = 8;
+  static const double medium = 16;
+  static const double large = 24;
+  static const double contentWidth = 720;
+}
+
 class AppTheme {
   // Default app seed color (Deep Blue)
   static const Color defaultSeedColor = Color(0xFF1E40AF);
@@ -14,6 +21,10 @@ class AppTheme {
       brightness: brightness,
     );
 
+    final baseTextTheme = Typography.material2021()
+        .englishLike
+        .merge(ThemeData(brightness: brightness).textTheme)
+        .apply(fontSizeFactor: fontScale);
     return ThemeData(
       useMaterial3: true,
       colorScheme: colorScheme,
@@ -32,7 +43,7 @@ class AppTheme {
           letterSpacing: -0.2,
         ),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 1,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
@@ -76,7 +87,7 @@ class AppTheme {
           minimumSize: const Size(48, 48), // Section 6.4: >= 48x48 tap target
         ),
       ),
-      textTheme: TextTheme(
+      textTheme: baseTextTheme.copyWith(
         displayLarge: TextStyle(
           fontSize: 32 * fontScale,
           fontWeight: FontWeight.bold,
@@ -113,7 +124,7 @@ class AppTheme {
           letterSpacing: 0.2,
         ),
       ),
-      dialogTheme: DialogTheme(
+      dialogTheme: DialogThemeData(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),

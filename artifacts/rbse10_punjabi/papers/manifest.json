@@ -1,0 +1,200 @@
+[
+  {
+    "id": "2026_main",
+    "year": 2026,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/Sec/S-75.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/index.htm",
+    "pages": 8,
+    "sha256": "fc9f2af56923e834637b5ff18bffa3c12cb01e547a8de6d6dcfa7e7cd3b3d05b",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2026_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2026_main.txt"
+  },
+  {
+    "id": "2026_supplementary",
+    "year": 2026,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/SecSUP/S-75.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2026/index.htm",
+    "pages": 8,
+    "sha256": "7431072f75c8118dfa55d1d0201cc66584663f8e44334b1626b86cbca55209c8",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2026_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2026_supplementary.txt"
+  },
+  {
+    "id": "2025_main",
+    "year": 2025,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/Sec/S-75.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/index.htm",
+    "pages": 8,
+    "sha256": "6006272de937be94f3686fcd353c4a8d48c614fa4758b0ea49ac13816ba446bc",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2025_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2025_main.txt"
+  },
+  {
+    "id": "2025_supplementary",
+    "year": 2025,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/SecSUP/S-75.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2025/index.htm",
+    "pages": 8,
+    "sha256": "6a8ba658500ec57c831996da16b42f1283c1e73402dee176eea8d3da6df03267",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2025_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2025_supplementary.txt"
+  },
+  {
+    "id": "2024_main",
+    "year": 2024,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/Sec/S-75.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/index.htm",
+    "pages": 8,
+    "sha256": "04fdab44954e579ad70fc2a6e58fdb45847c4270bcfcedf26b38cac9a60664d0",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2024_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2024_main.txt"
+  },
+  {
+    "id": "2024_supplementary",
+    "year": 2024,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/SecSUP/S-75.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2024/index.htm",
+    "pages": 8,
+    "sha256": "3f35a2e764bb05bb4cbfb24f688be335e564528b4b6d5f265cfd19a1100478fa",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2024_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2024_supplementary.txt"
+  },
+  {
+    "id": "2023_main",
+    "year": 2023,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2023/Sec/S-75.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2023/index.htm",
+    "pages": 8,
+    "sha256": "2c8e471b571e17dfd285ef02dbebe2acb9b101852feefadabb62192b2ec82f1f",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2023_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2023_main.txt"
+  },
+  {
+    "id": "2022_main",
+    "year": 2022,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2022/Sec/S-75.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2022/index.htm",
+    "pages": 8,
+    "sha256": "cd0fdd9e94f9e272997859f77bebdc40b2567531777c99e82f6658a794af7a5f",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2022_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2022_main.txt"
+  },
+  {
+    "id": "2021_main",
+    "year": 2021,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2021/Sec/S-75-Punjabi.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2021/index.htm",
+    "pages": 10,
+    "sha256": "f2fb8d2d91e98606ef99a9b352b5b2ed50a27843c523cddf60d095eda25d3b15",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2021_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2021_main.txt"
+  },
+  {
+    "id": "2020_main",
+    "year": 2020,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/Sec/S-75-Punjabi.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/index.htm",
+    "pages": 8,
+    "sha256": "fb132023d64c94fbe636806eaf04cc379f03b8eac146d132df31cd2c49e30e96",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2020_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2020_main.txt"
+  },
+  {
+    "id": "2020_supplementary",
+    "year": 2020,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/SecSUP/S-75.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2020/index.htm",
+    "pages": 8,
+    "sha256": "dd18410c810fdd708e529c691ea226d04aef98262d9ddda9c541073c91fb8899",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2020_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2020_supplementary.txt"
+  },
+  {
+    "id": "2019_main",
+    "year": 2019,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2019/Sec/S-75-Punjabi-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2019/index.htm",
+    "pages": 8,
+    "sha256": "fe0f8e2715b7ad39ab7965514627778dc0abca6e3e5edaf0dddc234bb8e42db3",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2019_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2019_main.txt"
+  },
+  {
+    "id": "2018_main",
+    "year": 2018,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/Sec/S-75-Punjabi-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/index.htm",
+    "pages": 4,
+    "sha256": "0b3ab2f3ca7e46458c69130988e978fca102b42a46fb2b4b1fa91982f882f420",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2018_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2018_main.txt"
+  },
+  {
+    "id": "2018_supplementary",
+    "year": 2018,
+    "session": "supplementary",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/SUPP/Sec/S-75-Punjabi-T-L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2018/index.htm",
+    "pages": 4,
+    "sha256": "08765e1e239686381d1210d8cb0424c2deb4a902d9b5053f7fe53eb7b8e3ef89",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2018_supplementary.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2018_supplementary.txt"
+  },
+  {
+    "id": "2017_main",
+    "year": 2017,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/Sec/S-75-Punjabi-TL.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2017/index.htm",
+    "pages": 8,
+    "sha256": "650b714009beea8c339ba514fe6a6bdde7b90456fc4e7bd61b15ab41e9e7f7c6",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2017_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2017_main.txt"
+  },
+  {
+    "id": "2016_main",
+    "year": 2016,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2016/Sec/S-75%20Pnjabi.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2016/index.htm",
+    "pages": 8,
+    "sha256": "32522c249f7552a0f0f7165d14f2578077c77086b7e7a63fd676dd1707dac6d4",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2016_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2016_main.txt"
+  },
+  {
+    "id": "2015_main",
+    "year": 2015,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2015/Sec/S-75-Punjabi%20_T.L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2015/index.htm",
+    "pages": 7,
+    "sha256": "bbb0bf7be992c49b40b9aa3a5218a0058945b811412e57c370a717aedfff3d4f",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2015_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2015_main.txt"
+  },
+  {
+    "id": "2014_main",
+    "year": 2014,
+    "session": "main",
+    "url": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2014/Sec/S-75-Punjabi%20_T.L.pdf",
+    "index": "https://rajeduboard.rajasthan.gov.in/books/PAPERS-2014/index.htm",
+    "pages": 7,
+    "sha256": "df3135d1f3b7a19d103d8b1f6ca1a72c7f180a889e838031b67e59a73d76d581",
+    "file": "artifacts\\rbse10_punjabi\\papers\\2014_main.pdf",
+    "text_file": "artifacts\\rbse10_punjabi\\papers\\2014_main.txt"
+  }
+]

@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import '../providers/progress_provider.dart';
 import '../services/content_service.dart';
 import '../widgets/accessible_card.dart';
+import '../widgets/progress_state_panel.dart';
+import 'subject_screen.dart';
 
 class ProgressScreen extends StatelessWidget {
   const ProgressScreen({super.key});
@@ -15,7 +17,11 @@ class ProgressScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('अध्ययन प्रगति (My Progress)'),
+        toolbarHeight: (MediaQuery.textScalerOf(context).scale(
+                    Theme.of(context).textTheme.titleMedium?.fontSize ?? 18) *
+                2.8)
+            .clamp(56.0, 160.0),
+        title: const Text('My progress'),
       ),
       body: Consumer<ProgressProvider>(
         builder: (context, progressProvider, child) {
@@ -25,8 +31,15 @@ class ProgressScreen extends StatelessWidget {
           }
 
           return ListView(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
             children: [
+              const ProgressStatePanel(),
+              if (totalReadAcrossAll == 0)
+                const Padding(
+                    padding: EdgeInsets.all(16),
+                    child: Text(
+                        'अपना पहला अध्याय पढ़ें और अंत में “पढ़ लिया” चुनें। अभ्यास स्कोर अलग सहेजे जाते हैं।')),
               // Hero Progress Card
               Container(
                 padding: const EdgeInsets.all(20),
@@ -83,7 +96,7 @@ class ProgressScreen extends StatelessWidget {
               const SizedBox(height: 24),
 
               Text(
-                'विषयवार स्थिति (Subject Breakdown)',
+                'By subject',
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -92,21 +105,32 @@ class ProgressScreen extends StatelessWidget {
 
               // Subject Wise Progress
               ...subjects.map((subject) {
-                final readCount = progressProvider.getReadCountForSubject(subject.id);
-                // Approximate 4 chapters per book x 8 books = 32 chapters
-                const totalTargetChapters = 32;
-                final progressFraction = (readCount / totalTargetChapters).clamp(0.0, 1.0);
+                final subjectColor = ColorScheme.fromSeed(
+                        seedColor: subject.seedColor,
+                        brightness: theme.brightness)
+                    .primary;
+                final readCount =
+                    progressProvider.getReadCountForSubject(subject.id);
+                final totalTargetChapters = ContentService.instance
+                    .getTotalChaptersForSubject(subject.id);
+                final progressFraction = totalTargetChapters > 0
+                    ? (readCount / totalTargetChapters).clamp(0.0, 1.0)
+                    : 0.0;
 
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 12.0),
                   child: AccessibleCard(
                     semanticLabel: '${subject.name}: $readCount अध्याय पूर्ण',
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => SubjectScreen(subject: subject))),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
-                            Icon(subject.icon, color: subject.seedColor, size: 24),
+                            Icon(subject.icon, color: subjectColor, size: 24),
                             const SizedBox(width: 10),
                             Expanded(
                               child: Text(
@@ -120,7 +144,7 @@ class ProgressScreen extends StatelessWidget {
                               '$readCount / $totalTargetChapters',
                               style: theme.textTheme.labelMedium?.copyWith(
                                 fontWeight: FontWeight.bold,
-                                color: subject.seedColor,
+                                color: subjectColor,
                               ),
                             ),
                           ],
@@ -132,7 +156,8 @@ class ProgressScreen extends StatelessWidget {
                             value: progressFraction,
                             minHeight: 8,
                             backgroundColor: colorScheme.surfaceVariant,
-                            valueColor: AlwaysStoppedAnimation<Color>(subject.seedColor),
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                                subject.seedColor),
                           ),
                         ),
                       ],
@@ -143,58 +168,11 @@ class ProgressScreen extends StatelessWidget {
 
               const SizedBox(height: 32),
 
-              // Reset Progress Section with Confirmation Dialog (Section 6.5)
-              Center(
-                child: TextButton.icon(
-                  icon: Icon(Icons.delete_outline_rounded, color: colorScheme.error),
-                  label: Text(
-                    'प्रगति रीसेट करें (Reset All Progress)',
-                    style: TextStyle(color: colorScheme.error),
-                  ),
-                  onPressed: () => _confirmReset(context, progressProvider),
-                ),
-              ),
               const SizedBox(height: 20),
             ],
           );
         },
       ),
-    );
-  }
-
-  void _confirmReset(BuildContext context, ProgressProvider provider) {
-    showDialog(
-      context: context,
-      builder: (dialogCtx) {
-        return AlertDialog(
-          icon: const Icon(Icons.warning_amber_rounded, size: 36),
-          title: const Text('प्रगति रीसेट की पुष्टि'),
-          content: const Text(
-            'क्या आप वास्तव में अपने सभी पठित अध्याय और क्विज स्कोर रीसेट करना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।',
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(dialogCtx),
-              child: const Text('रद्द करें'),
-            ),
-            FilledButton(
-              style: FilledButton.styleFrom(
-                backgroundColor: Theme.of(context).colorScheme.error,
-              ),
-              onPressed: () async {
-                Navigator.pop(dialogCtx);
-                await provider.resetAllProgress();
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('समस्त प्रगति रीसेट कर दी गई है।')),
-                  );
-                }
-              },
-              child: const Text('हाँ, रीसेट करें'),
-            ),
-          ],
-        );
-      },
     );
   }
 }

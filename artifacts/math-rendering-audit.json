@@ -1,0 +1,40 @@
+{
+  "uniqueExpressions": 25321,
+  "failures": [
+    {
+      "file": "assets/content\\rbse10_maths\\rbse10_maths_book1.json",
+      "expression": "S_n = \\frac{n}{2}(\\text{____} + l)",
+      "error": "Instance of 'ParseException'"
+    },
+    {
+      "file": "assets/content\\rbse10_maths\\rbse10_maths_book1.json",
+      "expression": "a_n = S_n - \\text{____}",
+      "error": "Instance of 'ParseException'"
+    },
+    {
+      "file": "assets/content\\rbse10_maths\\rbse10_maths_book1.json",
+      "expression": "r(\\pi + \\text{____})",
+      "error": "Instance of 'ParseException'"
+    },
+    {
+      "file": "assets/content\\rbse10_maths\\rbse10_maths_book1.json",
+      "expression": "l = \\sqrt{\\text{____} + h^2}",
+      "error": "Instance of 'ParseException'"
+    },
+    {
+      "file": "assets/content\\rbse10_maths\\rbse10_maths_book1.json",
+      "expression": "\\sqrt{l^2 + b^2 + \\text{____}}",
+      "error": "Instance of 'ParseException'"
+    },
+    {
+      "file": "assets/content\\rbse10_maths\\rbse10_maths_book1.json",
+      "expression": "3 \\times \\text{माध्यक} = \\text{बहुलक} + \\text{____}",
+      "error": "Instance of 'ParseException'"
+    },
+    {
+      "file": "assets/content\\rbse10_maths\\rbse10_maths_book1.json",
+      "expression": "3 \\times \\text{माध्यक} = \\text{बहुलक} + \\text{____} \\times \\text{माध्य}",
+      "error": "Instance of 'ParseException'"
+    }
+  ]
+}
