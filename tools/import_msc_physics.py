@@ -3,7 +3,7 @@
 
 Run: python tools/import_msc_physics.py [--check]
 No external packages. --check verifies saved outputs without rewriting them.
-All content after the first teaching unit is retained, including appendices.
+The complete manuscript is retained, including author, prerequisites and appendices.
 """
 from __future__ import annotations
 
@@ -12,6 +12,7 @@ import hashlib
 import html
 import json
 import re
+import shutil
 import zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -30,6 +31,10 @@ BOOKS = (
 ANCHOR = re.compile(r'^\s*<div id="[^"]+"></div>\s*$')
 HEADING = re.compile(r'^(#{1,6}) (.+)$')
 SEPARATOR = re.compile(r'^\s*\|(?:\s*:?-+:?\s*\|)+\s*$')
+IMAGE = re.compile(r'^!\[([^\]]*)\]\(([^)]+)\)$')
+IMAGE_SOURCES = {}
+APPENDIX_START = {'mathematical_physics': 65, 'classical_mechanics': 46,
+                  'quantum_mechanics_i': 50, 'statistical_physics': 24}
 
 
 def digest(value: str | bytes) -> str:
@@ -64,14 +69,14 @@ def visible_text(source: str) -> str:
         if table and line.strip().startswith('|') and line.strip().endswith('|'):
             # Every pipe in these tables is a column boundary unless escaped.
             line = ' '.join(re.split(r'(?<!\\)\|', line)[1:-1])
+        line = re.sub(r'^\s*(?:>\s?)+', '', line)
         if re.match(r'^\s*#{1,6}\s+', line):
             line = re.sub(r'^\s*#{1,6}\s+', '', line)
         else:
             line = re.sub(r'^\s*(?:[-+] |\d+[.)] )', '', line)
-        line = re.sub(r'^\s*>\s?', '', line)
         line = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'\1', line)
         line = re.sub(r'(?<!\\)\*\*(.*?)(?<!\\)\*\*', r'\1', line)
-        line = re.sub(r'(?<![\\*])\*([^*]+)(?<!\\)\*(?!\*)', r'\1', line)
+        line = re.sub(r'(?<![\w\\*])\*([^*\n]+)(?<!\\)\*(?![\w*])', r'\1', line)
         line = re.sub(r'`([^`]+)`', r'\1', line)
         line = re.sub(r'\\([\\`*_{}\[\]()#+.!<>|$-])', r'\1', line)
         result.append(html.unescape(line))
@@ -86,6 +91,9 @@ def clean(lines: list[str], book_id: str, offset: int) -> tuple[list[str], list[
         if ANCHOR.fullmatch(line):
             repairs.append({'sourceLine': offset + index + 1, 'kind': 'remove empty HTML navigation anchor'})
             continue
+        if IMAGE.fullmatch(line) and not code:
+            result.append(line)
+            continue
         # The published Markdown has a stray closing fence after a repeated
         # generating formula. Supply its missing opening fence; keep both formulas.
         if (book_id == 'mathematical_physics' and not code
@@ -98,7 +106,13 @@ def clean(lines: list[str], book_id: str, offset: int) -> tuple[list[str], list[
         if line.strip().startswith('```'):
             code = not code
         elif not code:
-            line = line.replace('_', r'\_').replace('<', '&lt;').replace('>', '&gt;')
+            if line.lstrip().startswith('|'):
+                line = line.replace('|λ|', r'\|λ\|')
+            # Retain a leading blockquote marker; escape mathematical comparisons.
+            quote = re.match(r'^(>\s*)', line)
+            prefix = quote[0] if quote else ''
+            line = line[len(prefix):].replace('_', r'\_').replace('<', '&lt;').replace('>', '&gt;')
+            line = prefix + line
             if book_id in {'mathematical_physics', 'quantum_mechanics_i'}:
                 # Single asterisks are conjugation signs, except *Example:*.
                 line = line.replace('*Example:*', '\x00EXAMPLE\x00')
@@ -116,65 +130,55 @@ def clean(lines: list[str], book_id: str, offset: int) -> tuple[list[str], list[
     return result, repairs
 
 
-def chapters_from(lines: list[str]) -> list[dict]:
-    boundaries, code = [], False
-    for index, line in enumerate(lines):
+def chapter_markdown(chapter: dict) -> str:
+    return '\n'.join(block['value'] if block['type'] == 'text' else
+                     f"![{block['caption']}]({IMAGE_SOURCES[block['value']]})"
+                     for block in chapter['content'])
+
+
+def chapters_from(lines: list[str], book_id: str) -> list[dict]:
+    # Only top-level teaching units delimit units. Headings such as
+    # '## Unit 1: Quick Revision' remain inside the corresponding unit.
+    boundaries = [(0, 'Start Here: Basics and Study Guide', 'preface')]
+    code = False
+    for i, line in enumerate(lines):
         if line.strip().startswith('```'):
             code = not code
+        if code:
             continue
-        match = HEADING.fullmatch(line)
-        if not match or code:
-            continue
-        level, title = len(match[1]), match[2]
-        unit = bool(re.match(r'Unit [123]:', title))
-        appendix = title.startswith('Appendix ')
-        topic = bool(re.match(r'\d+\.\d+\s', title))
-        other = level == 2 and not title.startswith(('Section A:', 'Part A:', 'Part B:'))
-        if unit or appendix or topic or other:
-            boundaries.append((index, title))
-    assert boundaries and boundaries[0][0] == 0
-    # A heading alone is context for its first topic, not an empty lesson.
-    merged = []
-    for index, title in boundaries:
-        if merged:
-            prev, prev_title = merged[-1]
-            between = lines[prev + 1:index]
-            if not any(line.strip() and line.strip() != '---'
-                       and not HEADING.fullmatch(line) for line in between):
-                merged[-1] = (prev, title)
-                continue
-        merged.append((index, title))
-    chapters = []
-    context = ''
-    for number, (start, title) in enumerate(merged, 1):
-        end = merged[number][0] if number < len(merged) else len(lines)
-        segment = lines[start:end]
-        for line in segment:
-            if re.match(r'^#{1,2} (Unit [123]:|Appendix )', line):
-                context = HEADING.fullmatch(line)[2]
-                break
-        chapters.append({'id': f'ch{number}', 'title': html.unescape(title.replace(r'\_', '_')),
-                         'subtitle': context, 'content': [{'type': 'text', 'value': '\n'.join(segment)}], 'mcqs': []})
-    reconstructed = '\n'.join(block['value'] for ch in chapters for block in ch['content'])
-    assert reconstructed == '\n'.join(lines), 'Splitting lost or duplicated source content'
-    assert len({digest(ch['content'][0]['value']) for ch in chapters}) == len(chapters)
-    # Subsections belong inside their complete teaching unit. Keep small
-    # content blocks so the reader can render long units lazily.
-    grouped = []
-    for chapter in chapters:
-        unit = re.match(r'Unit ([123]):', chapter['subtitle'])
-        appendix = chapter['title'].startswith('Appendix ')
-        if appendix or not unit:
-            grouped.append(chapter)
-            continue
-        unit_id = 'unit' + unit[1]
-        if not grouped or grouped[-1]['id'] != unit_id:
-            grouped.append({**chapter, 'id': unit_id,
-                            'title': chapter['subtitle'], 'content': []})
-        grouped[-1]['content'].extend(chapter['content'])
-    assert '\n'.join(block['value'] for chapter in grouped for block in chapter['content']) == '\n'.join(lines)
-    assert sum(chapter['id'].startswith('unit') for chapter in grouped) == 3
-    return grouped
+        unit = re.match(r'^# Unit ([123]):', line)
+        appendix = re.match(r'^#{1,2} Appendix (\d+):', line)
+        if unit:
+            boundaries.append((i, HEADING.fullmatch(line)[2], 'unit'+unit[1]))
+        elif appendix:
+            # Preserve existing appendix IDs as well as unit IDs and book IDs.
+            boundaries.append((i, HEADING.fullmatch(line)[2],
+                               'ch'+str(APPENDIX_START[book_id]+int(appendix[1])-1)))
+    result=[]
+    for number,(start,title,chapter_id) in enumerate(boundaries):
+        end=boundaries[number+1][0] if number+1<len(boundaries) else len(lines)
+        blocks=[]; chunk=[]; code=False
+        def flush():
+            if chunk:
+                blocks.append({'type':'text','value':'\n'.join(chunk)})
+                chunk.clear()
+        for line in lines[start:end]:
+            image=IMAGE.fullmatch(line)
+            if image and not code:
+                flush()
+                filename=next(name for name,path in IMAGE_SOURCES.items() if path==image[2])
+                blocks.append({'type':'image','value':filename,'caption':image[1]})
+            else:
+                if not code and re.match(r'^#{2,3} ',line):flush()
+                chunk.append(line)
+                if line.strip().startswith('```'):code=not code
+        flush()
+        result.append({'id':chapter_id,'title':title,'subtitle':'Shiwali Sharma' if chapter_id=='preface' else title,
+                       'content':blocks,'mcqs':[]})
+    assert '\n'.join(map(chapter_markdown,result))=='\n'.join(lines), 'Lost or duplicated manuscript content'
+    assert len({ch['id'] for ch in result})==len(result)
+    assert {ch['id'] for ch in result if ch['id'].startswith('unit')}=={'unit1','unit2','unit3'}
+    return result
 
 
 def epub_comparison(path: Path, chapters: list[dict]) -> dict:
@@ -227,10 +231,31 @@ def main() -> None:
         source_bytes = path.read_bytes()
         source = source_bytes.decode('utf-8-sig')
         lines = source.splitlines()
-        first = next(i for i, line in enumerate(lines) if re.match(r'^#{1,2} Unit 1:', line))
-        cleaned, repairs = clean(lines[first:], book_id, first)
-        chapters = chapters_from(cleaned)
-        data = {'subject': 'M.Sc. Physics', 'book': title, 'chapters': chapters}
+        first = next(i for i, line in enumerate(lines) if re.match(r'^# Unit 1:', line))
+        assert '**Author:** Shiwali Sharma' in source
+        # App credit is a small line, not a printed title page. Retain the
+        # complete teaching introduction and prerequisite bridge after it.
+        intro=next(i for i,line in enumerate(lines) if re.match(r'^## (Preface|A Note)',line))
+        app_lines=[f'{title} · Shiwali Sharma','']+lines[intro:]
+        cleaned, repairs = clean(app_lines, book_id, intro-2)
+        IMAGE_SOURCES.clear()
+        images=[]
+        for line in cleaned:
+            image=IMAGE.fullmatch(line)
+            if not image:
+                continue
+            image_path=(args.source_root/image[2]).resolve()
+            assert image_path.is_relative_to(args.source_root.resolve())
+            filename='msc_'+book_id+'_'+image_path.name
+            IMAGE_SOURCES[filename]=image[2]
+            destination=ROOT/'assets/images'/filename
+            if args.check:
+                assert destination.read_bytes()==image_path.read_bytes(), f'Stale figure: {filename}'
+            else:
+                shutil.copy2(image_path,destination)
+            images.append({'file':filename,'source':image[2],'sha256':digest(image_path.read_bytes())})
+        chapters = chapters_from(cleaned,book_id)
+        data = {'subject': 'M.Sc. Physics', 'book': title, 'author': 'Shiwali Sharma', 'chapters': chapters}
         asset = f'assets/content/mscphysics/{book_id}.json'
         markdown = f'books_markdown/mscphysics/{book_id}.md'
         save(ROOT / asset, json.dumps(data, ensure_ascii=False, indent=2) + '\n', args.check)
@@ -238,21 +263,24 @@ def main() -> None:
         # Prove all non-presentation source characters survive the transformations.
         def payload(text: str) -> str:
             text = re.sub(r'^\s*<div id="[^"]+"></div>\s*$', '', text, flags=re.M)
-            text = re.sub(r'\\([_*])', r'\1', html.unescape(text))
+            text = re.sub(r'\\([_*|])', r'\1', html.unescape(text))
             return compact(text.replace('```', ''))
-        retained = '\n'.join(lines[first:])
-        imported = '\n'.join(block['value'] for ch in chapters for block in ch['content'])
+        retained = '\n'.join(app_lines)
+        imported = '\n'.join(map(chapter_markdown,chapters))
         assert payload(retained) == payload(imported), f'Coverage failure: {title}'
         # Source files must still have their exact original bytes.
         assert path.read_bytes() == source_bytes
-        oracle = {ch['id']: visible_text('\n'.join(block['value'] for block in ch['content'])) for ch in chapters}
+        oracle = {ch['id']: visible_text('\n'.join(block['value'] for block in ch['content'] if block['type']=='text')) for ch in chapters}
         save(ROOT / f'artifacts/mscphysics_expected_text/{book_id}.json',
              json.dumps(oracle, ensure_ascii=False, indent=2) + '\n', args.check)
         audit = {'id': book_id, 'title': title, 'source': str(path), 'sourceSha256': digest(source_bytes),
                  'sourceLines': len(lines), 'firstTeachingLine': first + 1,
-                 'excludedFrontMatterLines': first, 'retainedSourceLines': len(lines) - first,
+                 'excludedFrontMatterLines': intro, 'retainedSourceLines': len(lines)-intro,
+                 'appCredit': f'{title} · Shiwali Sharma',
+                 'omittedPublicationHeader': '\n'.join(lines[:intro]),
                  'chapterCount': len(chapters), 'interactiveMcqCount': 0,
-                 'coverage': 'Every retained non-presentation character preserved, in source order',
+                 'coverage': 'Small book/author credit replaces publication header; complete teaching preface, prerequisites, units and appendices retained in order; diagrams copied byte for byte',
+                 'author': 'Shiwali Sharma', 'images':images,
                  'retainedPayloadSha256': digest(payload(retained)),
                  'importedPayloadSha256': digest(payload(imported)),
                  'asset': asset, 'assetSha256': digest((ROOT / asset).read_bytes()),
@@ -262,9 +290,9 @@ def main() -> None:
                  'publicationComparison': epub_comparison(args.source_root / epub, chapters)}
         audits.append(audit)
         catalog.append(f"      Book(id: 'mscphysics_{book_id}', subjectId: 'mscphysics', bookNumber: {number},\n"
-                       f"          title: '{title}', description: 'Complete English M.Sc. guide with derivations, solved problems and revision sheets.',\n"
+                       f"          title: '{title}', description: 'Shiwali Sharma · English with Hindi support',\n"
                        f"          jsonAssetPath: '{asset}', expectedChapterCount: {len(chapters)}),")
-        print(f'{title}: {len(chapters)} chapters; source lines {first + 1}-{len(lines)}; complete coverage')
+        print(f'{title}: {len(chapters)} chapters, {len(images)} diagrams; full manuscript, author Shiwali Sharma')
     generated = """// Generated by tools/import_msc_physics.py; chapter counts follow source headings.
 import 'package:flutter/material.dart';
 import '../models/book.dart';
@@ -284,8 +312,8 @@ Subject createMscPhysicsSubject() => Subject(
         'subject': 'mscphysics', 'books': audits,
         'limitations': [
             'Source equations use Unicode and literal notation, not TeX. Preserved without speculative conversion.',
-            'Sources contain open-answer practice; none supplies genuine MCQ choices with an explicit answer key.',
-            'Repeated/skipped source topic numbers are retained; stable sequential chapter IDs keep navigation distinct.',
+            'Explained manuscript MCQs remain in the reading content; no duplicate interactive quiz is generated.',
+            'Book, unit and existing appendix IDs are preserved. Start Here retains the learning introduction with a small book/author credit in place of the print publication header.',
             'Mathematical Physics repeats a Bessel generating formula beside a stray fence; both formula occurrences are retained, with the missing opening fence repaired.',
         ]}, ensure_ascii=False, indent=2) + '\n', args.check)
 

@@ -79,8 +79,12 @@ void main() {
     for (final book in subject.books) {
       final data = jsonDecode(File(book.jsonAssetPath).readAsStringSync());
       final chapters = data['chapters'] as List;
+      expect(data['author'], 'Shiwali Sharma');
+      expect(chapters.first['id'], 'preface');
+      expect((chapters.first['content'] as List).map((b) => b['value']).join('\n'),
+          contains('Shiwali Sharma'));
       for (var unit = 1; unit <= 3; unit++) {
-        final chapter = chapters[unit - 1];
+        final chapter = chapters.firstWhere((c) => c['id'] == 'unit$unit');
         expect(chapter['id'], 'unit$unit');
         expect(chapter['title'], startsWith('Unit $unit:'));
         expect((chapter['content'] as List).length, greaterThan(5));
@@ -88,7 +92,7 @@ void main() {
             (chapter['content'] as List).map((b) => b['value']).join('\n');
         expect(text.length, greaterThan(10000));
       }
-      expect(chapters.skip(3).every((c) => c['title'].startsWith('Appendix ')),
+      expect(chapters.skip(4).every((c) => c['title'].startsWith('Appendix ')),
           isTrue);
     }
     expect(
@@ -119,6 +123,8 @@ void main() {
         ChapterIdentity.isRetiredProgressKey(
             'mscphysics_mscphysics_mathematical_physics_unit1'),
         isFalse);
+    expect(ChapterIdentity.canonical('mscphysics',
+        'mscphysics_statistical_physics', 'ch27'), 'ch26');
   });
 
   for (final book in subject.books) {
@@ -134,8 +140,9 @@ void main() {
       expect(loaded.title, book.title);
       expect(loaded.chapters.length, (data['chapters'] as List).length);
       expect(loaded.chapterCount, book.expectedChapterCount);
-      expect(loaded.chapters.first.content.first.value,
-          matches(r'^#{1,2} Unit 1:'));
+      expect(loaded.chapters.first.id, 'preface');
+      expect(loaded.chapters.first.content.map((b) => b.value).join('\n'),
+          contains('${book.title} · Shiwali Sharma'));
       expect(loaded.chapters.last.title, startsWith('Appendix '));
       expect(loaded.chapters.every((chapter) => chapter.mcqs.isEmpty), isTrue);
       expect(loaded.chapters.map((ch) => ch.id).toSet().length,
@@ -146,7 +153,7 @@ void main() {
         () {
       for (final chapter in data['chapters'] as List) {
         final source =
-            (chapter['content'] as List).map((b) => b['value']).join('\n');
+            (chapter['content'] as List).where((b) => b['type'] == 'text').map((b) => b['value']).join('\n');
         final nodes = md.Document(
                 extensionSet: md.ExtensionSet.gitHubFlavored, encodeHtml: false)
             .parseLines(source.split('\n'));
@@ -164,7 +171,7 @@ void main() {
       addTearDown(tester.view.resetDevicePixelRatio);
       for (final chapter in data['chapters'] as List) {
         final source =
-            (chapter['content'] as List).map((b) => b['value']).join('\n');
+            (chapter['content'] as List).where((b) => b['type'] == 'text').map((b) => b['value']).join('\n');
         await tester.pumpWidget(MaterialApp(
           theme: ThemeData.dark(),
           home: MediaQuery(
