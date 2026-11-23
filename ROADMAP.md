@@ -23,7 +23,7 @@ Status key: `[ ]` not started · `[~]` in progress · `[x]` done
   `shared_preferences`.
 - **Branch:** `feature/home-shelves`
 
-### 2. [ ] Smaller install — download books on demand
+### 2. [ ] Smaller install — download books on demand (deferred)
 - **Problem:** The APK is ~133 MB because ~190 MB of book JSON is bundled in
   `assets/content/`. Students on cheap phones / limited data struggle.
 - **Change:** Ship a small app (maybe one starter book per shelf). Let the
@@ -33,11 +33,12 @@ Status key: `[ ]` not started · `[~]` in progress · `[x]` done
   (`loadBookContent`), new download manager + storage under app documents dir.
 - **Note:** Biggest effort item. Needs a hosting location for the JSON files.
 
-### 3. [ ] Remove "प्रथम प्रारूप" (first draft) labels shown to users
+### 3. [x] Remove "प्रथम प्रारूप" (first draft) labels shown to users — done 2026-11-23
 - **Problem:** Science, Sanskrit and Punjabi taglines/titles say "प्रथम प्रारूप"
   / "(प्रारूप)", which makes students doubt the content.
 - **Change:** Finish those books, or drop the label from user-facing text.
 - **Where:** `lib/services/content_service.dart` (subject taglines, book titles).
+- **Branch:** `feature/home-shelves` (small change, done on the current branch)
 
 ### 4. [ ] One interface language setting (Hindi / English)
 - **Problem:** Buttons are English ("Previous", "Next", "Mark as read",
@@ -110,3 +111,12 @@ Status key: `[ ]` not started · `[~]` in progress · `[x]` done
 - Tip: to preview the UI without an emulator, run `flutter build web` and serve
   `build/web` (e.g. `python -m http.server 8765 --directory build/web`). The
   progress database does not work on web, so treat it as a visual check only.
+- 2026-11-23 — #2 (on-demand downloads) deferred by the user for later; it
+  still needs a decision on where to host the book JSON.
+- 2026-11-23 — #3 done (not yet committed). Dropped "प्रथम प्रारूप" / "(प्रारूप)"
+  from the Science, Sanskrit and Punjabi taglines and book titles, and the
+  "प्रथम संपादकीय प्रारूप।" prefix from every chapter note in those three books
+  (bundled JSON and the Markdown sources in `10th rbse/`). The rest of each note
+  stays, because it tells students honestly what is still missing (e.g. Science:
+  NCERT solutions and full PYQs still being checked), so finishing those books
+  is still open. New guard test: `test/no_draft_labels_test.dart`.
