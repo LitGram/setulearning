@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
 import '../models/book.dart';
 import '../models/chapter.dart';
@@ -99,7 +100,7 @@ class _BookScreenState extends State<BookScreen> {
             Text(
               widget.subject.books.length == 1
                   ? widget.subject.name
-                  : '${widget.subject.name} • पुस्तक ${widget.book.bookNumber}',
+                  : '${widget.subject.name} • ${context.strings.bookNumber(widget.book.bookNumber)}',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: theme.textTheme.bodySmall?.copyWith(
@@ -120,7 +121,7 @@ class _BookScreenState extends State<BookScreen> {
                   const CircularProgressIndicator(),
                   const SizedBox(height: 16),
                   Text(
-                    'विषय सूची लोड हो रही है...',
+                    context.strings.loadingContents,
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: colorScheme.onSurfaceVariant,
                     ),
@@ -141,7 +142,7 @@ class _BookScreenState extends State<BookScreen> {
                         size: 48, color: colorScheme.error),
                     const SizedBox(height: 12),
                     Text(
-                      'पुस्तक लोड करने में समस्या आई',
+                      context.strings.bookLoadError,
                       style: theme.textTheme.titleMedium?.copyWith(
                         color: colorScheme.error,
                       ),
@@ -154,7 +155,7 @@ class _BookScreenState extends State<BookScreen> {
                               .loadBookContent(widget.book);
                         });
                       },
-                      child: const Text('Retry'),
+                      child: Text(context.strings.retry),
                     ),
                   ],
                 ),
@@ -181,7 +182,7 @@ class _BookScreenState extends State<BookScreen> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 4.0, vertical: 4.0),
                       child: Text(
-                        'Chapters',
+                        context.strings.chapters,
                         style: theme.textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
@@ -194,12 +195,12 @@ class _BookScreenState extends State<BookScreen> {
                     controller: _searchController,
                     textInputAction: TextInputAction.search,
                     decoration: InputDecoration(
-                      labelText: 'Search chapters',
+                      labelText: context.strings.searchChapters,
                       prefixIcon: const Icon(Icons.search),
                       suffixIcon: _query.isEmpty
                           ? null
                           : IconButton(
-                              tooltip: 'Clear search',
+                              tooltip: context.strings.clearSearch,
                               icon: const Icon(Icons.clear),
                               onPressed: () => setState(() {
                                 _searchController.clear();
@@ -215,7 +216,7 @@ class _BookScreenState extends State<BookScreen> {
                   Wrap(spacing: 8, runSpacing: 8, children: [
                     for (final filter in _ChapterFilter.values)
                       ChoiceChip(
-                        label: Text(filter.label),
+                        label: Text(filter.label(context.strings)),
                         selected: _filter == filter,
                         onSelected: (_) => setState(() => _filter = filter),
                       ),
@@ -223,10 +224,9 @@ class _BookScreenState extends State<BookScreen> {
                   const SizedBox(height: 12),
                   if (!chapters.any(
                       (chapter) => _matches(chapter, book, progressProvider)))
-                    const Padding(
-                        padding: EdgeInsets.all(16),
-                        child: Text(
-                            'No matching chapters. Try another word or clear the filter.')),
+                    Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Text(context.strings.noMatchingChapters)),
                   // Chapters List
                   ...chapters
                       .asMap()
@@ -279,13 +279,13 @@ class _BookScreenState extends State<BookScreen> {
     if (chapters.isEmpty) {
       actionLabel = '';
     } else if (allRead) {
-      actionLabel = 'Read again from chapter 1';
+      actionLabel = context.strings.readAgainFromStart;
       target = chapters.first;
     } else if (readCount == 0) {
-      actionLabel = 'Start reading';
+      actionLabel = context.strings.startReading;
       target = chapters[nextIndex];
     } else {
-      actionLabel = 'Continue with chapter ${nextIndex + 1}';
+      actionLabel = context.strings.continueWithChapter(nextIndex + 1);
       target = chapters[nextIndex];
     }
 
@@ -319,7 +319,7 @@ class _BookScreenState extends State<BookScreen> {
             children: [
               Expanded(
                 child: Text(
-                  '$readCount of ${chapters.length} chapters read',
+                  context.strings.chaptersReadOf(readCount, chapters.length),
                   style: theme.textTheme.labelLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
@@ -341,8 +341,8 @@ class _BookScreenState extends State<BookScreen> {
               value: fraction,
               minHeight: 8,
               backgroundColor: colorScheme.surfaceContainerHighest,
-              semanticsLabel:
-                  'Book progress, $readCount of ${chapters.length} chapters read',
+              semanticsLabel: context.strings
+                  .bookProgressSemantics(readCount, chapters.length),
             ),
           ),
           if (target != null) ...[
@@ -389,7 +389,7 @@ class _BookScreenState extends State<BookScreen> {
 
     return AccessibleCard(
       semanticLabel:
-          'अध्याय $index: ${chapter.title}, ${isRead ? "पठित" : "अपठित"}',
+          context.strings.chapterSemantics(index, chapter.title, isRead),
       onTap: () => _openChapter(book, chapter),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -447,23 +447,28 @@ class _BookScreenState extends State<BookScreen> {
                   runSpacing: 4,
                   children: [
                     if (isRead)
-                      const StatusBadge(
-                          type: BadgeType.completed, customLabel: 'Read')
+                      StatusBadge(
+                          type: BadgeType.completed,
+                          customLabel: context.strings.read)
                     else
-                      const StatusBadge(
-                          type: BadgeType.notStarted, customLabel: 'Unread'),
+                      StatusBadge(
+                          type: BadgeType.notStarted,
+                          customLabel: context.strings.unread),
                     if (quizRecord != null)
                       StatusBadge(
                         type: quizRecord.percentage >= 60
                             ? BadgeType.quizPassed
                             : BadgeType.quizNeedsReview,
-                        customLabel:
-                            'स्कोर: ${quizRecord.score}/${quizRecord.total} (${quizRecord.percentage.toStringAsFixed(0)}%)',
+                        customLabel: context.strings.quizScore(
+                            quizRecord.score,
+                            quizRecord.total,
+                            quizRecord.percentage.toStringAsFixed(0)),
                       )
                     else if (chapter.mcqs.isNotEmpty)
                       StatusBadge(
                         type: BadgeType.inProgress,
-                        customLabel: '${chapter.mcqs.length} अभ्यास प्रश्न',
+                        customLabel: context.strings
+                            .practiceQuestionsCount(chapter.mcqs.length),
                       ),
                   ],
                 ),
@@ -479,10 +484,13 @@ class _BookScreenState extends State<BookScreen> {
 }
 
 enum _ChapterFilter {
-  all('All'),
-  unread('Unread'),
-  read('Read');
+  all,
+  unread,
+  read;
 
-  final String label;
-  const _ChapterFilter(this.label);
+  String label(AppStrings strings) => switch (this) {
+        _ChapterFilter.all => strings.all,
+        _ChapterFilter.unread => strings.unread,
+        _ChapterFilter.read => strings.read,
+      };
 }

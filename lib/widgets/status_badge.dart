@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 
 enum BadgeType {
   completed,
@@ -32,35 +33,35 @@ class StatusBadge extends StatelessWidget {
     switch (type) {
       case BadgeType.completed:
         icon = Icons.check_circle_rounded;
-        label = customLabel ?? 'Completed';
+        label = customLabel ?? context.strings.statusCompleted;
         bgColor = colorScheme.primaryContainer;
         fgColor = colorScheme.onPrimaryContainer;
         border = BorderSide(color: colorScheme.primary.withOpacity(0.3));
         break;
       case BadgeType.quizPassed:
         icon = Icons.emoji_events_rounded;
-        label = customLabel ?? 'Practice completed';
+        label = customLabel ?? context.strings.statusPracticeCompleted;
         bgColor = colorScheme.secondaryContainer;
         fgColor = colorScheme.onSecondaryContainer;
         border = BorderSide(color: colorScheme.secondary.withOpacity(0.3));
         break;
       case BadgeType.quizNeedsReview:
         icon = Icons.replay_rounded;
-        label = customLabel ?? 'Retry';
+        label = customLabel ?? context.strings.retry;
         bgColor = colorScheme.tertiaryContainer;
         fgColor = colorScheme.onTertiaryContainer;
         border = BorderSide(color: colorScheme.tertiary.withOpacity(0.3));
         break;
       case BadgeType.inProgress:
         icon = Icons.timelapse_rounded;
-        label = customLabel ?? 'In progress';
+        label = customLabel ?? context.strings.statusInProgress;
         bgColor = colorScheme.surfaceVariant;
         fgColor = colorScheme.onSurfaceVariant;
         border = BorderSide(color: colorScheme.outlineVariant);
         break;
       case BadgeType.notStarted:
         icon = Icons.circle_outlined;
-        label = customLabel ?? 'Unread';
+        label = customLabel ?? context.strings.unread;
         bgColor = colorScheme.surface;
         fgColor = colorScheme.onSurfaceVariant;
         border = BorderSide(color: colorScheme.outline.withOpacity(0.4));
@@ -68,7 +69,7 @@ class StatusBadge extends StatelessWidget {
     }
 
     return Semantics(
-      label: 'Status: $label',
+      label: context.strings.status(label),
       excludeSemantics: true,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),

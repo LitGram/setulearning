@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
 import '../models/book.dart';
 import '../models/chapter.dart';
@@ -69,16 +70,15 @@ class _QuizScreenState extends State<QuizScreen> {
             context: context,
             barrierDismissible: false,
             builder: (context) => AlertDialog(
-                    title: const Text('Resume practice?'),
-                    content: const Text(
-                        'Your unfinished answers are saved on this device.'),
+                    title: Text(context.strings.resumePracticeTitle),
+                    content: Text(context.strings.resumePracticeBody),
                     actions: [
                       TextButton(
                           onPressed: () => Navigator.pop(context, false),
-                          child: const Text('Start again')),
+                          child: Text(context.strings.startAgain)),
                       FilledButton(
                           onPressed: () => Navigator.pop(context, true),
-                          child: const Text('Resume'))
+                          child: Text(context.strings.resume))
                     ]));
         if (!mounted) return;
         if (resume == true) {
@@ -156,15 +156,15 @@ class _QuizScreenState extends State<QuizScreen> {
     final exit = await showDialog<bool>(
         context: context,
         builder: (context) => AlertDialog(
-                title: const Text('Leave practice?'),
-                content: const Text('Save your answers and resume later.'),
+                title: Text(context.strings.leavePracticeTitle),
+                content: Text(context.strings.leavePracticeBody),
                 actions: [
                   TextButton(
                       onPressed: () => Navigator.pop(context, false),
-                      child: const Text('Keep practicing')),
+                      child: Text(context.strings.keepPracticing)),
                   FilledButton(
                       onPressed: () => Navigator.pop(context, true),
-                      child: const Text('Save & exit'))
+                      child: Text(context.strings.saveAndExit))
                 ]));
     if (exit != true || !mounted) return;
     await _saveDraft();
@@ -317,7 +317,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
     if (_mcqs.isEmpty) {
       return Scaffold(
-        appBar: AppBar(title: const Text('प्रश्नोत्तरी')),
+        appBar: AppBar(title: Text(context.strings.quizTitle)),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -325,13 +325,13 @@ class _QuizScreenState extends State<QuizScreen> {
               const Icon(Icons.quiz_outlined, size: 60),
               const SizedBox(height: 16),
               Text(
-                'इस अध्याय में कोई प्रश्न नहीं हैं।',
+                context.strings.noQuestions,
                 style: theme.textTheme.titleMedium,
               ),
               const SizedBox(height: 16),
               FilledButton(
                 onPressed: () => Navigator.pop(context),
-                child: const Text('Go back'),
+                child: Text(context.strings.goBack),
               ),
             ],
           ),
@@ -357,7 +357,7 @@ class _QuizScreenState extends State<QuizScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Practice',
+              context.strings.practice,
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
@@ -377,9 +377,10 @@ class _QuizScreenState extends State<QuizScreen> {
         children: [
           if (_saveFailed)
             MaterialBanner(
-                content: const Text('Answers could not be saved.'),
+                content: Text(context.strings.answersNotSaved),
                 actions: [
-                  TextButton(onPressed: _saveDraft, child: const Text('Retry'))
+                  TextButton(
+                      onPressed: _saveDraft, child: Text(context.strings.retry))
                 ]),
           // Linear progress bar
           LinearProgressIndicator(
@@ -406,7 +407,8 @@ class _QuizScreenState extends State<QuizScreen> {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
-                        'Question ${_questionIndex + 1} of ${_mcqs.length}',
+                        context.strings
+                            .questionOf(_questionIndex + 1, _mcqs.length),
                         style: theme.textTheme.labelMedium?.copyWith(
                           color: colorScheme.onPrimaryContainer,
                           fontWeight: FontWeight.bold,
@@ -414,7 +416,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                     ),
                     Text(
-                      'Score: $_score',
+                      context.strings.score(_score),
                       style: theme.textTheme.labelMedium?.copyWith(
                         color: colorScheme.onSurfaceVariant,
                         fontWeight: FontWeight.w600,
@@ -454,14 +456,14 @@ class _QuizScreenState extends State<QuizScreen> {
                           : _useFiftyFifty,
                       icon: const Icon(Icons.auto_awesome_rounded),
                       label: Text(_hiddenOptions.containsKey(_questionIndex)
-                          ? '50–50 used'
-                          : '50–50 lifeline'),
+                          ? context.strings.fiftyFiftyUsed
+                          : context.strings.fiftyFiftyLifeline),
                     ),
                   ),
                   if (_hiddenOptions.containsKey(_questionIndex))
                     Semantics(
                         liveRegion: true,
-                        child: const Text('Two incorrect options removed.')),
+                        child: Text(context.strings.twoOptionsRemoved)),
                   const SizedBox(height: 12),
                 ],
 
@@ -512,7 +514,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       color: cardBg,
                       border: border,
                       semanticLabel:
-                          'Option ${optionLetters[optIdx]}: $optText ${isSelected ? "Selected" : ""} ${_submittedCurrent ? (isCorrect ? "Correct answer" : isSelected ? "Incorrect answer" : "") : ""}',
+                          '${context.strings.option(optionLetters[optIdx])}: $optText ${isSelected ? context.strings.selected : ""} ${_submittedCurrent ? (isCorrect ? context.strings.correctAnswer : isSelected ? context.strings.incorrectAnswer : "") : ""}',
                       onTap: _submittedCurrent
                           ? null
                           : () => _selectOption(optIdx),
@@ -568,8 +570,9 @@ class _QuizScreenState extends State<QuizScreen> {
                           padding: const EdgeInsets.symmetric(vertical: 12),
                           child: Text(
                               selectedOption == currentMcq.correctIndex
-                                  ? 'Correct answer'
-                                  : 'Not quite. The correct answer is ${optionLetters[currentMcq.correctIndex]}.',
+                                  ? context.strings.correctAnswer
+                                  : context.strings.notQuite(
+                                      optionLetters[currentMcq.correctIndex]),
                               style: theme.textTheme.titleSmall))),
                 // Explanation Box (if submitted)
                 if (_submittedCurrent && currentMcq.explanation != null) ...[
@@ -597,7 +600,7 @@ class _QuizScreenState extends State<QuizScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Explanation',
+                                context.strings.explanation,
                                 style: theme.textTheme.labelMedium?.copyWith(
                                   fontWeight: FontWeight.bold,
                                   color: colorScheme.secondary,
@@ -640,26 +643,27 @@ class _QuizScreenState extends State<QuizScreen> {
                   if (_questionIndex > 0)
                     OutlinedButton(
                       onPressed: _previousQuestion,
-                      child: const Text('Previous'),
+                      child: Text(context.strings.previous),
                     ),
                   if (_questionIndex > 0) const SizedBox(width: 10),
                   if (!_submittedCurrent)
                     TextButton(
-                        onPressed: _skipQuestion, child: const Text('Skip')),
+                        onPressed: _skipQuestion,
+                        child: Text(context.strings.skip)),
                   Expanded(
                     child: !_submittedCurrent
                         ? FilledButton(
                             onPressed: selectedOption != null
                                 ? _checkCurrentAnswer
                                 : null,
-                            child: const Text('Check answer'),
+                            child: Text(context.strings.checkAnswer),
                           )
                         : FilledButton(
                             onPressed: _nextQuestion,
                             child: Text(
                               _questionIndex < _mcqs.length - 1
-                                  ? 'Next question'
-                                  : 'View results',
+                                  ? context.strings.nextQuestion
+                                  : context.strings.viewResults,
                             ),
                           ),
                   ),
@@ -684,7 +688,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     Theme.of(context).textTheme.titleMedium?.fontSize ?? 18) *
                 2.8)
             .clamp(56.0, 160.0),
-        title: const Text('Practice results'),
+        title: Text(context.strings.practiceResults),
         automaticallyImplyLeading: false,
       ),
       body: Center(
@@ -710,14 +714,16 @@ class _QuizScreenState extends State<QuizScreen> {
               ),
               const SizedBox(height: 20),
               Text(
-                isPassed ? 'शानदार प्रदर्शन!' : 'अभ्यास जारी रखें!',
+                isPassed
+                    ? context.strings.greatPerformance
+                    : context.strings.keepGoing,
                 style: theme.textTheme.headlineSmall?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
               ),
               const SizedBox(height: 8),
               Text(
-                '${widget.chapter.title} अभ्यास पूर्ण',
+                context.strings.practiceComplete(widget.chapter.title),
                 style: theme.textTheme.bodyMedium?.copyWith(
                   color: colorScheme.onSurfaceVariant,
                 ),
@@ -743,7 +749,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     Column(
                       children: [
                         Text(
-                          'Questions',
+                          context.strings.questions,
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: colorScheme.onSurfaceVariant,
                           ),
@@ -765,7 +771,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     Column(
                       children: [
                         Text(
-                          'Correct answers',
+                          context.strings.correctAnswers,
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: colorScheme.onSurfaceVariant,
                           ),
@@ -788,7 +794,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     Column(
                       children: [
                         Text(
-                          'Score',
+                          context.strings.scoreLabel,
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: colorScheme.onSurfaceVariant,
                           ),
@@ -810,10 +816,11 @@ class _QuizScreenState extends State<QuizScreen> {
               ),
               const SizedBox(height: 32),
 
-              Text('${_mcqs.length - _checked.length} skipped / unanswered'),
+              Text(
+                  context.strings.skippedCount(_mcqs.length - _checked.length)),
               if (_checked.length < _mcqs.length)
                 ExpansionTile(
-                  title: const Text('Review skipped questions'),
+                  title: Text(context.strings.reviewSkipped),
                   children: [
                     for (var i = 0; i < _mcqs.length; i++)
                       if (!_checked.contains(i))
@@ -824,8 +831,9 @@ class _QuizScreenState extends State<QuizScreen> {
                                 children: [
                                   MarkdownContent(data: _mcqs[i].question),
                                   MarkdownContent(
-                                      data:
-                                          'Correct answer: ${_mcqs[i].options[_mcqs[i].correctIndex]}'),
+                                      data: context.strings.correctAnswerIs(
+                                          _mcqs[i]
+                                              .options[_mcqs[i].correctIndex])),
                                   if (_mcqs[i].explanation != null)
                                     MarkdownContent(
                                         data: _mcqs[i].explanation!),
@@ -834,17 +842,18 @@ class _QuizScreenState extends State<QuizScreen> {
                 ),
 
               Text(_savingResult
-                  ? 'Saving progress…'
+                  ? context.strings.savingProgress
                   : _resultSaved
-                      ? 'Progress saved'
-                      : 'Progress not saved'),
+                      ? context.strings.progressSaved
+                      : context.strings.progressNotSaved),
               if (!_resultSaved && !_savingResult)
                 TextButton(
-                    onPressed: _finishQuiz, child: const Text('Retry saving')),
+                    onPressed: _finishQuiz,
+                    child: Text(context.strings.retrySaving)),
               if (_checked
                   .any((i) => _selectedAnswers[i] != _mcqs[i].correctIndex))
                 ExpansionTile(
-                    title: const Text('Review incorrect answers'),
+                    title: Text(context.strings.reviewIncorrect),
                     children: [
                       ..._checked
                           .where((i) =>
@@ -857,8 +866,9 @@ class _QuizScreenState extends State<QuizScreen> {
                                     MarkdownContent(data: _mcqs[i].question),
                                     const SizedBox(height: 8),
                                     MarkdownContent(
-                                        data:
-                                            'Correct answer: ${_mcqs[i].options[_mcqs[i].correctIndex]}'),
+                                        data: context.strings.correctAnswerIs(
+                                            _mcqs[i].options[
+                                                _mcqs[i].correctIndex])),
                                     if (_mcqs[i].explanation != null)
                                       MarkdownContent(
                                           data: _mcqs[i].explanation!),
@@ -869,7 +879,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 width: double.infinity,
                 child: FilledButton.icon(
                   icon: const Icon(Icons.arrow_back_rounded),
-                  label: const Text('Back to chapter'),
+                  label: Text(context.strings.backToChapter),
                   onPressed: () => Navigator.pop(context),
                 ),
               ),
@@ -878,7 +888,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 width: double.infinity,
                 child: OutlinedButton.icon(
                   icon: const Icon(Icons.refresh_rounded),
-                  label: const Text('Try again'),
+                  label: Text(context.strings.tryAgain),
                   onPressed: _savingResult || !_resultSaved ? null : _resetQuiz,
                 ),
               ),

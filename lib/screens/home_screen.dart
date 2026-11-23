@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/subject.dart';
 import '../models/subject_group.dart';
 import '../providers/progress_provider.dart';
@@ -53,21 +55,21 @@ class _HomeScreenState extends State<HomeScreen> {
                         _visited.add(index);
                       }),
                       labelType: NavigationRailLabelType.all,
-                      destinations: const [
+                      destinations: [
                         NavigationRailDestination(
-                          icon: Icon(Icons.menu_book_outlined),
-                          selectedIcon: Icon(Icons.menu_book_rounded),
-                          label: Text('Subjects'),
+                          icon: const Icon(Icons.menu_book_outlined),
+                          selectedIcon: const Icon(Icons.menu_book_rounded),
+                          label: Text(context.strings.navSubjects),
                         ),
                         NavigationRailDestination(
-                          icon: Icon(Icons.insights_outlined),
-                          selectedIcon: Icon(Icons.insights_rounded),
-                          label: Text('Progress'),
+                          icon: const Icon(Icons.insights_outlined),
+                          selectedIcon: const Icon(Icons.insights_rounded),
+                          label: Text(context.strings.navProgress),
                         ),
                         NavigationRailDestination(
-                          icon: Icon(Icons.settings_outlined),
-                          selectedIcon: Icon(Icons.settings_rounded),
-                          label: Text('Settings'),
+                          icon: const Icon(Icons.settings_outlined),
+                          selectedIcon: const Icon(Icons.settings_rounded),
+                          label: Text(context.strings.navSettings),
                         ),
                       ],
                     ),
@@ -84,21 +86,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     _selectedDestination = index;
                     _visited.add(index);
                   }),
-                  destinations: const [
+                  destinations: [
                     NavigationDestination(
-                      icon: Icon(Icons.menu_book_outlined),
-                      selectedIcon: Icon(Icons.menu_book_rounded),
-                      label: 'Subjects',
+                      icon: const Icon(Icons.menu_book_outlined),
+                      selectedIcon: const Icon(Icons.menu_book_rounded),
+                      label: context.strings.navSubjects,
                     ),
                     NavigationDestination(
-                      icon: Icon(Icons.insights_outlined),
-                      selectedIcon: Icon(Icons.insights_rounded),
-                      label: 'Progress',
+                      icon: const Icon(Icons.insights_outlined),
+                      selectedIcon: const Icon(Icons.insights_rounded),
+                      label: context.strings.navProgress,
                     ),
                     NavigationDestination(
-                      icon: Icon(Icons.settings_outlined),
-                      selectedIcon: Icon(Icons.settings_rounded),
-                      label: 'Settings',
+                      icon: const Icon(Icons.settings_outlined),
+                      selectedIcon: const Icon(Icons.settings_rounded),
+                      label: context.strings.navSettings,
                     ),
                   ],
                 ),
@@ -115,10 +117,51 @@ class _SubjectHomeScreen extends StatefulWidget {
 }
 
 class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
+  static const _groupPrefKey = 'home_shelf';
+  static const _allGroupsId = 'all';
+
   bool _resuming = false;
 
   /// `null` shows every group.
   SubjectGroup? _group;
+
+  /// True once the student has answered the first-launch question (or picked
+  /// a chip). Starts true so nothing flashes before preferences load.
+  bool _groupChosen = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadGroup();
+  }
+
+  Future<void> _loadGroup() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final saved = prefs.getString(_groupPrefKey);
+      if (!mounted) return;
+      setState(() {
+        _groupChosen = saved != null;
+        _group = SubjectGroup.fromId(saved);
+      });
+    } catch (error) {
+      debugPrint('Could not load the saved subject group: $error');
+    }
+  }
+
+  /// Shows [group] (null = every group) and remembers it for next time.
+  Future<void> _chooseGroup(SubjectGroup? group) async {
+    setState(() {
+      _group = group;
+      _groupChosen = true;
+    });
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_groupPrefKey, group?.id ?? _allGroupsId);
+    } catch (error) {
+      debugPrint('Could not save the subject group: $error');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -172,7 +215,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                   ),
                 ),
                 Text(
-                  'पढ़ाई, जब चाहो',
+                  context.strings.appTagline,
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: colorScheme.onSurfaceVariant,
                   ),
@@ -183,7 +226,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
         ),
         actions: [
           IconButton(
-            tooltip: 'Search',
+            tooltip: context.strings.search,
             icon: const Icon(Icons.search_rounded),
             onPressed: _openSearch,
           ),
@@ -215,7 +258,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 4.0),
                       child: Text(
-                        'Choose a subject',
+                        context.strings.chooseSubject,
                         style: theme.textTheme.titleLarge?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
@@ -224,13 +267,17 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(4, 2, 4, 0),
                       child: Text(
-                        'अपनी परीक्षा और विषय के अनुसार पुस्तकें चुनें।',
+                        context.strings.chooseSubjectHint,
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                     ),
                     const SizedBox(height: 12),
+                    if (!_groupChosen) ...[
+                      _buildGroupQuestion(context, groups),
+                      const SizedBox(height: 12),
+                    ],
                     _buildGroupFilter(context, subjects, groups),
                     const SizedBox(height: 8),
                     for (final group in visibleGroups) ...[
@@ -270,7 +317,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
     final colorScheme = theme.colorScheme;
     return Semantics(
       button: true,
-      label: 'Search books and chapters',
+      label: context.strings.searchBooksAndChapters,
       excludeSemantics: true,
       child: Material(
         color: colorScheme.surfaceContainerHigh,
@@ -289,7 +336,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                   const SizedBox(width: 12),
                   Expanded(
                     child: Text(
-                      'Search books and chapters',
+                      context.strings.searchBooksAndChapters,
                       style: theme.textTheme.bodyLarge?.copyWith(
                         color: colorScheme.onSurfaceVariant,
                       ),
@@ -311,19 +358,97 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
       return ChoiceChip(
         label: Text('$label ($count)'),
         selected: selected,
-        onSelected: (_) => setState(() => _group = group),
+        onSelected: (_) => _chooseGroup(group),
       );
     }
 
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: [
-        chip(null, 'All', subjects.length),
-        for (final group in groups)
-          chip(group, group.label,
-              subjects.where((s) => SubjectGroup.of(s) == group).length),
-      ],
+    final language = context.strings.language;
+    return Semantics(
+      label: context.strings.chooseShelf,
+      container: true,
+      child: Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: [
+          chip(null, context.strings.all, subjects.length),
+          for (final group in groups)
+            chip(group, group.labelIn(language),
+                subjects.where((s) => SubjectGroup.of(s) == group).length),
+        ],
+      ),
+    );
+  }
+
+  /// First-launch question: which group should home open on next time?
+  /// Picking a chip below answers it too.
+  Widget _buildGroupQuestion(BuildContext context, List<SubjectGroup> groups) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+    final strings = context.strings;
+    return AccessibleCard(
+      color: colorScheme.secondaryContainer.withOpacity(0.5),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            strings.shelfQuestion,
+            style: theme.textTheme.titleLarge?.copyWith(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            strings.shelfQuestionHint,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(height: 12),
+          for (final group in groups)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size.fromHeight(56),
+                  alignment: Alignment.centerLeft,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                ),
+                onPressed: () => _chooseGroup(group),
+                child: Row(
+                  children: [
+                    Icon(group.icon, color: colorScheme.primary),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            group.labelIn(strings.language),
+                            style: theme.textTheme.titleSmall?.copyWith(
+                              fontWeight: FontWeight.bold,
+                              color: colorScheme.onSurface,
+                            ),
+                          ),
+                          Text(
+                            group.descriptionIn(strings.language),
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          TextButton(
+            onPressed: () => _chooseGroup(null),
+            child: Text(strings.showAllSubjects),
+          ),
+        ],
+      ),
     );
   }
 
@@ -341,20 +466,10 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                group.label,
+                group.labelIn(context.strings.language),
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
-              ),
-            ),
-            const SizedBox(width: 8),
-            Flexible(
-              child: Text(
-                group.hindiLabel,
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: colorScheme.onSurfaceVariant,
-                ),
-                overflow: TextOverflow.ellipsis,
               ),
             ),
           ],
@@ -416,7 +531,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
           const SizedBox(width: 10),
           Expanded(
             child: Text(
-              'पूर्णतः ऑफलाइन: सभी पुस्तकें एवं अभ्यास प्रश्न बिना इंटरनेट के उपलब्ध हैं।',
+              context.strings.offlineNote,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: colorScheme.onSurfaceVariant,
               ),
@@ -433,8 +548,8 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
 
     return AccessibleCard(
       color: colorScheme.primaryContainer,
-      semanticLabel:
-          'Continue reading: ${lastPos.chapterTitle}, ${lastPos.bookTitle}',
+      semanticLabel: context.strings
+          .continueReadingSemantics(lastPos.chapterTitle, lastPos.bookTitle),
       onTap: _resuming
           ? null
           : () async {
@@ -472,9 +587,8 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                 }
               } catch (_) {
                 if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                      content: Text(
-                          'Could not open the chapter. Please try again.')));
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      content: Text(context.strings.couldNotOpenChapter)));
                 }
               } finally {
                 if (mounted && _resuming) setState(() => _resuming = false);
@@ -512,7 +626,7 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Continue reading',
+                  context.strings.continueReading,
                   style: theme.textTheme.labelLarge?.copyWith(
                     color: colorScheme.onPrimaryContainer,
                     fontWeight: FontWeight.bold,
@@ -559,11 +673,11 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
         .primary;
     final readCount = progressProvider.getReadCountForSubject(subject.id);
     final bookCount = subject.books.length;
-    final bookLabel = bookCount == 1 ? '1 book' : '$bookCount books';
+    final bookLabel = context.strings.booksLower(bookCount);
 
     return AccessibleCard(
       semanticLabel: '${subject.name}, ${subject.hindiName}, $bookLabel'
-          '${readCount > 0 ? ', $readCount chapters read' : ''}',
+          '${readCount > 0 ? ', ${context.strings.chaptersRead(readCount)}' : ''}',
       onTap: () => openSubject(context, subject),
       child: Row(
         children: [
@@ -621,8 +735,11 @@ class _SubjectHomeScreenState extends State<_SubjectHomeScreen> {
                     _meta(context, Icons.menu_book_outlined, bookLabel,
                         colorScheme.onSurfaceVariant),
                     if (readCount > 0)
-                      _meta(context, Icons.check_circle_outline_rounded,
-                          '$readCount अध्याय पूर्ण', colorScheme.primary),
+                      _meta(
+                          context,
+                          Icons.check_circle_outline_rounded,
+                          context.strings.chaptersDone(readCount),
+                          colorScheme.primary),
                   ],
                 ),
               ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
 import '../providers/progress_provider.dart';
 import '../services/content_service.dart';
@@ -21,7 +22,7 @@ class ProgressScreen extends StatelessWidget {
                     Theme.of(context).textTheme.titleMedium?.fontSize ?? 18) *
                 2.8)
             .clamp(56.0, 160.0),
-        title: const Text('My progress'),
+        title: Text(context.strings.myProgress),
       ),
       body: Consumer<ProgressProvider>(
         builder: (context, progressProvider, child) {
@@ -36,10 +37,9 @@ class ProgressScreen extends StatelessWidget {
             children: [
               const ProgressStatePanel(),
               if (totalReadAcrossAll == 0)
-                const Padding(
-                    padding: EdgeInsets.all(16),
-                    child: Text(
-                        'अपना पहला अध्याय पढ़ें और अंत में “पढ़ लिया” चुनें। अभ्यास स्कोर अलग सहेजे जाते हैं।')),
+                Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Text(context.strings.progressEmpty)),
               // Hero Progress Card
               Container(
                 padding: const EdgeInsets.all(20),
@@ -74,14 +74,14 @@ class ProgressScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'कुल पूर्ण अध्याय',
+                            context.strings.totalChaptersDone,
                             style: theme.textTheme.bodyMedium?.copyWith(
                               color: colorScheme.onPrimary.withOpacity(0.9),
                             ),
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            '$totalReadAcrossAll अध्याय',
+                            context.strings.chaptersCount(totalReadAcrossAll),
                             style: theme.textTheme.headlineMedium?.copyWith(
                               color: colorScheme.onPrimary,
                               fontWeight: FontWeight.bold,
@@ -96,7 +96,7 @@ class ProgressScreen extends StatelessWidget {
               const SizedBox(height: 24),
 
               Text(
-                'By subject',
+                context.strings.bySubject,
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -120,7 +120,8 @@ class ProgressScreen extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 12.0),
                   child: AccessibleCard(
-                    semanticLabel: '${subject.name}: $readCount अध्याय पूर्ण',
+                    semanticLabel:
+                        '${subject.name}: ${context.strings.chaptersDone(readCount)}',
                     onTap: () => openSubject(context, subject),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

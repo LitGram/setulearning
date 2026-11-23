@@ -19,8 +19,8 @@ Status key: `[ ]` not started · `[~]` in progress · `[x]` done
   हैं?"; remember the answer; keep a "सभी" (All) choice that shows every shelf
   with section headers. The choice can be changed any time from chips at the top.
 - **Where:** `lib/screens/home_screen.dart` (`_SubjectHomeScreen`),
-  subject → shelf mapping in a new `lib/models/shelf.dart`, saved with
-  `shared_preferences`.
+  subject → group mapping in `lib/models/subject_group.dart`, saved with
+  `shared_preferences` under `home_shelf`.
 - **Branch:** `feature/home-shelves`
 
 ### 2. [ ] Smaller install — download books on demand (deferred)
@@ -40,12 +40,13 @@ Status key: `[ ]` not started · `[~]` in progress · `[x]` done
 - **Where:** `lib/services/content_service.dart` (subject taglines, book titles).
 - **Branch:** `feature/home-shelves` (small change, done on the current branch)
 
-### 4. [ ] One interface language setting (Hindi / English)
+### 4. [x] One interface language setting (Hindi / English) — done 2026-11-23
 - **Problem:** Buttons are English ("Previous", "Next", "Mark as read",
   "Choose a subject") while descriptions are Hindi.
 - **Change:** Add a language choice in Settings and route all UI strings through
   it (Flutter `intl` / ARB files, or a simple strings map).
 - **Where:** all of `lib/screens/` and `lib/widgets/`, `settings_screen.dart`.
+- **Branch:** `feature/ui-language`
 
 ## Priority 2 — missing features
 
@@ -120,3 +121,22 @@ Status key: `[ ]` not started · `[~]` in progress · `[x]` done
   stays, because it tells students honestly what is still missing (e.g. Science:
   NCERT solutions and full PYQs still being checked), so finishing those books
   is still open. New guard test: `test/no_draft_labels_test.dart`.
+- 2026-11-23 — #4 done on `feature/ui-language` (not yet committed). New
+  `lib/l10n/app_strings.dart` holds every UI string as a Hindi/English pair;
+  `LanguageProvider` saves the choice under the `ui_language` preference
+  (default Hindi). Settings has a "भाषा / Language" section at the top. Book
+  content and subject names are not translated. Screens with no
+  `AppStringsScope` above them (single-screen widget tests) fall back to
+  English, so older tests still find "Next", "Mark as read" etc. New test:
+  `test/ui_language_test.dart`. Not yet checked visually on a phone; long
+  Hindi labels on small screens are worth a look.
+- 2026-11-23 — Moved onto GitHub (`LitGram/setulearning`). GitHub `main`
+  already had its own grouping (`SubjectGroup` + filter chips, PR #1), so the
+  shelves were folded into it rather than kept as a second model: the
+  first-launch question and the remembered choice now drive `SubjectGroup`,
+  and `lib/models/shelf.dart` is gone. Group names follow the language
+  setting. The work was rebuilt on branch `feature/shelves-and-language`
+  from GitHub `main`; raw source folders (`10th rbse/`, `artifacts/`,
+  `12th_science_rbse/`) were left out of the public repo. The 13 tests that
+  fail on GitHub `main` (book content and missing `artifacts/` files) still
+  fail; everything else passes.
