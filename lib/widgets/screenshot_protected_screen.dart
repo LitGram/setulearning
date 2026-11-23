@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import '../services/screenshot_protection.dart';
 
 /// Keep chapter content off screen until Android confirms capture is blocked.
@@ -51,20 +52,20 @@ class _ScreenshotProtectedScreenState extends State<ScreenshotProtectedScreen> {
             return widget.child;
           }
           return Scaffold(
-            appBar: AppBar(title: const Text('Opening chapter')),
+            appBar: AppBar(title: Text(context.strings.openingChapter)),
             body: Center(
               child: snapshot.hasError
                   ? Padding(
                       padding: const EdgeInsets.all(24),
                       child: Column(mainAxisSize: MainAxisSize.min, children: [
-                        const Text(
-                            'This chapter could not be opened securely. Please retry.'),
+                        Text(
+                            context.strings.chapterNotOpenedSecurely),
                         const SizedBox(height: 12),
                         FilledButton(
                           onPressed: () => setState(() {
                             _protection = _service.acquire(_owner);
                           }),
-                          child: const Text('Retry'),
+                          child: Text(context.strings.retry),
                         ),
                       ]),
                     )

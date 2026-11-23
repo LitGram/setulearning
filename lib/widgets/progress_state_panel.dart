@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
 import '../providers/progress_provider.dart';
 
@@ -9,9 +10,9 @@ class ProgressStatePanel extends StatelessWidget {
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressProvider>();
     if (progress.isLoading) {
-      return const Padding(
-        padding: EdgeInsets.all(16),
-        child: LinearProgressIndicator(semanticsLabel: 'Loading progress'),
+      return Padding(
+        padding: const EdgeInsets.all(16),
+        child: LinearProgressIndicator(semanticsLabel: context.strings.loadingProgress),
       );
     }
     if (progress.loadError == null) return const SizedBox.shrink();
@@ -19,10 +20,10 @@ class ProgressStatePanel extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          const Text(
-              'Saved progress could not be loaded. You can keep reading.'),
+          Text(
+              context.strings.progressLoadFailed),
           TextButton(
-              onPressed: progress.loadProgress, child: const Text('Retry')),
+              onPressed: progress.loadProgress, child: Text(context.strings.retry)),
         ]),
       ),
     );

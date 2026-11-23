@@ -14,6 +14,10 @@ class ChapterIdentity {
     // Old M.Sc. subsections now sit inside complete units. Resolve history
     // links to their unit without treating a read subsection as a read unit.
     if (subject == 'mscphysics') {
+      // The revised statistical references are combined in Appendix 3.
+      if (book == 'mscphysics_statistical_physics' && chapter == 'ch27') {
+        return 'ch26';
+      }
       const starts = {
         'mscphysics_mathematical_physics': [1, 22, 42, 65],
         'mscphysics_classical_mechanics': [1, 17, 33, 46],

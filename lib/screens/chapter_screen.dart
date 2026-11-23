@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
 import '../models/book.dart';
 import '../models/chapter.dart';
@@ -79,8 +80,8 @@ class _ChapterScreenState extends State<ChapterScreen>
       });
     } catch (_) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-            content: Text('Reading position could not be saved.')));
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(context.strings.readingPositionNotSaved)));
       }
     }
   }
@@ -122,8 +123,8 @@ class _ChapterScreenState extends State<ChapterScreen>
             chapterTitle: chapter.title);
       } catch (_) {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-              content: Text('Reading history could not be saved.')));
+          ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text(context.strings.readingHistoryNotSaved)));
         }
       } finally {
         if (mounted && chapter.id == _currentChapter.id) _restoring = false;
@@ -175,7 +176,7 @@ class _ChapterScreenState extends State<ChapterScreen>
               Padding(
                 padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
                 child: Text(
-                  'All chapters',
+                  context.strings.allChapters,
                   style: theme.textTheme.titleLarge
                       ?.copyWith(fontWeight: FontWeight.bold),
                 ),
@@ -220,10 +221,10 @@ class _ChapterScreenState extends State<ChapterScreen>
                       subtitle: Text([
                         if (chapter.subtitle != null) chapter.subtitle!,
                         isCurrent
-                            ? 'Reading now'
+                            ? context.strings.readingNow
                             : isRead
-                                ? 'Read'
-                                : 'Unread',
+                                ? context.strings.read
+                                : context.strings.unread,
                       ].join(' • ')),
                       onTap: () {
                         Navigator.pop(sheetContext);
@@ -320,14 +321,15 @@ class _ChapterScreenState extends State<ChapterScreen>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'अध्याय-अंत अभ्यास (वैकल्पिक)',
+                            context.strings.endOfChapterPractice,
                             style: theme.textTheme.titleMedium?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: colorScheme.onSecondaryContainer,
                             ),
                           ),
                           Text(
-                            'कुल प्रश्न: ${_currentChapter.mcqs.length} • अध्याय पढ़ने के बाद कभी भी हल करें',
+                            context.strings.chapterPracticeSummary(
+                                _currentChapter.mcqs.length),
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: colorScheme.onSecondaryContainer
                                   .withOpacity(0.8),
@@ -343,7 +345,7 @@ class _ChapterScreenState extends State<ChapterScreen>
                   width: double.infinity,
                   child: FilledButton.icon(
                     icon: const Icon(Icons.play_circle_fill_rounded),
-                    label: const Text('वैकल्पिक अभ्यास शुरू करें'),
+                    label: Text(context.strings.startOptionalPractice),
                     style: FilledButton.styleFrom(
                       backgroundColor: colorScheme.secondary,
                       foregroundColor: colorScheme.onSecondary,
@@ -395,16 +397,16 @@ class _ChapterScreenState extends State<ChapterScreen>
         ),
         actions: [
           IconButton(
-              tooltip: 'All chapters',
+              tooltip: context.strings.allChapters,
               icon: const Icon(Icons.format_list_bulleted_rounded),
               onPressed: _showContents),
           IconButton(
-              tooltip: 'Reading settings',
+              tooltip: context.strings.readingSettings,
               icon: const Icon(Icons.text_fields_rounded),
               onPressed: () => showReaderSettings(context)),
           if (_currentChapter.mcqs.isNotEmpty)
             IconButton(
-                tooltip: 'Practice',
+                tooltip: context.strings.practice,
                 icon: const Icon(Icons.quiz_outlined),
                 onPressed: () => Navigator.push(
                     context,
@@ -467,8 +469,8 @@ class _ChapterScreenState extends State<ChapterScreen>
                                         ? Icons.check_circle
                                         : Icons.check),
                                     label: Text(completed
-                                        ? 'Reading completed'
-                                        : 'Mark as read'),
+                                        ? context.strings.readingCompleted
+                                        : context.strings.markAsRead),
                                     onPressed: completed
                                         ? null
                                         : () async {
@@ -480,16 +482,18 @@ class _ChapterScreenState extends State<ChapterScreen>
                                                       _currentChapter.id);
                                               if (context.mounted) {
                                                 ScaffoldMessenger.of(context)
-                                                    .showSnackBar(const SnackBar(
-                                                        content: Text(
-                                                            'Progress saved')));
+                                                    .showSnackBar(SnackBar(
+                                                        content: Text(context
+                                                            .strings
+                                                            .progressSaved)));
                                               }
                                             } catch (_) {
                                               if (context.mounted) {
                                                 ScaffoldMessenger.of(context)
-                                                    .showSnackBar(const SnackBar(
-                                                        content: Text(
-                                                            'Could not save progress. Try again.')));
+                                                    .showSnackBar(SnackBar(
+                                                        content: Text(context
+                                                            .strings
+                                                            .couldNotSaveProgress)));
                                               }
                                             }
                                           }));
@@ -527,7 +531,7 @@ class _ChapterScreenState extends State<ChapterScreen>
                   Expanded(
                     child: OutlinedButton.icon(
                       icon: const Icon(Icons.arrow_back_rounded, size: 18),
-                      label: const Text('Previous'),
+                      label: Text(context.strings.previous),
                       onPressed: _hasPrevious
                           ? () => _goToChapter(_currentIndex - 1)
                           : null,
@@ -536,7 +540,7 @@ class _ChapterScreenState extends State<ChapterScreen>
                   const SizedBox(width: 12),
                   // Chapter indicator. Tapping it opens the chapter list.
                   Semantics(
-                    hint: 'Opens the list of all chapters',
+                    hint: context.strings.opensChapterList,
                     child: TextButton(
                       onPressed: _showContents,
                       style: TextButton.styleFrom(
@@ -557,7 +561,7 @@ class _ChapterScreenState extends State<ChapterScreen>
                   Expanded(
                     child: FilledButton.icon(
                       icon: const Icon(Icons.arrow_forward_rounded, size: 18),
-                      label: const Text('Next'),
+                      label: Text(context.strings.next),
                       onPressed: _hasNext
                           ? () => _goToChapter(_currentIndex + 1)
                           : null,

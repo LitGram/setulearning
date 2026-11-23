@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import 'package:provider/provider.dart';
 import '../providers/progress_provider.dart';
 
@@ -8,23 +9,23 @@ class ResetProgressButton extends StatelessWidget {
   Widget build(BuildContext context) => ListTile(
         leading: Icon(Icons.delete_outline,
             color: Theme.of(context).colorScheme.error),
-        title: const Text('Reset all progress'),
-        subtitle: const Text(
-            'Clear reading history, quiz scores, and unfinished attempts'),
+        title: Text(context.strings.resetAllProgress),
+        subtitle: Text(
+            context.strings.resetAllProgressSubtitle),
         onTap: () async {
           final confirmed = await showDialog<bool>(
               context: context,
               builder: (context) => AlertDialog(
-                    title: const Text('Reset all progress?'),
-                    content: const Text(
-                        'This removes your saved reading progress and practice scores. This cannot be undone.'),
+                    title: Text(context.strings.resetConfirmTitle),
+                    content: Text(
+                        context.strings.resetConfirmBody),
                     actions: [
                       TextButton(
                           onPressed: () => Navigator.pop(context, false),
-                          child: const Text('Cancel')),
+                          child: Text(context.strings.cancel)),
                       FilledButton(
                           onPressed: () => Navigator.pop(context, true),
-                          child: const Text('Reset'))
+                          child: Text(context.strings.reset))
                     ],
                   ));
           if (confirmed != true || !context.mounted) return;
@@ -32,12 +33,12 @@ class ResetProgressButton extends StatelessWidget {
             await context.read<ProgressProvider>().resetAllProgress();
             if (context.mounted) {
               ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Progress reset')));
+                  SnackBar(content: Text(context.strings.progressReset)));
             }
           } catch (_) {
             if (context.mounted) {
-              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                  content: Text('Could not reset progress. Try again.')));
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text(context.strings.couldNotReset)));
             }
           }
         },

@@ -85,7 +85,9 @@ Widget _app(Widget home, ProgressProvider progress) => MultiProvider(
 void main() {
   setUp(() {
     ScreenshotProtection.resetForTesting();
-    SharedPreferences.setMockInitialValues({});
+    // A returning student who already answered the first-launch group
+    // question (that question is covered by home_shelves_test.dart).
+    SharedPreferences.setMockInitialValues({'home_shelf': 'all'});
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(
             ScreenshotProtection.channel, (_) async => null);

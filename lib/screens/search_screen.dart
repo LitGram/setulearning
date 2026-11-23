@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_strings.dart';
 import '../models/book.dart';
 import '../models/chapter.dart';
 import '../models/subject.dart';
@@ -77,7 +78,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 .contains(query))
         .toList();
     return Scaffold(
-      appBar: AppBar(title: const Text('Search books and chapters')),
+      appBar: AppBar(title: Text(context.strings.searchBooksAndChapters)),
       body: Column(children: [
         Padding(
             padding: const EdgeInsets.all(16),
@@ -87,42 +88,40 @@ class _SearchScreenState extends State<SearchScreen> {
               textInputAction: TextInputAction.search,
               onChanged: (_) => setState(() {}),
               decoration: InputDecoration(
-                labelText: 'Hindi or English title',
+                labelText: context.strings.searchFieldLabel,
                 prefixIcon: const Icon(Icons.search),
                 suffixIcon: _controller.text.isEmpty
                     ? null
                     : IconButton(
-                        tooltip: 'Clear search',
+                        tooltip: context.strings.clearSearch,
                         icon: const Icon(Icons.clear),
                         onPressed: () => setState(_controller.clear)),
                 border: const OutlineInputBorder(),
               ),
             )),
         if (_loading)
-          const LinearProgressIndicator(
-              semanticsLabel: 'Preparing chapter search'),
+          LinearProgressIndicator(
+              semanticsLabel: context.strings.preparingSearch),
         if (_failed)
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Wrap(
                   crossAxisAlignment: WrapCrossAlignment.center,
                   children: [
-                    const Text(
-                        'Some chapters could not be loaded. You can still search books.'),
+                    Text(context.strings.someChaptersNotLoaded),
                     TextButton(
                         onPressed: _loading ? null : _index,
-                        child: const Text('Retry')),
+                        child: Text(context.strings.retry)),
                   ])),
         Expanded(
             child: query.isEmpty
                 ? ListView(padding: const EdgeInsets.all(16), children: [
-                    const Text(
-                        'Search any word from a book or chapter title. Works offline.'),
+                    Text(context.strings.searchHint),
                     const SizedBox(height: 20),
                     if (_recent.isNotEmpty) ...[
                       Semantics(
                         header: true,
-                        child: Text('Recent searches',
+                        child: Text(context.strings.recentSearches,
                             style: Theme.of(context).textTheme.titleSmall),
                       ),
                       const SizedBox(height: 8),
@@ -138,11 +137,10 @@ class _SearchScreenState extends State<SearchScreen> {
                     ],
                   ])
                 : results.isEmpty
-                    ? const Center(
+                    ? Center(
                         child: Padding(
-                            padding: EdgeInsets.all(24),
-                            child: Text(
-                                'No results. Try a shorter word or a Hindi or English title.')))
+                            padding: const EdgeInsets.all(24),
+                            child: Text(context.strings.noResults)))
                     : ListView.builder(
                         itemCount: results.length + 1,
                         itemBuilder: (context, index) {
@@ -152,9 +150,7 @@ class _SearchScreenState extends State<SearchScreen> {
                               child: Semantics(
                                 liveRegion: true,
                                 child: Text(
-                                  results.length == 1
-                                      ? '1 result'
-                                      : '${results.length} results',
+                                  context.strings.resultsCount(results.length),
                                   style: Theme.of(context).textTheme.labelLarge,
                                 ),
                               ),
@@ -179,7 +175,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                 entry.chapter!.subtitle!,
                               entry.subject.name,
                               entry.chapter == null
-                                  ? 'पुस्तक'
+                                  ? context.strings.book
                                   : entry.book.title,
                             ].join(' • ')),
                             trailing: const Icon(Icons.chevron_right),
